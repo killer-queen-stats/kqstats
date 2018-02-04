@@ -1,0 +1,29 @@
+{
+  "name": "kqstats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc -p src",
+    "build:example": "tsc -p example",
+    "clean": "del-cli lib",
+    "clean:example": "del-cli example/build",
+    "test": "mocha -r ts-node/register --exit test/**/*.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "del-cli": "^1.1.0",
+    "mocha": "^5.0.0",
+    "ts-node": "^4.1.0",
+    "typescript": "^2.7.1",
+    "websocket": "^1.0.25"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.2",
+    "@types/mocha": "^2.2.48",
+    "@types/node": "^9.4.0",
+    "@types/websocket": "0.0.36"
+  }
+}

@@ -1,0 +1,336 @@
+map.html:141 <<< WS received: ![k[bracket],v[{"tournament_name":"CQTestWed2","tournament_location":"Close Quarters","format":"m","concluded":false,"stream_url":"","brackets":[{"bracket_type":"m","rounds":[{"round_num":0,"sets":[{"id":1,"best_of":3,"on_machine_name":"","start_time":"","teams":[{"name":"Lose to Los","score":0},{"name":"Queen Courtney","score":0}],"victory_types":[],"match_data_id":[]},{"id":2,"best_of":3,"on_machine_name":"","start_time":"","teams":[{"name":"","score":0},{"name":"","score":0}],"victory_types":[],"match_data_id":[]},{"id":3,"best_of":3,"on_machine_name":"","start_time":"","teams":[{"name":"","score":0},{"name":"","score":0}],"victory_types":[],"match_data_id":[]}]}]}],"standings":[]}]]!
+map.html:165 unhandled message:  bracket = {"tournament_name":"CQTestWed2","tournament_location":"Close Quarters","format":"m","concluded":false,"stream_url":"","brackets":[{"bracket_type":"m","rounds":[{"round_num":0,"sets":[{"id":1,"best_of":3,"on_machine_name":"","start_time":"","teams":[{"name":"Lose to Los","score":0},{"name":"Queen Courtney","score":0}],"victory_types":[],"match_data_id":[]},{"id":2,"best_of":3,"on_machine_name":"","start_time":"","teams":[{"name":"","score":0},{"name":"","score":0}],"victory_types":[],"match_data_id":[]},{"id":3,"best_of":3,"on_machine_name":"","start_time":"","teams":[{"name":"","score":0},{"name":"","score":0}],"victory_types":[],"match_data_id":[]}]}]}],"standings":[]}
+map.html:141 <<< WS received: ![k[tstart],v[{"start":"True","format":"m","tournamentname":"CQTestWed2","message":""}]]!
+map.html:165 unhandled message:  tstart = {"start":"True","format":"m","tournamentname":"CQTestWed2","message":""}
+map.html:141 <<< WS received: ![k[nextmatch],v[{"id":"1","bestOf":"3","team1":"Lose to Los","team2":"Queen Courtney","score1":"0","score2":"0","win1":"0","win2":"0","loss1":"0","loss2":"0","machineName":"KQ","message":"","concluded":"False","next1":"","next2":"","warmup":"0","status":"OKAY"}]]!
+map.html:165 unhandled message:  nextmatch = {"id":"1","bestOf":"3","team1":"Lose to Los","team2":"Queen Courtney","score1":"0","score2":"0","win1":"0","win2":"0","loss1":"0","loss2":"0","machineName":"KQ","message":"","concluded":"False","next1":"","next2":"","warmup":"0","status":"OKAY"}
+map.html:141 <<< WS received: ![k[bracket],v[{"tournament_name":"CQTestWed2","tournament_location":"Close Quarters","format":"m","concluded":false,"stream_url":"","brackets":[{"bracket_type":"m","rounds":[{"round_num":0,"sets":[{"id":1,"best_of":3,"on_machine_name":"KQ","start_time":"","teams":[{"name":"Lose to Los","score":0},{"name":"Queen Courtney","score":0}],"victory_types":[],"match_data_id":[]},{"id":2,"best_of":3,"on_machine_name":"","start_time":"","teams":[{"name":"","score":0},{"name":"","score":0}],"victory_types":[],"match_data_id":[]},{"id":3,"best_of":3,"on_machine_name":"","start_time":"","teams":[{"name":"","score":0},{"name":"","score":0}],"victory_types":[],"match_data_id":[]}]}]}],"standings":[]}]]!
+map.html:165 unhandled message:  bracket = {"tournament_name":"CQTestWed2","tournament_location":"Close Quarters","format":"m","concluded":false,"stream_url":"","brackets":[{"bracket_type":"m","rounds":[{"round_num":0,"sets":[{"id":1,"best_of":3,"on_machine_name":"KQ","start_time":"","teams":[{"name":"Lose to Los","score":0},{"name":"Queen Courtney","score":0}],"victory_types":[],"match_data_id":[]},{"id":2,"best_of":3,"on_machine_name":"","start_time":"","teams":[{"name":"","score":0},{"name":"","score":0}],"victory_types":[],"match_data_id":[]},{"id":3,"best_of":3,"on_machine_name":"","start_time":"","teams":[{"name":"","score":0},{"name":"","score":0}],"victory_types":[],"match_data_id":[]}]}]}],"standings":[]}
+map.html:141 <<< WS received: ![k[currentmatch],v[{"id":"1","bestOf":"3","team1":"Lose to Los","team2":"Queen Courtney","score1":"0","score2":"0","win1":"0","win2":"0","loss1":"0","loss2":"0","machineName":"KQ","message":"","concluded":"False","next1":"","next2":"","warmup":"0","status":"OKAY"}]]!
+map.html:165 unhandled message:  currentmatch = {"id":"1","bestOf":"3","team1":"Lose to Los","team2":"Queen Courtney","score1":"0","score2":"0","win1":"0","win2":"0","loss1":"0","loss2":"0","machineName":"KQ","message":"","concluded":"False","next1":"","next2":"","warmup":"0","status":"OKAY"}
+map.html:141 <<< WS received: ![k[currentmatch],v[{"id":"1","bestOf":"3","team1":"Lose to Los","team2":"Queen Courtney","score1":"0","score2":"0","win1":"0","win2":"0","loss1":"0","loss2":"0","machineName":"KQ","message":"","concluded":"False","next1":"","next2":"","warmup":"0","status":"OKAY"}]]!
+map.html:165 unhandled message:  currentmatch = {"id":"1","bestOf":"3","team1":"Lose to Los","team2":"Queen Courtney","score1":"0","score2":"0","win1":"0","win2":"0","loss1":"0","loss2":"0","machineName":"KQ","message":"","concluded":"False","next1":"","next2":"","warmup":"0","status":"OKAY"}
+map.html:141 <<< WS received: ![k[alive],v[10:40:50 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[currentmatch],v[{"id":"1","bestOf":"3","team1":"Lose to Los","team2":"Queen Courtney","score1":"0","score2":"0","win1":"0","win2":"0","loss1":"0","loss2":"0","machineName":"KQ","message":"","concluded":"False","next1":"","next2":"","warmup":"0","status":"OKAY"}]]!
+map.html:165 unhandled message:  currentmatch = {"id":"1","bestOf":"3","team1":"Lose to Los","team2":"Queen Courtney","score1":"0","score2":"0","win1":"0","win2":"0","loss1":"0","loss2":"0","machineName":"KQ","message":"","concluded":"False","next1":"","next2":"","warmup":"0","status":"OKAY"}
+map.html:141 <<< WS received: ![k[alive],v[10:40:55 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:41:00 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:41:05 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:41:10 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:41:15 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:41:20 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:41:25 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playernames],v[,,,,,,,,,]]!
+map.html:162 players: Wed Jan 31 2018 22:41:27 GMT-0500 (EST) ,,,,,,,,,
+map.html:141 <<< WS received: ![k[alive],v[10:41:30 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:41:35 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:41:40 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:41:45 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[972.2963,720.9521,1,10]]!
+map.html:156 kill: 972.2963,720.9521,1,10
+map.html:141 <<< WS received: ![k[alive],v[10:41:50 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[1395.373,352.6056,5,8]]!
+map.html:156 kill: 1395.373,352.6056,5,8
+map.html:141 <<< WS received: ![k[playerKill],v[948.43,500,3,10]]!
+map.html:156 kill: 948.43,500,3,10
+map.html:141 <<< WS received: ![k[alive],v[10:41:55 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:42:00 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[622.332,740.3358,1,10]]!
+map.html:156 kill: 622.332,740.3358,1,10
+map.html:141 <<< WS received: ![k[alive],v[10:42:05 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[1303.133,261,5,6]]!
+map.html:156 kill: 1303.133,261,5,6
+map.html:141 <<< WS received: ![k[alive],v[10:42:10 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[1238.304,108.7608,8,9]]!
+map.html:156 kill: 1238.304,108.7608,8,9
+map.html:141 <<< WS received: ![k[playerKill],v[1396.418,261,4,5]]!
+map.html:156 kill: 1396.418,261,4,5
+map.html:141 <<< WS received: ![k[alive],v[10:42:15 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[690.9393,463.7061,3,6]]!
+map.html:156 kill: 690.9393,463.7061,3,6
+map.html:141 <<< WS received: ![k[playerKill],v[1159.13,380,4,5]]!
+map.html:156 kill: 1159.13,380,4,5
+map.html:141 <<< WS received: ![k[playerKill],v[1135.811,140.0001,8,9]]!
+map.html:156 kill: 1135.811,140.0001,8,9
+map.html:141 <<< WS received: ![k[alive],v[10:42:20 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:42:25 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[581.5381,400.7683,4,3]]!
+map.html:156 kill: 581.5381,400.7683,4,3
+map.html:141 <<< WS received: ![k[playerKill],v[960,500,2,9]]!
+map.html:156 kill: 960,500,2,9
+map.html:141 <<< WS received: ![k[alive],v[10:42:30 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[1131.083,765.8201,2,1]]!
+map.html:156 kill: 1131.083,765.8201,2,1
+map.html:141 <<< WS received: ![k[playerKill],v[1447.181,415,8,7]]!
+map.html:156 kill: 1447.181,415,8,7
+map.html:141 <<< WS received: ![k[playerKill],v[1046.888,376.8357,8,3]]!
+map.html:156 kill: 1046.888,376.8357,8,3
+map.html:141 <<< WS received: ![k[alive],v[10:42:35 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[33.96716,380,8,9]]!
+map.html:156 kill: 33.96716,380,8,9
+map.html:141 <<< WS received: ![k[playerKill],v[704.7123,11,5,10]]!
+map.html:156 kill: 704.7123,11,5,10
+map.html:141 <<< WS received: ![k[alive],v[10:42:40 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[613.5267,501,8,5]]!
+map.html:156 kill: 613.5267,501,8,5
+map.html:141 <<< WS received: ![k[playerKill],v[711.0421,11,6,7]]!
+map.html:156 kill: 711.0421,11,6,7
+map.html:141 <<< WS received: ![k[alive],v[10:42:45 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:42:50 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[707.4136,236.7321,4,5]]!
+map.html:156 kill: 707.4136,236.7321,4,5
+map.html:141 <<< WS received: ![k[playerKill],v[1051.046,775,2,9]]!
+map.html:156 kill: 1051.046,775,2,9
+map.html:141 <<< WS received: ![k[playerKill],v[1651.667,558.9241,3,8]]!
+map.html:156 kill: 1651.667,558.9241,3,8
+map.html:141 <<< WS received: ![k[alive],v[10:42:55 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[277.1117,377.5695,3,4]]!
+map.html:156 kill: 277.1117,377.5695,3,4
+map.html:141 <<< WS received: ![k[alive],v[10:43:00 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[588.5304,46.08041,10,5]]!
+map.html:156 kill: 588.5304,46.08041,10,5
+map.html:141 <<< WS received: ![k[playerKill],v[600.0404,21,3,6]]!
+map.html:156 kill: 600.0404,21,3,6
+map.html:141 <<< WS received: ![k[playerKill],v[1360,260,2,9]]!
+map.html:156 kill: 1360,260,2,9
+map.html:141 <<< WS received: ![k[alive],v[10:43:05 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:43:10 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[1173.895,496.1886,1,4]]!
+map.html:156 kill: 1173.895,496.1886,1,4
+map.html:141 <<< WS received: ![k[alive],v[10:43:15 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:43:20 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[1301.277,500,1,4]]!
+map.html:156 kill: 1301.277,500,1,4
+map.html:141 <<< WS received: ![k[playerKill],v[1360,260,3,8]]!
+map.html:156 kill: 1360,260,3,8
+map.html:141 <<< WS received: ![k[alive],v[10:43:25 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:43:30 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[1360,260,3,6]]!
+map.html:156 kill: 1360,260,3,6
+map.html:141 <<< WS received: ![k[playerKill],v[1381.963,337.3527,2,3]]!
+map.html:156 kill: 1381.963,337.3527,2,3
+map.html:141 <<< WS received: ![k[alive],v[10:43:35 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[1459.44,368.299,2,3]]!
+map.html:156 kill: 1459.44,368.299,2,3
+map.html:141 <<< WS received: ![k[alive],v[10:43:40 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[1154.664,11,8,5]]!
+map.html:156 kill: 1154.664,11,8,5
+map.html:141 <<< WS received: ![k[alive],v[10:43:45 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:43:50 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:43:55 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[874.0416,656.1747,8,1]]!
+map.html:156 kill: 874.0416,656.1747,8,1
+map.html:141 <<< WS received: ![k[alive],v[10:44:00 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:44:05 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[1395,260,6,5]]!
+map.html:156 kill: 1395,260,6,5
+map.html:141 <<< WS received: ![k[playerKill],v[660.7191,20,10,3]]!
+map.html:156 kill: 660.7191,20,10,3
+map.html:141 <<< WS received: ![k[playerKill],v[725.9181,11,7,10]]!
+map.html:156 kill: 725.9181,11,7,10
+map.html:141 <<< WS received: ![k[alive],v[10:44:10 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[1282.885,254.1731,1,6]]!
+map.html:156 kill: 1282.885,254.1731,1,6
+map.html:141 <<< WS received: ![k[alive],v[10:44:15 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[1360,260,8,5]]!
+map.html:156 kill: 1360,260,8,5
+map.html:141 <<< WS received: ![k[playerKill],v[636.8793,74.50696,7,10]]!
+map.html:156 kill: 636.8793,74.50696,7,10
+map.html:141 <<< WS received: ![k[alive],v[10:44:20 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[1252.849,497.6144,9,4]]!
+map.html:156 kill: 1252.849,497.6144,9,4
+map.html:141 <<< WS received: ![k[playerKill],v[577.2125,75.12848,7,6]]!
+map.html:156 kill: 577.2125,75.12848,7,6
+map.html:141 <<< WS received: ![k[playerKill],v[607.4725,69.27219,8,7]]!
+map.html:156 kill: 607.4725,69.27219,8,7
+map.html:141 <<< WS received: ![k[alive],v[10:44:25 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:44:30 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[1379.36,260,1,4]]!
+map.html:156 kill: 1379.36,260,1,4
+map.html:141 <<< WS received: ![k[playerKill],v[523.0802,365.0733,8,3]]!
+map.html:156 kill: 523.0802,365.0733,8,3
+map.html:141 <<< WS received: ![k[playerKill],v[568.3513,390.4745,8,7]]!
+map.html:156 kill: 568.3513,390.4745,8,7
+map.html:141 <<< WS received: ![k[alive],v[10:44:35 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[900.75,260,2,3]]!
+map.html:156 kill: 900.75,260,2,3
+map.html:141 <<< WS received: ![k[alive],v[10:44:40 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[387.72,142.3,6,1]]!
+map.html:156 kill: 387.72,142.3,6,1
+map.html:141 <<< WS received: ![k[currentmatch],v[{"id":"1","bestOf":"3","team1":"Lose to Los","team2":"Queen Courtney","score1":"1","score2":"0","win1":"0","win2":"0","loss1":"0","loss2":"0","machineName":"KQ","message":"","concluded":"False","next1":"","next2":"","warmup":"0","status":"OKAY"}]]!
+map.html:165 unhandled message:  currentmatch = {"id":"1","bestOf":"3","team1":"Lose to Los","team2":"Queen Courtney","score1":"1","score2":"0","win1":"0","win2":"0","loss1":"0","loss2":"0","machineName":"KQ","message":"","concluded":"False","next1":"","next2":"","warmup":"0","status":"OKAY"}
+map.html:141 <<< WS received: ![k[bracket],v[{"tournament_name":"CQTestWed2","tournament_location":"Close Quarters","format":"m","concluded":false,"stream_url":"","brackets":[{"bracket_type":"m","rounds":[{"round_num":0,"sets":[{"id":1,"best_of":3,"on_machine_name":"KQ","start_time":"","teams":[{"name":"Lose to Los","score":1},{"name":"Queen Courtney","score":0}],"victory_types":["blue_military"],"match_data_id":["d,CQTestWed2,1,1"]},{"id":2,"best_of":3,"on_machine_name":"","start_time":"","teams":[{"name":"","score":0},{"name":"","score":0}],"victory_types":[],"match_data_id":[]},{"id":3,"best_of":3,"on_machine_name":"","start_time":"","teams":[{"name":"","score":0},{"name":"","score":0}],"victory_types":[],"match_data_id":[]}]}]}],"standings":[]}]]!
+map.html:165 unhandled message:  bracket = {"tournament_name":"CQTestWed2","tournament_location":"Close Quarters","format":"m","concluded":false,"stream_url":"","brackets":[{"bracket_type":"m","rounds":[{"round_num":0,"sets":[{"id":1,"best_of":3,"on_machine_name":"KQ","start_time":"","teams":[{"name":"Lose to Los","score":1},{"name":"Queen Courtney","score":0}],"victory_types":["blue_military"],"match_data_id":["d,CQTestWed2,1,1"]},{"id":2,"best_of":3,"on_machine_name":"","start_time":"","teams":[{"name":"","score":0},{"name":"","score":0}],"victory_types":[],"match_data_id":[]},{"id":3,"best_of":3,"on_machine_name":"","start_time":"","teams":[{"name":"","score":0},{"name":"","score":0}],"victory_types":[],"match_data_id":[]}]}]}],"standings":[]}
+map.html:141 <<< WS received: ![k[alive],v[10:44:45 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:44:50 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[currentmatch],v[{"id":"1","bestOf":"3","team1":"Lose to Los","team2":"Queen Courtney","score1":"1","score2":"0","win1":"0","win2":"0","loss1":"0","loss2":"0","machineName":"KQ","message":"","concluded":"False","next1":"","next2":"","warmup":"0","status":"OKAY"}]]!
+map.html:165 unhandled message:  currentmatch = {"id":"1","bestOf":"3","team1":"Lose to Los","team2":"Queen Courtney","score1":"1","score2":"0","win1":"0","win2":"0","loss1":"0","loss2":"0","machineName":"KQ","message":"","concluded":"False","next1":"","next2":"","warmup":"0","status":"OKAY"}
+map.html:141 <<< WS received: ![k[alive],v[10:44:55 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[currentmatch],v[{"id":"1","bestOf":"3","team1":"Lose to Los","team2":"Queen Courtney","score1":"1","score2":"0","win1":"0","win2":"0","loss1":"0","loss2":"0","machineName":"KQ","message":"","concluded":"False","next1":"","next2":"","warmup":"0","status":"OKAY"}]]!
+map.html:165 unhandled message:  currentmatch = {"id":"1","bestOf":"3","team1":"Lose to Los","team2":"Queen Courtney","score1":"1","score2":"0","win1":"0","win2":"0","loss1":"0","loss2":"0","machineName":"KQ","message":"","concluded":"False","next1":"","next2":"","warmup":"0","status":"OKAY"}
+map.html:141 <<< WS received: ![k[playernames],v[,,,,,,,,,]]!
+map.html:162 players: Wed Jan 31 2018 22:45:00 GMT-0500 (EST) ,,,,,,,,,
+map.html:141 <<< WS received: ![k[alive],v[10:45:00 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:45:05 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:45:10 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:45:15 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:45:20 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:45:25 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:45:30 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:45:35 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[1133.92,719.0234,9,4]]!
+map.html:156 kill: 1133.92,719.0234,9,4
+map.html:141 <<< WS received: ![k[alive],v[10:45:40 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[324.4981,83.03066,3,10]]!
+map.html:156 kill: 324.4981,83.03066,3,10
+map.html:141 <<< WS received: ![k[alive],v[10:45:45 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[295.1201,56.4485,3,4]]!
+map.html:156 kill: 295.1201,56.4485,3,4
+map.html:141 <<< WS received: ![k[alive],v[10:45:50 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:45:55 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[1611.685,755.8088,7,8]]!
+map.html:156 kill: 1611.685,755.8088,7,8
+map.html:141 <<< WS received: ![k[playerKill],v[347.6633,349.7535,3,10]]!
+map.html:156 kill: 347.6633,349.7535,3,10
+map.html:141 <<< WS received: ![k[alive],v[10:46:00 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:46:05 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:46:10 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:46:15 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[1446.313,968.0236,6,3]]!
+map.html:156 kill: 1446.313,968.0236,6,3
+map.html:141 <<< WS received: ![k[alive],v[10:46:20 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[746.5865,289.4623,2,5]]!
+map.html:156 kill: 746.5865,289.4623,2,5
+map.html:141 <<< WS received: ![k[playerKill],v[1206.038,414.8931,6,7]]!
+map.html:156 kill: 1206.038,414.8931,6,7
+map.html:141 <<< WS received: ![k[alive],v[10:46:25 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[664.5099,551.7073,2,3]]!
+map.html:156 kill: 664.5099,551.7073,2,3
+map.html:141 <<< WS received: ![k[alive],v[10:46:30 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[alive],v[10:46:35 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[1432.33,1055.641,9,4]]!
+map.html:156 kill: 1432.33,1055.641,9,4
+map.html:141 <<< WS received: ![k[playerKill],v[1262.364,491,6,7]]!
+map.html:156 kill: 1262.364,491,6,7
+map.html:141 <<< WS received: ![k[alive],v[10:46:40 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[1057.717,773.9609,2,9]]!
+map.html:156 kill: 1057.717,773.9609,2,9
+map.html:141 <<< WS received: ![k[playerKill],v[1159.53,500,6,5]]!
+map.html:156 kill: 1159.53,500,6,5
+map.html:141 <<< WS received: ![k[playerKill],v[305.9368,728.3295,8,1]]!
+map.html:156 kill: 305.9368,728.3295,8,1
+map.html:141 <<< WS received: ![k[alive],v[10:46:45 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[319.24,20,3,4]]!
+map.html:156 kill: 319.24,20,3,4
+map.html:141 <<< WS received: ![k[playerKill],v[305.2745,20,3,10]]!
+map.html:156 kill: 305.2745,20,3,10
+map.html:141 <<< WS received: ![k[playerKill],v[403.4225,113.0698,2,3]]!
+map.html:156 kill: 403.4225,113.0698,2,3
+map.html:141 <<< WS received: ![k[playerKill],v[1399.554,692.554,1,8]]!
+map.html:156 kill: 1399.554,692.554,1,8
+map.html:141 <<< WS received: ![k[alive],v[10:46:50 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[1592.34,287.1487,6,9]]!
+map.html:156 kill: 1592.34,287.1487,6,9
+map.html:141 <<< WS received: ![k[alive],v[10:46:55 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[1415.094,760.8493,6,7]]!
+map.html:156 kill: 1415.094,760.8493,6,7
+map.html:141 <<< WS received: ![k[alive],v[10:47:00 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[1341.465,782.9894,2,7]]!
+map.html:156 kill: 1341.465,782.9894,2,7
+map.html:141 <<< WS received: ![k[playerKill],v[1361.724,740,2,9]]!
+map.html:156 kill: 1361.724,740,2,9
+map.html:141 <<< WS received: ![k[playerKill],v[1213.077,613.4033,2,5]]!
+map.html:156 kill: 1213.077,613.4033,2,5
+map.html:141 <<< WS received: ![k[alive],v[10:47:05 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[1214.671,554.507,2,3]]!
+map.html:156 kill: 1214.671,554.507,2,3
+map.html:141 <<< WS received: ![k[playerKill],v[877.7459,464.9889,1,4]]!
+map.html:156 kill: 877.7459,464.9889,1,4
+map.html:141 <<< WS received: ![k[alive],v[10:47:10 PM]]!
+map.html:128 >>> WS sending: ![k[im alive],v[null]]!
+map.html:141 <<< WS received: ![k[playerKill],v[645.8069,500,1,10]]!
+map.html:156 kill: 645.8069,500,1,10
+map.html:141 <<< WS received: ![k[currentmatch],v[{"id":"1","bestOf":"3","team1":"Lose to Los","team2":"Queen Courtney","score1":"2","score2":"0","win1":"0","win2":"0","loss1":"0","loss2":"0","machineName":"KQ","message":"","concluded":"True","next1":"","next2":"","warmup":"0","status":"OKAY"}]]!
+map.html:165 unhandled message:  currentmatch = {"id":"1","bestOf":"3","team1":"Lose to Los","team2":"Queen Courtney","score1":"2","score2":"0","win1":"0","win2":"0","loss1":"0","loss2":"0","machineName":"KQ","message":"","concluded":"True","next1":"","next2":"","warmup":"0","status":"OKAY"}
+map.html:141 <<< WS received: ![k[bracket],v[{"tournament_name":"CQTestWed2","tournament_location":"Close Quarters","format":"m","concluded":false,"stream_url":"","brackets":[{"bracket_type":"m","rounds":[{"round_num":0,"sets":[{"id":1,"best_of":3,"on_machine_name":"KQ","start_time":"","teams":[{"name":"Lose to Los","score":2},{"name":"Queen Courtney","score":0}],"victory_types":["blue_military","blue_economic"],"match_data_id":["d,CQTestWed2,1,1","d,CQTestWed2,1,2"]},{"id":2,"best_of":3,"on_machine_name":"","start_time":"","teams":[{"name":"","score":0},{"name":"","score":0}],"victory_types":[],"match_data_id":[]},{"id":3,"best_of":3,"on_machine_name":"","start_time":"","teams":[{"name":"","score":0},{"name":"","score":0}],"victory_types":[],"match_data_id":[]}]}]}],"standings":[]}]]!
+map.html:165 unhandled message:  bracket = {"tournament_name":"CQTestWed2","tournament_location":"Close Quarters","format":"m","concluded":false,"stream_url":"","brackets":[{"bracket_type":"m","rounds":[{"round_num":0,"sets":[{"id":1,"best_of":3,"on_machine_name":"KQ","start_time":"","teams":[{"name":"Lose to Los","score":2},{"name":"Queen Courtney","score":0}],"victory_types":["blue_military","blue_economic"],"match_data_id":["d,CQTestWed2,1,1","d,CQTestWed2,1,2"]},{"id":2,"best_of":3,"on_machine_name":"","start_time":"","teams":[{"name":"","score":0},{"name":"","score":0}],"victory_types":[],"match_data_id":[]},{"id":3,"best_of":3,"on_machine_name":"","start_time":"","teams":[{"name":"","score":0},{"name":"","score":0}],"victory_types":[],"match_data_id":[]}]}]}],"standings":[]}
+map.html:141 <<< WS received: ![k[nextmatch],v[{"id":"1","bestOf":"3","team1":"","team2":"","score1":"0","score2":"0","win1":"0","win2":"0","loss1":"0","loss2":"0","machineName":"KQ","message":"","concluded":"False","next1":"","next2":"","warmup":"0","status":"OKAY"}]]!
+map.html:165 unhandled message:  nextmatch = {"id":"1","bestOf":"3","team1":"","team2":"","score1":"0","score2":"0","win1":"0","win2":"0","loss1":"0","loss2":"0","machineName":"KQ","message":"","concluded":"False","next1":"","next2":"","warmup":"0","status":"OKAY"}
+map.html:141 <<< WS received: ![k[bracket],v[{"tournament_name":"CQTestWed2","tournament_location":"Close Quarters","format":"m","concluded":false,"stream_url":"","brackets":[{"bracket_type":"m","rounds":[{"round_num":0,"sets":[{"id":1,"best_of":3,"on_machine_name":"KQ","start_time":"","teams":[{"name":"","score":0},{"name":"","score":0}],"victory_types":["blue_military","blue_economic"],"match_data_id":["d,CQTestWed2,1,1","d,CQTestWed2,1,2"]},{"id":2,"best_of":3,"on_machine_name":"","start_time":"","teams":[{"name":"","score":0},{"name":"","score":0}],"victory_types":[],"match_data_id":[]},{"id":3,"best_of":3,"on_machine_name":"","start_time":"","teams":[{"name":"","score":0},{"name":"","score":0}],"victory_types":[],"match_data_id":[]}]}]}],"standings":[]}]]!
+map.html:165 unhandled message:  bracket = {"tournament_name":"CQTestWed2","tournament_location":"Close Quarters","format":"m","concluded":false,"stream_url":"","brackets":[{"bracket_type":"m","rounds":[{"round_num":0,"sets":[{"id":1,"best_of":3,"on_machine_name":"KQ","start_time":"","teams":[{"name":"","score":0},{"name":"","score":0}],"victory_types":["blue_military","blue_economic"],"match_data_id":["d,CQTestWed2,1,1","d,CQTestWed2,1,2"]},{"id":2,"best_of":3,"on_machine_name":"","start_time":"","teams":[{"name":"","score":0},{"name":"","score":0}],"victory_types":[],"match_data_id":[]},{"id":3,"best_of":3,"on_machine_name":"","start_time":"","teams":[{"name":"","score":0},{"name":"","score":0}],"victory_types":[],"match_data_id":[]}]}]}],"standings":[]}

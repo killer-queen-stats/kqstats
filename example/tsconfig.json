@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "lib": [
+            "es2015"
+        ],
+        "sourceMap": true,
+        "outDir": "build"
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
