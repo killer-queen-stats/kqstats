@@ -2,7 +2,6 @@ import { expect } from 'chai';
 import * as http from 'http';
 import * as websocket from 'websocket';
 import { KQStream, KQEventCallback, PlayerKill, Character } from '../src/KQStream';
-import { getCiphers } from 'crypto';
 
 const KQ_PORT = 12749;
 

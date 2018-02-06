@@ -15,11 +15,23 @@ Get real time statistics from your Killer Queen cabinets!
 
 The `KQStream` class processes socket messages from a Killer Queen cabinet. You can set up a callback method for each type of supported event. These callback methods receive data from the event in a deserialized object that can easily be used in other code.
 
-`KQStream` supports the following events:
+### ```new KQStream([options])```
 
-- `playerKill`
+Creates a new `KQStream object with the specified options:
 
-An example of a simple killfeed:
+- `options.log`: a `stream.Writable` object where all messages from the cabinet, appended with a timestamp, will be written
+
+### ```async KQStream#connect(host)```
+
+Connect to the specified `host` string. Should usually follow the format: `ws://[HOST_IP]:12749`.
+
+### ```KQStream#on('playerKill', callback)```
+
+Set the callback for `playerKill` events. `callback` should accept a single parameter of type `PlayerKill`.
+
+## Examples
+
+Simple killfeed:
 
 ```ts
 import { KQStream, PlayerKill, Character } from '../src/KQStream';
@@ -42,6 +54,18 @@ stream.on('playerKill', (event: PlayerKill) => {
     const victor = characterNames[event.by];
     const vainquished = characterNames[event.killed];
     console.log(`${victor} killed ${vainquished} at ${event.pos.x},${event.pos.y}`);
+});
+stream.connect(`ws://localhost:12749`);
+```
+
+Logging all cabinet messages to a file:
+
+```ts
+import * as fs from 'fs';
+import { KQStream } from '../src/KQStream';
+
+const stream = new KQStream({
+    log: fs.createWriteStream('log.txt')
 });
 stream.connect(`ws://localhost:12749`);
 ```

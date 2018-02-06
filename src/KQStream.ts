@@ -4,6 +4,7 @@
  */
 
 import * as websocket from 'websocket';
+import * as stream from 'stream';
 
 export enum Character {
     GoldQueen = 1,
@@ -35,12 +36,25 @@ export type KQEventType = 'playerKill';
 
 export type KQEventCallback<T> = (event: T) => any;
 
+export interface KQStreamOptions {
+    log?: stream.Writable
+}
+
 export class KQStream {
     private client: websocket.client;
     private connection: websocket.connection;
+
     private onPlayerKill: KQEventCallback<PlayerKill>;
 
-    constructor() {}
+    private log: stream.Writable;
+
+    constructor(options?: KQStreamOptions) {
+        if (options !== undefined) {
+            if (options.log !== undefined) {
+                this.log = options.log;
+            }
+        }
+    }
 
     async connect(host: string): Promise<void> {
         return new Promise<void>((resolve, reject) => {
@@ -59,7 +73,11 @@ export class KQStream {
     }
 
     private processMessage(data: websocket.IMessage): void {
-        const dataArray = data.binaryData.toString().match(/!\[k\[(.*?)\],v\[(.*)?\]\]!/);
+        const message = data.binaryData.toString();
+        if (this.log !== undefined) {
+            this.log.write(`${Date.now().toString()},${message}\n`);
+        }
+        const dataArray = message.match(/!\[k\[(.*?)\],v\[(.*)?\]\]!/);
         if (!dataArray) {
             console.warn('Could not parse data', data.utf8Data);
             return;
@@ -69,16 +87,16 @@ export class KQStream {
         case 'alive':
             this.sendMessage('im alive', null);
         case 'playerKill':
-            const [x, y, by, killed] = value.split(',');
-            const playerKill: PlayerKill = {
-                pos: {
-                    x: Number(x),
-                    y: Number(y)
-                },
-                killed: Number(killed),
-                by: Number(by)
-            };
             if (this.onPlayerKill) {
+                const [x, y, by, killed] = value.split(',');
+                const playerKill: PlayerKill = {
+                    pos: {
+                        x: Number(x),
+                        y: Number(y)
+                    },
+                    killed: Number(killed),
+                    by: Number(by)
+                };
                 this.onPlayerKill(playerKill);
             }
             break;
