@@ -62,3 +62,4 @@ typings/
 
 # Typescript build output
 lib
+example/build
