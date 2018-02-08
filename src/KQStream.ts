@@ -63,6 +63,7 @@ export class KQStream {
                 reject(err);
             });
             this.client.on('connect', (connection) => {
+                this.connection = connection;
                 connection.on('message', (data) => {
                     this.processMessage(data);
                 });
@@ -73,7 +74,7 @@ export class KQStream {
     }
 
     private processMessage(data: websocket.IMessage): void {
-        const message = data.binaryData.toString();
+        const message = data.utf8Data.toString();
         if (this.log !== undefined) {
             this.log.write(`${Date.now().toString()},${message}\n`);
         }

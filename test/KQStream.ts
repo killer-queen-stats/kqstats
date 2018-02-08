@@ -94,7 +94,7 @@ describe('KQStream', () => {
         kqstream.on('playerKill', onPlayerKill);
         for (let message of messages) {
             const buffer = Buffer.from(message, 'utf8');
-            connection.send(buffer);
+            connection.sendUTF(message);
         }
         await sleep(1000);
         expect(playerKillEvents.length).to.equal(4);
