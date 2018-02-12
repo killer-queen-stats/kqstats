@@ -40,6 +40,10 @@ This method simulates messages from a real Killer Queen cabinet. The first messa
 
 Set the callback for `playerKill` events. `callback` should accept a single parameter of type `PlayerKill`.
 
+### ```KQStream#on('playernames', callback)```
+
+Set the callback for `playernames` events. `callback` should accept a single parameter of type `PlayerNames`.
+
 ## Examples
 
 Simple killfeed:

@@ -19,6 +19,8 @@ export enum Character {
     BlueChecks = 10
 }
 
+export interface PlayerNames {}
+
 export interface Position {
     x: number,
     y: number
@@ -30,10 +32,6 @@ export interface PlayerKill {
     by: Character
 }
 
-export type KQEvent = PlayerKill;
-
-export type KQEventType = 'playerKill';
-
 export type KQEventCallback<T> = (event: T) => any;
 
 export interface KQStreamOptions {
@@ -44,6 +42,7 @@ export class KQStream {
     private client: websocket.client;
     private connection: websocket.connection;
 
+    private onPlayerNames: KQEventCallback<PlayerNames>;
     private onPlayerKill: KQEventCallback<PlayerKill>;
 
     private log: stream.Writable;
@@ -104,6 +103,13 @@ export class KQStream {
         switch (key) {
         case 'alive':
             this.sendMessage('im alive', null);
+        case 'playernames':
+            if (this.onPlayerNames) {
+                // Not sure what the values of the message mean,
+                // so just pass an empty object for now
+                this.onPlayerNames({});
+            }
+            break;
         case 'playerKill':
             if (this.onPlayerKill) {
                 const [x, y, by, killed] = value.split(',');
@@ -128,9 +134,13 @@ export class KQStream {
         this.connection.send(buffer);
     }
 
+    on(eventType: 'playernames', callback: KQEventCallback<PlayerNames>): void;
     on(eventType: 'playerKill', callback: KQEventCallback<PlayerKill>): void;
-    on(eventType: KQEventType, callback: KQEventCallback<KQEvent>): void {
+    on(eventType: string, callback: KQEventCallback<any>): void {
         switch (eventType) {
+        case 'playernames':
+            this.onPlayerNames = callback;
+            break;
         case 'playerKill':
             this.onPlayerKill = callback;
             break;
