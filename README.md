@@ -13,17 +13,28 @@ Get real time statistics from your Killer Queen cabinets!
 
 ## Usage
 
-The `KQStream` class processes socket messages from a Killer Queen cabinet. You can set up a callback method for each type of supported event. These callback methods receive data from the event in a deserialized object that can easily be used in other code.
+The `KQStream` class processes socket messages from a Killer Queen cabinet. You can set up a callback method for each type of supported event. These callback methods receive objects that contain event data in a deserialized format.
 
-### ```new KQStream([options])```
+### ```new KQStream(options?: KQStreamOptions)```
 
-Creates a new `KQStream object with the specified options:
+Creates a new `KQStream` object with the specified options:
 
 - `options.log`: a `stream.Writable` object where all messages from the cabinet, appended with a timestamp, will be written
 
-### ```async KQStream#connect(host)```
+All `options` properties are optional.
 
-Connect to the specified `host` string. Should usually follow the format: `ws://[HOST_IP]:12749`.
+### ```async KQStream#connect(host: string)```
+
+Connect to the specified host and processes messages. `host` should usually follow the format: `ws://[HOST_IP]:12749`.
+
+### ```KQStream#read(data: string)```
+
+Reads and processes messages from the `data` string. `data` must be the contents of a CSV file with the following format:
+
+- First value: timestamp in milliseconds
+- Second value: message from the cabinet (not wrapped in quotes)
+
+This method simulates messages from a real Killer Queen cabinet. The first message in the `data` string is processed immediately, and processing of subsequent messages is delaed according to each message's timestamp.
 
 ### ```KQStream#on('playerKill', callback)```
 

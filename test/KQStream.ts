@@ -38,68 +38,104 @@ function createServer(): websocket.server {
 }
 
 describe('KQStream', () => {
-    const messages: string[] = [
-        '![k[playerKill],v[730,860,9,8]]!',
-        '![k[playerKill],v[770,860,9,10]]!',
-        '![k[playerKill],v[810,860,9,4]]!',
-        '![k[playerKill],v[1071.977,20,3,10]]!'
-    ];
-    const kqstream = new KQStream();
+    interface TestEvent {
+        timestamp: string,
+        message: string
+    };
+    const events: TestEvent[] = [{
+        timestamp: '1518063130451',
+        message: '![k[playerKill],v[730,860,9,8]]!'
+    }, {
+        timestamp: '1518063130461',
+        message: '![k[playerKill],v[770,860,9,10]]!'
+    }, {
+        timestamp: '1518063130471',
+        message: '![k[playerKill],v[810,860,9,4]]!'
+    }, {
+        timestamp: '1518063130481',
+        message: '![k[playerKill],v[1071.977,20,3,10]]!'
+    }];
+    const expectedEvents: PlayerKill[] = [{
+        pos: {
+            x: 770,
+            y: 860
+        },
+        killed: Character.BlueChecks,
+        by: Character.GoldChecks
+    }, {
+        pos: {
+            x: 770,
+            y: 860
+        },
+        killed: Character.BlueChecks,
+        by: Character.GoldChecks
+    }, {
+        pos: {
+            x: 810,
+            y: 860
+        },
+        killed: Character.BlueStripes,
+        by: Character.GoldChecks
+    }, {
+        pos: {
+            x: 1071.977,
+            y: 20
+        },
+        killed: Character.BlueChecks,
+        by: Character.GoldStripes
+    }];
 
+    let kqstream: KQStream;
     let connection: websocket.connection;
+    let playerKillEvents: PlayerKill[];
 
     before(async () => {
-        const server = createServer();
-        const [_, conn] = await Promise.all([
-            kqstream.connect(`ws://localhost:${KQ_PORT}`),
-            getConnection(server)
-        ]);
-        connection = conn;
+        kqstream = new KQStream();
+        kqstream.on('playerKill', (event: PlayerKill): void => {
+            playerKillEvents.push(event);
+        });
     });
 
-    it('should process playerKill events', async () => {
-        const expectedEvents: PlayerKill[] = [{
-            pos: {
-                x: 770,
-                y: 860
-            },
-            killed: Character.BlueChecks,
-            by: Character.GoldChecks
-        }, {
-            pos: {
-                x: 770,
-                y: 860
-            },
-            killed: Character.BlueChecks,
-            by: Character.GoldChecks
-        }, {
-            pos: {
-                x: 810,
-                y: 860
-            },
-            killed: Character.BlueStripes,
-            by: Character.GoldChecks
-        }, {
-            pos: {
-                x: 1071.977,
-                y: 20
-            },
-            killed: Character.BlueChecks,
-            by: Character.GoldStripes
-        }];
-        const playerKillEvents: PlayerKill[] = [];
-        const onPlayerKill = (event: PlayerKill): void => {
-            playerKillEvents.push(event);
-        };
-        kqstream.on('playerKill', onPlayerKill);
-        for (let message of messages) {
-            const buffer = Buffer.from(message, 'utf8');
-            connection.sendUTF(message);
-        }
-        await sleep(1000);
-        expect(playerKillEvents.length).to.equal(4);
-        for (let expectedEvent of expectedEvents) {
-            expect(playerKillEvents).to.deep.include(expectedEvent);
-        }
+    describe('#connect', () => {
+        before(async () => {
+            const server = createServer();
+            const [_, conn] = await Promise.all([
+                kqstream.connect(`ws://localhost:${KQ_PORT}`),
+                getConnection(server)
+            ]);
+            connection = conn;
+        });
+
+        it('should process playerKill events', async () => {
+            playerKillEvents = [];
+
+            for (let event of events) {
+                connection.sendUTF(event.message);
+            }
+            await sleep(1000);
+
+            expect(playerKillEvents.length).to.equal(4);
+            for (let expectedEvent of expectedEvents) {
+                expect(playerKillEvents).to.deep.include(expectedEvent);
+            }
+        });
+    });
+
+    describe('#read', () => {
+        it('should process playerKill events', async () => {
+            playerKillEvents = [];
+
+            let data: string = '';
+            for (let event of events) {
+                data += `${event.timestamp},${event.message}\n`;
+            }
+            kqstream.read(data);
+            await sleep(1000);
+
+            expect(playerKillEvents.length).to.equal(4);
+            for (let expectedEvent of expectedEvents) {
+                expect(playerKillEvents).to.deep.include(expectedEvent);
+            }
+        });
     });
 });

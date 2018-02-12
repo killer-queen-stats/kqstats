@@ -65,7 +65,8 @@ export class KQStream {
             this.client.on('connect', (connection) => {
                 this.connection = connection;
                 connection.on('message', (data) => {
-                    this.processMessage(data);
+                    const message = data.utf8Data.toString();
+                    this.processMessage(message);
                 });
                 resolve();
             });
@@ -73,14 +74,30 @@ export class KQStream {
         })
     }
 
-    private processMessage(data: websocket.IMessage): void {
-        const message = data.utf8Data.toString();
+    read(data: string): void {
+        const lines = data.split('\n');
+        if (data[data.length-1] === '\n') {
+            lines.splice(lines.length-1, 1);
+        }
+        const start = Number(lines[0].split(',')[0]);
+        for (let line of lines) {
+            const lineArray = line.split(',');
+            const timestamp = Number(lineArray[0]);
+            lineArray.splice(0, 1);
+            const message = lineArray.join(',');
+            setTimeout(() => {
+                this.processMessage(message);
+            }, timestamp - start);
+        }
+    }
+
+    private processMessage(message: string): void {
         if (this.log !== undefined) {
             this.log.write(`${Date.now().toString()},${message}\n`);
         }
         const dataArray = message.match(/!\[k\[(.*?)\],v\[(.*)?\]\]!/);
         if (!dataArray) {
-            console.warn('Could not parse data', data.utf8Data);
+            console.warn('Could not parse message', message);
             return;
         }
         const [_, key, value] = dataArray;
