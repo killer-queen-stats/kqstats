@@ -128,10 +128,12 @@ export class KQStream {
     }
 
     private sendMessage(key: string, value: any): void {
-        const valueString = JSON.stringify(value);
-        const message = `![k[${key}],v[${valueString}]]!`;
-        const buffer = Buffer.from(message, 'utf8');
-        this.connection.send(buffer);
+        if (this.connection !== undefined) {
+            const valueString = JSON.stringify(value);
+            const message = `![k[${key}],v[${valueString}]]!`;
+            const buffer = Buffer.from(message, 'utf8');
+            this.connection.send(buffer);
+        }
     }
 
     on(eventType: 'playernames', callback: KQEventCallback<PlayerNames>): void;

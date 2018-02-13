@@ -1,7 +1,7 @@
 import { KQStream, PlayerKill, Character } from '../src/KQStream';
 
 // Change this to the IP address of the Killer Queen cabinet
-const KQ_HOST = 'localhost';
+const KQ_HOST = '192.168.1.100';
 
 const characterNames = {
     [Character.GoldQueen]: 'Gold Queen',
