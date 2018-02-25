@@ -1,0 +1,28 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.App {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, tr, th, td {
+  border: 1px solid white;
+}
+
+.killboard.horizontal {
+  position: relative;
+}
+
+.killboard.horizontal .value {
+  position: absolute;
+  width: 100px;
+  bottom: 0px;
+  font-size: 60pt;
+  text-align: center;
+}

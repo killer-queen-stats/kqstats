@@ -4,7 +4,7 @@
  */
 
 import * as fs from 'fs';
-import { KQStream } from '../src/KQStream';
+import { KQStream } from '../src/lib/KQStream';
 
 // Change this to the IP address of the Killer Queen cabinet
 const KQ_HOST = '192.168.1.100';

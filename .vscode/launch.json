@@ -25,12 +25,21 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
-            "program": "${workspaceFolder}/index.js",
-            "preLaunchTask": "tsc: build - tsconfig.json",
-            "outFiles": [
-                "${workspaceFolder}/lib/**/*.js"
-            ]
+            "name": "Launch Server",
+            "args": [
+                "${workspaceFolder}/src/server/app.ts",
+                "-c",
+                "ws://localhost:12749"
+            ],
+            "cwd": "${workspaceFolder}",
+            "runtimeArgs": [
+                "-r",
+                "ts-node/register"
+            ],
+            "env": {
+                "TS_NODE_PROJECT": "src/server/tsconfig.json"
+            },
+            "internalConsoleOptions": "openOnSessionStart"
         }
     ]
 }

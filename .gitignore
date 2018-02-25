@@ -61,5 +61,7 @@ typings/
 .next
 
 # Typescript build output
-lib
-example/build
+build
+
+# macOS files
+.DS_Store

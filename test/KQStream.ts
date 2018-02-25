@@ -1,15 +1,13 @@
 import { expect } from 'chai';
 import * as http from 'http';
 import * as websocket from 'websocket';
-import { KQStream, PlayerNames, PlayerKill, Character } from '../src/KQStream';
+import { KQStream, PlayerNames, PlayerKill, Character } from '../src/lib/KQStream';
 
 const KQ_PORT = 12749;
 
 async function sleep(ms: number): Promise<void> {
     return new Promise<void>((resolve, reject) => {
-        setTimeout(() => {
-            resolve();
-        }, 1000);
+        setTimeout(resolve, ms);
     });
 }
 
@@ -39,9 +37,10 @@ function createServer(): websocket.server {
 
 describe('KQStream', () => {
     interface TestEvent {
-        timestamp: string,
-        message: string
-    };
+        timestamp: string;
+        message: string;
+    }
+
     const events: TestEvent[] = [{
         timestamp: '1518063130441',
         message: '![k[playernames],v[,,,,,,,,,]]!'
