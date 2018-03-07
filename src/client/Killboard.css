@@ -1,18 +1,40 @@
-body {
-  background-color: black;
-  color: white;
-}
-
-.App {
-  text-align: center;
-}
-
 table {
   border-collapse: collapse;
 }
 
 table, tr, th, td {
-  border: 1px solid white;
+  border: 1px solid rgba(99, 110, 114, 0.4);;
+  font-size: 20px;
+}
+
+table img {
+  height: 30px;
+}
+
+tr:nth-child(n+2):nth-child(-n+6) td:nth-child(odd) {
+  background-color: rgba(253, 178, 65, 0.2);
+}
+tr:nth-child(n+2):nth-child(-n+6) td:nth-child(even) {
+  background-color: rgba(253, 178, 65, 0.1);
+}
+tr:nth-child(n+7):nth-child(-n+11) td:nth-child(odd) {
+  background-color: rgba(56, 124, 234, 0.2);
+}
+tr:nth-child(n+7):nth-child(-n+11) td:nth-child(even) {
+  background-color: rgba(56, 124, 234, 0.1);
+}
+
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+
+th:nth-child(1), td:nth-child(1) {
+  width: 60px;
+}
+
+th:not(:nth-child(1)), td:not(:nth-child(1)) {
+  width: 80px;
 }
 
 .killboard.horizontal {
