@@ -1,7 +1,9 @@
+import { Route, RouteComponentProps, Switch } from 'react-router';
 import * as socket_io_client from 'socket.io-client';
 import { Character } from '../lib/KQStream';
 import { GameStats, GameStatsType, KQStat } from '../lib/GameStats';
 import * as React from 'react';
+import { Page404 } from './404';
 import './Killboard.css';
 
 const goldQueen = require('./sprites/gold_queen.png');
@@ -22,7 +24,7 @@ const blueBackgroundMirror = require('./sprites/blue_team_mirror.png');
 
 const queenCrown = require('./sprites/crown.png');
 
-abstract class Killboard extends React.Component {
+abstract class KillboardBase extends React.Component {
   state: GameStatsType = GameStats.defaultGameStats;
 
   private io: SocketIOClient.Socket;
@@ -46,23 +48,15 @@ abstract class Killboard extends React.Component {
     });
     this.io.open();
   }
-}
 
-export class KillboardHome extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1>Killboard</h1>
-        <p>Links to killboards:</p>
-        <ul>
-          <li><a href="/killboard/full">Full</a></li>
-          <li><a href="/killboard/horizontal/blue">Blue team</a></li>
-          <li><a href="/killboard/horizontal/blue/mirror">Blue team (mirrored)</a></li>
-          <li><a href="/killboard/horizontal/gold">Gold team</a></li>
-          <li><a href="/killboard/horizontal/gold/mirror">Gold team (mirrored)</a></li>
-        </ul>
-      </div>
-    );
+  componentWillMount() {
+    document.body.style.backgroundColor = 'black';
+    document.body.style.color = 'white';
+  }
+
+  componentWillUnmount() {
+    document.body.style.backgroundColor = null;
+    document.body.style.color = null;
   }
 }
 const KillStat = (stat: any) => (
@@ -92,8 +86,7 @@ const KillboardRow = (props: any) => {
     );
 };
 
-export class KillboardFull extends Killboard {
-
+class KillboardFull extends KillboardBase {
   render() {
     return (
       <div className="App">
@@ -113,7 +106,6 @@ export class KillboardFull extends Killboard {
           <KillboardRow {...{stat: this.state[Character.BlueAbs], image: blueAbs}}/>
           <KillboardRow {...{stat: this.state[Character.BlueSkulls], image: blueSkulls}}/>
           <KillboardRow {...{stat: this.state[Character.BlueChecks], image: blueChecks}}/>
-
         </table>
       </div>
     );
@@ -136,7 +128,7 @@ interface KillboardHorizontalAlias {
   };
 }
 
-export class KillboardHorizontal extends Killboard {
+class KillboardHorizontal extends KillboardBase {
   props: KillboardHorizontalProps;
 
   private alias: KillboardHorizontalAlias;
@@ -229,6 +221,63 @@ export class KillboardHorizontal extends Killboard {
           {this.state[this.alias.position[5]].deaths}
         </div>
       </div>
+    );
+  }
+}
+
+export class Killboard extends React.Component<RouteComponentProps<{}>> {
+  render() {
+    return (
+      <Switch>
+        <Route
+          exact={true}
+          path={`${this.props.match.path}/full`}
+          component={KillboardFull}
+        />
+        <Route
+          exact={true}
+          path={`${this.props.match.path}/horizontal/blue`}
+          render={(props) => (
+            <KillboardHorizontal
+              team="blue"
+              mirror={false}
+            />
+          )}
+        />
+        <Route
+          exact={true}
+          path={`${this.props.match.path}/horizontal/gold`}
+          render={(props) => (
+            <KillboardHorizontal
+              team="gold"
+              mirror={false}
+            />
+          )}
+        />
+        <Route
+          exact={true}
+          path={`${this.props.match.path}/horizontal/blue/mirror`}
+          render={(props) => (
+            <KillboardHorizontal
+              team="blue"
+              mirror={true}
+            />
+          )}
+        />
+        <Route
+          exact={true}
+          path={`${this.props.match.path}/horizontal/gold/mirror`}
+          render={(props) => (
+            <KillboardHorizontal
+              team="gold"
+              mirror={true}
+            />
+          )}
+        />
+        <Route
+          component={Page404}
+        />
+      </Switch>
     );
   }
 }
