@@ -60,30 +60,30 @@ abstract class KillboardBase extends React.Component {
   }
 }
 const KillStat = (stat: any) => (
-    <td>
-        {stat.kills}
-        <span className="kill_stat">
-            ( <img className="queen_kill" src={queenCrown}/>{stat.queen_kills} / {stat.other_kills} )
-        </span>
-    </td>
+  <td>
+    {stat.kills}
+    <span className="kill_stat">
+      ( <img className="queen_kill" src={queenCrown}/>{stat.queen_kills} / {stat.other_kills} )
+    </span>
+  </td>
 );
 
 const DeathStat = (stat: any) => (
-    <td>
-        {stat.deaths}
-    </td>
+  <td>
+    {stat.deaths}
+  </td>
 );
 
 const KillboardRow = (props: any) => {
-    return (
-      <tr>
-        <td>
-          <img src={props.image} />
-        </td>
-        <KillStat {...props.stat} />
-        <DeathStat {...props.stat} />
-      </tr>
-    );
+  return (
+    <tr>
+      <td>
+        <img src={props.image} />
+      </td>
+      <KillStat {...props.stat} />
+      <DeathStat {...props.stat} />
+    </tr>
+  );
 };
 
 class KillboardFull extends KillboardBase {
@@ -96,16 +96,16 @@ class KillboardFull extends KillboardBase {
             <th>Kills</th>
             <th>Deaths</th>
           </tr>
-          <KillboardRow {...{stat: this.state[Character.GoldQueen], image: goldQueen}}/>
-          <KillboardRow {...{stat: this.state[Character.GoldStripes], image: goldStripes}}/>
-          <KillboardRow {...{stat: this.state[Character.GoldAbs], image: goldAbs}}/>
-          <KillboardRow {...{stat: this.state[Character.GoldSkulls], image: goldSkulls}}/>
-          <KillboardRow {...{stat: this.state[Character.GoldChecks], image: goldChecks}}/>
-          <KillboardRow {...{stat: this.state[Character.BlueQueen], image: blueQueen}}/>
-          <KillboardRow {...{stat: this.state[Character.BlueStripes], image: blueStripes}}/>
-          <KillboardRow {...{stat: this.state[Character.BlueAbs], image: blueAbs}}/>
-          <KillboardRow {...{stat: this.state[Character.BlueSkulls], image: blueSkulls}}/>
-          <KillboardRow {...{stat: this.state[Character.BlueChecks], image: blueChecks}}/>
+          <KillboardRow stat={this.state[Character.GoldQueen]} image={goldQueen} />
+          <KillboardRow stat={this.state[Character.GoldStripes]} image={goldStripes} />
+          <KillboardRow stat={this.state[Character.GoldAbs]} image={goldAbs} />
+          <KillboardRow stat={this.state[Character.GoldSkulls]} image={goldSkulls} />
+          <KillboardRow stat={this.state[Character.GoldChecks]} image={goldChecks} />
+          <KillboardRow stat={this.state[Character.BlueQueen]} image={blueQueen} />
+          <KillboardRow stat={this.state[Character.BlueStripes]} image={blueStripes} />
+          <KillboardRow stat={this.state[Character.BlueAbs]} image={blueAbs} />
+          <KillboardRow stat={this.state[Character.BlueSkulls]} image={blueSkulls} />
+          <KillboardRow stat={this.state[Character.BlueChecks]} image={blueChecks} />
         </table>
       </div>
     );
