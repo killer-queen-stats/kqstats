@@ -7,7 +7,7 @@ table, tr, th, td {
   font-size: 20px;
 }
 
-table img {
+td:nth-child(1) img {
   height: 30px;
 }
 
@@ -47,4 +47,14 @@ th:not(:nth-child(1)), td:not(:nth-child(1)) {
   bottom: 0px;
   font-size: 60pt;
   text-align: center;
+}
+
+.kill_stat {
+  padding-left: 5px;
+  position: relative;
+}
+.queen_kill {
+  width: 16px;
+  position: absolute;
+  top: -9px;
 }

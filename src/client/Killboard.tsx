@@ -22,6 +22,8 @@ const blueBackground = require('./sprites/blue_team.png');
 const goldBackgroundMirror = require('./sprites/gold_team_mirror.png');
 const blueBackgroundMirror = require('./sprites/blue_team_mirror.png');
 
+const queenCrown = require('./sprites/crown.png');
+
 abstract class KillboardBase extends React.Component {
   state: GameStatsType = GameStats.defaultGameStats;
 
@@ -57,6 +59,32 @@ abstract class KillboardBase extends React.Component {
     document.body.style.color = null;
   }
 }
+const KillStat = (stat: any) => (
+  <td>
+    {stat.kills}
+    <span className="kill_stat">
+      ( <img className="queen_kill" src={queenCrown}/>{stat.queen_kills} / {stat.other_kills} )
+    </span>
+  </td>
+);
+
+const DeathStat = (stat: any) => (
+  <td>
+    {stat.deaths}
+  </td>
+);
+
+const KillboardRow = (props: any) => {
+  return (
+    <tr>
+      <td>
+        <img src={props.image} />
+      </td>
+      <KillStat {...props.stat} />
+      <DeathStat {...props.stat} />
+    </tr>
+  );
+};
 
 class KillboardFull extends KillboardBase {
   render() {
@@ -68,76 +96,16 @@ class KillboardFull extends KillboardBase {
             <th>Kills</th>
             <th>Deaths</th>
           </tr>
-          <tr>
-            <td>
-              <img src={goldQueen} />
-            </td>
-            <td>{this.state[Character.GoldQueen].kills}</td>
-            <td>{this.state[Character.GoldQueen].deaths}</td>
-          </tr>
-          <tr>
-            <td>
-              <img src={goldStripes} />
-            </td>
-            <td>{this.state[Character.GoldStripes].kills}</td>
-            <td>{this.state[Character.GoldStripes].deaths}</td>
-          </tr>
-          <tr>
-            <td>
-              <img src={goldAbs} />
-            </td>
-            <td>{this.state[Character.GoldAbs].kills}</td>
-            <td>{this.state[Character.GoldAbs].deaths}</td>
-          </tr>
-          <tr>
-            <td>
-              <img src={goldSkulls} />
-            </td>
-            <td>{this.state[Character.GoldSkulls].kills}</td>
-            <td>{this.state[Character.GoldSkulls].deaths}</td>
-          </tr>
-          <tr>
-            <td>
-              <img src={goldChecks} />
-            </td>
-            <td>{this.state[Character.GoldChecks].kills}</td>
-            <td>{this.state[Character.GoldChecks].deaths}</td>
-          </tr>
-          <tr>
-            <td>
-              <img src={blueQueen} />
-            </td>
-            <td>{this.state[Character.BlueQueen].kills}</td>
-            <td>{this.state[Character.BlueQueen].deaths}</td>
-          </tr>
-          <tr>
-            <td>
-              <img src={blueStripes} />
-            </td>
-            <td>{this.state[Character.BlueStripes].kills}</td>
-            <td>{this.state[Character.BlueStripes].deaths}</td>
-          </tr>
-          <tr>
-            <td>
-              <img src={blueAbs} />
-            </td>
-            <td>{this.state[Character.BlueAbs].kills}</td>
-            <td>{this.state[Character.BlueAbs].deaths}</td>
-          </tr>
-          <tr>
-            <td>
-              <img src={blueSkulls} />
-            </td>
-            <td>{this.state[Character.BlueSkulls].kills}</td>
-            <td>{this.state[Character.BlueSkulls].deaths}</td>
-          </tr>
-          <tr>
-            <td>
-              <img src={blueChecks} />
-            </td>
-            <td>{this.state[Character.BlueChecks].kills}</td>
-            <td>{this.state[Character.BlueChecks].deaths}</td>
-          </tr>
+          <KillboardRow stat={this.state[Character.GoldQueen]} image={goldQueen} />
+          <KillboardRow stat={this.state[Character.GoldStripes]} image={goldStripes} />
+          <KillboardRow stat={this.state[Character.GoldAbs]} image={goldAbs} />
+          <KillboardRow stat={this.state[Character.GoldSkulls]} image={goldSkulls} />
+          <KillboardRow stat={this.state[Character.GoldChecks]} image={goldChecks} />
+          <KillboardRow stat={this.state[Character.BlueQueen]} image={blueQueen} />
+          <KillboardRow stat={this.state[Character.BlueStripes]} image={blueStripes} />
+          <KillboardRow stat={this.state[Character.BlueAbs]} image={blueAbs} />
+          <KillboardRow stat={this.state[Character.BlueSkulls]} image={blueSkulls} />
+          <KillboardRow stat={this.state[Character.BlueChecks]} image={blueChecks} />
         </table>
       </div>
     );

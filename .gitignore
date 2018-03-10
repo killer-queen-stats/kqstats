@@ -65,3 +65,6 @@ build
 
 # macOS files
 .DS_Store
+
+# rubymine
+.idea

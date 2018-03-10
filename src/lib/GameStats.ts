@@ -1,7 +1,7 @@
 import * as uuid from 'uuid/v4';
 import { KQStream, Character, PlayerKill } from './KQStream';
 
-type StatisticType = 'kills' | 'deaths';
+type StatisticType = 'kills' | 'queen_kills' | 'other_kills' | 'deaths';
 
 interface Enum {
     [key: number]: string;
@@ -44,6 +44,8 @@ export class GameStats {
     static get statisticTypes(): StatisticType[] {
         return [
             'kills',
+            'queen_kills',
+            'other_kills',
             'deaths'
         ];
     }
@@ -188,9 +190,17 @@ export class GameStats {
 
     private processKill(kill: PlayerKill) {
         this.gameStats[kill.by].kills++;
+
+        // Track queen kills vs other kils
+        if (kill.killed === 1 || kill.killed === 2) {
+            this.gameStats[kill.by].queen_kills++;
+        } else {
+            this.gameStats[kill.by].other_kills++;
+        }
+
         this.gameStats[kill.killed].deaths++;
         this.trigger('change', {
-            [kill.by]: ['kills'],
+            [kill.by]: ['kills', 'queen_kills', 'other_kills'],
             [kill.killed]: ['deaths']
         });
     }
