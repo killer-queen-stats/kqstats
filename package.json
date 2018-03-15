@@ -14,12 +14,13 @@
     "start:server": "ts-node --project src/server/tsconfig.json src/server/app.ts",
     "start:client": "npm run react:start",
     "poststart": "npm run react:start",
-    "test": "TS_NODE_PROJECT=test/tsconfig.json mocha -r ts-node/register --exit test/**/*.ts"
+    "test": "cross-env TS_NODE_PROJECT=test/tsconfig.json mocha -r ts-node/register --exit test/**/*.ts"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "chai": "^4.1.2",
+    "cross-env": "^5.1.4",
     "del-cli": "^1.1.0",
     "express": "^4.16.2",
     "mocha": "^5.0.0",
