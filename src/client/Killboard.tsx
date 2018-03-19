@@ -249,6 +249,11 @@ class KillboardHorizontal extends KillboardBase {
       </div>
     );
   }
+
+  componentWillMount() {
+    super.componentWillMount();
+    document.body.style.backgroundColor = 'transparent';
+  }
 }
 
 export class Killboard extends React.Component<RouteComponentProps<{}>> {

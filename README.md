@@ -62,7 +62,7 @@ We're going to display blue team's killboard:
 4. Put in the following values, leaving all others the same:
   - URL: `http://localhost:3000/killboard/blue`
   - Width: `1280`
-  - Height: `92`
+  - Height: `122`
 5. Click OK
 
 The killboard should now appear in your scene. You can move and resize it as you see fit.

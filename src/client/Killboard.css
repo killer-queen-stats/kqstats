@@ -61,19 +61,21 @@ th:not(:nth-child(1)), td:not(:nth-child(1)) {
 
 .killboard.horizontal {
   position: relative;
+  top: 30px;
 }
 
 .killboard.horizontal .value {
   position: absolute;
   width: 100px;
-  top: 3px;
+  bottom: 0px;
   font-size: 60pt;
   text-align: center;
+  line-height: normal;
 }
 
 .killboard.horizontal div.crowns {
   position: absolute;
-  bottom: 2px;
+  top: -20px;
 }
 .killboard.horizontal div.crowns img.crown {
   width: 40px;
