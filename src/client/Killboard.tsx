@@ -23,12 +23,22 @@ const goldBackgroundMirror = require('./sprites/gold_team_mirror.png');
 const blueBackgroundMirror = require('./sprites/blue_team_mirror.png');
 
 const queenCrown = require('./sprites/crown.png');
+const crownPixelArt = require('./sprites/crown_pixelart.png');
+
+function getCrowns(n: number) {
+  const crown = <img className="crown" src={crownPixelArt}/>;
+  const html: JSX.Element[] = [];
+  for (let i = 0; i < n; i++) {
+    html.push(crown);
+  }
+  return html;
+} 
 
 abstract class KillboardBase extends React.Component {
   state: GameStatsType = GameStats.defaultGameStats;
 
   private io: SocketIOClient.Socket;
-  
+
   constructor(props: {}) {
     super(props);
     this.io = socket_io_client('http://localhost:8000', {
@@ -59,12 +69,10 @@ abstract class KillboardBase extends React.Component {
     document.body.style.color = null;
   }
 }
+
 const KillStat = (stat: any) => (
   <td>
     {stat.kills}
-    <span className="kill_stat">
-      ( <img className="queen_kill" src={queenCrown}/>{stat.queen_kills} / {stat.other_kills} )
-    </span>
   </td>
 );
 
@@ -78,7 +86,10 @@ const KillboardRow = (props: any) => {
   return (
     <tr>
       <td>
-        <img src={props.image} />
+        <div className="crowns">
+          {getCrowns(props.stat.queen_kills)}
+        </div>
+        <img className="character" src={props.image} />
       </td>
       <KillStat {...props.stat} />
       <DeathStat {...props.stat} />
@@ -219,6 +230,21 @@ class KillboardHorizontal extends KillboardBase {
         </div>
         <div className="value" style={{left: '1158px'}}>
           {this.state[this.alias.position[5]].deaths}
+        </div>
+        <div className="crowns" style={{left: '59px'}}>
+          {getCrowns(this.state[this.alias.position[1]].queen_kills)}
+        </div>
+        <div className="crowns" style={{left: '315px'}}>
+          {getCrowns(this.state[this.alias.position[2]].queen_kills)}
+        </div>
+        <div className="crowns" style={{left: '571px'}}>
+          {getCrowns(this.state[this.alias.position[3]].queen_kills)}
+        </div>
+        <div className="crowns" style={{left: '827px'}}>
+          {getCrowns(this.state[this.alias.position[4]].queen_kills)}
+        </div>
+        <div className="crowns" style={{left: '1084px'}}>
+          {getCrowns(this.state[this.alias.position[5]].queen_kills)}
         </div>
       </div>
     );

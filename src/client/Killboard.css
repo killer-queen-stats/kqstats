@@ -7,8 +7,30 @@ table, tr, th, td {
   font-size: 20px;
 }
 
-td:nth-child(1) img {
+td:nth-child(1) {
+  position: relative;
+}
+
+td:nth-child(1) img.character {
   height: 30px;
+}
+
+td:nth-child(1) div.crowns {
+  position: absolute;
+}
+td:nth-child(1) div.crowns img.crown {
+  height: 5px;
+  position: absolute;
+  left: 0px;
+}
+td:nth-child(1) div.crowns img.crown:nth-child(1) {
+  top: 5px;
+}
+td:nth-child(1) div.crowns img.crown:nth-child(2) {
+  top: 15px;
+}
+td:nth-child(1) div.crowns img.crown:nth-child(3) {
+  top: 25px;
 }
 
 tr:nth-child(n+2):nth-child(-n+6) td:nth-child(odd) {
@@ -44,9 +66,18 @@ th:not(:nth-child(1)), td:not(:nth-child(1)) {
 .killboard.horizontal .value {
   position: absolute;
   width: 100px;
-  bottom: 0px;
+  top: 3px;
   font-size: 60pt;
   text-align: center;
+}
+
+.killboard.horizontal div.crowns {
+  position: absolute;
+  bottom: 2px;
+}
+.killboard.horizontal div.crowns img.crown {
+  width: 40px;
+  padding-right: 4px;
 }
 
 .kill_stat {
