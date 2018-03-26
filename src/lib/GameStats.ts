@@ -1,7 +1,7 @@
 import * as uuid from 'uuid/v4';
 import { KQStream, Character, PlayerKill } from './KQStream';
 
-type StatisticType = 'kills' | 'queen_kills' | 'other_kills' | 'deaths';
+type StatisticType = 'kills' | 'queen_kills' | 'warrior_kills' | 'deaths';
 
 interface Enum {
     [key: number]: string;
@@ -12,6 +12,14 @@ export interface GameStatsType {
     // https://github.com/Microsoft/TypeScript/issues/13042
     [character: number]: {
         [statisticType in StatisticType]: number
+    };
+}
+
+interface GameStateType {
+    // Should be [character in Character], but there's a regression in TypeScript:
+    // https://github.com/Microsoft/TypeScript/issues/13042
+    [character: number]: {
+        isWarrior: boolean
     };
 }
 
@@ -36,6 +44,7 @@ interface GameStatsCallbackDictionary<T> {
 export class GameStats {
     private stream: KQStream;
     private gameStats: GameStatsType;
+    private gameState: GameStateType;
     private onChange: GameStatsCallbackDictionary<KQStat>;
 
     /**
@@ -45,7 +54,7 @@ export class GameStats {
         return [
             'kills',
             'queen_kills',
-            'other_kills',
+            'warrior_kills',
             'deaths'
         ];
     }
@@ -63,6 +72,16 @@ export class GameStats {
             }
         }
         return defaultGameStats;
+    }
+    static get defaultGameState(): GameStateType {
+        const defaultGameState: GameStateType = {};
+        const characterValues = GameStats.getEnumNumbers(Character);
+        for (let character of characterValues) {
+            defaultGameState[character] = {
+                isWarrior: false
+            };
+        }
+        return defaultGameState;
     }
     static get defaultChangeFilter(): GameStatsFilter {
         const defaultChangeFilter: GameStatsFilter = {};
@@ -185,23 +204,35 @@ export class GameStats {
 
     private resetStats() {
         this.gameStats = GameStats.defaultGameStats;
+        this.gameState = GameStats.defaultGameState;
         this.trigger('change');
     }
 
     private processKill(kill: PlayerKill) {
-        this.gameStats[kill.by].kills++;
+        const filter: GameStatsFilter = {
+            [kill.by]: ['kills'],
+            [kill.killed]: ['deaths']
+        };
 
-        // Track queen kills vs other kils
-        if (kill.killed === 1 || kill.killed === 2) {
+        // Increment kills and deaths
+        this.gameStats[kill.by].kills++;
+        if (kill.killed === Character.GoldQueen || kill.killed === Character.BlueQueen) {
             this.gameStats[kill.by].queen_kills++;
-        } else {
-            this.gameStats[kill.by].other_kills++;
+            filter[kill.by].push('queen_kills');
+        } else if (this.gameState[kill.killed].isWarrior) {
+            this.gameStats[kill.by].warrior_kills++;
+            filter[kill.by].push('warrior_kills');
+        }
+        this.gameStats[kill.killed].deaths++;
+
+        // Set state of characters
+        if (kill.by !== Character.GoldQueen && kill.by !== Character.BlueQueen) {
+            this.gameState[kill.by].isWarrior = true;
+        }
+        if (kill.killed !== Character.GoldQueen && kill.killed !== Character.BlueQueen) {
+            this.gameState[kill.killed].isWarrior = false;
         }
 
-        this.gameStats[kill.killed].deaths++;
-        this.trigger('change', {
-            [kill.by]: ['kills', 'queen_kills', 'other_kills'],
-            [kill.killed]: ['deaths']
-        });
+        this.trigger('change', filter);
     }
 }

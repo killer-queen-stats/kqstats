@@ -70,18 +70,6 @@ abstract class KillboardBase extends React.Component {
   }
 }
 
-const KillStat = (stat: any) => (
-  <td>
-    {stat.kills}
-  </td>
-);
-
-const DeathStat = (stat: any) => (
-  <td>
-    {stat.deaths}
-  </td>
-);
-
 const KillboardRow = (props: any) => {
   return (
     <tr>
@@ -91,8 +79,15 @@ const KillboardRow = (props: any) => {
         </div>
         <img className="character" src={props.image} />
       </td>
-      <KillStat {...props.stat} />
-      <DeathStat {...props.stat} />
+      <td>
+        {props.stat.kills}
+      </td>
+      <td>
+        {props.stat.warrior_kills}
+      </td>
+      <td>
+        {props.stat.deaths}
+      </td>
     </tr>
   );
 };
@@ -105,6 +100,7 @@ class KillboardFull extends KillboardBase {
           <tr>
             <th />
             <th>Kills</th>
+            <th>Warrior Kills*</th>
             <th>Deaths</th>
           </tr>
           <KillboardRow stat={this.state[Character.GoldQueen]} image={goldQueen} />
@@ -118,6 +114,7 @@ class KillboardFull extends KillboardBase {
           <KillboardRow stat={this.state[Character.BlueSkulls]} image={blueSkulls} />
           <KillboardRow stat={this.state[Character.BlueChecks]} image={blueChecks} />
         </table>
+        <h6>* Only records killed warriors that got at least one kill during their life</h6>
       </div>
     );
   }
