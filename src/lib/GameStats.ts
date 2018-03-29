@@ -111,6 +111,30 @@ export class GameStats {
         return values;
     }
 
+    /**
+     * Returns true if character is a queen.
+     * 
+     * @param character The character to evaluate
+     */
+    private static isQueen(character: Character): boolean {
+        return character === Character.GoldQueen || character === Character.BlueQueen;
+    }
+
+    /**
+     * Returns true if the kill was maybe a snail eating a drone (i.e. snail kill).
+     * 
+     * - On day and dusk maps, snail kills happen at `y: 20`.
+     * - On night map, snail kills happen at `y: 500`.
+     * 
+     * Drones killed while standing on a platform at the same height as the snail
+     * will also have the same y-pos as a snail kill.
+     * 
+     * @param kill The kill to evaluate
+     */
+    private static isMaybeSnailKill(kill: PlayerKill): boolean {
+        return kill.pos.y === 20 || kill.pos.y === 500;
+    }
+
     constructor(stream: KQStream) {
         this.stream = stream;
         this.onChange = {};
@@ -226,10 +250,10 @@ export class GameStats {
         this.gameStats[kill.killed].deaths++;
 
         // Set state of characters
-        if (kill.by !== Character.GoldQueen && kill.by !== Character.BlueQueen) {
+        if (!GameStats.isQueen(kill.by) && !GameStats.isMaybeSnailKill(kill)) {
             this.gameState[kill.by].isWarrior = true;
         }
-        if (kill.killed !== Character.GoldQueen && kill.killed !== Character.BlueQueen) {
+        if (!GameStats.isQueen(kill.killed)) {
             this.gameState[kill.killed].isWarrior = false;
         }
 
