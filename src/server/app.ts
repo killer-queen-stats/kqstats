@@ -2,14 +2,19 @@ import * as fs from 'fs';
 import * as os from 'os';
 import * as path from 'path';
 import * as socket_io from 'socket.io';
-import { KQStream } from '../lib/KQStream';
+import { KQStream, KQStreamOptions } from '../lib/KQStream';
 import { GameStats } from '../lib/GameStats';
 
 if (process.argv.length !== 4) {
     throw new Error('Incorrect usage!');
 }
 
-const stream = new KQStream();
+const options: KQStreamOptions = {};
+if (process.env.ENV === 'development') {
+    options.log = process.stdout;
+}
+
+const stream = new KQStream(options);
 const gameStats = new GameStats(stream);
 gameStats.start();
 

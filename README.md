@@ -75,6 +75,7 @@ The killboard should now appear in your scene. You can move and resize it as you
     - _Example_: `npm run start -- -c ws://192.168.0.2:12749`
   - `-r [PATH_TO_SOCKET_MESSAGE_FILE]`: Read socket messages from a file to simulate a Killer Queen cabinet. You'll find example files in `example/socket_messages`.
     - _Example_: `npm run start -- -r example/socket_messages/non_tournament_mode_games.txt`
+  You can also use `npm run start:debug` to output all messages received from the cab to the console.
 - `npm run build`: Build all TypeScript files to `build` folder
   - Useful for compiling and using the classes in `src/lib`
 - `npm run clean`: Delete the `build` folder
