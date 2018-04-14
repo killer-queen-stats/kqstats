@@ -11,8 +11,9 @@
     "react:start": "react-scripts-ts start",
     "react:test": "react-scripts-ts test --env=jsdon",
     "start": "npm-run-all --parallel \"start:server -- {@}\" start:client --",
-    "start:server": "ts-node --project src/server/tsconfig.json src/server/app.ts",
     "start:client": "npm run react:start",
+    "start:debug": "cross-env ENV=development npm run start --",
+    "start:server": "ts-node --project src/server/tsconfig.json src/server/app.ts",
     "poststart": "npm run react:start",
     "test": "cross-env TS_NODE_PROJECT=test/tsconfig.json mocha -r ts-node/register --exit test/**/*.ts"
   },
