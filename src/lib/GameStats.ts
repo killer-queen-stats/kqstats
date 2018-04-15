@@ -132,7 +132,12 @@ export class GameStats {
      * @param kill The kill to evaluate
      */
     private static isMaybeSnailKill(kill: PlayerKill): boolean {
-        return kill.pos.y === 20 || kill.pos.y === 500;
+        // Snail kills can happen within roughly 40 position units from
+        // the default y-pos of 20 on day and dusk, and 500 on night.
+        return (
+            (kill.pos.y > -20 && kill.pos.y < 60) ||
+            (kill.pos.y > 460 && kill.pos.y < 540)
+        );
     }
 
     constructor(stream: KQStream) {
