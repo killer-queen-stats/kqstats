@@ -114,7 +114,7 @@ class KillboardFull extends KillboardBase {
           <KillboardRow stat={this.state[Character.BlueSkulls]} image={blueSkulls} />
           <KillboardRow stat={this.state[Character.BlueChecks]} image={blueChecks} />
         </table>
-        <h6>* Only records killed warriors that got at least one kill during their life</h6>
+        <h6>* May be missing some warrior kills</h6>
       </div>
     );
   }
