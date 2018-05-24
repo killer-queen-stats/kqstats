@@ -32,7 +32,7 @@
             "args": [
                 "${workspaceFolder}/src/server/app.ts",
                 "-c",
-                "ws://localhost:12749"
+                "ws://192.168.1.100:12749"
             ],
             "cwd": "${workspaceFolder}",
             "runtimeArgs": [
@@ -40,7 +40,8 @@
                 "ts-node/register"
             ],
             "env": {
-                "TS_NODE_PROJECT": "src/server/tsconfig.json"
+                "TS_NODE_PROJECT": "src/server/tsconfig.json",
+                "ENV": "development"
             },
             "internalConsoleOptions": "openOnSessionStart"
         }
