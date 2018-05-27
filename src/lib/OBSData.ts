@@ -31,6 +31,16 @@ interface CharacterMapping {
     };
 }
 
+/**
+ * Stores game stats in file system. Individual files contain a single statistic.
+ * These files' contents can be displayed in OBS using a text source, allowing
+ * stats to be displayed in an OBS stream.
+ *
+ * Files are stored in the `.kqstats` folder of the user's home directory.
+ *
+ * @deprecated This feature is no longer supported. Instead, use a BrowserSource
+ * in OBS to display the React web app.
+ */
 export class OBSData {
     static get defaultGameStats(): GameStats {
         return {
