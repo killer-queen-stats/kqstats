@@ -143,6 +143,7 @@ export class GameStats {
 
     constructor(stream: KQStream) {
         this.stream = stream;
+        this.hasGameStartBeenEncountered = false;
         this.onChange = {};
     }
 
