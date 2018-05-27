@@ -43,6 +43,7 @@ interface GameStatsCallbackDictionary<T> {
 
 export class GameStats {
     private stream: KQStream;
+    private hasGameStartBeenEncountered: boolean;
     private gameStats: GameStatsType;
     private gameState: GameStateType;
     private onChange: GameStatsCallbackDictionary<KQStat>;
@@ -142,6 +143,7 @@ export class GameStats {
 
     constructor(stream: KQStream) {
         this.stream = stream;
+        this.hasGameStartBeenEncountered = false;
         this.onChange = {};
     }
 
@@ -194,9 +196,12 @@ export class GameStats {
         this.resetStats();
         this.stream.on('playernames', () => {
             this.resetStats();
-        });
-        this.stream.on('playerKill', (kill: PlayerKill) => {
-            this.processKill(kill);
+            if (!this.hasGameStartBeenEncountered) {
+                this.stream.on('playerKill', (kill: PlayerKill) => {
+                    this.processKill(kill);
+                });
+            }
+            this.hasGameStartBeenEncountered = true;
         });
     }
 
