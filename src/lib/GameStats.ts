@@ -1,3 +1,4 @@
+import { ProtectedEventEmitter } from '../lib/ts-eventemitter';
 import * as uuid from 'uuid/v4';
 import { KQStream, Character, PlayerKill } from './KQStream';
 
@@ -35,18 +36,15 @@ export interface KQStat {
     value: number;
 }
 
-export type GameStatsCallback<T> = (data: T) => any;
-
-interface GameStatsCallbackDictionary<T> {
-    [id: string]: GameStatsCallback<T>;
+interface Events {
+    'change': KQStat;
 }
 
-export class GameStats {
+export class GameStats extends ProtectedEventEmitter<Events> {
     private stream: KQStream;
     private hasGameStartBeenEncountered: boolean;
     private gameStats: GameStatsType;
     private gameState: GameStateType;
-    private onChange: GameStatsCallbackDictionary<KQStat>;
 
     /**
      * Complete list of valid statistic types.
@@ -142,54 +140,9 @@ export class GameStats {
     }
 
     constructor(stream: KQStream) {
+        super();
         this.stream = stream;
         this.hasGameStartBeenEncountered = false;
-        this.onChange = {};
-    }
-
-    on(eventType: 'change', callback: GameStatsCallback<KQStat>): string;
-    on(eventType: string, callback: GameStatsCallback<any>): string {
-        let id = uuid();
-        switch (eventType) {
-        case 'change':
-            while (this.onChange[id] !== undefined) {
-                id = uuid();
-            }
-            this.onChange[id] = callback;
-            break;
-        default:
-            throw new Error(`${eventType} is not a supported event type`);
-        }
-        return id;
-    }
-
-    off(eventType: 'change', id?: string): boolean;
-    off(eventType: string, id?: string): boolean {
-        let removed = false;
-        if (id !== undefined) {
-            switch (eventType) {
-            case 'change':
-                if (this.onChange[id] !== undefined) {
-                    delete this.onChange[id];
-                    removed = true;
-                }
-                break;
-            default:
-                throw new Error(`${eventType} is not a supported event type`);   
-            }
-        } else {
-            let keys: string[] = [];
-            switch (eventType) {
-            case 'change':
-                keys = Object.keys(this.onChange);
-                removed = keys.length > 0;
-                this.onChange = {};
-                break;
-            default:
-                throw new Error(`${eventType} is not a supported event type`);
-            }
-        }
-        return removed;
     }
 
     start() {
@@ -214,23 +167,18 @@ export class GameStats {
      * @param filter The statistics to filter
      */
     trigger(eventType: 'change', filter?: GameStatsFilter) {
-        const ids = Object.keys(this.onChange);
-        if (ids.length > 0) {
-            if (filter === undefined) {
-                filter = GameStats.defaultChangeFilter;
-            }
-            for (let character of Object.keys(filter)) {
-                const characterNumber = Number(character);
-                if (!isNaN(characterNumber)) {
-                    for (let statistic of filter[character]) {
-                        for (let id of ids) {
-                            this.onChange[id]({
-                                character: characterNumber,
-                                statistic: statistic,
-                                value: this.gameStats[characterNumber][statistic]
-                            });
-                        }
-                    }
+        if (filter === undefined) {
+            filter = GameStats.defaultChangeFilter;
+        }
+        for (let character of Object.keys(filter)) {
+            const characterNumber = Number(character);
+            if (!isNaN(characterNumber)) {
+                for (let statistic of filter[character]) {
+                    this.protectedEmit('change', {
+                        character: characterNumber,
+                        statistic: statistic,
+                        value: this.gameStats[characterNumber][statistic]
+                    });
                 }
             }
         }

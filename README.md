@@ -88,7 +88,7 @@ Other npm scripts in `package.json` are not supported at this time and may cause
 
 ### KQStream
 
-The `KQStream` class processes socket messages from a Killer Queen cabinet. You can set up a callback method for each type of supported event. These callback methods receive objects that contain event data in a deserialized format.
+The `KQStream` class is an [`EventEmitter`](https://nodejs.org/api/events.html#events_class_eventemitter) that processes socket messages from a Killer Queen cabinet. You can set up a callback method for each type of supported event. These callback methods receive objects that contain event data in a deserialized format.
 
 #### ```new KQStream(options?: KQStreamOptions)```
 
