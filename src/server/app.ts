@@ -3,7 +3,7 @@ import * as os from 'os';
 import * as path from 'path';
 import * as socket_io from 'socket.io';
 import { KQStream, KQStreamOptions } from '../lib/KQStream';
-import { GameStats } from '../lib/GameStats';
+import { GameStats, KQStat } from '../lib/GameStats';
 
 if (process.argv.length !== 4) {
     throw new Error('Incorrect usage!');
@@ -35,11 +35,12 @@ if (process.argv[2] === '-r') {
 
 const io = socket_io(8000);
 io.on('connection', (socket) => {
-    const id = gameStats.on('change', (data) => {
+    const changeListener = (data: KQStat) => {
         socket.emit('stat', data);
-    });
+    };
+    const id = gameStats.on('change', changeListener);
     socket.on('disconnect', () => {
-        gameStats.off('change', id);
+        gameStats.removeListener('change', changeListener);
     });
     gameStats.trigger('change');
 });

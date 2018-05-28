@@ -3,6 +3,7 @@
  * https://github.com/arantius/kqdeathmap
  */
 
+import { ProtectedEventEmitter } from './ts-eventemitter';
 import * as websocket from 'websocket';
 import * as stream from 'stream';
 import * as uuid from 'uuid/v4';
@@ -33,28 +34,23 @@ export interface PlayerKill {
     by: Character;
 }
 
-export type KQEventCallback<T> = (event: T) => any;
-
-interface KQEventCallbackDictionary<T> {
-    [id: string]: KQEventCallback<T>;
-}
-
 export interface KQStreamOptions {
     log?: stream.Writable;
 }
 
-export class KQStream {
+interface Events {
+    'playernames': PlayerNames;
+    'playerKill': PlayerKill;
+}
+
+export class KQStream extends ProtectedEventEmitter<Events> {
     private client: websocket.client;
     private connection: websocket.connection;
-
-    private onPlayerNames: KQEventCallbackDictionary<PlayerNames>;
-    private onPlayerKill: KQEventCallbackDictionary<PlayerKill>;
 
     private log: stream.Writable;
 
     constructor(options?: KQStreamOptions) {
-        this.onPlayerNames = {};
-        this.onPlayerKill = {};
+        super();
         if (options !== undefined) {
             if (options.log !== undefined) {
                 this.log = options.log;
@@ -99,82 +95,6 @@ export class KQStream {
         }
     }
 
-    on(eventType: 'playernames', callback: KQEventCallback<PlayerNames>): string;
-    on(eventType: 'playerKill', callback: KQEventCallback<PlayerKill>): string;
-    on(eventType: string, callback: KQEventCallback<any>): string {
-        let id = uuid();
-        switch (eventType) {
-        case 'playernames':
-            while (this.onPlayerNames[id] !== undefined) {
-                id = uuid();
-            }
-            this.onPlayerNames[id] = callback;
-            break;
-        case 'playerKill':
-            while (this.onPlayerKill[id] !== undefined) {
-                id = uuid();
-            }
-            this.onPlayerKill[id] = callback;
-            break;
-        default:
-            throw new Error(`${eventType} is not a supported event type`);
-        }
-        return id;
-    }
-
-    off(eventType: 'playesnames', id?: string): boolean;
-    off(eventType: 'playerKill', id?: string): boolean;
-    /**
-     * Removes the specified callback for a certain event,
-     * or all callbacks if no id is provided.
-     * 
-     * @param eventType The event type for which to remove callback(s)
-     * @param id The id of the callback to remove. If not specified,
-     *           all callbacks are removed.
-     * @returns True if callback(s) were removed. When an id is specified,
-     *          true will be returned if a callback existed for the id.
-     *          If no id is specified, true will be returned if there
-     *          were any callbacks for the event type.
-     */
-    off(eventType: string, id?: string): boolean {
-        let removed = false;
-        if (id !== undefined) {
-            switch (eventType) {
-            case 'playernames':
-                if (this.onPlayerNames[id] !== undefined) {
-                    delete this.onPlayerNames[id];
-                    removed = true;
-                }
-                break;
-            case 'playerKill':
-                if (this.onPlayerKill[id] !== undefined) {
-                    delete this.onPlayerKill[id];
-                    removed = true;
-                }
-                break;
-            default:
-                throw new Error(`${eventType} is not a supported event type`);
-            }
-        } else {
-            let keys: string[] = [];
-            switch (eventType) {
-            case 'playernames':
-                keys = Object.keys(this.onPlayerNames);
-                removed = keys.length > 0;
-                this.onPlayerNames = {};
-                break;
-            case 'playerKill':
-                keys = Object.keys(this.onPlayerKill);
-                removed = keys.length > 0;
-                this.onPlayerKill = {};
-                break;
-            default:
-                throw new Error(`${eventType} is not a supported event type`);
-            }
-        }
-        return removed;
-    }
-
     private processMessage(message: string): void {
         if (this.log !== undefined) {
             this.log.write(`${Date.now().toString()},${message}\n`);
@@ -191,31 +111,21 @@ export class KQStream {
             this.sendMessage('im alive', null);
             break;
         case 'playernames':
-            ids = Object.keys(this.onPlayerNames);
-            if (ids.length > 0) {
-                // Not sure what the values of the message mean,
-                // so just pass an empty object for now.
-                for (let id of Object.keys(this.onPlayerNames)) {
-                    this.onPlayerNames[id]({});
-                }
-            }
+            // Not sure what the values of the message mean,
+            // so just pass an empty object for now.
+            this.protectedEmit('playernames', {});
             break;
         case 'playerKill':
-            ids = Object.keys(this.onPlayerKill);
-            if (ids.length > 0) {
-                const [x, y, by, killed] = value.split(',');
-                const playerKill: PlayerKill = {
-                    pos: {
-                        x: Number(x),
-                        y: Number(y)
-                    },
-                    killed: Number(killed),
-                    by: Number(by)
-                };
-                for (let id of Object.keys(this.onPlayerKill)) {
-                    this.onPlayerKill[id](playerKill);
-                }
-            }
+            const [x, y, by, killed] = value.split(',');
+            const playerKill: PlayerKill = {
+                pos: {
+                    x: Number(x),
+                    y: Number(y)
+                },
+                killed: Number(killed),
+                by: Number(by)
+            };
+            this.protectedEmit('playerKill', playerKill);
             break;
         default:
             break;
