@@ -44,27 +44,24 @@ interface Events {
 }
 
 export class KQStream extends ProtectedEventEmitter<Events> {
-    private client: websocket.client;
+    private options: KQStreamOptions;
     private connection: websocket.connection;
-
-    private log: stream.Writable;
 
     constructor(options?: KQStreamOptions) {
         super();
-        if (options !== undefined) {
-            if (options.log !== undefined) {
-                this.log = options.log;
-            }
+        if (options === undefined) {
+            options = {};
         }
+        this.options = options;
     }
 
     async connect(host: string): Promise<void> {
         return new Promise<void>((resolve, reject) => {
-            this.client = new websocket.client();
-            this.client.on('connectFailed', (err) => {
+            const client = new websocket.client();
+            client.on('connectFailed', (err) => {
                 reject(err);
             });
-            this.client.on('connect', (connection) => {
+            client.on('connect', (connection) => {
                 this.connection = connection;
                 connection.on('message', (data) => {
                     if (data !== undefined && data.utf8Data !== undefined) {
@@ -74,7 +71,7 @@ export class KQStream extends ProtectedEventEmitter<Events> {
                 });
                 resolve();
             });
-            this.client.connect(host);
+            client.connect(host);
         });
     }
 
@@ -96,8 +93,8 @@ export class KQStream extends ProtectedEventEmitter<Events> {
     }
 
     private processMessage(message: string): void {
-        if (this.log !== undefined) {
-            this.log.write(`${Date.now().toString()},${message}\n`);
+        if (this.options.log !== undefined) {
+            this.options.log.write(`${Date.now().toString()},${message}\n`);
         }
         const dataArray = message.match(/!\[k\[(.*?)\],v\[(.*)?\]\]!/);
         if (!dataArray) {
