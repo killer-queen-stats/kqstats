@@ -1,4 +1,4 @@
-import { ProtectedEventEmitter } from '../lib/ts-eventemitter';
+import { ProtectedEventEmitter } from 'eventemitter-ts';
 import * as uuid from 'uuid/v4';
 import { KQStream, Character, PlayerKill } from './KQStream';
 

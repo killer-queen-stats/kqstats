@@ -23,6 +23,7 @@
     "chai": "^4.1.2",
     "cross-env": "^5.1.6",
     "del-cli": "^1.1.0",
+    "eventemitter-ts": "0.0.1",
     "express": "^4.16.3",
     "mocha": "^5.2.0",
     "nexe": "^2.0.0-rc.28",

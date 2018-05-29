@@ -3,7 +3,7 @@
  * https://github.com/arantius/kqdeathmap
  */
 
-import { ProtectedEventEmitter } from './ts-eventemitter';
+import { ProtectedEventEmitter } from 'eventemitter-ts';
 import * as websocket from 'websocket';
 import * as stream from 'stream';
 import * as uuid from 'uuid/v4';
