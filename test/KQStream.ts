@@ -1,38 +1,44 @@
 import { expect } from 'chai';
 import * as http from 'http';
+import * as sinon from 'sinon';
 import * as websocket from 'websocket';
-import { KQStream, PlayerNames, PlayerKill, Character } from '../src/lib/KQStream';
+import { KQStream, Events, PlayerNames, PlayerKill, Character } from '../src/lib/KQStream';
+import { sleep } from '../src/lib/helper';
+import { KQCab } from '../src/lib/KQCab';
 
-const KQ_PORT = 12749;
+interface ListenerCount {
+    onPlayerNames?: number;
+    onPlayerKill?: number;
+}
 
-async function sleep(ms: number): Promise<void> {
-    return new Promise<void>((resolve, reject) => {
-        setTimeout(resolve, ms);
+function createListenerPromise<K extends keyof Events>(
+    stream: KQStream,
+    event: K,
+    listener: (event: Events[K]) => void,
+    numCalls: number
+) {
+    let count = 0;
+    return new Promise<void>((resolve) => {
+        stream.on(event, (arg) => {
+            listener(arg);
+            if (++count === numCalls) {
+                resolve();
+            }
+        });
     });
 }
 
-async function getConnection(server: websocket.server): Promise<websocket.connection> {
-    return new Promise<websocket.connection>((resolve, reject) => {
-        server.on('connect', (connection) => {
-            resolve(connection);
-        });
-        server.on('request', (request) => {
-            const connection = request.accept('echo-protocol');
-        });
-    });
-}
-
-function createServer(): websocket.server {
-    const httpServer = http.createServer((request, response) => {
-        response.writeHead(404);
-        response.end();
-    });
-    httpServer.listen(KQ_PORT);
-    const wsServer: websocket.server = new websocket.server({
-        httpServer: httpServer,
-        autoAcceptConnections: true
-    });
-    return wsServer;
+/**
+ * Removes all event listeners from a KQStream.
+ * 
+ * This is a holdover until the following issue is fixed:
+ * https://github.com/KevinSnyderCodes/eventemitter-ts/issues/2
+ * 
+ * @param stream The KQStream to remove all event listeners from
+ */
+function removeAllListeners(stream: KQStream) {
+    stream.removeAllListeners('playernames');
+    stream.removeAllListeners('playerKill');
 }
 
 describe('KQStream', () => {
@@ -41,6 +47,7 @@ describe('KQStream', () => {
         message: string;
     }
 
+    const stream = new KQStream();
     const events: TestEvent[] = [{
         timestamp: '1518063130441',
         message: '![k[playernames],v[,,,,,,,,,]]!'
@@ -87,85 +94,90 @@ describe('KQStream', () => {
         killed: Character.BlueChecks,
         by: Character.GoldStripes
     }];
+    const onPlayerNames = (event: PlayerNames) => {
+        playerNamesEvents.push(event);
+    };
+    const onPlayerKill = (event: PlayerKill) => {
+        playerKillEvents.push(event);
+    };
 
-    let kqstream: KQStream;
-    let connection: websocket.connection;
     let playerNamesEvents: PlayerNames[];
     let playerKillEvents: PlayerKill[];
-
-    before(async () => {
-        kqstream = new KQStream();
-        kqstream.on('playernames', (event: PlayerNames) => {
-            playerNamesEvents.push(event);
-        });
-        kqstream.on('playerKill', (event: PlayerKill) => {
-            playerKillEvents.push(event);
-        });
-    });
+    let playerNamesPromise: Promise<void>;
+    let playerKillPromise: Promise<void>;
 
     describe('#connect', () => {
         before(async () => {
-            // Set up websocket server
-            const server = createServer();
-            const [_, conn] = await Promise.all([
-                kqstream.connect(`ws://localhost:${KQ_PORT}`),
-                getConnection(server)
-            ]);
-            connection = conn;
+            const cab = new KQCab();
+            await stream.connect(`ws://localhost:${KQCab.DEFAULT_PORT}`);
 
             // Arrange
             playerNamesEvents = [];
             playerKillEvents = [];
+            playerNamesPromise = createListenerPromise(stream, 'playernames', onPlayerNames, 1);
+            playerKillPromise = createListenerPromise(stream, 'playerKill', onPlayerKill, 4);
 
             // Act
             for (let event of events) {
-                connection.sendUTF(event.message);
+                cab.send(event.message);
             }
-            await sleep(1000);
         });
 
-        it('should process playernames events', () => {
+        it('should process playernames events', async () => {
+            await playerNamesPromise;
             expect(playerNamesEvents.length).to.equal(1);
             for (let expectedEvent of expectedPlayerNamesEvents) {
                 expect(playerNamesEvents).to.deep.include(expectedEvent);
             }
         });
 
-        it('should process playerKill events', () => {
+        it('should process playerKill events', async () => {
+            await playerKillPromise;
             expect(playerKillEvents.length).to.equal(4);
             for (let expectedEvent of expectedPlayerKillEvents) {
                 expect(playerKillEvents).to.deep.include(expectedEvent);
             }
         });
+
+        after(() => {
+            removeAllListeners(stream);
+        });
     });
 
     describe('#read', () => {
-        before(async () => {
+        before(() => {
             // Arrange
             playerNamesEvents = [];
             playerKillEvents = [];
+            playerNamesPromise = createListenerPromise(stream, 'playernames', onPlayerNames, 1);
+            playerKillPromise = createListenerPromise(stream, 'playerKill', onPlayerKill, 4);
             let data: string = '';
             for (let event of events) {
                 data += `${event.timestamp},${event.message}\n`;
             }
 
             // Act
-            kqstream.read(data);
-            await sleep(1000);
+            stream.read(data);
         });
 
-        it('should process playernames events', () => {
+        it('should process playernames events', async () => {
+            await playerNamesPromise;
             expect(playerNamesEvents.length).to.equal(1);
             for (let expectedEvent of expectedPlayerNamesEvents) {
                 expect(playerNamesEvents).to.deep.include(expectedEvent);
             }
         });
 
-        it('should process playerKill events', () => {
+        it('should process playerKill events', async () => {
+            await playerKillPromise;
             expect(playerKillEvents.length).to.equal(4);
             for (let expectedEvent of expectedPlayerKillEvents) {
                 expect(playerKillEvents).to.deep.include(expectedEvent);
             }
+        });
+
+        after(() => {
+            removeAllListeners(stream);
         });
     });
 });

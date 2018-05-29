@@ -38,7 +38,7 @@ export interface KQStreamOptions {
     log?: stream.Writable;
 }
 
-interface Events {
+export interface Events {
     'playernames': PlayerNames;
     'playerKill': PlayerKill;
 }

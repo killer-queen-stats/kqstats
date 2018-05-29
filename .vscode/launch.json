@@ -12,8 +12,6 @@
             "args": [
                 "-r",
                 "ts-node/register",
-                "-u",
-                "tdd",
                 "--timeout",
                 "999999",
                 "--colors",
