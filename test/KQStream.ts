@@ -28,19 +28,6 @@ function createListenerPromise<K extends keyof Events>(
     });
 }
 
-/**
- * Removes all event listeners from a KQStream.
- * 
- * This is a holdover until the following issue is fixed:
- * https://github.com/KevinSnyderCodes/eventemitter-ts/issues/2
- * 
- * @param stream The KQStream to remove all event listeners from
- */
-function removeAllListeners(stream: KQStream) {
-    stream.removeAllListeners('playernames');
-    stream.removeAllListeners('playerKill');
-}
-
 describe('KQStream', () => {
     interface TestEvent {
         timestamp: string;
@@ -140,7 +127,7 @@ describe('KQStream', () => {
         });
 
         after(() => {
-            removeAllListeners(stream);
+            stream.removeAllListeners();
         });
     });
 
@@ -177,7 +164,7 @@ describe('KQStream', () => {
         });
 
         after(() => {
-            removeAllListeners(stream);
+            stream.removeAllListeners();
         });
     });
 });
