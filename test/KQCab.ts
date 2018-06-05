@@ -222,7 +222,6 @@ describe('KQCab', () => {
                     }
                     lastMessage = now;
                     if (++count === NUM_ALIVE_INTERVALS) {
-                        console.log('done');
                         resolve();
                     }
                     clock.tick(KQCab.ALIVE_INTERVAL_MS);

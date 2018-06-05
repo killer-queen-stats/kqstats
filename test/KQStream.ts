@@ -5,11 +5,6 @@ import * as websocket from 'websocket';
 import { KQStream, Events, PlayerNames, PlayerKill, Character } from '../src/lib/KQStream';
 import { KQCab } from '../src/lib/KQCab';
 
-interface ListenerCount {
-    onPlayerNames?: number;
-    onPlayerKill?: number;
-}
-
 function createListenerPromise<K extends keyof Events>(
     stream: KQStream,
     event: K,
