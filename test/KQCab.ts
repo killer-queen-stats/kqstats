@@ -1,6 +1,7 @@
 import { expect } from 'chai';
 import * as moment from 'moment';
 import * as net from 'net';
+import * as portscanner from 'portscanner';
 import * as sinon from 'sinon';
 import * as websocket from 'websocket';
 import { KQCab } from '../src/lib/KQCab';
@@ -13,22 +14,6 @@ const NUM_CONNECTIONS = 3;
 const NUM_MESSAGES = 3;
 const OTHER_PORT = 12345;
 const WAIT_AFTER_MESSAGE_SEND_MS = 2;
-
-async function isPortOpen(port: number) {
-    return new Promise<boolean>((resolve) => {
-        const server = net.createServer();
-        server.once('error', (err: any) => {
-            if (err.code === 'EADDRINUSE') {
-                resolve(false);
-            }
-        });
-        server.once('listening', () => {
-            server.close();
-            resolve(true);
-        });
-        server.listen(port);
-    });
-}
 
 interface CreateConnectionOptions {
     port?: number;
@@ -94,11 +79,13 @@ describe('KQCab', () => {
     describe('#constructor', () => {
         it('should create a server on the specified port', async () => {
             const cab = new KQCab(OTHER_PORT);
-            expect(await isPortOpen(OTHER_PORT)).to.be.false;
+            const status = await portscanner.checkPortStatus(OTHER_PORT);
+            expect(status).to.equal('open');
         });
         it('should create a server on port 12749 if no port is specified', async () => {
             const cab = new KQCab();
-            expect(await isPortOpen(KQCab.DEFAULT_PORT)).to.be.false;
+            const status = await portscanner.checkPortStatus(KQCab.DEFAULT_PORT);
+            expect(status).to.equal('open');
         });
         it('should not allow another server to be created on the same port', (done) => {
             const cab = new KQCab();
@@ -147,12 +134,13 @@ describe('KQCab', () => {
                 await cab.destroy();
             });
         });
-        it('should free up the port for use by another server', async () => {
+        it('should free up the port used by the KQCab instance', async () => {
             return new Promise<void>(async (resolve) => {
                 const cab = new KQCab();
                 const connection = await createConnection();
                 const onClose = async () => {
-                    expect(await isPortOpen(KQCab.DEFAULT_PORT)).to.be.true;
+                    const status = await portscanner.checkPortStatus(KQCab.DEFAULT_PORT);
+                    expect(status).to.equal('closed');
                     resolve();
                 };
                 connection.on('close', onClose);
