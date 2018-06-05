@@ -100,8 +100,18 @@ describe('KQStream', () => {
             // Arrange
             playerNamesEvents = [];
             playerKillEvents = [];
-            playerNamesPromise = createListenerPromise(stream, 'playernames', onPlayerNames, 1);
-            playerKillPromise = createListenerPromise(stream, 'playerKill', onPlayerKill, 4);
+            playerNamesPromise = createListenerPromise(
+                stream,
+                'playernames',
+                onPlayerNames,
+                expectedPlayerNamesEvents.length
+            );
+            playerKillPromise = createListenerPromise(
+                stream,
+                'playerKill',
+                onPlayerKill,
+                expectedPlayerKillEvents.length
+            );
 
             // Act
             for (let event of events) {
@@ -135,8 +145,18 @@ describe('KQStream', () => {
             // Arrange
             playerNamesEvents = [];
             playerKillEvents = [];
-            playerNamesPromise = createListenerPromise(stream, 'playernames', onPlayerNames, 1);
-            playerKillPromise = createListenerPromise(stream, 'playerKill', onPlayerKill, 4);
+            playerNamesPromise = createListenerPromise(
+                stream,
+                'playernames',
+                onPlayerNames,
+                expectedPlayerNamesEvents.length
+            );
+            playerKillPromise = createListenerPromise(
+                stream,
+                'playerKill',
+                onPlayerKill,
+                expectedPlayerKillEvents.length
+            );
             let data: string = '';
             for (let event of events) {
                 data += `${event.timestamp},${event.message}\n`;
