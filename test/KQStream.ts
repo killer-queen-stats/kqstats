@@ -3,7 +3,6 @@ import * as http from 'http';
 import * as sinon from 'sinon';
 import * as websocket from 'websocket';
 import { KQStream, Events, PlayerNames, PlayerKill, Character } from '../src/lib/KQStream';
-import { sleep } from '../src/lib/helper';
 import { KQCab } from '../src/lib/KQCab';
 
 interface ListenerCount {

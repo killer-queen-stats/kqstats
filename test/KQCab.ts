@@ -5,7 +5,7 @@ import * as sinon from 'sinon';
 import * as websocket from 'websocket';
 import { KQCab } from '../src/lib/KQCab';
 import { KQStream } from '../src/lib/KQStream';
-import { sleep } from '../src/lib/helper';
+import * as sleep from 'sleep-promise';
 
 const NUM_ALIVE_INTERVALS = 10;
 const NUM_CABS = 3;
@@ -59,7 +59,9 @@ async function createConnection(
                      * for 2 milliseconds is the shortest amount of time
                      * that causes the tests to pass on each run.
                      */
-                    await sleep(WAIT_AFTER_MESSAGE_SEND_MS);
+                    await sleep(WAIT_AFTER_MESSAGE_SEND_MS, {
+                        useCachedSetTimeout: true
+                    });
                 }
                 if (data !== undefined && data.utf8Data !== undefined) {
                     const message = data.utf8Data.toString();
