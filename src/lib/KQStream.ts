@@ -4,9 +4,8 @@
  */
 
 import { ProtectedEventEmitter } from 'eventemitter-ts';
-import * as websocket from 'websocket';
 import * as stream from 'stream';
-import * as uuid from 'uuid/v4';
+import * as websocket from 'websocket';
 
 export enum Character {
     GoldQueen = 1,

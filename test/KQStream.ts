@@ -1,15 +1,7 @@
 import { expect } from 'chai';
-import * as http from 'http';
-import * as sinon from 'sinon';
-import * as websocket from 'websocket';
-import { KQStream, Events, PlayerNames, PlayerKill, Character } from '../src/lib/KQStream';
 import * as sleep from 'sleep-promise';
 import { KQCab } from '../src/lib/KQCab';
-
-interface ListenerCount {
-    onPlayerNames?: number;
-    onPlayerKill?: number;
-}
+import { Character, Events, KQStream } from '../src/lib/KQStream';
 
 type TestEvent = {
     timestamp: string;
@@ -19,10 +11,6 @@ type TestEvent = {
 
 type CabEvents = {
     [K in keyof Events]: Events[K][];
-};
-
-type CabPromises = {
-    [K in keyof Events]: Promise<void>[];
 };
 
 describe('KQStream', () => {

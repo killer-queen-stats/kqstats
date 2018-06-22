@@ -1,8 +1,8 @@
-import * as path from 'path';
-import * as os from 'os';
 import * as fs from 'fs';
+import * as os from 'os';
+import * as path from 'path';
 import * as rimraf from 'rimraf';
-import { KQStream, Character, PlayerKill } from './KQStream';
+import { KQStream, PlayerKill } from './KQStream';
 
 interface CharacterStats {
     'kills': number;
@@ -22,13 +22,6 @@ interface CabStats {
 interface GameStats {
     'gold': CabStats;
     'blue': CabStats;
-}
-
-interface CharacterMapping {
-    [key: number]: {
-        'cab': string,
-        'character': string
-    };
 }
 
 /**

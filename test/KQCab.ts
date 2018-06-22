@@ -1,12 +1,11 @@
 import { expect } from 'chai';
 import * as moment from 'moment';
-import * as net from 'net';
 import * as portscanner from 'portscanner';
 import * as sinon from 'sinon';
+import * as sleep from 'sleep-promise';
 import * as websocket from 'websocket';
 import { KQCab } from '../src/lib/KQCab';
 import { KQStream } from '../src/lib/KQStream';
-import * as sleep from 'sleep-promise';
 
 const NUM_ALIVE_INTERVALS = 10;
 const NUM_CABS = 3;

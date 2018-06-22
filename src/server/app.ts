@@ -1,9 +1,7 @@
 import * as fs from 'fs';
-import * as os from 'os';
-import * as path from 'path';
 import * as socket_io from 'socket.io';
-import { KQStream, KQStreamOptions } from '../lib/KQStream';
 import { GameStats, KQStat } from '../lib/GameStats';
+import { KQStream, KQStreamOptions } from '../lib/KQStream';
 
 if (process.argv.length !== 4) {
     throw new Error('Incorrect usage!');
