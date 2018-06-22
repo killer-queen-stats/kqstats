@@ -25,19 +25,6 @@ type CabPromises = {
     [K in keyof Events]: Promise<void>[];
 };
 
-/**
- * Removes all event listeners from a KQStream.
- * 
- * This is a holdover until the following issue is fixed:
- * https://github.com/KevinSnyderCodes/eventemitter-ts/issues/2
- * 
- * @param stream The KQStream to remove all event listeners from
- */
-function removeAllListeners(stream: KQStream) {
-    stream.removeAllListeners('playernames');
-    stream.removeAllListeners('playerKill');
-}
-
 describe('KQStream', () => {
     const stream = new KQStream();
     const messages: TestEvent[] = [{
@@ -130,6 +117,10 @@ describe('KQStream', () => {
                 expect(receivedEvents.playerKill).to.deep.include(expectedEvent);
             }
         });
+
+        after(() => {
+            stream.removeAllListeners();
+        });
     });
 
     describe('#read', () => {
@@ -167,6 +158,10 @@ describe('KQStream', () => {
             for (let expectedEvent of expectedEvents.playerKill) {
                 expect(receivedEvents.playerKill).to.deep.include(expectedEvent);
             }
+        });
+
+        after(() => {
+            stream.removeAllListeners();
         });
     });
 });
