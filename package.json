@@ -35,6 +35,7 @@
     "react-scripts-ts": "^2.16.0",
     "rimraf": "^2.6.2",
     "sinon": "^5.0.10",
+    "sleep-promise": "^8.0.1",
     "socket.io": "^2.1.1",
     "socket.io-client": "^2.1.1",
     "ts-node": "^4.1.0",
