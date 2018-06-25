@@ -4,7 +4,7 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --keyofStringsOnly",
     "clean": "del-cli build",
     "react:build": "react-scripts-ts build",
     "react:eject": "react-scripts-ts eject",
