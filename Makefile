@@ -1,2 +1,3 @@
 dockerize:
-	docker build -t toonces/kqstats .
+	docker build -t kqsf/kqstats .
+	docker push kqsf/kqstats
