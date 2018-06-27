@@ -17,7 +17,7 @@ async function getConnection(server: websocket.server): Promise<websocket.connec
             resolve(connection);
         });
         server.on('request', (request) => {
-            const connection = request.accept('echo-protocol');
+            request.accept('echo-protocol');
         });
     });
 }
@@ -107,11 +107,10 @@ describe('KQStream', () => {
         before(async () => {
             // Set up websocket server
             const server = createServer();
-            const [_, conn] = await Promise.all([
+            connection = await Promise.all([
                 kqstream.connect(`ws://localhost:${KQ_PORT}`),
                 getConnection(server)
-            ]);
-            connection = conn;
+            ])[1];
 
             // Arrange
             playerNamesEvents = [];

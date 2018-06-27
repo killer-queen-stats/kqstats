@@ -1,0 +1,122 @@
+table {
+  border-collapse: collapse;
+}
+
+table, tr, th, td {
+  border: 1px solid rgba(99, 110, 114, 0.4);;
+  font-size: 20px;
+}
+
+td:nth-child(1) {
+  position: relative;
+}
+
+td:nth-child(1) img.character {
+  height: 30px;
+}
+
+td:nth-child(1) div.crowns {
+  position: absolute;
+}
+td:nth-child(1) div.crowns img.crown {
+  height: 5px;
+  position: absolute;
+  left: 0px;
+}
+td:nth-child(1) div.crowns img.crown:nth-child(1) {
+  top: 5px;
+}
+td:nth-child(1) div.crowns img.crown:nth-child(2) {
+  top: 15px;
+}
+td:nth-child(1) div.crowns img.crown:nth-child(3) {
+  top: 25px;
+}
+
+tr:nth-child(n+2):nth-child(-n+6) td:nth-child(odd) {
+  background-color: rgba(253, 178, 65, 0.2);
+}
+tr:nth-child(n+2):nth-child(-n+6) td:nth-child(even) {
+  background-color: rgba(253, 178, 65, 0.1);
+}
+tr:nth-child(n+7):nth-child(-n+11) td:nth-child(odd) {
+  background-color: rgba(56, 124, 234, 0.2);
+}
+tr:nth-child(n+7):nth-child(-n+11) td:nth-child(even) {
+  background-color: rgba(56, 124, 234, 0.1);
+}
+
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+
+th:nth-child(1), td:nth-child(1) {
+  width: 60px;
+}
+
+th:not(:nth-child(1)), td:not(:nth-child(1)) {
+  width: 80px;
+}
+
+.killboard.horizontal {
+  position: relative;
+  top: 30px;
+}
+
+.killboard.horizontal .value {
+  position: absolute;
+  width: 100px;
+  bottom: 0px;
+  font-size: 60pt;
+  text-align: center;
+  line-height: normal;
+}
+
+.killboard.horizontal div.crowns {
+  position: absolute;
+  top: -20px;
+}
+.killboard.horizontal div.crowns img.crown {
+  width: 40px;
+  padding-right: 4px;
+}
+
+.kill_stat {
+  padding-left: 5px;
+  position: relative;
+}
+.queen_kill {
+  width: 16px;
+  position: absolute;
+  top: -9px;
+}
+
+.killboard.player {
+  text-align: center;
+}
+
+.killboard.player img {
+  width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+}
+
+.killboard.player .stat {
+  width: 100%;
+  height: 100%;
+  border: 2px solid white;
+  border-radius: 4px;
+}
+
+.killboard.player .stat span {
+  display: block;
+}
+
+.killboard.player .stat span.name {
+  font-size: 24px;
+}
+
+.killboard.player .stat span.value {
+  font-size: 48px;
+}

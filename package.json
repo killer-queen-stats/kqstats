@@ -13,6 +13,7 @@
     "start": "npm-run-all --parallel \"start:server -- {@}\" start:client --",
     "start:client": "npm run react:start",
     "start:debug": "cross-env ENV=development npm run start --",
+    "start:prod": "cross-env ENV=production PORT=80 npm run start --",
     "start:server": "ts-node --project src/server/tsconfig.json src/server/app.ts",
     "poststart": "npm run react:start",
     "test": "cross-env TS_NODE_PROJECT=test/tsconfig.json mocha -r ts-node/register --exit test/**/*.ts"
@@ -20,10 +21,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/bootstrap": "^4.1.1",
+    "bootstrap": "^4.1.1",
     "chai": "^4.1.2",
     "cross-env": "^5.1.6",
     "del-cli": "^1.1.0",
-    "eventemitter-ts": "0.0.1",
+    "eventemitter-ts": "0.0.4",
     "express": "^4.16.3",
     "mocha": "^5.2.0",
     "nexe": "^2.0.0-rc.28",
@@ -52,6 +55,6 @@
     "@types/socket.io-client": "^1.4.32",
     "@types/uuid": "^3.4.3",
     "@types/websocket": "0.0.36",
-    "typescript": "^2.8.3"
+    "typescript": "^2.9.2"
   }
 }

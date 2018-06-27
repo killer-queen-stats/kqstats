@@ -6,7 +6,6 @@
 import { ProtectedEventEmitter } from 'eventemitter-ts';
 import * as websocket from 'websocket';
 import * as stream from 'stream';
-import * as uuid from 'uuid/v4';
 
 export enum Character {
     GoldQueen = 1,
@@ -101,8 +100,7 @@ export class KQStream extends ProtectedEventEmitter<Events> {
             console.warn('Could not parse message', message);
             return;
         }
-        const [_, key, value] = dataArray;
-        let ids: string[] = [];
+        const [, key, value] = dataArray;
         switch (key) {
         case 'alive':
             this.sendMessage('im alive', null);
