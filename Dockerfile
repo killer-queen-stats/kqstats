@@ -8,12 +8,12 @@ RUN DEBIAN_FRONTEND='noninteractive' apt-get install -y --no-install-recommends 
 RUN mkdir -p /app && \
     mkdir -p /tmp
 
+ADD package.json /tmp/package.json
+RUN cd /tmp && npm install
+RUN cp -a /tmp/node_modules /app
+
 WORKDIR /app
-
-COPY package.json ./
-
-RUN npm install
-COPY . .
-RUN npm run-script build
+ADD . /app
 
 EXPOSE 3000
+EXPOSE 8000
