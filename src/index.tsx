@@ -1,17 +1,47 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Killboard } from './client/Killboard';
+import { Character } from './lib/KQStream';
+import Killboard from './client/killboard/Killboard';
 import { Page404 } from './client/404';
 import registerServiceWorker from './client/registerServiceWorker';
+import sprites from './client/img/sprites';
+import 'bootstrap/dist/css/bootstrap.css';
 import './client/index.css';
+
+interface CharacterColumnProps {
+  character: Character;
+}
+
+const CharacterColumn = (props: CharacterColumnProps) => (
+  <div className="col mb-3">
+    <a href={`/killboard/player/${props.character}`}>
+      <img src={sprites.character[props.character]} />
+    </a>
+  </div>
+);
 
 class Home extends React.Component {
   render() {
     return (
-      <div>
-        <h1>Killboard</h1>
-        <p>Links to killboards:</p>
+      <div className="container">
+        <h1>Killer Queen Stats</h1>
+        <div className="roster">
+          <div className="row">
+            <CharacterColumn character={Character.GoldStripes} />
+            <CharacterColumn character={Character.GoldAbs} />
+            <CharacterColumn character={Character.GoldQueen} />
+            <CharacterColumn character={Character.GoldSkulls} />
+            <CharacterColumn character={Character.GoldChecks} />
+          </div>
+          <div className="row">
+            <CharacterColumn character={Character.BlueStripes} />
+            <CharacterColumn character={Character.BlueAbs} />
+            <CharacterColumn character={Character.BlueQueen} />
+            <CharacterColumn character={Character.BlueSkulls} />
+            <CharacterColumn character={Character.BlueChecks} />
+          </div>
+        </div>
         <ul>
           <li><a href="/killboard/full">Full</a></li>
           <li><a href="/killboard/horizontal/blue">Blue team</a></li>

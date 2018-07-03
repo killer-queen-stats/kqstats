@@ -100,8 +100,7 @@ export class KQStream extends ProtectedEventEmitter<Events> {
             console.warn('Could not parse message', message);
             return;
         }
-        const [_, key, value] = dataArray;
-        let ids: string[] = [];
+        const [, key, value] = dataArray;
         switch (key) {
         case 'alive':
             this.sendMessage('im alive', null);

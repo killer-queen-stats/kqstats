@@ -36,7 +36,7 @@ io.on('connection', (socket) => {
     const changeListener = (data: KQStat) => {
         socket.emit('stat', data);
     };
-    const id = gameStats.on('change', changeListener);
+    gameStats.on('change', changeListener);
     socket.on('disconnect', () => {
         gameStats.removeListener('change', changeListener);
     });

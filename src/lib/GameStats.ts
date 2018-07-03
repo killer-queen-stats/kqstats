@@ -3,31 +3,25 @@ import { Character, KQStream, PlayerKill } from './KQStream';
 
 type StatisticType = 'kills' | 'queen_kills' | 'warrior_kills' | 'deaths';
 
-interface Enum {
-    [key: number]: string;
-}
+export type GameStatsType = {
+    [character in Character]: CharacterStatsType
+};
 
-export interface GameStatsType {
-    // Should be [character in Character], but there's a regression in TypeScript:
-    // https://github.com/Microsoft/TypeScript/issues/13042
-    [character: number]: {
-        [statisticType in StatisticType]: number
-    };
-}
+type CharacterStatsType = {
+    [statisticType in StatisticType]: number
+};
 
-interface GameStateType {
-    // Should be [character in Character], but there's a regression in TypeScript:
-    // https://github.com/Microsoft/TypeScript/issues/13042
-    [character: number]: {
-        isWarrior: boolean
-    };
-}
+type GameStateType = {
+    [character in Character]: CharacterStateType
+};
 
-export interface GameStatsFilter {
-    // Should be [character in Character], but there's a regression in TypeScript:
-    // https://github.com/Microsoft/TypeScript/issues/13042
-    [character: number]: StatisticType[];
-}
+type CharacterStateType = {
+    isWarrior: boolean
+};
+
+export type ChangeFilter = {
+    [character in Character]?: StatisticType[];
+};
 
 export interface KQStat {
     character: Character;
@@ -48,7 +42,7 @@ export class GameStats extends ProtectedEventEmitter<Events> {
     /**
      * Complete list of valid statistic types.
      */
-    static get statisticTypes(): StatisticType[] {
+    private static get statisticTypes(): StatisticType[] {
         return [
             'kills',
             'queen_kills',
@@ -61,52 +55,59 @@ export class GameStats extends ProtectedEventEmitter<Events> {
      * statistics of a game are when it begins.
      */
     static get defaultGameStats(): GameStatsType {
-        const defaultGameStats: GameStatsType = {};
-        const characterValues = GameStats.getEnumNumbers(Character);
-        for (let character of characterValues) {
-            defaultGameStats[character] = {} as any;
-            for (let statistic of GameStats.statisticTypes) {
-                defaultGameStats[character][statistic] = 0;
-            }
-        }
-        return defaultGameStats;
+        return {
+            [Character.GoldQueen]: GameStats.defaultCharacterStats,
+            [Character.BlueQueen]: GameStats.defaultCharacterStats,
+            [Character.GoldStripes]: GameStats.defaultCharacterStats,
+            [Character.BlueStripes]: GameStats.defaultCharacterStats,
+            [Character.GoldAbs]: GameStats.defaultCharacterStats,
+            [Character.BlueAbs]: GameStats.defaultCharacterStats,
+            [Character.GoldSkulls]: GameStats.defaultCharacterStats,
+            [Character.BlueSkulls]: GameStats.defaultCharacterStats,
+            [Character.GoldChecks]: GameStats.defaultCharacterStats,
+            [Character.BlueChecks]: GameStats.defaultCharacterStats
+        };
     }
-    static get defaultGameState(): GameStateType {
-        const defaultGameState: GameStateType = {};
-        const characterValues = GameStats.getEnumNumbers(Character);
-        for (let character of characterValues) {
-            defaultGameState[character] = {
-                isWarrior: false
-            };
-        }
-        return defaultGameState;
+    private static get defaultCharacterStats(): CharacterStatsType {
+        return {
+            kills: 0,
+            queen_kills: 0,
+            warrior_kills: 0,
+            deaths: 0
+        };
     }
-    static get defaultChangeFilter(): GameStatsFilter {
-        const defaultChangeFilter: GameStatsFilter = {};
-        const characterValues = GameStats.getEnumNumbers(Character);
-        for (let character of characterValues) {
-            defaultChangeFilter[character] = GameStats.statisticTypes;
-        }
-        return defaultChangeFilter;
+    private static get defaultGameState(): GameStateType {
+        return {
+            [Character.GoldQueen]: GameStats.defaultCharacterState,
+            [Character.BlueQueen]: GameStats.defaultCharacterState,
+            [Character.GoldStripes]: GameStats.defaultCharacterState,
+            [Character.BlueStripes]: GameStats.defaultCharacterState,
+            [Character.GoldAbs]: GameStats.defaultCharacterState,
+            [Character.BlueAbs]: GameStats.defaultCharacterState,
+            [Character.GoldSkulls]: GameStats.defaultCharacterState,
+            [Character.BlueSkulls]: GameStats.defaultCharacterState,
+            [Character.GoldChecks]: GameStats.defaultCharacterState,
+            [Character.BlueChecks]: GameStats.defaultCharacterState
+        };
     }
-    /**
-     * Get all the number values of an enum.
-     * 
-     * This function is only relevant if your
-     * enum uses number values, as opposed to
-     * other value types (e.g. strings).
-     * 
-     * @param e The enum whose number values to get
-     */
-    static getEnumNumbers(e: Enum): number[] {
-        const values: number[] = [];
-        for (let key of Object.keys(e)) {
-            const n = Number(key);
-            if (!isNaN(n)) {
-                values.push(n);
-            }
-        }
-        return values;
+    private static get defaultCharacterState(): CharacterStateType {
+        return {
+            isWarrior: false
+        };
+    }
+    private static get defaultChangeFilter(): ChangeFilter {
+        return {
+            [Character.GoldQueen]: GameStats.statisticTypes,
+            [Character.BlueQueen]: GameStats.statisticTypes,
+            [Character.GoldStripes]: GameStats.statisticTypes,
+            [Character.BlueStripes]: GameStats.statisticTypes,
+            [Character.GoldAbs]: GameStats.statisticTypes,
+            [Character.BlueAbs]: GameStats.statisticTypes,
+            [Character.GoldSkulls]: GameStats.statisticTypes,
+            [Character.BlueSkulls]: GameStats.statisticTypes,
+            [Character.GoldChecks]: GameStats.statisticTypes,
+            [Character.BlueChecks]: GameStats.statisticTypes
+        };
     }
 
     /**
@@ -165,7 +166,7 @@ export class GameStats extends ProtectedEventEmitter<Events> {
      * @param eventType The 'change' event
      * @param filter The statistics to filter
      */
-    trigger(eventType: 'change', filter?: GameStatsFilter) {
+    trigger(eventType: 'change', filter?: ChangeFilter) {
         if (filter === undefined) {
             filter = GameStats.defaultChangeFilter;
         }
@@ -190,7 +191,7 @@ export class GameStats extends ProtectedEventEmitter<Events> {
     }
 
     private processKill(kill: PlayerKill) {
-        const filter: GameStatsFilter = {
+        const filter: ChangeFilter = {
             [kill.by]: ['kills'],
             [kill.killed]: ['deaths']
         };
@@ -199,10 +200,10 @@ export class GameStats extends ProtectedEventEmitter<Events> {
         this.gameStats[kill.by].kills++;
         if (kill.killed === Character.GoldQueen || kill.killed === Character.BlueQueen) {
             this.gameStats[kill.by].queen_kills++;
-            filter[kill.by].push('queen_kills');
+            filter[kill.by]!.push('queen_kills');
         } else if (this.gameState[kill.killed].isWarrior) {
             this.gameStats[kill.by].warrior_kills++;
-            filter[kill.by].push('warrior_kills');
+            filter[kill.by]!.push('warrior_kills');
         }
         this.gameStats[kill.killed].deaths++;
 
