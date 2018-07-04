@@ -69,8 +69,8 @@ The killboard should now appear in your scene. You can move and resize it as you
 
 ## Commands
 
-- `npm run start`: Run the server and web app. Expects one of the following arguments:
-  - `-c ws://[IP_ADDRESS]:12749`: Connect to a cab
+- `npm run start`: Run the server and web app. It will automatically connect to the first cab it finds on the local network. You can also use one of the following arguments:
+  - `-c ws://[IP_ADDRESS]:12749`: Connect to a cab at the specified addres
     - _Example_: `npm run start -- -c ws://192.168.0.2:12749`
   - `-r [PATH_TO_SOCKET_MESSAGE_FILE]`: Read socket messages from a file to simulate a Killer Queen cabinet. You'll find example files in `example/socket_messages`.
     - _Example_: `npm run start -- -r example/socket_messages/non_tournament_mode_games.txt`
