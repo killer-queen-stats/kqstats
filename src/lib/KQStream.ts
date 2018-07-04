@@ -4,8 +4,8 @@
  */
 
 import { ProtectedEventEmitter } from 'eventemitter-ts';
-import * as websocket from 'websocket';
 import * as stream from 'stream';
+import * as websocket from 'websocket';
 
 export enum Character {
     GoldQueen = 1,
@@ -37,7 +37,7 @@ export interface KQStreamOptions {
     log?: stream.Writable;
 }
 
-interface Events {
+export interface Events {
     'playernames': PlayerNames;
     'playerKill': PlayerKill;
 }
@@ -45,6 +45,24 @@ interface Events {
 export class KQStream extends ProtectedEventEmitter<Events> {
     private options: KQStreamOptions;
     private connection: websocket.connection;
+
+    /**
+     * Parses a Killer Queen websocket message.
+     * 
+     * @param message The message to parse
+     * @returns The type (key) and data (value) of the message,
+     *          or `undefined` if unable to parse the message.
+     */
+    static parse(message: string) {
+        const dataArray = message.match(/!\[k\[(.*?)\],v\[(.*)?\]\]!/);
+        if (!dataArray) {
+            return;
+        }
+        return {
+            type: dataArray[1],
+            data: dataArray[2]
+        };
+    }
 
     constructor(options?: KQStreamOptions) {
         super();
@@ -74,34 +92,16 @@ export class KQStream extends ProtectedEventEmitter<Events> {
         });
     }
 
-    read(data: string): void {
-        const lines = data.split('\n');
-        if (data[data.length - 1] === '\n') {
-            lines.splice(lines.length - 1, 1);
-        }
-        const start = Number(lines[0].split(',')[0]);
-        for (let line of lines) {
-            const lineArray = line.split(',');
-            const timestamp = Number(lineArray[0]);
-            lineArray.splice(0, 1);
-            const message = lineArray.join(',');
-            setTimeout(() => {
-                this.processMessage(message);
-            }, timestamp - start);
-        }
-    }
-
     private processMessage(message: string): void {
         if (this.options.log !== undefined) {
             this.options.log.write(`${Date.now().toString()},${message}\n`);
         }
-        const dataArray = message.match(/!\[k\[(.*?)\],v\[(.*)?\]\]!/);
-        if (!dataArray) {
+        const parsedMessage = KQStream.parse(message);
+        if (!parsedMessage) {
             console.warn('Could not parse message', message);
             return;
         }
-        const [, key, value] = dataArray;
-        switch (key) {
+        switch (parsedMessage.type) {
         case 'alive':
             this.sendMessage('im alive', null);
             break;
@@ -111,7 +111,7 @@ export class KQStream extends ProtectedEventEmitter<Events> {
             this.protectedEmit('playernames', {});
             break;
         case 'playerKill':
-            const [x, y, by, killed] = value.split(',');
+            const [x, y, by, killed] = parsedMessage.data.split(',');
             const playerKill: PlayerKill = {
                 pos: {
                     x: Number(x),
