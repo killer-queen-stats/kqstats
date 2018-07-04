@@ -1,6 +1,7 @@
 import * as http from 'http';
 import * as moment from 'moment';
 import * as websocket from 'websocket';
+import { KQStream } from './KQStream';
 
 interface Client {
     connection: websocket.connection;
@@ -123,6 +124,26 @@ export class KQCab {
     send(message: string): void {
         for (let client of this.clients) {
             client.connection.sendUTF(message);
+        }
+    }
+
+    read(data: string): void {
+        const lines = data.split('\n');
+        if (data[data.length - 1] === '\n') {
+            lines.splice(lines.length - 1, 1);
+        }
+        const start = Number(lines[0].split(',')[0]);
+        for (let line of lines) {
+            const lineArray = line.split(',');
+            const timestamp = Number(lineArray[0]);
+            lineArray.splice(0, 1);
+            const message = lineArray.join(',');
+            const parsedMessage = KQStream.parse(message);
+            if (parsedMessage && parsedMessage.type !== 'alive') {
+                setTimeout(() => {
+                    this.send(message);
+                }, timestamp - start);
+            }
         }
     }
 

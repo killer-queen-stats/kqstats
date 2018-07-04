@@ -1,5 +1,4 @@
 import { expect } from 'chai';
-import * as sleep from 'sleep-promise';
 import { KQCab } from '../src/lib/KQCab';
 import { Character, Events, KQStream } from '../src/lib/KQStream';
 
@@ -90,48 +89,6 @@ describe('KQStream', () => {
                     cab.send(message.data);
                 });
             }
-        });
-
-        it('should process playernames events', async () => {
-            expect(receivedEvents.playernames.length).to.equal(1);
-            for (let expectedEvent of expectedEvents.playernames) {
-                expect(receivedEvents.playernames).to.deep.include(expectedEvent);
-            }
-        });
-
-        it('should process playerKill events', async () => {
-            expect(receivedEvents.playerKill.length).to.equal(4);
-            for (let expectedEvent of expectedEvents.playerKill) {
-                expect(receivedEvents.playerKill).to.deep.include(expectedEvent);
-            }
-        });
-
-        after(() => {
-            stream.removeAllListeners();
-        });
-    });
-
-    describe('#read', () => {
-        before(async () => {
-            receivedEvents = {
-                playernames: [],
-                playerKill: []
-            };
-
-            stream.on('playernames', (arg) => {
-                receivedEvents.playernames.push(arg);
-            });
-            stream.on('playerKill', (arg) => {
-                receivedEvents.playerKill.push(arg);
-            });
-
-            let data: string = '';
-            for (let message of messages) {
-                data += `${message.timestamp},${message.data}\n`;
-            }
-            stream.read(data);
-
-            await sleep(100);
         });
 
         it('should process playernames events', async () => {

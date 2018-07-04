@@ -10,7 +10,6 @@ import { KQStream } from '../src/lib/KQStream';
 const NUM_ALIVE_INTERVALS = 10;
 const NUM_CABS = 3;
 const NUM_CONNECTIONS = 3;
-const NUM_MESSAGES = 3;
 const OTHER_PORT = 12345;
 const WAIT_AFTER_MESSAGE_SEND_MS = 2;
 
@@ -77,17 +76,17 @@ describe('KQCab', () => {
 
     describe('#constructor', () => {
         it('should create a server on the specified port', async () => {
-            const cab = new KQCab(OTHER_PORT);
+            new KQCab(OTHER_PORT);
             const status = await portscanner.checkPortStatus(OTHER_PORT);
             expect(status).to.equal('open');
         });
         it('should create a server on port 12749 if no port is specified', async () => {
-            const cab = new KQCab();
+            new KQCab();
             const status = await portscanner.checkPortStatus(KQCab.DEFAULT_PORT);
             expect(status).to.equal('open');
         });
         it('should not allow another server to be created on the same port', (done) => {
-            const cab = new KQCab();
+            new KQCab();
             const otherCab = new KQCab();
             (otherCab as any).httpServer.once('error', (err: any) => {
                 expect(err.code).to.equal('EADDRINUSE');
@@ -162,13 +161,13 @@ describe('KQCab', () => {
         });
     });
     it('should allow connections from clients', () => {
-        const cab = new KQCab();
+        new KQCab();
         expect(async () => {
             await createConnection();
         }).to.not.throw();
     });
     it('should allow connections from KQStream', () => {
-        const cab = new KQCab();
+        new KQCab();
         const stream = new KQStream();
         expect(async () => {
             await stream.connect(`ws://localhost:${KQCab.DEFAULT_PORT}`);
@@ -176,7 +175,7 @@ describe('KQCab', () => {
     });
     it('should send alive messages with the correct format', async () => {
         return new Promise<void>(async (resolve, reject) => {
-            const cab = new KQCab();
+            new KQCab();
             const connection = await createConnection({
                 onMessage: (message: string) => {
                     const now = moment().format('h:mm:ss A');
@@ -210,8 +209,8 @@ describe('KQCab', () => {
         return new Promise<void>(async (resolve) => {
             let lastMessage: moment.Moment;
             let count = 0;
-            const cab = new KQCab();
-            const connection = await createConnection({
+            new KQCab();
+            await createConnection({
                 onMessage: async (message: string) => {
                     expect(message.indexOf('![k[alive]')).to.equal(0);
                     const now = moment();
@@ -230,7 +229,7 @@ describe('KQCab', () => {
         });
     });
     it('should send an alive message to all clients', async () => {
-        const cab = new KQCab();
+        new KQCab();
         const connectionPromises: Promise<websocket.connection>[] = [];
         const messagePromises: Promise<string>[] = [];
         for (let i = 0; i < NUM_CONNECTIONS; i++) {
@@ -254,7 +253,7 @@ describe('KQCab', () => {
     });
     it('should disconnect a client if a message is not received between alive messages', () => {
         return new Promise<void>(async (resolve) => {
-            const cab = new KQCab();
+            new KQCab();
             const connection = await createConnection();
             connection.on('close', resolve);
             clock.tick(KQCab.ALIVE_INTERVAL_MS * 2);
