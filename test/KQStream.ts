@@ -1,15 +1,15 @@
 import { expect } from 'chai';
 import { KQCab } from '../src/lib/KQCab';
-import { Character, Events, KQStream } from '../src/lib/KQStream';
+import { Character, GameEvents, KQStream } from '../src/lib/KQStream';
 
 type TestEvent = {
     timestamp: string;
-    type: keyof Events;
+    type: keyof GameEvents;
     data: string;
 };
 
 type CabEvents = {
-    [K in keyof Events]: Events[K][];
+    [K in keyof GameEvents]: GameEvents[K][];
 };
 
 describe('KQStream', () => {

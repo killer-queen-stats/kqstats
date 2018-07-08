@@ -37,10 +37,27 @@ export interface KQStreamOptions {
     log?: stream.Writable;
 }
 
-export interface Events {
-    'playernames': PlayerNames;
-    'playerKill': PlayerKill;
-}
+export type GameEvents = {
+    'playernames': PlayerNames,
+    'playerKill': PlayerKill,
+};
+
+type ConnectionClose = {
+    code: number,
+    desc: string,
+};
+
+type ConnectionError = {
+    err: Error,
+    connected: boolean,
+};
+
+type StreamEvents = {
+    'connectionClose': ConnectionClose,
+    'connectionError': ConnectionError,
+};
+
+type Events = GameEvents & StreamEvents;
 
 export class KQStream extends ProtectedEventEmitter<Events> {
     private options: KQStreamOptions;
@@ -85,6 +102,18 @@ export class KQStream extends ProtectedEventEmitter<Events> {
                         const message = data.utf8Data.toString();
                         this.processMessage(message);
                     }
+                });
+                connection.on('close', (code, desc) => {
+                    this.protectedEmit('connectionClose', {
+                        code,
+                        desc
+                    });
+                });
+                connection.on('error', (err) => {
+                    this.protectedEmit('connectionError', {
+                        err,
+                        connected: this.connection.connected
+                    });
                 });
                 resolve();
             });
