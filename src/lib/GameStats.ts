@@ -142,11 +142,13 @@ export class GameStats extends ProtectedEventEmitter<Events> {
     constructor(stream: KQStream) {
         super();
         this.stream = stream;
-        this.hasGameStartBeenEncountered = false;
     }
 
     start() {
         this.resetStats();
+        this.hasGameStartBeenEncountered = false;
+        this.stream.removeAllListeners('playernames');
+        this.stream.removeAllListeners('playerKill');
         this.stream.on('playernames', () => {
             this.resetStats();
             if (!this.hasGameStartBeenEncountered) {

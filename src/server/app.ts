@@ -7,7 +7,10 @@ import { GameStats, KQStat } from '../lib/GameStats';
 import { KQCab } from '../lib/KQCab';
 import { KQStream, KQStreamOptions } from '../lib/KQStream';
 
-function getLocalIpAddresses(): string[] {
+const WAIT_SCAN_S = 10;
+const WAIT_CONNECT_S = 10;
+
+function getLocalIps(): string[] {
     const res: string[] = [];
     const ifaces = os.networkInterfaces();
     for (let name of Object.keys(ifaces)) {
@@ -24,7 +27,7 @@ function getLocalIpAddresses(): string[] {
     return res;
 }
 
-async function getCandidateIps(ips: string[], port: number): Promise<string[]> {
+async function filterIpsByOpenPort(ips: string[], port: number): Promise<string[]> {
     const res: string[] = [];
     const promises = ips.map(async (ip) => {
         try {
@@ -42,22 +45,53 @@ async function getCandidateIps(ips: string[], port: number): Promise<string[]> {
     return res;
 }
 
+async function getCandidateIps(): Promise<string[]> {
+    const localIps = getLocalIps();
+    return await filterIpsByOpenPort(localIps, 12749);
+}
+
+async function getConnectionIp(): Promise<string> {
+    console.log('Scanning for candidate IPs on local network...');
+    const candidateIps = await getCandidateIps();
+    console.log(`Found ${candidateIps.length} candidate IPs`);
+    if (candidateIps.length === 0) {
+        console.log(`Waiting ${WAIT_SCAN_S} seconds to rescan...`);
+        return new Promise<string>((resolve) => {
+            setTimeout(() => {
+                resolve(getConnectionIp());
+            }, WAIT_SCAN_S * 1000);
+        });
+    } else {
+        console.log(`Using first IP found: ${candidateIps[0]}`);
+        return candidateIps[0];
+    }
+}
+
+async function connect(stream: KQStream, address: string) {
+    if (address === undefined) {
+        const ip = await getConnectionIp();
+        address = `ws://${ip}:12749`;
+    }
+    console.log(`Connecting to ${address}...`);
+    try {
+        await stream.connect(address);
+    } catch (error) {
+        console.log(`Connection failed, waiting ${WAIT_CONNECT_S} seconds...`);
+        return new Promise<void>((resolve) => {
+            setTimeout(() => {
+                resolve(connect(stream, address));
+            }, WAIT_CONNECT_S * 1000);
+        });
+    }
+    console.log('Connected!');
+}
+
 async function main() {
     if (
         !(process.argv.length === 4 || process.argv.length === 2) ||
         (process.argv.length === 4 && ['-c', '-r'].indexOf(process.argv[2]) === -1)
     ) {
         throw new Error('Incorrect usage!');
-    }
-
-    if (process.argv.length === 2) {
-        process.argv[2] = '-c';
-        const localIps = getLocalIpAddresses();
-        const candidateIps = await getCandidateIps(localIps, 12749);
-        if (candidateIps.length === 0) {
-            throw new Error('Could not find a Killer Queen cabinet on the local network');
-        }
-        process.argv[3] = `ws://${candidateIps[0]}:12749`;
     }
     
     const options: KQStreamOptions = {};
@@ -68,22 +102,6 @@ async function main() {
     const stream = new KQStream(options);
     const gameStats = new GameStats(stream);
     gameStats.start();
-    
-    let cab;
-    let address;
-    
-    if (process.argv[2] === '-r') {
-        cab = new KQCab();
-        address = 'ws://localhost:12749';
-    } else if (process.argv[2] === '-c') {
-        address = process.argv[3];
-    }
-        
-    await stream.connect(address as string);
-    
-    if (process.argv[2] === '-r') {
-        (cab as KQCab).read(fs.readFileSync(process.argv[3], 'utf8'));
-    }
     
     const io = socket_io(8000);
     io.on('connection', (socket) => {
@@ -96,6 +114,27 @@ async function main() {
         });
         gameStats.trigger('change');
     });
+
+    if (process.argv.length === 2) {
+        process.argv[2] = '-c';
+    }
+    
+    if (process.argv[2] === '-r') {
+        const cab = new KQCab();
+        const address = 'ws://localhost:12749';
+        await stream.connect(address);
+        cab.read(fs.readFileSync(process.argv[3], 'utf8'));
+    } else if (process.argv[2] === '-c') {
+        const address = process.argv[3];
+        stream.on('connectionError', (data) => {
+            if (!data.connected) {
+                console.log('Lost connection!');
+                gameStats.start();
+                connect(stream, address);
+            }
+        });
+        connect(stream, address);
+    }
 }
 
 main().catch((err) => {
