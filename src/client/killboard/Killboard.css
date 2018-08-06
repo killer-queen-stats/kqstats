@@ -71,6 +71,11 @@ th:not(:nth-child(1)), td:not(:nth-child(1)) {
   font-size: 60pt;
   text-align: center;
   line-height: normal;
+  text-shadow:
+    -2px -2px 0 #000,
+     2px -2px 0 #000,
+    -2px  2px 0 #000,
+     2px  2px 0 #000;
 }
 
 .killboard.horizontal div.crowns {
