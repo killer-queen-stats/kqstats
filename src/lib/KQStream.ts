@@ -72,6 +72,15 @@ type StreamEvents = {
 type Events = GameEvents & StreamEvents;
 
 export class KQStream extends ProtectedEventEmitter<Events> {
+    /**
+     * Some keys in websocket messages are not formatted correctly.
+     * This object is used by `KQStream#parse` to fix them.
+     */
+    private static keyAdjustments = {
+        'getOnSnail: ': 'getOnSnail',
+        'getOffSnail: ': 'getOffSnail'
+    };
+
     private options: KQStreamOptions;
     private connection: websocket.connection;
 
@@ -87,10 +96,15 @@ export class KQStream extends ProtectedEventEmitter<Events> {
         if (!dataArray) {
             return;
         }
-        return {
-            type: dataArray[1],
-            data: dataArray[2]
+        const parsedMessage = {
+            key: dataArray[1],
+            value: dataArray[2]
         };
+        const newKey = KQStream.keyAdjustments[parsedMessage.key];
+        if (newKey !== undefined) {
+            parsedMessage.key = newKey;
+        }
+        return parsedMessage;
     }
 
     constructor(options?: KQStreamOptions) {
@@ -142,81 +156,81 @@ export class KQStream extends ProtectedEventEmitter<Events> {
             console.warn('Could not parse message', message);
             return;
         }
-        switch (parsedMessage.type) {
+        switch (parsedMessage.key) {
         case 'alive':
             this.sendMessage('im alive', null);
             break;
         case 'playernames':
-            const playernames = parsers.playernames(parsedMessage.data);
+            const playernames = parsers.playernames(parsedMessage.value);
             this.protectedEmit('playernames', playernames);
             break;
         case 'playerKill':
-            const playerKill = parsers.playerKill(parsedMessage.data);
+            const playerKill = parsers.playerKill(parsedMessage.value);
             this.protectedEmit('playerKill', playerKill);
             break;
         // New events from beta 2018-08-21
         case 'blessMaiden':
-            const blessMaiden = parsers.blessMaiden(parsedMessage.data);
+            const blessMaiden = parsers.blessMaiden(parsedMessage.value);
             this.protectedEmit('blessMaiden', blessMaiden);
             break;
         case 'reserveMaiden':
-            const reserveMaiden = parsers.reserveMaiden(parsedMessage.data);
+            const reserveMaiden = parsers.reserveMaiden(parsedMessage.value);
             this.protectedEmit('reserveMaiden', reserveMaiden);
             break;
         case 'unreserveMaiden':
-            const unreserveMaiden = parsers.unreserveMaiden(parsedMessage.data);
+            const unreserveMaiden = parsers.unreserveMaiden(parsedMessage.value);
             this.protectedEmit('unreserveMaiden', unreserveMaiden);
             break;
         case 'useMaiden':
-            const useMaiden = parsers.useMaiden(parsedMessage.data);
+            const useMaiden = parsers.useMaiden(parsedMessage.value);
             this.protectedEmit('useMaiden', useMaiden);
             break;
         case 'glance':
-            const glance = parsers.glance(parsedMessage.data);
+            const glance = parsers.glance(parsedMessage.value);
             this.protectedEmit('glance', glance);
             break;
         case 'carryFood':
-            const carryFood = parsers.carryFood(parsedMessage.data);
+            const carryFood = parsers.carryFood(parsedMessage.value);
             this.protectedEmit('carryFood', carryFood);
             break;
         case 'gamestart':
-            const gameStart = parsers.gameStart(parsedMessage.data);
+            const gameStart = parsers.gameStart(parsedMessage.value);
             this.protectedEmit('gamestart', gameStart);
             break;
         case 'gameend':
-            const gameEnd = parsers.gameEnd(parsedMessage.data);
+            const gameEnd = parsers.gameEnd(parsedMessage.value);
             this.protectedEmit('gameend', gameEnd);
             break;
         case 'victory':
-            const victory = parsers.victory(parsedMessage.data);
+            const victory = parsers.victory(parsedMessage.value);
             this.protectedEmit('victory', victory);
             break;
         case 'spawn':
-            const spawn = parsers.spawn(parsedMessage.data);
+            const spawn = parsers.spawn(parsedMessage.value);
             this.protectedEmit('spawn', spawn);
             break;
-        case 'getOnSnail: ':
-            const getOnSnail = parsers.getOnSnail(parsedMessage.data);
+        case 'getOnSnail':
+            const getOnSnail = parsers.getOnSnail(parsedMessage.value);
             this.protectedEmit('getOnSnail', getOnSnail);
             break;
-        case 'getOffSnail: ':
-            const getOffSnail = parsers.getOffSnail(parsedMessage.data);
+        case 'getOffSnail':
+            const getOffSnail = parsers.getOffSnail(parsedMessage.value);
             this.protectedEmit('getOffSnail', getOffSnail);
             break;
         case 'snailEat':
-            const snailEat = parsers.snailEat(parsedMessage.data);
+            const snailEat = parsers.snailEat(parsedMessage.value);
             this.protectedEmit('snailEat', snailEat);
             break;
         case 'snailEscape':
-            const snailEscape = parsers.snailEscape(parsedMessage.data);
+            const snailEscape = parsers.snailEscape(parsedMessage.value);
             this.protectedEmit('snailEscape', snailEscape);
             break;
         case 'berryDeposit':
-            const berryDeposit = parsers.berryDeposit(parsedMessage.data);
+            const berryDeposit = parsers.berryDeposit(parsedMessage.value);
             this.protectedEmit('berryDeposit', berryDeposit);
             break;
         case 'berryKickIn':
-            const berryKickIn = parsers.berryKickIn(parsedMessage.data);
+            const berryKickIn = parsers.berryKickIn(parsedMessage.value);
             this.protectedEmit('berryKickIn', berryKickIn);
             break;
         default:
