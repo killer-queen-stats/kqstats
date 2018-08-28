@@ -374,31 +374,29 @@ describe('KQStream', () => {
         ]
     };
 
-    let receivedEvents: CabEvents;
-
     describe('#connect', () => {
-        before(async () => {
-            receivedEvents = {
-                playernames: [],
-                playerKill: [],
-                blessMaiden: [],
-                reserveMaiden: [],
-                unreserveMaiden: [],
-                useMaiden: [],
-                glance: [],
-                carryFood: [],
-                gamestart: [],
-                gameend: [],
-                victory: [],
-                spawn: [],
-                getOnSnail: [],
-                getOffSnail: [],
-                snailEat: [],
-                snailEscape: [],
-                berryDeposit: [],
-                berryKickIn: [],
-            };
+        const receivedEvents = {
+            playernames: [],
+            playerKill: [],
+            blessMaiden: [],
+            reserveMaiden: [],
+            unreserveMaiden: [],
+            useMaiden: [],
+            glance: [],
+            carryFood: [],
+            gamestart: [],
+            gameend: [],
+            victory: [],
+            spawn: [],
+            getOnSnail: [],
+            getOffSnail: [],
+            snailEat: [],
+            snailEscape: [],
+            berryDeposit: [],
+            berryKickIn: [],
+        };
 
+        before(async () => {
             const cab = new KQCab();
             await stream.connect(`ws://localhost:${KQCab.DEFAULT_PORT}`);
 
@@ -417,131 +415,15 @@ describe('KQStream', () => {
             }
         });
 
-        it('should process playernames events', async () => {
-            expect(receivedEvents.playernames.length).to.equal(1);
-            for (let expectedEvent of expectedEvents.playernames) {
-                expect(receivedEvents.playernames).to.deep.include(expectedEvent);
-            }
-        });
-
-        it('should process playerKill events', async () => {
-            expect(receivedEvents.playerKill.length).to.equal(4);
-            for (let expectedEvent of expectedEvents.playerKill) {
-                expect(receivedEvents.playerKill).to.deep.include(expectedEvent);
-            }
-        });
-
-        it('should process blessMaiden events', async () => {
-            expect(receivedEvents.blessMaiden.length).to.equal(3);
-            for (let expectedEvent of expectedEvents.blessMaiden) {
-                expect(receivedEvents.blessMaiden).to.deep.include(expectedEvent);
-            }
-        });
-
-        it('should process reserveMaiden events', async () => {
-            expect(receivedEvents.reserveMaiden.length).to.equal(2);
-            for (let expectedEvent of expectedEvents.reserveMaiden) {
-                expect(receivedEvents.reserveMaiden).to.deep.include(expectedEvent);
-            }
-        });
-
-        it('should process unreserveMaiden events', async () => {
-            expect(receivedEvents.unreserveMaiden.length).to.equal(2);
-            for (let expectedEvent of expectedEvents.unreserveMaiden) {
-                expect(receivedEvents.unreserveMaiden).to.deep.include(expectedEvent);
-            }
-        });
-
-        it('should process useMaiden events', async () => {
-            expect(receivedEvents.useMaiden.length).to.equal(2);
-            for (let expectedEvent of expectedEvents.useMaiden) {
-                expect(receivedEvents.useMaiden).to.deep.include(expectedEvent);
-            }
-        });
-
-        it('should process glance events', async () => {
-            expect(receivedEvents.glance.length).to.equal(2);
-            for (let expectedEvent of expectedEvents.glance) {
-                expect(receivedEvents.glance).to.deep.include(expectedEvent);
-            }
-        });
-        
-        it('should process carryFood events', async () => {
-            expect(receivedEvents.carryFood.length).to.equal(2);
-            for (let expectedEvent of expectedEvents.carryFood) {
-                expect(receivedEvents.carryFood).to.deep.include(expectedEvent);
-            }
-        });
-
-        it('should process gamestart events', async () => {
-            expect(receivedEvents.gamestart.length).to.equal(3);
-            for (let expectedEvent of expectedEvents.gamestart) {
-                expect(receivedEvents.gamestart).to.deep.include(expectedEvent);
-            }
-        });
-
-        it('should process gameend events', async () => {
-            expect(receivedEvents.gameend.length).to.equal(3);
-            for (let expectedEvent of expectedEvents.gameend) {
-                expect(receivedEvents.gameend).to.deep.include(expectedEvent);
-            }
-        });
-
-        it('should process victory events', async () => {
-            expect(receivedEvents.victory.length).to.equal(3);
-            for (let expectedEvent of expectedEvents.victory) {
-                expect(receivedEvents.victory).to.deep.include(expectedEvent);
-            }
-        });
-
-        it('should process spawn events', async () => {
-            expect(receivedEvents.spawn.length).to.equal(2);
-            for (let expectedEvent of expectedEvents.spawn) {
-                expect(receivedEvents.spawn).to.deep.include(expectedEvent);
-            }
-        });
-
-        it('should process getOnSnail events', async () => {
-            expect(receivedEvents.getOnSnail.length).to.equal(2);
-            for (let expectedEvent of expectedEvents.getOnSnail) {
-                expect(receivedEvents.getOnSnail).to.deep.include(expectedEvent);
-            }
-        });
-
-        it('should process getOffSnail events', async () => {
-            expect(receivedEvents.getOffSnail.length).to.equal(2);
-            for (let expectedEvent of expectedEvents.getOffSnail) {
-                expect(receivedEvents.getOffSnail).to.deep.include(expectedEvent);
-            }
-        });
-
-        it('should process snailEat events', async () => {
-            expect(receivedEvents.snailEat.length).to.equal(2);
-            for (let expectedEvent of expectedEvents.snailEat) {
-                expect(receivedEvents.snailEat).to.deep.include(expectedEvent);
-            }
-        });
-
-        it('should process snailEscape events', async () => {
-            expect(receivedEvents.snailEscape.length).to.equal(2);
-            for (let expectedEvent of expectedEvents.snailEscape) {
-                expect(receivedEvents.snailEscape).to.deep.include(expectedEvent);
-            }
-        });
-
-        it('should process berryDeposit events', async () => {
-            expect(receivedEvents.berryDeposit.length).to.equal(2);
-            for (let expectedEvent of expectedEvents.berryDeposit) {
-                expect(receivedEvents.berryDeposit).to.deep.include(expectedEvent);
-            }
-        });
-
-        it('should process berryKickIn events', async () => {
-            expect(receivedEvents.berryKickIn.length).to.equal(2);
-            for (let expectedEvent of expectedEvents.berryKickIn) {
-                expect(receivedEvents.berryKickIn).to.deep.include(expectedEvent);
-            }
-        });
+        for (let k of Object.keys(receivedEvents)) {
+            const key = k as keyof CabEvents;
+            it(`should process ${key} events`, async () => {
+                expect(receivedEvents[key].length).to.equal(expectedEvents[key].length);
+                for (let expectedEvent of expectedEvents[key]) {
+                    expect(receivedEvents[key]).to.deep.include(expectedEvent);
+                }
+            });
+        }
 
         after(() => {
             stream.removeAllListeners();
