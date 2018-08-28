@@ -77,8 +77,8 @@ function position(x: string, y: string): Position {
 }
 
 export function playernames(value: string): PlayerNames {
-  // Not sure what the values of the message mean,
-  // so just return an empty object for now.
+  // This is for when player cards get implemented.
+  // Return an empty object for now.
   return {};
 }
 

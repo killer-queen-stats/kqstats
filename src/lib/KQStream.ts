@@ -92,8 +92,10 @@ export class KQStream extends ProtectedEventEmitter<Events> {
      *          or `undefined` if unable to parse the message.
      */
     static parse(message: string) {
+        // Websocket messages use format `![k[${key}],v[${value}]]!`
+        // Replace `${key}` with the key, and `${value}` with the value
         const dataArray = message.match(/!\[k\[(.*?)\],v\[(.*)?\]\]!/);
-        if (!dataArray) {
+        if (dataArray === null) {
             return;
         }
         const parsedMessage = {
