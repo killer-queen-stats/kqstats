@@ -222,31 +222,31 @@ describe('KQStream', () => {
         gamestart: [
             {
                 map: GameMap.Day,
-                orientation: CabOrientation.GoldBlue
+                orientation: CabOrientation.GoldOnLeft
             },
             {
                 map: GameMap.Night,
-                orientation: CabOrientation.GoldBlue
+                orientation: CabOrientation.GoldOnLeft
             },
             {
                 map: GameMap.Dusk,
-                orientation: CabOrientation.GoldBlue
+                orientation: CabOrientation.GoldOnLeft
             }
         ],
         gameend: [
             {
                 map: GameMap.Day,
-                orientation: CabOrientation.GoldBlue,
+                orientation: CabOrientation.GoldOnLeft,
                 duration: 59.73758
             },
             {
                 map: GameMap.Night,
-                orientation: CabOrientation.GoldBlue,
+                orientation: CabOrientation.GoldOnLeft,
                 duration: 103.5066
             },
             {
                 map: GameMap.Dusk,
-                orientation: CabOrientation.GoldBlue,
+                orientation: CabOrientation.GoldOnLeft,
                 duration: 139.3835
             }
         ],

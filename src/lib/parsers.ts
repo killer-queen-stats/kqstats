@@ -1,5 +1,6 @@
 import {
   // Subtypes
+  Position,
   Team,
   Maiden,
   GameMap,
@@ -26,6 +27,15 @@ import {
   BerryKickIn,
 } from './models/KQStream';
 
+/**
+ * Different events use different names for teams:
+ * 
+ * - `blessMaiden` uses `"Red"` and `"Blue"`
+ * - `victory` uses `"Gold"` and `"Blue"`
+ * 
+ * This object covers all the possibilities and maps
+ * them to a single enum.
+ */
 const teams = {
   'Red': Team.Gold,
   'Gold': Team.Gold,
@@ -44,8 +54,8 @@ const maps = {
 };
 
 const orientations = {
-  'False': CabOrientation.BlueGold,
-  'True': CabOrientation.GoldBlue,
+  'False': CabOrientation.BlueOnLeft,
+  'True': CabOrientation.GoldOnLeft,
 };
 
 const victories = {
@@ -59,6 +69,13 @@ const booleans = {
   'True': true,
 };
 
+function position(x: string, y: string): Position {
+  return {
+    x: Number(x),
+    y: Number(y)
+  };
+}
+
 export function playernames(value: string): PlayerNames {
   // Not sure what the values of the message mean,
   // so just return an empty object for now.
@@ -68,10 +85,7 @@ export function playernames(value: string): PlayerNames {
 export function playerKill(value: string): PlayerKill {
   const [x, y, by, killed] = value.split(',');
   return {
-    pos: {
-      x: Number(x),
-      y: Number(y),
-    },
+    pos: position(x, y),
     killed: Number(killed),
     by: Number(by),
   };
@@ -80,10 +94,7 @@ export function playerKill(value: string): PlayerKill {
 export function blessMaiden(value: string): BlessMaiden {
   const [x, y, team] = value.split(',');
   return {
-    pos: {
-      x: Number(x),
-      y: Number(y),
-    },
+    pos: position(x, y),
     team: teams[team],
   };
 }
@@ -91,10 +102,7 @@ export function blessMaiden(value: string): BlessMaiden {
 export function reserveMaiden(value: string): ReserveMaiden {
   const [x, y, character] = value.split(',');
   return {
-    pos: {
-      x: Number(x),
-      y: Number(y),
-    },
+    pos: position(x, y),
     character: Number(character),
   };
 }
@@ -102,10 +110,7 @@ export function reserveMaiden(value: string): ReserveMaiden {
 export function unreserveMaiden(value: string): UnreserveMaiden {
   const [x, y, _, character] = value.split(',');
   return {
-    pos: {
-      x: Number(x),
-      y: Number(y),
-    },
+    pos: position(x, y),
     character: Number(character),
   };
 }
@@ -113,10 +118,7 @@ export function unreserveMaiden(value: string): UnreserveMaiden {
 export function useMaiden(value: string): UseMaiden {
   const [x, y, type, character] = value.split(',');
   return {
-    pos: {
-      x: Number(x),
-      y: Number(y),
-    },
+    pos: position(x, y),
     type: maidens[type],
     character: Number(character),
   };
@@ -173,10 +175,7 @@ export function spawn(value: string): Spawn {
 export function getOnSnail(value: string): GetOnSnail {
   const [x, y, character] = value.split(',');
   return {
-    pos: {
-      x: Number(x),
-      y: Number(y),
-    },
+    pos: position(x, y),
     character: Number(character),
   };
 }
@@ -184,10 +183,7 @@ export function getOnSnail(value: string): GetOnSnail {
 export function getOffSnail(value: string): GetOffSnail {
   const [x, y, _, character] = value.split(',');
   return {
-    pos: {
-      x: Number(x),
-      y: Number(y),
-    },
+    pos: position(x, y),
     character: Number(character),
   };
 }
@@ -195,10 +191,7 @@ export function getOffSnail(value: string): GetOffSnail {
 export function snailEat(value: string): SnailEat {
   const [x, y, rider, eaten] = value.split(',');
   return {
-    pos: {
-      x: Number(x),
-      y: Number(y),
-    },
+    pos: position(x, y),
     rider: Number(rider),
     eaten: Number(eaten),
   };
@@ -207,10 +200,7 @@ export function snailEat(value: string): SnailEat {
 export function snailEscape(value: string): SnailEscape {
   const [x, y, character] = value.split(',');
   return {
-    pos: {
-      x: Number(x),
-      y: Number(y)
-    },
+    pos: position(x, y),
     character: Number(character)
   };
 }
@@ -218,10 +208,7 @@ export function snailEscape(value: string): SnailEscape {
 export function berryDeposit(value: string): BerryDeposit {
   const [x, y, character] = value.split(',');
   return {
-    pos: {
-      x: Number(x),
-      y: Number(y)
-    },
+    pos: position(x, y),
     character: Number(character)
   };
 }
@@ -229,10 +216,7 @@ export function berryDeposit(value: string): BerryDeposit {
 export function berryKickIn(value: string): BerryKickIn {
   const [x, y, character] = value.split(',');
   return {
-    pos: {
-      x: Number(x),
-      y: Number(y)
-    },
+    pos: position(x, y),
     character: Number(character)
   };
 }

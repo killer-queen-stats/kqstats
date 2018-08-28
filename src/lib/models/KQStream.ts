@@ -1,4 +1,4 @@
-interface Position {
+export interface Position {
   x: number;
   y: number;
 }
@@ -34,8 +34,8 @@ export enum GameMap {
 
 // Read keys as LeftRight
 export enum CabOrientation {
-  BlueGold = 'BLUE_GOLD',
-  GoldBlue = 'GOLD_BLUE',
+  BlueOnLeft = 'BLUE_ON_LEFT',
+  GoldOnLeft = 'GOLD_ON_LEFT',
 }
 
 export enum VictoryType {
