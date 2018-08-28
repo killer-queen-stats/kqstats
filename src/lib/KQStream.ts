@@ -6,32 +6,27 @@
 import { ProtectedEventEmitter } from 'eventemitter-ts';
 import * as stream from 'stream';
 import * as websocket from 'websocket';
-
-export enum Character {
-    GoldQueen = 1,
-    BlueQueen = 2,
-    GoldStripes = 3,
-    BlueStripes = 4,
-    GoldAbs = 5,
-    BlueAbs = 6,
-    GoldSkulls = 7,
-    BlueSkulls = 8,
-    GoldChecks = 9,
-    BlueChecks = 10
-}
-
-export interface PlayerNames {}
-
-export interface Position {
-    x: number;
-    y: number;
-}
-
-export interface PlayerKill {
-    pos: Position;
-    killed: Character;
-    by: Character;
-}
+import * as parsers from './parsers';
+import {
+    PlayerNames,
+    PlayerKill,
+    BlessMaiden,
+    ReserveMaiden,
+    UnreserveMaiden,
+    UseMaiden,
+    Glance,
+    CarryFood,
+    GameStart,
+    GameEnd,
+    Victory,
+    Spawn,
+    GetOnSnail,
+    GetOffSnail,
+    SnailEat,
+    SnailEscape,
+    BerryDeposit,
+    BerryKickIn,
+} from './models/KQStream';
 
 export interface KQStreamOptions {
     log?: stream.Writable;
@@ -40,6 +35,23 @@ export interface KQStreamOptions {
 export type GameEvents = {
     'playernames': PlayerNames,
     'playerKill': PlayerKill,
+    // New events from beta 2018-08-21
+    'blessMaiden': BlessMaiden,
+    'reserveMaiden': ReserveMaiden,
+    'unreserveMaiden': UnreserveMaiden,
+    'useMaiden': UseMaiden,
+    'glance': Glance,
+    'carryFood': CarryFood,
+    'gamestart': GameStart,
+    'gameend': GameEnd,
+    'victory': Victory,
+    'spawn': Spawn,
+    'getOnSnail': GetOnSnail,
+    'getOffSnail': GetOffSnail,
+    'snailEat': SnailEat,
+    'snailEscape': SnailEscape,
+    'berryDeposit': BerryDeposit,
+    'berryKickIn': BerryKickIn,
 };
 
 type ConnectionClose = {
@@ -135,21 +147,77 @@ export class KQStream extends ProtectedEventEmitter<Events> {
             this.sendMessage('im alive', null);
             break;
         case 'playernames':
-            // Not sure what the values of the message mean,
-            // so just pass an empty object for now.
-            this.protectedEmit('playernames', {});
+            const playernames = parsers.playernames(parsedMessage.data);
+            this.protectedEmit('playernames', playernames);
             break;
         case 'playerKill':
-            const [x, y, by, killed] = parsedMessage.data.split(',');
-            const playerKill: PlayerKill = {
-                pos: {
-                    x: Number(x),
-                    y: Number(y)
-                },
-                killed: Number(killed),
-                by: Number(by)
-            };
+            const playerKill = parsers.playerKill(parsedMessage.data);
             this.protectedEmit('playerKill', playerKill);
+            break;
+        // New events from beta 2018-08-21
+        case 'blessMaiden':
+            const blessMaiden = parsers.blessMaiden(parsedMessage.data);
+            this.protectedEmit('blessMaiden', blessMaiden);
+            break;
+        case 'reserveMaiden':
+            const reserveMaiden = parsers.reserveMaiden(parsedMessage.data);
+            this.protectedEmit('reserveMaiden', reserveMaiden);
+            break;
+        case 'unreserveMaiden':
+            const unreserveMaiden = parsers.unreserveMaiden(parsedMessage.data);
+            this.protectedEmit('unreserveMaiden', unreserveMaiden);
+            break;
+        case 'useMaiden':
+            const useMaiden = parsers.useMaiden(parsedMessage.data);
+            this.protectedEmit('useMaiden', useMaiden);
+            break;
+        case 'glance':
+            const glance = parsers.glance(parsedMessage.data);
+            this.protectedEmit('glance', glance);
+            break;
+        case 'carryFood':
+            const carryFood = parsers.carryFood(parsedMessage.data);
+            this.protectedEmit('carryFood', carryFood);
+            break;
+        case 'gamestart':
+            const gameStart = parsers.gameStart(parsedMessage.data);
+            this.protectedEmit('gamestart', gameStart);
+            break;
+        case 'gameend':
+            const gameEnd = parsers.gameEnd(parsedMessage.data);
+            this.protectedEmit('gameend', gameEnd);
+            break;
+        case 'victory':
+            const victory = parsers.victory(parsedMessage.data);
+            this.protectedEmit('victory', victory);
+            break;
+        case 'spawn':
+            const spawn = parsers.spawn(parsedMessage.data);
+            this.protectedEmit('spawn', spawn);
+            break;
+        case 'getOnSnail: ':
+            const getOnSnail = parsers.getOnSnail(parsedMessage.data);
+            this.protectedEmit('getOnSnail', getOnSnail);
+            break;
+        case 'getOffSnail: ':
+            const getOffSnail = parsers.getOffSnail(parsedMessage.data);
+            this.protectedEmit('getOffSnail', getOffSnail);
+            break;
+        case 'snailEat':
+            const snailEat = parsers.snailEat(parsedMessage.data);
+            this.protectedEmit('snailEat', snailEat);
+            break;
+        case 'snailEscape':
+            const snailEscape = parsers.snailEscape(parsedMessage.data);
+            this.protectedEmit('snailEscape', snailEscape);
+            break;
+        case 'berryDeposit':
+            const berryDeposit = parsers.berryDeposit(parsedMessage.data);
+            this.protectedEmit('berryDeposit', berryDeposit);
+            break;
+        case 'berryKickIn':
+            const berryKickIn = parsers.berryKickIn(parsedMessage.data);
+            this.protectedEmit('berryKickIn', berryKickIn);
             break;
         default:
             break;
