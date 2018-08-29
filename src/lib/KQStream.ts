@@ -3,6 +3,7 @@
  * https://github.com/arantius/kqdeathmap
  */
 
+import * as _ from "lodash";
 import { ProtectedEventEmitter } from 'eventemitter-ts';
 import * as stream from 'stream';
 import * as websocket from 'websocket';
@@ -72,21 +73,12 @@ type StreamEvents = {
 type Events = GameEvents & StreamEvents;
 
 export class KQStream extends ProtectedEventEmitter<Events> {
-    /**
-     * Some keys in websocket messages are not formatted correctly.
-     * This object is used by `KQStream#parse` to fix them.
-     */
-    private static keyAdjustments = {
-        'getOnSnail: ': 'getOnSnail',
-        'getOffSnail: ': 'getOffSnail'
-    };
-
     private options: KQStreamOptions;
     private connection: websocket.connection;
 
     /**
      * Parses a Killer Queen websocket message.
-     * 
+     *
      * @param message The message to parse
      * @returns The type (key) and data (value) of the message,
      *          or `undefined` if unable to parse the message.
@@ -94,19 +86,35 @@ export class KQStream extends ProtectedEventEmitter<Events> {
     static parse(message: string) {
         // Websocket messages use format `![k[${key}],v[${value}]]!`
         // Replace `${key}` with the key, and `${value}` with the value
-        const dataArray = message.match(/!\[k\[(.*?)\],v\[(.*)?\]\]!/);
+        const dataArray = message.match(/!\[k\[(.+)\],v\[(.*)?\]\]!/);
         if (dataArray === null) {
             return;
         }
         const parsedMessage = {
-            key: dataArray[1],
-            value: dataArray[2]
+            key: KQStream.normalizeKey(dataArray[1]),
+            value: KQStream.normalizeValues(dataArray[2]),
         };
-        const newKey = KQStream.keyAdjustments[parsedMessage.key];
-        if (newKey !== undefined) {
-            parsedMessage.key = newKey;
-        }
+
         return parsedMessage;
+    }
+
+    static normalizeKey(key: string) {
+        // Replace non letters with empty
+        return key.replace(/[^a-z]/gi, "").trim();
+    }
+
+    static normalizeValues(values: any) {
+        const valuesList = values.split(",");
+        const normalizedValuesList = _.map(valuesList, (value) => {
+            // If it's a number, no processing necessary
+            if (!Number.isNaN(Number(value))) { return value; }
+
+            // Convert to camelCase
+            value = value.replace(/^Red$/, "Gold");
+            value = _.camelCase(value);
+            return value;
+        });
+        return normalizedValuesList;
     }
 
     constructor(options?: KQStreamOptions) {
