@@ -139,7 +139,7 @@ export class KQCab {
             lineArray.splice(0, 1);
             const message = lineArray.join(',');
             const parsedMessage = KQStream.parse(message);
-            if (parsedMessage && parsedMessage.type !== 'alive') {
+            if (parsedMessage && parsedMessage.key !== 'alive') {
                 setTimeout(() => {
                     this.send(message);
                 }, timestamp - start);
