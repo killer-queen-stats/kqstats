@@ -103,13 +103,20 @@ export class KQStream extends ProtectedEventEmitter<Events> {
         return key.replace(/[^a-z]/gi, "").trim();
     }
 
-    static normalizeValues(values: any) {
+    static normalizeValues(values: string) {
         const valuesList = values.split(",");
-        const normalizedValuesList = _.map(valuesList, (value) => {
+        const normalizedValuesList = valuesList.map((value) => {
             // If it's a number, no processing necessary
             if (!Number.isNaN(Number(value))) { return value; }
 
-            // Convert to camelCase
+            /**
+             * Normalize team names and convert to camelcase
+             * Different events use different names for teams:
+             *
+             * - `blessMaiden` uses `"Red"` and `"Blue"`
+             * - `victory` uses `"Gold"` and `"Blue"`
+             * We just want gold and blue.
+             */
             value = value.replace(/^Red$/, "Gold");
             value = _.camelCase(value);
             return value;

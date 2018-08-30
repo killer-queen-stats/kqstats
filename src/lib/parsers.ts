@@ -27,15 +27,7 @@ import {
   BerryKickIn,
 } from './models/KQStream';
 
-/**
- * Different events use different names for teams:
- *
- * - `blessMaiden` uses `"Red"` and `"Blue"`
- * - `victory` uses `"Gold"` and `"Blue"`
- *
- * This object covers all the possibilities and maps
- * them to a single enum.
- */
+
 const teams = {
   'gold': Team.Gold,
   'blue': Team.Blue,
@@ -75,13 +67,13 @@ function position(x: string, y: string): Position {
   };
 }
 
-export function playernames(value: Array<string>): PlayerNames {
+export function playernames(value: string[]): PlayerNames {
   // This is for when player cards get implemented.
   // Return an empty object for now.
   return {};
 }
 
-export function playerKill(value: Array<string>): PlayerKill {
+export function playerKill(value: string[]): PlayerKill {
   const [x, y, by, killed] = value;
   return {
     pos: position(x, y),
@@ -90,7 +82,7 @@ export function playerKill(value: Array<string>): PlayerKill {
   };
 }
 
-export function blessMaiden(value: Array<string>): BlessMaiden {
+export function blessMaiden(value: string[]): BlessMaiden {
   const [x, y, team] = value;
   return {
     pos: position(x, y),
@@ -98,7 +90,7 @@ export function blessMaiden(value: Array<string>): BlessMaiden {
   };
 }
 
-export function reserveMaiden(value: Array<string>): ReserveMaiden {
+export function reserveMaiden(value: string[]): ReserveMaiden {
   const [x, y, character] = value;
   return {
     pos: position(x, y),
@@ -106,7 +98,7 @@ export function reserveMaiden(value: Array<string>): ReserveMaiden {
   };
 }
 
-export function unreserveMaiden(value: Array<string>): UnreserveMaiden {
+export function unreserveMaiden(value: string[]): UnreserveMaiden {
   const [x, y, _, character] = value;
   return {
     pos: position(x, y),
@@ -114,7 +106,7 @@ export function unreserveMaiden(value: Array<string>): UnreserveMaiden {
   };
 }
 
-export function useMaiden(value: Array<string>): UseMaiden {
+export function useMaiden(value: string[]): UseMaiden {
   const [x, y, type, character] = value;
   return {
     pos: position(x, y),
@@ -123,7 +115,7 @@ export function useMaiden(value: Array<string>): UseMaiden {
   };
 }
 
-export function glance(value: Array<string>): Glance {
+export function glance(value: string[]): Glance {
   const [attacker, target] = value;
   return {
     attacker: Number(attacker),
@@ -131,14 +123,14 @@ export function glance(value: Array<string>): Glance {
   };
 }
 
-export function carryFood(value: Array<string>): CarryFood {
+export function carryFood(value: string[]): CarryFood {
   const [character] = value;
   return {
     character: Number(character),
   };
 }
 
-export function gameStart(value: Array<string>): GameStart {
+export function gameStart(value: string[]): GameStart {
   const [map, orientation] = value;
   return {
     map: maps[map],
@@ -146,7 +138,7 @@ export function gameStart(value: Array<string>): GameStart {
   };
 }
 
-export function gameEnd(value: Array<string>): GameEnd {
+export function gameEnd(value: string[]): GameEnd {
   const [map, orientation, duration] = value;
   return {
     map: maps[map],
@@ -155,7 +147,7 @@ export function gameEnd(value: Array<string>): GameEnd {
   };
 }
 
-export function victory(value: Array<string>): Victory {
+export function victory(value: string[]): Victory {
   const [team, type] = value;
   return {
     team: teams[team],
@@ -163,7 +155,7 @@ export function victory(value: Array<string>): Victory {
   };
 }
 
-export function spawn(value: Array<string>): Spawn {
+export function spawn(value: string[]): Spawn {
   const [character, isAI] = value;
   return {
     character: Number(character),
@@ -171,7 +163,7 @@ export function spawn(value: Array<string>): Spawn {
   };
 }
 
-export function getOnSnail(value: Array<string>): GetOnSnail {
+export function getOnSnail(value: string[]): GetOnSnail {
   const [x, y, character] = value;
   return {
     pos: position(x, y),
@@ -179,7 +171,7 @@ export function getOnSnail(value: Array<string>): GetOnSnail {
   };
 }
 
-export function getOffSnail(value: Array<string>): GetOffSnail {
+export function getOffSnail(value: string[]): GetOffSnail {
   const [x, y, _, character] = value;
   return {
     pos: position(x, y),
@@ -187,7 +179,7 @@ export function getOffSnail(value: Array<string>): GetOffSnail {
   };
 }
 
-export function snailEat(value: Array<string>): SnailEat {
+export function snailEat(value: string[]): SnailEat {
   const [x, y, rider, eaten] = value;
   return {
     pos: position(x, y),
@@ -196,7 +188,7 @@ export function snailEat(value: Array<string>): SnailEat {
   };
 }
 
-export function snailEscape(value: Array<string>): SnailEscape {
+export function snailEscape(value: string[]): SnailEscape {
   const [x, y, character] = value;
   return {
     pos: position(x, y),
@@ -204,7 +196,7 @@ export function snailEscape(value: Array<string>): SnailEscape {
   };
 }
 
-export function berryDeposit(value: Array<string>): BerryDeposit {
+export function berryDeposit(value: string[]): BerryDeposit {
   const [x, y, character] = value;
   return {
     pos: position(x, y),
@@ -212,7 +204,7 @@ export function berryDeposit(value: Array<string>): BerryDeposit {
   };
 }
 
-export function berryKickIn(value: Array<string>): BerryKickIn {
+export function berryKickIn(value: string[]): BerryKickIn {
   const [x, y, character] = value;
   return {
     pos: position(x, y),
