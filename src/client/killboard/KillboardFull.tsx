@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Character } from '../../lib/KQStream';
+import { Character } from '../../lib/models/KQStream';
 import sprites from '../img/sprites';
 import KillboardBase from './KillboardBase';
 

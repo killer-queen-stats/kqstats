@@ -1,4 +1,5 @@
-import { KQStream, PlayerKill, Character } from '../src/lib/KQStream';
+import { KQStream } from '../src/lib/KQStream';
+import { PlayerKill, Character } from '../src/lib/models/KQStream';
 
 // Change this to the IP address of the Killer Queen cabinet
 const KQ_HOST = '192.168.1.100';

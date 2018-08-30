@@ -1,5 +1,6 @@
 import { ProtectedEventEmitter } from 'eventemitter-ts';
-import { Character, KQStream, PlayerKill } from './KQStream';
+import { KQStream } from './KQStream';
+import { Character, PlayerKill } from './models/KQStream';
 
 type StatisticType = 'kills' | 'queen_kills' | 'warrior_kills' | 'deaths';
 

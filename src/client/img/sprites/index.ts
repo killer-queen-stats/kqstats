@@ -1,4 +1,4 @@
-import { Character } from '../../../lib/KQStream';
+import { Character } from '../../../lib/models/KQStream';
 
 const gold = {
   queen: require('./gold_queen.png'),

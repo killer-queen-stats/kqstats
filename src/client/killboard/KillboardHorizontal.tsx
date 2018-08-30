@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Character } from '../../lib/KQStream';
+import { Character } from '../../lib/models/KQStream';
 import KillboardBase from './KillboardBase';
 
 const goldBackground = require('../img/gold_team.png');
