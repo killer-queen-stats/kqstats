@@ -27,35 +27,26 @@ import {
   BerryKickIn,
 } from './models/KQStream';
 
-/**
- * Different events use different names for teams:
- * 
- * - `blessMaiden` uses `"Red"` and `"Blue"`
- * - `victory` uses `"Gold"` and `"Blue"`
- * 
- * This object covers all the possibilities and maps
- * them to a single enum.
- */
+
 const teams = {
-  'Red': Team.Gold,
-  'Gold': Team.Gold,
-  'Blue': Team.Blue,
+  'gold': Team.Gold,
+  'blue': Team.Blue,
 };
 
 const maidens = {
-  'maiden_wings': Maiden.Warrior,
-  'maiden_speed': Maiden.Speed,
+  'maidenWings': Maiden.Warrior,
+  'maidenSpeed': Maiden.Speed,
 };
 
 const maps = {
-  'map_day': GameMap.Day,
-  'map_night': GameMap.Night,
-  'map_dusk': GameMap.Dusk,
+  'mapDay': GameMap.Day,
+  'mapNight': GameMap.Night,
+  'mapDusk': GameMap.Dusk,
 };
 
 const orientations = {
-  'False': CabOrientation.BlueOnLeft,
-  'True': CabOrientation.GoldOnLeft,
+  'false': CabOrientation.BlueOnLeft,
+  'true': CabOrientation.GoldOnLeft,
 };
 
 const victories = {
@@ -65,8 +56,8 @@ const victories = {
 };
 
 const booleans = {
-  'False': false,
-  'True': true,
+  'false': false,
+  'true': true,
 };
 
 function position(x: string, y: string): Position {
@@ -76,14 +67,14 @@ function position(x: string, y: string): Position {
   };
 }
 
-export function playernames(value: string): PlayerNames {
+export function playernames(value: string[]): PlayerNames {
   // This is for when player cards get implemented.
   // Return an empty object for now.
   return {};
 }
 
-export function playerKill(value: string): PlayerKill {
-  const [x, y, by, killed] = value.split(',');
+export function playerKill(value: string[]): PlayerKill {
+  const [x, y, by, killed] = value;
   return {
     pos: position(x, y),
     killed: Number(killed),
@@ -91,32 +82,32 @@ export function playerKill(value: string): PlayerKill {
   };
 }
 
-export function blessMaiden(value: string): BlessMaiden {
-  const [x, y, team] = value.split(',');
+export function blessMaiden(value: string[]): BlessMaiden {
+  const [x, y, team] = value;
   return {
     pos: position(x, y),
     team: teams[team],
   };
 }
 
-export function reserveMaiden(value: string): ReserveMaiden {
-  const [x, y, character] = value.split(',');
+export function reserveMaiden(value: string[]): ReserveMaiden {
+  const [x, y, character] = value;
   return {
     pos: position(x, y),
     character: Number(character),
   };
 }
 
-export function unreserveMaiden(value: string): UnreserveMaiden {
-  const [x, y, _, character] = value.split(',');
+export function unreserveMaiden(value: string[]): UnreserveMaiden {
+  const [x, y, _, character] = value;
   return {
     pos: position(x, y),
     character: Number(character),
   };
 }
 
-export function useMaiden(value: string): UseMaiden {
-  const [x, y, type, character] = value.split(',');
+export function useMaiden(value: string[]): UseMaiden {
+  const [x, y, type, character] = value;
   return {
     pos: position(x, y),
     type: maidens[type],
@@ -124,31 +115,31 @@ export function useMaiden(value: string): UseMaiden {
   };
 }
 
-export function glance(value: string): Glance {
-  const [attacker, target] = value.split(',');
+export function glance(value: string[]): Glance {
+  const [attacker, target] = value;
   return {
     attacker: Number(attacker),
     target: Number(target),
   };
 }
 
-export function carryFood(value: string): CarryFood {
-  const [character] = value.split(',');
+export function carryFood(value: string[]): CarryFood {
+  const [character] = value;
   return {
     character: Number(character),
   };
 }
 
-export function gameStart(value: string): GameStart {
-  const [map, orientation] = value.split(',');
+export function gameStart(value: string[]): GameStart {
+  const [map, orientation] = value;
   return {
     map: maps[map],
     orientation: orientations[orientation],
   };
 }
 
-export function gameEnd(value: string): GameEnd {
-  const [map, orientation, duration] = value.split(',');
+export function gameEnd(value: string[]): GameEnd {
+  const [map, orientation, duration] = value;
   return {
     map: maps[map],
     orientation: orientations[orientation],
@@ -156,40 +147,40 @@ export function gameEnd(value: string): GameEnd {
   };
 }
 
-export function victory(value: string): Victory {
-  const [team, type] = value.split(',');
+export function victory(value: string[]): Victory {
+  const [team, type] = value;
   return {
     team: teams[team],
     type: victories[type],
   };
 }
 
-export function spawn(value: string): Spawn {
-  const [character, isAI] = value.split(',');
+export function spawn(value: string[]): Spawn {
+  const [character, isAI] = value;
   return {
     character: Number(character),
     isAI: booleans[isAI],
   };
 }
 
-export function getOnSnail(value: string): GetOnSnail {
-  const [x, y, character] = value.split(',');
+export function getOnSnail(value: string[]): GetOnSnail {
+  const [x, y, character] = value;
   return {
     pos: position(x, y),
     character: Number(character),
   };
 }
 
-export function getOffSnail(value: string): GetOffSnail {
-  const [x, y, _, character] = value.split(',');
+export function getOffSnail(value: string[]): GetOffSnail {
+  const [x, y, _, character] = value;
   return {
     pos: position(x, y),
     character: Number(character),
   };
 }
 
-export function snailEat(value: string): SnailEat {
-  const [x, y, rider, eaten] = value.split(',');
+export function snailEat(value: string[]): SnailEat {
+  const [x, y, rider, eaten] = value;
   return {
     pos: position(x, y),
     rider: Number(rider),
@@ -197,24 +188,24 @@ export function snailEat(value: string): SnailEat {
   };
 }
 
-export function snailEscape(value: string): SnailEscape {
-  const [x, y, character] = value.split(',');
+export function snailEscape(value: string[]): SnailEscape {
+  const [x, y, character] = value;
   return {
     pos: position(x, y),
     character: Number(character)
   };
 }
 
-export function berryDeposit(value: string): BerryDeposit {
-  const [x, y, character] = value.split(',');
+export function berryDeposit(value: string[]): BerryDeposit {
+  const [x, y, character] = value;
   return {
     pos: position(x, y),
     character: Number(character)
   };
 }
 
-export function berryKickIn(value: string): BerryKickIn {
-  const [x, y, character] = value.split(',');
+export function berryKickIn(value: string[]): BerryKickIn {
+  const [x, y, character] = value;
   return {
     pos: position(x, y),
     character: Number(character)
