@@ -53,3 +53,7 @@ character_pos = c(
 )
 gold_team <- c(1,3,5,7,9)
 blue_team <- c(2,4,6,8,10)
+
+color_gold = "#e88f12"
+color_blue = "#c9d6ff"
+kq_colors = c(Gold = color_gold, Blue = color_blue)

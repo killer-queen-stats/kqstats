@@ -115,7 +115,7 @@ event_exports <- function(event_log, event_fields_list) {
   return(event_exports)
 }
 
-gate_dominance <- function(log) {
+gate_control <- function(log) {
   gates <- split_to_df(log, "blessMaiden")
   gates$team <- ifelse(gates$team == "Red", "Gold", "Blue")
 
