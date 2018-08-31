@@ -38,3 +38,18 @@ event_fields_list <- list(
      , victory = c("win_team", "win_condition")
      , gameend = c("map", "X2", "duration", "X4")
 )
+
+character_pos = c(
+  GoldQueen = 1,
+  BlueQueen = 2,
+  GoldStripes = 3,
+  BlueStripes = 4,
+  GoldAbs = 5,
+  BlueAbs = 6,
+  GoldSkulls = 7,
+  BlueSkulls = 8,
+  GoldChecks = 9,
+  BlueChecks = 10
+)
+gold_team <- c(1,3,5,7,9)
+blue_team <- c(2,4,6,8,10)
