@@ -47,7 +47,7 @@
         "no-string-literal": true,
         "no-switch-case-fall-through": true,
         "no-trailing-whitespace": false,
-        "no-unused-variable": true,
+        "no-unused-variable": [true, {"ignore-pattern": "^_"}],
         "no-use-before-declare": true,
         "one-line": [
             true,
