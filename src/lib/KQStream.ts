@@ -3,7 +3,7 @@
  * https://github.com/arantius/kqdeathmap
  */
 
-import * as _ from "lodash";
+import * as _ from 'lodash';
 import { ProtectedEventEmitter } from 'eventemitter-ts';
 import * as stream from 'stream';
 import * as websocket from 'websocket';
@@ -100,11 +100,11 @@ export class KQStream extends ProtectedEventEmitter<Events> {
 
     static normalizeKey(key: string) {
         // Replace non letters with empty
-        return key.replace(/[^a-z]/gi, "").trim();
+        return key.replace(/[^a-z]/gi, '').trim();
     }
 
     static normalizeValues(values: string) {
-        const valuesList = values.split(",");
+        const valuesList = values.split(',');
         const normalizedValuesList = valuesList.map((value) => {
             // If it's a number, no processing necessary
             if (!Number.isNaN(Number(value))) { return value; }
@@ -117,7 +117,7 @@ export class KQStream extends ProtectedEventEmitter<Events> {
              * - `victory` uses `"Gold"` and `"Blue"`
              * We just want gold and blue.
              */
-            value = value.replace(/^Red$/, "Gold");
+            value = value.replace(/^Red$/, 'Gold');
             value = _.camelCase(value);
             return value;
         });

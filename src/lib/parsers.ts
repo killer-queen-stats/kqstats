@@ -27,7 +27,6 @@ import {
   BerryKickIn,
 } from './models/KQStream';
 
-
 const teams = {
   'gold': Team.Gold,
   'blue': Team.Blue,
