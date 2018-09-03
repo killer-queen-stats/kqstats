@@ -2,7 +2,8 @@ import * as fs from 'fs';
 import * as os from 'os';
 import * as path from 'path';
 import * as rimraf from 'rimraf';
-import { KQStream, PlayerKill } from './KQStream';
+import { KQStream } from './KQStream';
+import { PlayerKill } from './models/KQStream';
 
 interface CharacterStats {
     'kills': number;

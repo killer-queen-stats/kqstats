@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Character } from './lib/KQStream';
+import { Character } from './lib/models/KQStream';
 import Killboard from './client/killboard/Killboard';
 import { Page404 } from './client/404';
 import registerServiceWorker from './client/registerServiceWorker';
