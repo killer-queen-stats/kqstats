@@ -1,3 +1,5 @@
+source('~/repos/kqstats/offline_analysis/r/utils.R')
+
 #Working functions
 read_data <- function(file) {
   r <- read.table(file, sep="!", skipNul=TRUE, skip=1)
@@ -38,8 +40,46 @@ split_to_df <- function(event_log, event_name) {
   if(event_name %in% names(event_fields_list)) {
   names(d) <- event_fields_list[[event_name]]
   }
-  return(numerify_at(cbind.data.frame(e, d)))
+  ans_df <- numerify_at(cbind.data.frame(e, d))
+  
+
+  return(ans_df)
 }
+
+  # if(refine) {
+  #   ref <- ans_df %>%
+  #     mutate(runner_team = playerTeam(player),
+  #            map = mapLocate(game_id),
+  #            hivePlaced = hive(x_pos, y_pos, map))
+  # }
+
+mapLocate <- function(events, ids) {
+  games <- game_log(events)
+  quick_map(games$game_id, ids, games$map)
+}
+
+playerTeam <- function(player_id) {
+  ifelse(player_id %in% gold_team, "Gold", "Blue")
+}
+
+hivePlaced <- function(x, y, map_name) {
+  if(inBlueHive(x,y,map_name)) "Blue"
+  if(inGoldHive(x,y,map_name)) "Gold"
+  
+}
+
+#mapply(inHive, bk$x_pos, bk$y_pos, bk$map, "right")
+inHive <- function(x,y,map_name, team_side) {
+ stopifnot(map_name %in% unique(hives$map))
+  pos <- hives[hives$map == map_name & hives$team == team_side,]
+  
+  x >= pos$value[pos$axis== "x" & pos$bound == "lower"] & 
+  x <= pos$value[pos$axis== "x" & pos$bound == "upper"] &
+  y >= pos$value[pos$axis== "y" & pos$bound == "lower"] &
+  y <= pos$value[pos$axis== "y" & pos$bound == "upper"]
+}
+
+
 
 numerify_at <- function(.df) {
   force_num <- suppressWarnings(lapply(.df, function(x) as.numeric(as.character(x))))
@@ -156,6 +196,8 @@ time_adjust <- function(field, stream_ts, event_ts) {
 berryDeposits <- function(events) {
   games <- game_log(events)
   
+  k <- split_to_df(events, "berryKickIn")
+  refin
   b <- split_to_df(events, "berryDeposit") %>%
   group_by(game_id) %>%
   summarise(gold_berries = sum(ifelse(player %in% gold_team, 1, 0)),
@@ -164,3 +206,24 @@ berryDeposits <- function(events) {
   gb <- left_join(games, b, by="game_id")
   gb %>% select(game_id, gold_berries, blue_berries)
 }
+
+quick_viz <- function(df_source, map="map_day", point.size=3,override.color=NULL, ...) {
+  map <- if("map" %in% names(df_source)) unlist(df_source[1, "map"]) else map
+  map <- if(gsub(".*?(dusk).*", "\\1", map) %in% c("dusk")) {
+           dusk_png
+  } else if(gsub(".*?(night).*", "\\1", map) %in% c("night")) {
+           night_png
+  } else {
+           day_png
+  }
+  
+  ggplot(df_source, aes_string(x="x_pos",y="y_pos",...)) +
+  expand_limits(y=c(0,1080), x=c(0,1920)) +
+  annotation_raster(map, ymin = 0,ymax=1080,xmin = 0,xmax = 1920) + 
+  if(!is.na(override.color)) {
+  geom_point(size=point.size, color=override.color)
+  } else {
+  geom_point(size=point.size)  
+  }
+}
+
