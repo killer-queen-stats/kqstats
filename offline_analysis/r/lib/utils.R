@@ -1,5 +1,5 @@
-library(png)
-library(graphics)
+require(png)
+require(graphics)
 
 path_to_repo <- if("path_to_repo" %in% ls()) path_to_repo else "~/"
 
@@ -90,6 +90,6 @@ img_dusk <- "https://raw.githubusercontent.com/arantius/kqdeathmap/master/img/ma
 
 
 #read map data
-night_png <- readPNG(paste0(path_to_repo, 'repos/kqstats/offline_analysis/r/example_data/map_night.png'))
-day_png <- readPNG(paste0(path_to_repo, 'repos/kqstats/offline_analysis/r/example_data/map_day.png'))
-dusk_png <- readPNG(paste0(path_to_repo, 'repos/kqstats/offline_analysis/r/example_data/map_dusk.png'))
+night_png <- readPNG(paste0(path_to_repo, 'repos/kqstats/offline_analysis/r/maps/map_night.png'))
+day_png <- readPNG(paste0(path_to_repo, 'repos/kqstats/offline_analysis/r/maps/map_day.png'))
+dusk_png <- readPNG(paste0(path_to_repo, 'repos/kqstats/offline_analysis/r/maps/map_dusk.png'))
