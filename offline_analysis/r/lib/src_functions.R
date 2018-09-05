@@ -1,4 +1,13 @@
-source('~/repos/kqstats/offline_analysis/r/utils.R')
+#Libraries
+require(stringr)
+require(ggplot2)
+require(lubridate)
+require(dplyr)
+require(tidyr)
+
+#Load utilities
+path_to_repo <- if("path_to_repo" %in% ls()) path_to_repo else "~/"
+source(paste0(path_to_repo, 'repos/kqstats/offline_analysis/r/lib/utils.R'))
 
 #Working functions
 read_data <- function(file) {
@@ -197,7 +206,7 @@ berryDeposits <- function(events) {
   games <- game_log(events)
   
   k <- split_to_df(events, "berryKickIn")
-  refin
+
   b <- split_to_df(events, "berryDeposit") %>%
   group_by(game_id) %>%
   summarise(gold_berries = sum(ifelse(player %in% gold_team, 1, 0)),
@@ -207,7 +216,7 @@ berryDeposits <- function(events) {
   gb %>% select(game_id, gold_berries, blue_berries)
 }
 
-quick_viz <- function(df_source, map="map_day", point.size=3,override.color=NULL, ...) {
+quick_viz <- function(df_source, map="map_day", point.size=3,override.color=NA, ...) {
   map <- if("map" %in% names(df_source)) unlist(df_source[1, "map"]) else map
   map <- if(gsub(".*?(dusk).*", "\\1", map) %in% c("dusk")) {
            dusk_png
