@@ -1,168 +1,418 @@
+import { ProtectedEventEmitter } from 'eventemitter-ts';
+import { Character, Position } from './KQStream';
+import { Player } from './Player';
+import { Gate, GateType } from './Gate';
+import { Hive } from './Hive';
+import { Snail } from './Snail';
+
 export type GameSideType = 'gold' | 'blue' | 'neutral';
 export type GameMapType = 'day' | 'night' | 'dusk';
 
-export type GameCoordsType = {
-    x: number;
-    y: number;
+export enum GameType {
+    Real = 'REAL',
+    Attract = 'ATTRACT',
 }
 
-export class Game {
-    constructor(mapType: GameMapType, blueOnLeft: boolean) {
-        super();
-        this.mapType:GameMapType = mapType;
-
-        this.players = [];
-        this.gates = this.createGateTypes(this.mapType);
-        this.hives = Hive.createHives();
-        this.snail = this.createSnail(this.mapType);
-
-        // Call these guys left side and right side
-        // Since there's no guarantee that gold or blue is on left or right
-        if (blueOnLeft) {
-            this.leftSide: GameSideType = 'blue';
-            this.rightSide: GameSideType = 'gold';
-        } else {
-            this.leftSide: GameSideType = 'gold';
-            this.rightSide: GameSideType = 'blue';
-        }
-    }
-
-    private createSnail(mapType: GameMapType) {
-        // Note all the bonus maps are also "day"
-        if (mapType === 'day') {
-            return Snail.createDaySnail();
-        } else if (mapType === 'night') {
-            return Snail.createNightSnail();
-        } else if (mapType === 'dusk') {
-            return Snail.createDuskSnail();
-        }
-        else null;
-    }
-    private createGates(mapType: GameMapType) {
-        if (mapType === 'day') {
-            return Gate.createDayGates();
-        } else if (mapType === 'night') {
-            return Gate.createNightGates();
-        } else if (mapType === 'dusk') {
-            return Gate.createDuskGates();
-        }
-        return [];
-    }
+export enum GameMap {
+    Day = 'DAY',
+    Night = 'NIGHT',
+    Dusk = 'DUSK',
+    BonusWarrior = 'BONUS_WARRIOR',
+    BonusSnail = 'BONUS_SNAIL',
 }
 
-export type SnailStateType = {
-    coords: GameCoordsType;
-    posession: GameSideType;
+export enum GameOrientation {
+    BlueOnLeft = 'BLUE_ON_LEFT',
+    GoldOnLeft = 'GOLD_ON_LEFT',
+}
+
+export enum Team {
+    Blue = 'BLUE',
+    Gold = 'GOLD',
+}
+
+export enum WinType {
+    Economic = 'ECONOMIC',
+    Military = 'MILITARY',
+    Snail = 'SNAIL',
+}
+
+export type GameWin = {
+    team: Team,
+    type: WinType,
 };
 
-export class Snail {
-    static createDaySnail() {
-        return new Snail({
-            x: 960,
-            y: 11,
-        });
-    }
-    static createNightSnail() {
-        return new Snail({
-            x: 960,
-            y: 491,
-        });
-    }
-    static createDuskSnail() {
-        return new Snail({
-            x: 960,
-            y: 11,
-        });
+export type GameEnd = {
+    winTeam: Team,
+    winType: WinType,
+    duration: number
+};
 
+export enum Possession {
+    Gold = 'GOLD',
+    Blue = 'BLUE',
+    None = 'NONE'
+}
+
+type Characters = {
+    [character in Character]: Player
+};
+
+type Hives = {
+    [team in Team]: Hive
+};
+
+// TODO: Put this in a better place
+function equal(a: Position, b: Position) {
+    return a.x === b.x && a.y === b.y;
+}
+
+/**
+ * A state machine that represents game state and validates
+ * changes between states.
+ * 
+ * `Game` class takes a strict approach to state changes and
+ * restricts what is considered valid state. For example,
+ * a warrior or a drone holding a berry cannot be on the snail.
+ * If an invalid state is reached, the state changing method
+ * will throw an error.
+ * 
+ * If `Game` enters an invalid state, it indicates that either
+ * the developer using the class made a mistake, or the valid
+ * states of Killer Queen have changed (e.g. due to game rules
+ * and mechanics changing) and the `Game` class must be updated
+ * to reflect these changes.
+ * 
+ * A `Game` holds 5 groups of state information:
+ * 
+ * - Metadata
+ *   - Map
+ *   - Cab orientation
+ *   - Game duratio
+ *   - Win condition
+ *   - Ongoing or final
+ * - Players
+ *   - Is warrior
+ *   - Is speed
+ *   - On snail
+ *   - Has berry
+ *   - Kills
+ *   - Deaths
+ * - Gates
+ *   - Type (speed, warrior)
+ *   - Possession (gold, blue)
+ * - Hives
+ *   - Total number of berry holes
+ *   - Number of berries deposited
+ *   - Number of berries kicked in
+ * - Snails
+ *   - Position
+ *   - Possession
+ */
+export class Game extends ProtectedEventEmitter<Events> {
+    static readonly characterTeam = {
+      [Character.GoldQueen]: Team.Gold,
+      [Character.BlueQueen]: Team.Blue,
+      [Character.GoldStripes]: Team.Gold,
+      [Character.BlueStripes]: Team.Blue,
+      [Character.GoldAbs]: Team.Gold,
+      [Character.BlueAbs]: Team.Blue,
+      [Character.GoldSkulls]: Team.Gold,
+      [Character.BlueSkulls]: Team.Blue,
+      [Character.GoldChecks]: Team.Gold,
+      [Character.BlueChecks]: Team.Blue
+    };
+    static readonly teamPossession = {
+        [Team.Gold]: Possession.Gold,
+        [Team.Blue]: Possession.Blue
+    };
+
+    // Metadata
+    private _type?: GameType;
+    get type(): GameType | undefined {
+        return this._type;
     }
-    constructor(coords: GameCoordsType) {
+    private _map?: GameMap;
+    get map(): GameMap | undefined {
+        return this._map;
+    }
+    private _orientation?: GameOrientation;
+    get orientation(): GameOrientation | undefined {
+        return this._orientation;
+    }
+    private _duration?: Number;
+    get duration(): Number | undefined {
+        return this._duration;
+    }
+    private _win?: GameWin;
+    get win(): GameWin | undefined {
+        return this._win;
+    }
+    get isFinal(): boolean {
+        return this.win !== undefined;
+    }
+
+    // Game Elements
+    private _players: Characters;
+    get players(): Characters {
+        return this._players;
+    }
+    private _gates: Gate[];
+    get gates(): Gate[] {
+        return this._gates;
+    }
+    private _hives: Hive[];
+    get hives(): Hive[] {
+        return this._hives;
+    }
+    private _snails: Snail[];
+    get snails(): Snail[] {
+        return this._snails;
+    }
+
+    constructor() {
         super();
 
-        this.coords: GameGoordsType = coords;
-        this.startPosition: GameCoordsType = coords;
-        this.posession: GameSideType = 'neutral';
+        this._type = undefined;
+        this._map = undefined;
+        this._orientation = undefined;
+        this._win = undefined;
+
+        this._players = {
+            [Character.GoldQueen]: new Player({
+                character: Character.GoldQueen
+            }),
+            [Character.BlueQueen]: new Player({
+                character: Character.BlueQueen
+            }),
+            [Character.GoldStripes]: new Player({
+                character: Character.GoldStripes
+            }),
+            [Character.BlueStripes]: new Player({
+                character: Character.BlueStripes
+            }),
+            [Character.GoldAbs]: new Player({
+                character: Character.GoldAbs
+            }),
+            [Character.BlueAbs]: new Player({
+                character: Character.BlueAbs
+            }),
+            [Character.GoldSkulls]: new Player({
+                character: Character.GoldSkulls
+            }),
+            [Character.BlueSkulls]: new Player({
+                character: Character.BlueSkulls
+            }),
+            [Character.GoldChecks]: new Player({
+                character: Character.GoldChecks
+            }),
+            [Character.BlueChecks]: new Player({
+                character: Character.BlueChecks
+            }),
+        };
+        this._gates = [];
+        this._hives = [];
+        this._snails = [];
     }
 
-    update(updatePayload: SnailStateType) {
-        this.coords = updatePayload.coords;
-        this.possession = this.possession;
-    }
-
-    deriveSideClosest(): number {
-        if (this.coords.x < this.startPosition.x) {
-            return -1
-        } else if(this.coords.x > this.startPosition.x) {
-            return 1;
+    // Metadata
+    setType(type: GameType) {
+        if (this.type !== undefined) {
+            throw new MetadataValueMustBeFinalError();
         }
-        return 0;
+        this._type = type;
     }
-}
-
-export type GateTypeType = 'speed' | 'warrior';
-
-export type GateStateType {
-    gateType: GateTypeType;
-    coords: GameCoordsType;
-    posession: GameSideType;
-}
-
-export class Gate() {
-    static createDayGates() {
-        return [
-            new Gate('warrior', {x: 560, y: 260}),
-            new Gate('warrior', {x: 960, y: 500}),
-            new Gate('warrior', {x: 1360, y: 260}),
-            new Gate('speed', {x: 410, y: 860}),
-            new Gate('speed', {x: 1510, y: 860}),
-        ];
+    setMap(map: GameMap) {
+        if (this.map !== undefined) {
+            throw new MetadataValueMustBeFinalError();
+        }
+        this._map = map;
+        // TODO: Set up gates, hives, snails, etc.
     }
-    static createNightGates() {
-        return [
-            new Gate('warrior', {x: 700, y: 260}),
-            new Gate('warrior', {x: 960, y: 700}),
-            new Gate('warrior', {x: 1220, y: 260}),
-            new Gate('speed', {x: 170, y: 740}),
-            new Gate('speed', {x: 1750, y: 740}),
-        ];
+    setOrientation(orientation: GameOrientation) {
+        if (this.orientation !== undefined) {
+            throw new MetadataValueMustBeFinalError();
+        }
+        this._orientation = orientation;
     }
-    static createDuskGates() {
-        return [
-            new Gate('warrior', {x: 310, y: 620}),
-            new Gate('warrior', {x: 960, y: 140}),
-            new Gate('warrior', {x: 1610, y: 620}),
-            new Gate('speed', {x: 340, y: 140}),
-            new Gate('speed', {x: 1580, y: 140}),
-        ];
+    setDuration(duration: number) {
+        if (this.duration !== undefined) {
+            throw new MetadataValueMustBeFinalError();
+        }
+        this._duration = duration;
     }
-    constructor(gateType: GateTypeType, coords: GameCoordsType) {
-        super();
-        this.gateType: GateTypeType = gateType;
-        this.coords: GameCoordsType = coords;
-        this.posession: GameSideType = neutral;
+    setWin(win: GameWin) {
+        if (this.win !== undefined) {
+            throw new MetadataValueMustBeFinalError();
+        }
+        this._win = win;
     }
 
-    changePosession(side: GameSideType) {
-        this.posession = side;
+    // Gates
+    tagGate(position: Position, team: Team) {
+        const gate = this.getGate(position);
+        const possession = Game.teamPossession[team];
+        gate.setPossession(possession);
     }
-}
-
-export class Hive() {
-    static createHives() {
-        return [
-            new Hive('blue'),
-            new Hive('gold'),
-        ]
+    enterGate(position: Position, character: Character) {
+        const gate = this.getGate(position);
+        gate.enter(character);
+    }
+    exitGate(position: Position, character: Character) {
+        const gate = this.getGate(position);
+        gate.exit(character);
+    }
+    useGate(position: Position, character: Character) {
+        const gate = this.getGate(position);
+        const player = this.getPlayer(character);
+        switch (gate.type) {
+            case GateType.Speed:
+            player.becomeSpeed();
+            break;
+            case GateType.Warrior:
+            player.becomeWarrior();
+            break;
+            default:
+            break;
+        }
+        gate.use(character);
     }
 
-    constructor(side: GameSideType) {
-        super();
-        this.side: GameSideType = side;
-        this.emptyHoles: number = 12;
-        this.filledHoles: number = 0;
+    // Hives
+    depositBerry(position: Position, character: Character) {
+        const team = Game.characterTeam[character];
+        const hive = this.getHive(team, position);
+        const player = this.getPlayer(character);
+        hive.depositBerry(position);
+        player.depositBerry();
+    }
+    kickInBerry(position: Position, character: Character) {
+        // TODO: Implement
+        // (Use a "best guess" system for which hive the berry
+        // got kicked into)
     }
 
-    fillHole() {
-        this.emptyHoles--;
-        this.filledHoles++;
+    // Snail
+    getOnSnail(position: Position, character: Character) {
+        const snail = this.getSnailByPosition(position);
+        const player = this.getPlayer(character);
+        snail.setRider(character);
+        player.getOnSnail();
+    }
+    getOffSnail(character: Character) {
+        const snail = this.getSnailByRider(character);
+        const player = this.getPlayer(character);
+        snail.clearRider();
+    }
+    updateSnailPosition(rider: Character, position: Position) {
+        const snail = this.getSnailByRider(rider);
+        snail.setPosition(position);
+    }
+    startEating(rider: Character, eaten: Character) {
+        const snail = this.getSnailByRider(rider);
+        snail.startEating(eaten);
+    }
+    endEating(rider: Character) {
+        const snail = this.getSnailByRider(rider);
+        snail.endEating();
+    }
+
+    // Player
+    becomeHuman(character: Character) {
+        const player = this.getPlayer(character);
+        player.becomeHuman();
+    }
+    holdBerry(character: Character) {
+        const player = this.getPlayer(character);
+        player.holdBerry();
+    }
+    kill(victim: Character, killer: Character) {
+        const player = this.getPlayer(victim);
+        player.kill();
+        // If victim was snail rider, free drone being eaten
+        const snailByRider = this.getSnailByRiderSafe(victim);
+        if (
+            snailByRider !== undefined &&
+            snailByRider.eatingCharacter !== undefined
+         ) {
+            snailByRider.endEating();
+            snailByRider.clearRider();
+        }
+        // If victim was drone being eaten by snail, end eating
+        const snailByEatingCharacter = this.getSnailByEatingCharacterSafe(victim);
+        if (snailByEatingCharacter !== undefined) {
+            snailByEatingCharacter.endEating();
+        }
+    }
+
+    private getPlayer(character: Character) {
+        return this.players[character];
+    }
+    private getGate(position: Position) {
+        const gate = this._gates.find((elem) => {
+            return equal(position, elem.position);
+        });
+        if (gate === undefined) {
+            throw new GateNotFoundError();
+        }
+        return gate;
+    }
+    private getHive(team: Team, position: Position) {
+        for (let hive of this.hives) {
+            if (hive.team === team && hive.inBounds(position)) {
+                return hive;
+            }
+        }
+        throw new HiveNotFoundError();
+    }
+    private getSnailByPosition(position: Position) {
+        const snail = this._snails.find((elem) => {
+            return equal(elem.position, position);
+        });
+        if (snail === undefined) {
+            throw new SnailNotFoundError();
+        }
+        return snail;
+    }
+    private getSnailByRider(rider: Character) {
+        const snail = this._snails.find((elem) => {
+            return elem.rider === rider;
+        });
+        if (snail === undefined) {
+            throw new SnailNotFoundError();
+        }
+        return snail;
+    }
+    private getSnailByEatingCharacter(eatingCharacter: Character) {
+        const snail = this.snails.find((elem) => {
+            return elem.eatingCharacter === eatingCharacter;
+        });
+        if (snail === undefined) {
+            throw new SnailNotFoundError();
+        }
+        return snail;
+    }
+
+    private getSnailByRiderSafe(rider: Character) {
+        try {
+            return this.getSnailByRider(rider);
+        } catch (error) {
+            if (error instanceof SnailNotFoundError) {
+                return undefined;
+            } else {
+                throw error;
+            }
+        }
+    }
+    private getSnailByEatingCharacterSafe(eatingCharacter: Character) {
+        try {
+            return this.getSnailByEatingCharacter(eatingCharacter);
+        } catch (error) {
+            if (error instanceof SnailNotFoundError) {
+                return undefined;
+            } else {
+                throw error;
+            }
+        }
     }
 }

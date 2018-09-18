@@ -34,6 +34,12 @@ interface Events {
     'change': KQStat;
 }
 
+/**
+ * Manages and emits game stats according to events from a
+ * `KQStream` class.
+ * 
+ * Intended for use with v1 events.
+ */
 export class GameStats extends ProtectedEventEmitter<Events> {
     private stream: KQStream;
     private hasGameStartBeenEncountered: boolean;
