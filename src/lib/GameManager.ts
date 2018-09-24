@@ -1,13 +1,12 @@
 import { KQStream } from './KQStream';
 import { ProtectedEventEmitter } from 'eventemitter-ts';
 import {
-  Game,
   GameOrientation,
   GameType,
   Team,
-  WinType,
-  GameMap
+  WinType
 } from './models/Game';
+import { Game } from './Game';
 import {
   GameStart,
   CabOrientation,
@@ -16,7 +15,6 @@ import {
   Team as TeamEnum,
   VictoryType,
   BlessMaiden,
-  Position,
   ReserveMaiden,
   UnreserveMaiden,
   UseMaiden,
@@ -57,17 +55,7 @@ export class GameManager extends ProtectedEventEmitter<Events> {
   };
 
   private stream: KQStream;
-
-  /**
-   * Uses the position of a maiden event to infer the game map.
-   * 
-   * @param position The position of the maiden event
-   * @returns The only map that has a gate at the given position,
-   *          or `null` if multiple maps have a gate at that position.
-   */
-  private static inferMapFromGatePos(position: Position): GameMap | undefined {
-    // TODO: Implement and use in KQStream listeners
-  }
+  private game: Game;
 
   constructor(stream: KQStream) {
     super();
@@ -75,18 +63,24 @@ export class GameManager extends ProtectedEventEmitter<Events> {
     this.stream = stream;
 
     this.stream.on('playernames', () => {
-      const game = new Game();
+      // TODO: Right here, remove all listeners except playernames
+      // so previous game object is no longer updated
+      // (You tried to use this.game so only the current game object
+      // gets updated, but because of closures it actually passes
+      // that object into the callbacks, so it always holds onto
+      // a single reference.)
+      this.game = new Game();
 
       // Metadata
       this.stream.on('gamestart', (gameStart: GameStart) => {
-        game.setOrientation(GameManager.orientationMap[gameStart.orientation]);
+        this.game.setOrientation(GameManager.orientationMap[gameStart.orientation]);
       });
       this.stream.on('gameend', (gameEnd: GameEnd) => {
-        game.setDuration(gameEnd.duration);
-        game.setType(GameType.Real);
+        this.game.setDuration(gameEnd.duration);
+        this.game.setType(GameType.Real);
       });
       this.stream.on('victory', (victory: Victory) => {
-        game.setWin({
+        this.game.setWin({
           team: GameManager.teamMap[victory.team],
           type: GameManager.winTypeMap[victory.type],
         });
@@ -96,52 +90,52 @@ export class GameManager extends ProtectedEventEmitter<Events> {
       this.stream.on('blessMaiden', (blessMaiden: BlessMaiden) => {
         const position = blessMaiden.pos;
         const team = GameManager.teamMap[blessMaiden.team];
-        game.tagGate(position, team);
+        this.game.tagGate(position, team);
       });
       this.stream.on('reserveMaiden', (reserveMaiden: ReserveMaiden) => {
         const position = reserveMaiden.pos;
         const character = reserveMaiden.character;
-        game.enterGate(position, character);
+        this.game.enterGate(position, character);
       });
       this.stream.on('unreserveMaiden', (unreserveMaiden: UnreserveMaiden) => {
         const position = unreserveMaiden.pos;
         const character = unreserveMaiden.character;
-        game.exitGate(position, character);
+        this.game.exitGate(position, character);
       });
       this.stream.on('useMaiden', (useMaiden: UseMaiden) => {
         const position = useMaiden.pos;
         const character = useMaiden.character;
-        game.useGate(position, character);
+        this.game.useGate(position, character);
       });
 
       // Berry
       this.stream.on('berryDeposit', (berryDeposit: BerryDeposit) => {
         const position = berryDeposit.pos;
         const character = berryDeposit.character;
-        game.depositBerry(position, character);
+        this.game.depositBerry(position, character);
       });
       this.stream.on('berryKickIn', (berryKickIn: BerryKickIn) => {
         const position = berryKickIn.pos;
         const character = berryKickIn.character;
-        game.kickInBerry(position, character);
+        this.game.kickInBerry(position, character);
       });
 
       // Snail
       this.stream.on('getOnSnail', (getOnSnail: GetOnSnail) => {
         const position = getOnSnail.pos;
         const character = getOnSnail.character;
-        game.getOnSnail(position, character);
+        this.game.getOnSnail(position, character);
       });
       this.stream.on('getOffSnail', (getOffSnail: GetOffSnail) => {
         const character = getOffSnail.character;
         const position = getOffSnail.pos;
-        game.updateSnailPosition(character, position);
-        game.getOffSnail(character);
+        this.game.updateSnailPosition(character, position);
+        this.game.getOffSnail(character);
       });
       this.stream.on('snailEat', (snailEat: SnailEat) => {
         const rider = snailEat.rider;
         const eaten = snailEat.eaten;
-        game.startEating(rider, eaten);
+        this.game.startEating(rider, eaten);
       });
 
       // Player
@@ -149,20 +143,20 @@ export class GameManager extends ProtectedEventEmitter<Events> {
         const character = spawn.character;
         const isAI = spawn.isAI;
         if (!isAI) {
-          game.becomeHuman(character);
+          this.game.becomeHuman(character);
         }
       });
       this.stream.on('carryFood', (carryFood: CarryFood) => {
         const character = carryFood.character;
-        game.holdBerry(character);
+        this.game.holdBerry(character);
       });
       this.stream.on('playerKill', (playerKill: PlayerKill) => {
         const victim = playerKill.killed;
         const killer = playerKill.by;
-        game.kill(victim, killer);
+        this.game.kill(victim, killer);
       });
 
-      this.protectedEmit('game', game);
+      this.protectedEmit('game', this.game);
     });
   }
 }

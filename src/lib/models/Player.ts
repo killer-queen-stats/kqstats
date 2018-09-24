@@ -1,12 +1,21 @@
 import { Character as CharacterEnum } from './KQStream';
-
-type Kill = {
-    victim: CharacterEnum
-};
-
-type Death = {
-    killer: CharacterEnum
-};
+import {
+    WarriorCanNotDepositBerryError,
+    DroneCanNotDepositBerryWhileOnSnailError,
+    DroneDoesNotHaveBerryError,
+    DroneCanNotKickInBerryWithoutHoldingBerryError,
+    DroneCanNotKickInBerryWhileOnSnailError,
+    PlayerIsAlreadyHumanError,
+    WarriorCanNotBecomeSpeedError,
+    DroneIsAlreadySpeedError,
+    WarriorIsAlreadyWarriorError,
+    WarriorCanNotRideSnailError,
+    DroneIsAlreadyOnSnailError,
+    DroneIsAlreadyOffSnailError,
+    WarriorCanNotHoldBerryError,
+    DroneCanNotBeginHoldingBerryWhileOnSnailError,
+    DroneAlreadyHasBerryError
+} from './errors/gameState/PlayerError';
 
 type PlayerOptions = {
     character: CharacterEnum
@@ -63,7 +72,7 @@ export class Player {
         // this._deaths = [];
         this._berryDeposits = 0;
         this._berryKickIns = 0;
-        this._isHuman = true;
+        this._isHuman = false;
         this.resetState();
     }
 

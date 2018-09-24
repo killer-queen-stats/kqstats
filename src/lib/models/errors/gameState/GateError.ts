@@ -1,46 +1,46 @@
-class GateError extends Error {
+export class GateError extends Error {
   constructor(message?: string) {
       super(message);
       Object.setPrototypeOf(this, new.target.prototype);
   }
 }
 
-class SamePossessionError extends GateError {
+export class SamePossessionError extends GateError {
   constructor() {
     super();
     Object.setPrototypeOf(this, new.target.prototype);
   }
 }
 
-class PossessionMismatchError extends GateError {
+export class PossessionMismatchError extends GateError {
   constructor() {
     super();
     Object.setPrototypeOf(this, new.target.prototype);
   }
 }
 
-class GateCanNotBecomeNeutralError extends GateError {
+export class GateCanNotBecomeNeutralError extends GateError {
   constructor() {
     super();
     Object.setPrototypeOf(this, new.target.prototype);
   }
 }
 
-class GateOccupiedError extends GateError {
+export class GateOccupiedError extends GateError {
   constructor() {
     super();
     Object.setPrototypeOf(this, new.target.prototype);
   }
 }
 
-class GateNotOccupiedError extends GateError {
+export class GateNotOccupiedError extends GateError {
   constructor() {
     super();
     Object.setPrototypeOf(this, new.target.prototype);
   }
 }
 
-class CharacterMismatchError extends GateError {
+export class CharacterMismatchError extends GateError {
   constructor() {
     super();
     Object.setPrototypeOf(this, new.target.prototype);

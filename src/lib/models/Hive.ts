@@ -1,93 +1,36 @@
-import { GameMap, Team } from './Game';
+import {
+    GameMap,
+    Team
+} from '../models/Game';
+import { Hives } from '../Game';
 import { Position } from './KQStream';
-
-/**
- * Describes the bounds of a `Hive` object.
- * Berries deposited into a hive must have
- * an x,y position within these bounds for
- * the deposit to be valid.
- */
-type HiveBounds = {
-    x: number,
-    y: number,
-    width: number,
-    height: number
-};
+import {
+    HiveMustHaveMoreThanZeroHolesError,
+    HiveIsFullError
+} from './errors/gameState/HiveError';
 
 type HiveSet = {
-    [map in GameMap]: () => Hive[]
+    [map in GameMap]: () => Hives
 };
 
 type HiveOptions = {
-    bounds: HiveBounds,
     team: Team,
     holes: number
 };
 
 export class Hive {
     static readonly set: HiveSet = {
-        [GameMap.Day]: () => {
-            return [
-                new Hive({
-                    bounds: {
-                        // TODO: Fill this in
-                    },
-                    team: Team.Blue,
-                    holes: 12
-                }),
-                new Hive({
-                    bounds: {
-                        // TODO: Fill this in
-                    },
-                    team: Team.Gold,
-                    holes: 12
-                })
-            ];
+        [GameMap.Day]: Hive.defaultHives,
+        [GameMap.Night]: Hive.defaultHives,
+        [GameMap.Dusk]: Hive.defaultHives,
+        [GameMap.BonusWarrior]: () => {
+            return {};
         },
-        [GameMap.Night]: () => {
-            return [
-                new Hive({
-                    bounds: {
-                        // TODO: Fill this in
-                    },
-                    team: Team.Blue,
-                    holes: 12
-                }),
-                new Hive({
-                    bounds: {
-                        // TODO: Fill this in
-                    },
-                    team: Team.Gold,
-                    holes: 12
-                })
-            ];
-        },
-        [GameMap.Dusk]: () => {
-            return [
-                new Hive({
-                    bounds: {
-                        // TODO: Fill this in
-                    },
-                    team: Team.Blue,
-                    holes: 12
-                }),
-                new Hive({
-                    bounds: {
-                        // TODO: Fill this in
-                    },
-                    team: Team.Gold,
-                    holes: 12
-                })
-            ];
-        },
-        [GameMap.BonusWarrior]: () => [],
-        [GameMap.BonusSnail]: () => []
+        [GameMap.BonusSnail]: () => {
+            return {};
+        }
     };
 
-    private _bounds: HiveBounds;
-    get bounds(): HiveBounds {
-        return this._bounds;
-    }
     private _team: Team;
     get team(): Team {
         return this._team;
@@ -108,6 +51,19 @@ export class Hive {
         return this._berryDeposits + this._berryKickIns;
     }
 
+    static defaultHives() {
+        return {
+            [Team.Blue]: new Hive({
+                team: Team.Blue,
+                holes: 12
+            }),
+            [Team.Gold]: new Hive({
+                team: Team.Gold,
+                holes: 12
+            })
+        };
+    }
+
     constructor(options: HiveOptions) {
         if (options.holes <= 0) {
             throw new HiveMustHaveMoreThanZeroHolesError();
@@ -119,31 +75,15 @@ export class Hive {
     }
 
     depositBerry(position: Position) {
-        this.checkBounds(position);
         if (this.berries === this.holes) {
             throw new HiveIsFullError();
         }
         this._berryDeposits++;
     }
-    kickInBerry() {
+    kickInBerry(position: Position) {
         if (this.berries === this.holes) {
             throw new HiveIsFullError();
         }
         this._berryKickIns++;
-    }
-
-    inBounds(position: Position) {
-        return (
-            position.x > this.bounds.x &&
-            position.y > this.bounds.y &&
-            position.x < this.bounds.x + this.bounds.width &&
-            position.y < this.bounds.y + this.bounds.height
-        );
-    }
-
-    private checkBounds(position: Position) {
-        if (!this.inBounds(position)) {
-            throw new BerryDepositOutOfBoundsError();
-        }
     }
 }

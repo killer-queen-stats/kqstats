@@ -1,5 +1,17 @@
 import { Position, Character } from './KQStream';
-import { Game, GameMap, Possession } from './Game';
+import {
+  GameMap,
+  Possession
+} from '../models/Game';
+import { Game } from '../Game';
+import {
+  GateCanNotBecomeNeutralError,
+  SamePossessionError,
+  GateOccupiedError,
+  PossessionMismatchError,
+  GateNotOccupiedError,
+  CharacterMismatchError
+} from './errors/gameState/GateError';
 
 type GateSet = {
   [map in GameMap]: () => Gate[]
@@ -168,7 +180,48 @@ export class Gate {
     },
     [GameMap.BonusSnail]: () => {
       return [
-        // TODO: Fill this in
+        new Gate({
+          type: GateType.Warrior,
+          position: {
+            x: 400,
+            y: 860
+          }
+        }),
+        new Gate({
+          type: GateType.Warrior,
+          position: {
+            x: 1520,
+            y: 860
+          }
+        }),
+        new Gate({
+          type: GateType.Warrior,
+          position: {
+            x: 960,
+            y: 20
+          }
+        }),
+        new Gate({
+          type: GateType.Speed,
+          position: {
+            x: 290,
+            y: 620
+          }
+        }),
+        new Gate({
+          type: GateType.Speed,
+          position: {
+            x: 1630,
+            y: 620
+          }
+        }),
+        new Gate({
+          type: GateType.Speed,
+          position: {
+            x: 960,
+            y: 260
+          }
+        })
       ];
     }
   };
@@ -233,5 +286,6 @@ export class Gate {
     } else if (this._character !== character) {
       throw new CharacterMismatchError();
     }
+    this._character = undefined;
   }
 }

@@ -6,6 +6,9 @@ import * as socket_io from 'socket.io';
 import { GameStats, KQStat } from '../lib/GameStats';
 import { KQCab } from '../lib/KQCab';
 import { KQStream, KQStreamOptions } from '../lib/KQStream';
+import { GameManager } from '../lib/GameManager';
+import { Team } from '../lib/models/KQStream';
+import { Hive } from '../lib/models/Hive';
 
 const WAIT_SCAN_S = 10;
 const WAIT_CONNECT_S = 10;
@@ -100,20 +103,33 @@ async function main() {
     }
     
     const stream = new KQStream(options);
-    const gameStats = new GameStats(stream);
-    gameStats.start();
-    
-    const io = socket_io(8000);
-    io.on('connection', (socket) => {
-        const changeListener = (data: KQStat) => {
-            socket.emit('stat', data);
-        };
-        gameStats.on('change', changeListener);
-        socket.on('disconnect', () => {
-            gameStats.removeListener('change', changeListener);
-        });
-        gameStats.trigger('change');
+    const gameManager = new GameManager(stream);
+    let prevInterval: NodeJS.Timer;
+    gameManager.on('game', (game) => {
+        clearInterval(prevInterval);
+        prevInterval = setInterval(() => {
+            if (
+                game.hives !== undefined &&
+                game.hives[Team.Blue] !== undefined
+            ) {
+                const hiveBlue = game.hives[Team.Blue] as Hive;
+                const hiveGold = game.hives[Team.Gold] as Hive;
+                console.log(hiveGold.berryDeposits, hiveBlue.berryDeposits);
+            }
+        }, 1000);
     });
+    
+    // const io = socket_io(8000);
+    // io.on('connection', (socket) => {
+    //     const changeListener = (data: KQStat) => {
+    //         socket.emit('stat', data);
+    //     };
+    //     gameStats.on('change', changeListener);
+    //     socket.on('disconnect', () => {
+    //         gameStats.removeListener('change', changeListener);
+    //     });
+    //     gameStats.trigger('change');
+    // });
 
     if (process.argv.length === 2) {
         process.argv[2] = '-c';
@@ -129,7 +145,7 @@ async function main() {
         stream.on('connectionError', (data) => {
             if (!data.connected) {
                 console.log('Lost connection!');
-                gameStats.start();
+                // gameStats.start();
                 connect(stream, address);
             }
         });

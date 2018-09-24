@@ -1,5 +1,11 @@
 import { Position, Character } from './KQStream';
-import { GameMap, Possession } from './Game';
+import { GameMap, Possession } from '../models/Game';
+import {
+  SnailDoesNotHaveRiderError,
+  SnailHasRiderError,
+  SnailIsNotEatingError,
+  SnailIsEatingError
+} from './errors/gameState/SnailError';
 
 type SnailSet = {
   [map in GameMap]: () => Snail[]
@@ -46,7 +52,24 @@ export class Snail {
     },
     [GameMap.BonusSnail]: () => {
       return [
-        // TODO: Fill this in
+        new Snail({
+          position: {
+            x: 520,
+            y: 371
+          }
+        }),
+        new Snail({
+          position: {
+            x: 1400,
+            y: 371
+          }
+        }),
+        new Snail({
+          position: {
+            x: 960,
+            y: 731
+          }
+        })
       ];
     }
   };

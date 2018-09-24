@@ -1,32 +1,32 @@
-class SnailError extends Error {
+export class SnailError extends Error {
   constructor(message?: string) {
       super(message);
       Object.setPrototypeOf(this, new.target.prototype);
   }
 }
 
-class SnailHasRiderError extends SnailError {
+export class SnailHasRiderError extends SnailError {
   constructor() {
     super();
     Object.setPrototypeOf(this, new.target.prototype);
   }
 }
 
-class SnailDoesNotHaveRiderError extends SnailError {
+export class SnailDoesNotHaveRiderError extends SnailError {
   constructor() {
     super();
     Object.setPrototypeOf(this, new.target.prototype);
   }
 }
 
-class SnailIsEatingError extends SnailError {
+export class SnailIsEatingError extends SnailError {
   constructor() {
     super();
     Object.setPrototypeOf(this, new.target.prototype);
   }
 }
 
-class SnailIsNotEatingError extends SnailError {
+export class SnailIsNotEatingError extends SnailError {
   constructor() {
     super();
     Object.setPrototypeOf(this, new.target.prototype);

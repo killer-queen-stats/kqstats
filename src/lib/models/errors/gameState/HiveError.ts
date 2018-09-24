@@ -1,25 +1,25 @@
-class HiveError extends Error {
+export class HiveError extends Error {
   constructor(message?: string) {
       super(message);
       Object.setPrototypeOf(this, new.target.prototype);
   }
 }
 
-class HiveIsFullError extends HiveError {
+export class HiveIsFullError extends HiveError {
   constructor() {
     super();
     Object.setPrototypeOf(this, new.target.prototype);
   }
 }
 
-class HiveMustHaveMoreThanZeroHolesError extends HiveError {
+export class HiveMustHaveMoreThanZeroHolesError extends HiveError {
   constructor() {
     super();
     Object.setPrototypeOf(this, new.target.prototype);
   }
 }
 
-class BerryDepositOutOfBoundsError extends HiveError {
+export class BerryDepositOutOfBoundsError extends HiveError {
   constructor() {
     super();
     Object.setPrototypeOf(this, new.target.prototype);
