@@ -2,29 +2,34 @@ package server
 
 import (
 	"bufio"
+	"errors"
+	"log"
 	"os"
 	"time"
-)
 
+	"github.com/sirupsen/logrus"
+)
 
 // StatServer is a test server that opens a stat file
 // and streams the messages across a websocket
 // Will loop the messages
 type StatServer struct {
-	FileName string
+	FileName  string
 	statQueue []string
-	counter int
-	StatChan chan string
-	StopChan chan interface{}
+	counter   int
+	StatChan  chan string
+	stopChan  chan interface{}
 }
 
+// NewStatServer creates a new statserver and loads all the
+// recorded stats into the statsqueue
 func NewStatServer(fileName string) *StatServer {
-	statServer := &StatServer {
-		FileName: fileName,
+	statServer := &StatServer{
+		FileName:  fileName,
 		statQueue: []string{},
-		counter: 0,
-		StatChan: make(chan string, 100),
-		StopChan: make(chan interface{}, 1),
+		counter:   0,
+		StatChan:  make(chan string, 100),
+		stopChan:  make(chan interface{}, 1),
 	}
 
 	err := statServer.loadMessages()
@@ -34,29 +39,32 @@ func NewStatServer(fileName string) *StatServer {
 	return statServer
 }
 
-func (s *StatServer) Serve() (<-chan string){
+// Serve begins to stuff the Stat Channel with
+// Messages from the files
+func (s *StatServer) Serve() <-chan string {
 	go serve()
 	return s.StatChan
 }
 
+// Stop stops the statserver
 func (s *StatServer) Stop() {
-	s.StopChan <- true
+	s.stopChan <- true
 }
 
 func (s *StatServer) serve() {
 	for {
 		select {
-			case <-s.StopChan:
-				logrus.Infof("Stopping Stat Server")
-				break;
-			default:
-				stat, err := s.getNextMessage()
-				if err != nil {
-					logrus.Errorf("Stat Server ran into an error %v", err)
-					break;
-				}
-				s.statChan <- stat
-				time.sleep(1 * time.Second)
+		case <-s.stopChan:
+			logrus.Infof("Stopping Stat Server")
+			break
+		default:
+			stat, err := s.getNextMessage()
+			if err != nil {
+				logrus.Errorf("Stat Server ran into an error %v", err)
+				break
+			}
+			s.statChan <- stat
+			time.sleep(1 * time.Second)
 		}
 
 	}
