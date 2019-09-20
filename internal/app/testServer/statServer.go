@@ -42,7 +42,7 @@ func NewStatServer(fileName string) *StatServer {
 // Serve begins to stuff the Stat Channel with
 // Messages from the files
 func (s *StatServer) Serve() <-chan string {
-	go serve()
+	go s.serve()
 	return s.StatChan
 }
 
@@ -63,8 +63,8 @@ func (s *StatServer) serve() {
 				logrus.Errorf("Stat Server ran into an error %v", err)
 				break
 			}
-			s.statChan <- stat
-			time.sleep(1 * time.Second)
+			s.StatChan <- stat
+			time.Sleep(1 * time.Second)
 		}
 
 	}
@@ -92,6 +92,6 @@ func (s *StatServer) getNextMessage() (string, error) {
 
 	message := s.statQueue[s.counter]
 	// Could be safter by resetting to 0 explicitly but this looks cleaner
-	counter = (counter + 1) % len(s.statQueue)
+	s.counter = (s.counter + 1) % len(s.statQueue)
 	return message, nil
 }

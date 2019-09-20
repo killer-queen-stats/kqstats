@@ -21,16 +21,16 @@ func MessageHandler(rw http.ResponseWriter, r *http.Request) {
 		return
 	}
 	defer c.Close()
-	statServer := server.NewStatServer()
+	statServer := server.NewStatServer( /*TODO: IMPORT LOGS*/ )
 	statChan := statServer.Serve()
 
 	for {
 		m := <-statChan
 		logrus.Infof("%v", m)
-		err := c.WriteMessage(mt, m)
+		err := c.WriteMessage(websocket.TextMessage, []byte(m))
 		if err != nil {
 			logrus.Infof("Lost connection %v. Terminating connection", err)
-			StatServer.Stop()
+			statServer.Stop()
 			break
 		}
 	}
@@ -38,13 +38,13 @@ func MessageHandler(rw http.ResponseWriter, r *http.Request) {
 
 // StatusHandler returns an ok message
 func StatusHandler(rw http.ResponseWriter, r *http.Request) {
-	rw.Write("Ok")
+	rw.Write([]byte("Ok"))
 }
 
 func main() {
 	http.HandleFunc("/", MessageHandler)
 	http.HandleFunc("/status", StatusHandler)
 
-	host := net.JoinHostPort(string(ip), wsport)
+	host := net.JoinHostPort("localhost", wsport)
 	log.Fatal(http.ListenAndServe(host, nil))
 }
