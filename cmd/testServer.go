@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"log"
 	"net"
 	"net/http"
@@ -12,6 +13,7 @@ import (
 
 var wsport = "12749"
 var upgrader = websocket.Upgrader{}
+var testLogsFilePath string
 
 // MessageHandler handles upgrading the connection
 func MessageHandler(rw http.ResponseWriter, r *http.Request) {
@@ -21,7 +23,7 @@ func MessageHandler(rw http.ResponseWriter, r *http.Request) {
 		return
 	}
 	defer c.Close()
-	statServer := server.NewStatServer( /*TODO: IMPORT LOGS*/ )
+	statServer := server.NewStatServer(testLogsFilePath)
 	statChan := statServer.Serve()
 
 	for {
@@ -42,6 +44,10 @@ func StatusHandler(rw http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	flag.StringVar(&testLogsFilePath, "path", "testData/testLogs", "Data that will get streamed from the logs")
+
+	flag.Parse()
+
 	http.HandleFunc("/", MessageHandler)
 	http.HandleFunc("/status", StatusHandler)
 
