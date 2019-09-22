@@ -37,12 +37,14 @@ func (o *Orchestrator) ReadMessage() {
 			logrus.Infof("Shutting down")
 			return
 		default:
-			_, _, err := o.conn.ReadMessage()
+			_, message, err := o.conn.ReadMessage()
 			if err != nil {
 				// Close the connection and break
 				o.conn.Close()
 				o.Stop()
 			}
+			// TODO: Move this to stdout plugin
+			logrus.Infof("%v", message)
 		}
 	}
 }
