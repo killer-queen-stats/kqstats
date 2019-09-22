@@ -10,6 +10,14 @@
   version = "v1.4.1"
 
 [[projects]]
+  branch = "master"
+  digest = "1:67f9ebf2c53e4673d0ee5477cbd7a1a02c3e18bed4564ac5033ecb08bf697529"
+  name = "github.com/johncgriffin/overflow"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "4d914c927216bf4e10c887ed4a9161aff06d7d8c"
+
+[[projects]]
   digest = "1:31e761d97c76151dde79e9d28964a812c46efc5baee4085b86f68f0c654450de"
   name = "github.com/konsorten/go-windows-terminal-sequences"
   packages = ["."]
@@ -38,6 +46,7 @@
   analyzer-version = 1
   input-imports = [
     "github.com/gorilla/websocket",
+    "github.com/johncgriffin/overflow",
     "github.com/sirupsen/logrus",
   ]
   solver-name = "gps-cdcl"
