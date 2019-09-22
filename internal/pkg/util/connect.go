@@ -13,14 +13,29 @@ import (
 // WSPort is the port that KQ stats connects on
 var WSPort = "12749"
 
+// ConnectionInfo is the info needed to connect to a cab
+type ConnectionInfo struct {
+	Addr string
+	Port string
+}
+
 // Connect returns a websocket Connection
-func Connect() (*websocket.Conn, error) {
-	ip, err := getConnectionIP()
-	if err != nil {
-		return nil, err
+func Connect(info *ConnectionInfo) (*websocket.Conn, error) {
+	var addr string
+	var port string
+	if info == nil || info.Addr == "" {
+		ip, err := getConnectionIP()
+		if err != nil {
+			return nil, err
+		}
+		addr = string(ip)
+		port = WSPort
+	} else {
+		addr = info.Addr
+		port = info.Port
 	}
 
-	host := net.JoinHostPort(string(ip), WSPort)
+	host := net.JoinHostPort(addr, port)
 
 	websocketURL := url.URL{
 		Scheme: "ws",
