@@ -21,4 +21,8 @@ func main() {
 	if err != nil {
 		log.Fatalf("Error with orchestration creation: %v", err)
 	}
+	go orchestrator.ReadMessage()
+
+	// Better way than waiting on a channel
+	<-orchestrator.StopChan
 }
