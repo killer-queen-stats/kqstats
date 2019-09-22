@@ -11,8 +11,13 @@ import (
 type Orchestrator struct {
 	conn     *websocket.Conn
 	StopChan chan interface{}
-	// TODO: Channel []*Plugin
-	// TODO: Parser *MessageParser
+	Parser   *StatParser
+	// TODO: Channel []*Plugin: These channels do something with the raw message after it's parsed
+}
+
+// Plugin is an interface that all additional channels will need to implement
+type Plugin interface {
+	Validate(map[string]interface{}) bool
 }
 
 // NewOrchestrator returns an error
@@ -25,6 +30,7 @@ func NewOrchestrator(info *util.ConnectionInfo) (*Orchestrator, error) {
 	orchestrator := &Orchestrator{
 		conn:     conn,
 		StopChan: make(chan interface{}, 1),
+		Parser:   NewStatParser(),
 	}
 	return orchestrator, nil
 }
