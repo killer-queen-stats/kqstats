@@ -12,6 +12,8 @@ func main() {
 	addr := flag.String("addr", "", "local ip of the cab")
 	port := flag.String("port", "12749", "port of the stats websocket")
 
+	flag.Parse()
+
 	info := &util.ConnectionInfo{
 		Addr: *addr,
 		Port: *port,

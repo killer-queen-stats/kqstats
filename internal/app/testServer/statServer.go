@@ -34,7 +34,7 @@ func NewStatServer(fileName string) *StatServer {
 
 	err := statServer.loadMessages()
 	if err != nil {
-		log.Fatalf("Could not load messages")
+		log.Fatalf("Could not load messages: %v", err)
 	}
 	return statServer
 }

@@ -33,7 +33,7 @@ func MessageHandler(rw http.ResponseWriter, r *http.Request) {
 		if err != nil {
 			logrus.Infof("Lost connection %v. Terminating connection", err)
 			statServer.Stop()
-			break
+			return
 		}
 	}
 }

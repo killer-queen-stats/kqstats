@@ -23,6 +23,7 @@ type ConnectionInfo struct {
 func Connect(info *ConnectionInfo) (*websocket.Conn, error) {
 	var addr string
 	var port string
+	logrus.Infof("%v", info)
 	if info == nil || info.Addr == "" {
 		ip, err := getConnectionIP()
 		if err != nil {
@@ -36,6 +37,7 @@ func Connect(info *ConnectionInfo) (*websocket.Conn, error) {
 	}
 
 	host := net.JoinHostPort(addr, port)
+	logrus.Infof("Connecting on address %v", host)
 
 	websocketURL := url.URL{
 		Scheme: "ws",
