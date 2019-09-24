@@ -29,7 +29,7 @@ func Connect(info *ConnectionInfo) (*websocket.Conn, error) {
 		if err != nil {
 			return nil, err
 		}
-		addr = string(ip)
+		addr = ip.String()
 		port = WSPort
 	} else {
 		addr = info.Addr
@@ -71,9 +71,10 @@ func filterIpsByOpenPort(ips []net.IP, port string) ([]net.IP, error) {
 	connectionTimeout := time.Second * 5
 	finalIPList := []net.IP{}
 	for _, ip := range ips {
-		conn, err := net.DialTimeout("tcp", net.JoinHostPort(string(ip), port), connectionTimeout)
+		logrus.Infof("Connecting on address %v", ip.String())
+		conn, err := net.DialTimeout("tcp", net.JoinHostPort(ip.String(), port), connectionTimeout)
 		if err != nil {
-			logrus.Warnf("Wrong ip address.")
+			logrus.Warnf("Wrong ip address %v %v", ip.String(), err)
 			continue
 		}
 		if conn != nil {

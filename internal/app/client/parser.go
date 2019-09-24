@@ -3,6 +3,7 @@ package client
 import (
 	"errors"
 	"regexp"
+	"strconv"
 	"strings"
 	"time"
 
@@ -35,7 +36,7 @@ func (p *StatParser) Parse(message string) (*Stat, error) {
 	if idxs != nil { // Found TS first
 		splitMessage := strings.SplitN(message, ",", 2)
 		tsString = splitMessage[0]
-		ts, err = p.convertTimestampString(tsString)
+		ts = p.convertTimestampString(tsString)
 		keysAndValue = splitMessage[1]
 	} else {
 		ts = time.Now()
@@ -45,6 +46,9 @@ func (p *StatParser) Parse(message string) (*Stat, error) {
 	stat := Stat{
 		RawMessage: message,
 		Timestamp:  ts,
+		Payload: map[string]interface{}{
+			"keysAndValue": keysAndValue,
+		},
 	}
 	return &stat, nil
 }
@@ -56,7 +60,7 @@ func (p *StatParser) validate(message string) bool {
 }
 
 func (p *StatParser) convertTimestampString(tsString string) time.Time {
-	i, err := strConv.ParseInt(tsString, 10, 64)
+	i, err := strconv.ParseInt(tsString, 10, 64)
 	if err != nil {
 		return time.Now()
 	}
@@ -65,9 +69,9 @@ func (p *StatParser) convertTimestampString(tsString string) time.Time {
 	_, ok := overflow.Mul64(i, int64(time.Second))
 	var ts time.Time
 	if !ok {
-		ts = epoch.Add(i * time.Millisecond)
+		ts = epoch.Add(time.Duration(i) * time.Millisecond)
 	} else {
-		ts = epoch.Add(i * time.Second)
+		ts = epoch.Add(time.Duration(i) * time.Second)
 	}
 	if ts.After(time.Now()) {
 		ts = time.Now()
