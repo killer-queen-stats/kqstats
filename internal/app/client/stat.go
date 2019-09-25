@@ -12,8 +12,8 @@ const (
 
 // Stat is a construct that envelopes everything that's spat out by the parser
 type Stat struct {
-	RawMessage string                 `json:rawMessage`
-	StatType   StatType               `json:statType`
-	Timestamp  time.Time              `json:timestamp`
-	Payload    map[string]interface{} `json:payload`
+	RawMessage string                 `json:"rawMessage"`
+	StatType   StatType               `json:"statType"`
+	Timestamp  time.Time              `json:"timestamp"`
+	Payload    map[string]interface{} `json:"payload"`
 }
