@@ -43,8 +43,12 @@ func (p *StatParser) Parse(message string) (*Stat, error) {
 		keysAndValue = message
 	}
 
+	key := p.getMessageKey(keysAndValue)
+	logrus.Infof("%v\n", key)
+
 	stat := Stat{
 		RawMessage: message,
+		StatType:   StatType(key),
 		Timestamp:  ts,
 		Payload: map[string]interface{}{
 			"keysAndValue": keysAndValue,
@@ -55,7 +59,7 @@ func (p *StatParser) Parse(message string) (*Stat, error) {
 
 func (p *StatParser) validate(message string) bool {
 	// Valid messages match something that looks like TS, ![k[messageType], v[message,values]]!
-	messageRegex := regexp.MustCompile(`([0-9]+,)?!\[k\[[a-zA-Z]+\],v\[[^\]]+\]\]!`)
+	messageRegex := regexp.MustCompile(`([0-9]+,)?!\[k\[[a-zA-Z: ]+\],v\[[^\]]+\]\]!`)
 	return messageRegex.MatchString(message)
 }
 
@@ -77,4 +81,16 @@ func (p *StatParser) convertTimestampString(tsString string) time.Time {
 		ts = time.Now()
 	}
 	return ts
+}
+
+func (p *StatParser) getMessageKey(keyAndValue string) string {
+	alphaRegex := regexp.MustCompile(`[^a-zA-Z]+`)
+	keyRegex := regexp.MustCompile(`k\[(?P<key>[a-zA-Z: ]+)\]`)
+	messageKeys := keyRegex.FindStringSubmatch(keyAndValue)
+	if len(messageKeys) <= 1 {
+		return ""
+	}
+	key := messageKeys[1]
+	processedKey := alphaRegex.ReplaceAllString(key, "")
+	return processedKey
 }
