@@ -64,7 +64,7 @@ func (s *StatServer) serve() {
 				break
 			}
 			s.StatChan <- stat
-			time.Sleep(1 * time.Second)
+			time.Sleep(1 * time.Millisecond)
 		}
 
 	}

@@ -50,7 +50,8 @@ func (o *Orchestrator) ReadMessage() {
 				o.Stop()
 			}
 			// TODO: Move this to stdout plugin
-			logrus.Infof("%v", string(message))
+			//logrus.Infof("%v", string(message))
+			o.Parser.Parse(string(message))
 		}
 	}
 }

@@ -8,6 +8,7 @@ import (
 	"time"
 
 	"github.com/johncgriffin/overflow"
+	"github.com/sirupsen/logrus"
 )
 
 // StatParser is a struct that will turn stat messages into JSON blobs
@@ -21,7 +22,10 @@ func NewStatParser() *StatParser {
 
 // Parse takes a string and returns a message
 func (p *StatParser) Parse(message string) (*Stat, error) {
-	if !p.validate(message) {
+	logrus.Infof("%v", message)
+
+	match := p.validate(message)
+	if !match {
 		return nil, errors.New("Not a stat")
 	}
 
@@ -44,7 +48,7 @@ func (p *StatParser) Parse(message string) (*Stat, error) {
 	}
 
 	key := p.getMessageKey(keysAndValue)
-	logrus.Infof("%v\n", key)
+	logrus.Infof("%v", key)
 
 	stat := Stat{
 		RawMessage: message,
