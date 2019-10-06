@@ -47,20 +47,17 @@ func (p *StatParser) Parse(message string) (*Stat, error) {
 		keysAndValue = message
 	}
 
-	key := p.getMessageKey(keysAndValue)
+	key := StatType(p.getMessageKey(keysAndValue))
 	values := p.getMessageValues(keysAndValue)
-	logrus.Infof("Key: %v", key)
-	logrus.Infof("Values: %v", values)
 
-	stat := Stat{
-		RawMessage: message,
-		StatType:   StatType(key),
-		Timestamp:  ts,
-		Payload: map[string]interface{}{
-			"keysAndValue": keysAndValue,
-		},
+	stat, err := NewStat(message, ts, key, values...)
+
+	if err != nil {
+		return nil, err
 	}
-	return &stat, nil
+	logrus.Infof("Stat: %v", stat)
+
+	return stat, nil
 }
 
 func (p *StatParser) validate(message string) bool {
