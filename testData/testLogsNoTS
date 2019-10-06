@@ -1,0 +1,5028 @@
+![k[alive],v[12:39:04 PM]]!
+![k[alive],v[12:39:09 PM]]!
+![k[alive],v[12:39:14 PM]]!
+![k[playerKill],v[750,861,1,2,Queen]]!
+![k[playerKill],v[801,860,1,10,Worker]]!
+![k[playerKill],v[830,860,1,4,Worker]]!
+![k[playerKill],v[830,860,1,6,Worker]]!
+![k[alive],v[12:39:19 PM]]!
+![k[playerKill],v[1190,860,8,5,Worker]]!
+![k[playerKill],v[1150,860,8,7,Worker]]!
+![k[playerKill],v[1110,860,8,9,Worker]]!
+![k[playerKill],v[810,860,1,6,Worker]]!
+![k[alive],v[12:39:24 PM]]!
+![k[playerKill],v[820,861,1,2,Queen]]!
+![k[alive],v[12:39:29 PM]]!
+![k[playerKill],v[890,861,1,2,Queen]]!
+![k[gameend],v[map_day,False,136.7731,False]]!
+![k[victory],v[Gold,military]]!
+![k[alive],v[12:39:34 PM]]!
+![k[alive],v[12:39:39 PM]]!
+![k[alive],v[12:39:44 PM]]!
+![k[spawn],v[1,False]]!
+![k[spawn],v[2,False]]!
+![k[playernames],v[,,,,,,,,,]]!
+![k[spawn],v[8,False]]!
+![k[spawn],v[10,False]]!
+![k[spawn],v[6,False]]!
+![k[spawn],v[4,False]]!
+![k[spawn],v[7,False]]!
+![k[alive],v[12:39:49 PM]]!
+![k[spawn],v[5,False]]!
+![k[spawn],v[9,False]]!
+![k[spawn],v[3,False]]!
+![k[blessMaiden],v[1510,860,Red]]!
+![k[alive],v[12:39:54 PM]]!
+![k[gamestart],v[map_day,False,0,False]]!
+![k[carryFood],v[8]]!
+![k[reserveMaiden],v[560,260,8]]!
+![k[alive],v[12:39:59 PM]]!
+![k[useMaiden],v[560,260,maiden_wings,8]]!
+![k[playerKill],v[830,860,1,10,Worker]]!
+![k[playerKill],v[859,860,1,4,Worker]]!
+![k[playerKill],v[750,861,1,2,Queen]]!
+![k[alive],v[12:40:04 PM]]!
+![k[playerKill],v[801,860,1,6,Worker]]!
+![k[playerKill],v[1032,860,8,5,Worker]]!
+![k[playerKill],v[1032,860,8,3,Worker]]!
+![k[playerKill],v[1119,860,8,9,Worker]]!
+![k[playerKill],v[1119,860,8,7,Worker]]!
+![k[alive],v[12:40:09 PM]]!
+![k[playerKill],v[770,860,1,4,Worker]]!
+![k[playerKill],v[730,860,1,10,Worker]]!
+![k[playerKill],v[820,861,1,2,Queen]]!
+![k[playerKill],v[810,860,1,6,Worker]]!
+![k[playerKill],v[753,945,1,8,Soldier]]!
+![k[alive],v[12:40:14 PM]]!
+![k[playerKill],v[730,860,1,4,Worker]]!
+![k[playerKill],v[730,860,1,6,Worker]]!
+![k[playerKill],v[770,860,1,8,Worker]]!
+![k[playerKill],v[770,860,1,10,Worker]]!
+![k[alive],v[12:40:19 PM]]!
+![k[alive],v[12:40:24 PM]]!
+![k[alive],v[12:40:29 PM]]!
+![k[alive],v[12:40:34 PM]]!
+![k[alive],v[12:40:39 PM]]!
+![k[alive],v[12:40:44 PM]]!
+![k[alive],v[12:40:49 PM]]!
+![k[alive],v[12:40:54 PM]]!
+![k[alive],v[12:40:59 PM]]!
+![k[alive],v[12:41:04 PM]]!
+![k[alive],v[12:41:09 PM]]!
+![k[alive],v[12:41:14 PM]]!
+![k[alive],v[12:41:19 PM]]!
+![k[alive],v[12:41:24 PM]]!
+![k[alive],v[12:41:29 PM]]!
+![k[alive],v[12:41:34 PM]]!
+![k[alive],v[12:41:39 PM]]!
+![k[alive],v[12:41:44 PM]]!
+![k[alive],v[12:41:49 PM]]!
+![k[alive],v[12:41:54 PM]]!
+![k[alive],v[12:41:59 PM]]!
+![k[alive],v[12:42:04 PM]]!
+![k[alive],v[12:42:09 PM]]!
+![k[alive],v[12:42:14 PM]]!
+![k[alive],v[12:42:19 PM]]!
+![k[alive],v[12:42:24 PM]]!
+![k[alive],v[12:42:29 PM]]!
+![k[alive],v[12:42:34 PM]]!
+![k[alive],v[12:42:39 PM]]!
+![k[alive],v[12:42:44 PM]]!
+![k[alive],v[12:42:49 PM]]!
+![k[alive],v[12:42:54 PM]]!
+![k[alive],v[12:42:59 PM]]!
+![k[alive],v[12:43:04 PM]]!
+![k[alive],v[12:43:09 PM]]!
+![k[alive],v[12:43:14 PM]]!
+![k[alive],v[12:43:19 PM]]!
+![k[alive],v[12:43:24 PM]]!
+![k[alive],v[12:43:29 PM]]!
+![k[alive],v[12:43:34 PM]]!
+![k[alive],v[12:43:39 PM]]!
+![k[alive],v[12:43:44 PM]]!
+![k[alive],v[12:43:49 PM]]!
+![k[alive],v[12:43:54 PM]]!
+![k[alive],v[12:43:59 PM]]!
+![k[alive],v[12:44:04 PM]]!
+![k[alive],v[12:44:09 PM]]!
+![k[alive],v[12:44:14 PM]]!
+![k[alive],v[12:44:19 PM]]!
+![k[alive],v[12:44:24 PM]]!
+![k[alive],v[12:44:29 PM]]!
+![k[alive],v[12:44:34 PM]]!
+![k[alive],v[12:44:39 PM]]!
+![k[alive],v[12:44:44 PM]]!
+![k[alive],v[12:44:49 PM]]!
+![k[alive],v[12:44:54 PM]]!
+![k[alive],v[12:44:59 PM]]!
+![k[alive],v[12:45:04 PM]]!
+![k[alive],v[12:45:09 PM]]!
+![k[alive],v[12:45:14 PM]]!
+![k[alive],v[12:45:19 PM]]!
+![k[alive],v[12:45:24 PM]]!
+![k[alive],v[12:45:29 PM]]!
+![k[alive],v[12:45:34 PM]]!
+![k[alive],v[12:45:39 PM]]!
+![k[alive],v[12:45:44 PM]]!
+![k[alive],v[12:45:49 PM]]!
+![k[alive],v[12:45:54 PM]]!
+![k[alive],v[12:45:59 PM]]!
+![k[alive],v[12:46:04 PM]]!
+![k[alive],v[12:46:09 PM]]!
+![k[alive],v[12:46:14 PM]]!
+![k[alive],v[12:46:19 PM]]!
+![k[alive],v[12:46:24 PM]]!
+![k[alive],v[12:46:29 PM]]!
+![k[alive],v[12:46:34 PM]]!
+![k[alive],v[12:46:39 PM]]!
+![k[alive],v[12:46:44 PM]]!
+![k[alive],v[12:46:49 PM]]!
+![k[alive],v[12:46:54 PM]]!
+![k[alive],v[12:46:59 PM]]!
+![k[alive],v[12:47:04 PM]]!
+![k[alive],v[12:47:09 PM]]!
+![k[alive],v[12:47:14 PM]]!
+![k[alive],v[12:47:19 PM]]!
+![k[alive],v[12:47:24 PM]]!
+![k[alive],v[12:47:29 PM]]!
+![k[alive],v[12:47:34 PM]]!
+![k[alive],v[12:47:39 PM]]!
+![k[alive],v[12:47:44 PM]]!
+![k[alive],v[12:47:49 PM]]!
+![k[alive],v[12:47:54 PM]]!
+![k[alive],v[12:47:59 PM]]!
+![k[alive],v[12:48:04 PM]]!
+![k[alive],v[12:48:09 PM]]!
+![k[alive],v[12:48:14 PM]]!
+![k[alive],v[12:48:19 PM]]!
+![k[alive],v[12:48:24 PM]]!
+![k[alive],v[12:48:29 PM]]!
+![k[alive],v[12:48:34 PM]]!
+![k[alive],v[12:48:39 PM]]!
+![k[alive],v[12:48:44 PM]]!
+![k[alive],v[12:48:49 PM]]!
+![k[alive],v[12:48:54 PM]]!
+![k[alive],v[12:48:59 PM]]!
+![k[alive],v[12:49:04 PM]]!
+![k[alive],v[12:49:09 PM]]!
+![k[alive],v[12:49:14 PM]]!
+![k[alive],v[12:49:19 PM]]!
+![k[alive],v[12:49:24 PM]]!
+![k[alive],v[12:49:29 PM]]!
+![k[alive],v[12:49:34 PM]]!
+![k[alive],v[12:49:39 PM]]!
+![k[alive],v[12:49:44 PM]]!
+![k[alive],v[12:49:49 PM]]!
+![k[alive],v[12:49:54 PM]]!
+![k[alive],v[12:49:59 PM]]!
+![k[alive],v[12:50:04 PM]]!
+![k[alive],v[12:50:09 PM]]!
+![k[alive],v[12:50:14 PM]]!
+![k[alive],v[12:50:19 PM]]!
+![k[alive],v[12:50:24 PM]]!
+![k[alive],v[12:50:29 PM]]!
+![k[alive],v[12:50:34 PM]]!
+![k[alive],v[12:50:39 PM]]!
+![k[alive],v[12:50:44 PM]]!
+![k[alive],v[12:50:49 PM]]!
+![k[alive],v[12:50:54 PM]]!
+![k[alive],v[12:50:59 PM]]!
+![k[alive],v[12:51:04 PM]]!
+![k[alive],v[12:51:09 PM]]!
+![k[alive],v[12:51:14 PM]]!
+![k[alive],v[12:51:19 PM]]!
+![k[playerKill],v[730,860,1,4,Worker]]!
+![k[playerKill],v[770,860,1,6,Worker]]!
+![k[alive],v[12:51:24 PM]]!
+![k[alive],v[12:51:29 PM]]!
+![k[alive],v[12:51:34 PM]]!
+![k[alive],v[12:51:39 PM]]!
+![k[alive],v[12:51:44 PM]]!
+![k[alive],v[12:51:49 PM]]!
+![k[alive],v[12:51:54 PM]]!
+![k[alive],v[12:51:59 PM]]!
+![k[alive],v[12:52:04 PM]]!
+![k[alive],v[12:52:09 PM]]!
+![k[alive],v[12:52:14 PM]]!
+![k[alive],v[12:52:19 PM]]!
+![k[alive],v[12:52:24 PM]]!
+![k[alive],v[12:52:29 PM]]!
+![k[alive],v[12:52:34 PM]]!
+![k[alive],v[12:52:39 PM]]!
+![k[alive],v[12:52:44 PM]]!
+![k[alive],v[12:52:49 PM]]!
+![k[alive],v[12:52:54 PM]]!
+![k[alive],v[12:52:59 PM]]!
+![k[alive],v[12:53:04 PM]]!
+![k[alive],v[12:53:09 PM]]!
+![k[alive],v[12:53:14 PM]]!
+![k[alive],v[12:53:19 PM]]!
+![k[alive],v[12:53:24 PM]]!
+![k[alive],v[12:53:29 PM]]!
+![k[alive],v[12:53:34 PM]]!
+![k[alive],v[12:53:39 PM]]!
+![k[alive],v[12:53:44 PM]]!
+![k[alive],v[12:53:49 PM]]!
+![k[alive],v[12:53:54 PM]]!
+![k[alive],v[12:53:59 PM]]!
+![k[alive],v[12:54:04 PM]]!
+![k[alive],v[12:54:09 PM]]!
+![k[alive],v[12:54:14 PM]]!
+![k[alive],v[12:54:19 PM]]!
+![k[alive],v[12:54:24 PM]]!
+![k[alive],v[12:54:29 PM]]!
+![k[alive],v[12:54:34 PM]]!
+![k[alive],v[12:54:39 PM]]!
+![k[alive],v[12:54:44 PM]]!
+![k[alive],v[12:54:49 PM]]!
+![k[alive],v[12:54:54 PM]]!
+![k[alive],v[12:54:59 PM]]!
+![k[alive],v[12:55:04 PM]]!
+![k[alive],v[12:55:09 PM]]!
+![k[alive],v[12:55:14 PM]]!
+![k[alive],v[12:55:19 PM]]!
+![k[alive],v[12:55:24 PM]]!
+![k[alive],v[12:55:29 PM]]!
+![k[alive],v[12:55:34 PM]]!
+![k[alive],v[12:55:39 PM]]!
+![k[alive],v[12:55:44 PM]]!
+![k[alive],v[12:55:49 PM]]!
+![k[alive],v[12:55:54 PM]]!
+![k[alive],v[12:55:59 PM]]!
+![k[alive],v[12:56:04 PM]]!
+![k[alive],v[12:56:09 PM]]!
+![k[alive],v[12:56:14 PM]]!
+![k[alive],v[12:56:19 PM]]!
+![k[alive],v[12:56:24 PM]]!
+![k[alive],v[12:56:29 PM]]!
+![k[alive],v[12:56:34 PM]]!
+![k[alive],v[12:56:39 PM]]!
+![k[alive],v[12:56:44 PM]]!
+![k[alive],v[12:56:49 PM]]!
+![k[alive],v[12:56:54 PM]]!
+![k[alive],v[12:56:59 PM]]!
+![k[alive],v[12:57:04 PM]]!
+![k[alive],v[12:57:09 PM]]!
+![k[alive],v[12:57:14 PM]]!
+![k[alive],v[12:57:19 PM]]!
+![k[alive],v[12:57:24 PM]]!
+![k[alive],v[12:57:29 PM]]!
+![k[alive],v[12:57:34 PM]]!
+![k[alive],v[12:57:39 PM]]!
+![k[alive],v[12:57:44 PM]]!
+![k[alive],v[12:57:49 PM]]!
+![k[alive],v[12:57:54 PM]]!
+![k[alive],v[12:57:59 PM]]!
+![k[alive],v[12:58:04 PM]]!
+![k[alive],v[12:58:09 PM]]!
+![k[alive],v[12:58:14 PM]]!
+![k[alive],v[12:58:19 PM]]!
+![k[alive],v[12:58:24 PM]]!
+![k[alive],v[12:58:29 PM]]!
+![k[alive],v[12:58:34 PM]]!
+![k[alive],v[12:58:39 PM]]!
+![k[alive],v[12:58:44 PM]]!
+![k[alive],v[12:58:49 PM]]!
+![k[alive],v[12:58:54 PM]]!
+![k[alive],v[12:58:59 PM]]!
+![k[alive],v[12:59:04 PM]]!
+![k[alive],v[12:59:09 PM]]!
+![k[alive],v[12:59:14 PM]]!
+![k[alive],v[12:59:19 PM]]!
+![k[alive],v[12:59:24 PM]]!
+![k[alive],v[12:59:29 PM]]!
+![k[alive],v[12:59:34 PM]]!
+![k[alive],v[12:59:39 PM]]!
+![k[alive],v[12:59:44 PM]]!
+![k[alive],v[12:59:49 PM]]!
+![k[alive],v[12:59:54 PM]]!
+![k[alive],v[12:59:59 PM]]!
+![k[alive],v[1:00:04 PM]]!
+![k[alive],v[1:00:09 PM]]!
+![k[alive],v[1:00:14 PM]]!
+![k[alive],v[1:00:19 PM]]!
+![k[alive],v[1:00:24 PM]]!
+![k[alive],v[1:00:29 PM]]!
+![k[alive],v[1:00:34 PM]]!
+![k[alive],v[1:00:39 PM]]!
+![k[alive],v[1:00:44 PM]]!
+![k[alive],v[1:00:49 PM]]!
+![k[alive],v[1:00:54 PM]]!
+![k[alive],v[1:00:59 PM]]!
+![k[alive],v[1:01:04 PM]]!
+![k[alive],v[1:01:09 PM]]!
+![k[alive],v[1:01:14 PM]]!
+![k[alive],v[1:01:19 PM]]!
+![k[alive],v[1:01:24 PM]]!
+![k[alive],v[1:01:29 PM]]!
+![k[alive],v[1:01:34 PM]]!
+![k[alive],v[1:01:39 PM]]!
+![k[alive],v[1:01:44 PM]]!
+![k[alive],v[1:01:49 PM]]!
+![k[alive],v[1:01:54 PM]]!
+![k[alive],v[1:01:59 PM]]!
+![k[alive],v[1:02:04 PM]]!
+![k[alive],v[1:02:09 PM]]!
+![k[alive],v[1:02:14 PM]]!
+![k[alive],v[1:02:19 PM]]!
+![k[alive],v[1:02:24 PM]]!
+![k[alive],v[1:02:29 PM]]!
+![k[alive],v[1:02:34 PM]]!
+![k[alive],v[1:02:39 PM]]!
+![k[alive],v[1:02:44 PM]]!
+![k[alive],v[1:02:49 PM]]!
+![k[alive],v[1:02:54 PM]]!
+![k[alive],v[1:02:59 PM]]!
+![k[alive],v[1:03:04 PM]]!
+![k[alive],v[1:03:09 PM]]!
+![k[alive],v[1:03:14 PM]]!
+![k[alive],v[1:03:19 PM]]!
+![k[alive],v[1:03:24 PM]]!
+![k[alive],v[1:03:29 PM]]!
+![k[alive],v[1:03:34 PM]]!
+![k[alive],v[1:03:39 PM]]!
+![k[alive],v[1:03:44 PM]]!
+![k[alive],v[1:03:49 PM]]!
+![k[alive],v[1:03:54 PM]]!
+![k[alive],v[1:03:59 PM]]!
+![k[alive],v[1:04:04 PM]]!
+![k[alive],v[1:04:09 PM]]!
+![k[alive],v[1:04:14 PM]]!
+![k[alive],v[1:04:19 PM]]!
+![k[alive],v[1:04:24 PM]]!
+![k[alive],v[1:04:29 PM]]!
+![k[alive],v[1:04:34 PM]]!
+![k[alive],v[1:04:39 PM]]!
+![k[alive],v[1:04:44 PM]]!
+![k[alive],v[1:04:49 PM]]!
+![k[alive],v[1:04:54 PM]]!
+![k[alive],v[1:04:59 PM]]!
+![k[alive],v[1:05:04 PM]]!
+![k[alive],v[1:05:09 PM]]!
+![k[alive],v[1:05:14 PM]]!
+![k[alive],v[1:05:19 PM]]!
+![k[alive],v[1:05:24 PM]]!
+![k[alive],v[1:05:29 PM]]!
+![k[alive],v[1:05:34 PM]]!
+![k[alive],v[1:05:39 PM]]!
+![k[alive],v[1:05:44 PM]]!
+![k[alive],v[1:05:49 PM]]!
+![k[alive],v[1:05:54 PM]]!
+![k[alive],v[1:05:59 PM]]!
+![k[alive],v[1:06:04 PM]]!
+![k[alive],v[1:06:09 PM]]!
+![k[alive],v[1:06:14 PM]]!
+![k[alive],v[1:06:19 PM]]!
+![k[alive],v[1:06:24 PM]]!
+![k[alive],v[1:06:29 PM]]!
+![k[alive],v[1:06:34 PM]]!
+![k[alive],v[1:06:39 PM]]!
+![k[alive],v[1:06:44 PM]]!
+![k[alive],v[1:06:49 PM]]!
+![k[alive],v[1:06:54 PM]]!
+![k[alive],v[1:06:59 PM]]!
+![k[alive],v[1:07:04 PM]]!
+![k[alive],v[1:07:09 PM]]!
+![k[alive],v[1:07:14 PM]]!
+![k[alive],v[1:07:19 PM]]!
+![k[alive],v[1:07:24 PM]]!
+![k[alive],v[1:07:29 PM]]!
+![k[alive],v[1:07:34 PM]]!
+![k[alive],v[1:07:39 PM]]!
+![k[alive],v[1:07:44 PM]]!
+![k[alive],v[1:07:49 PM]]!
+![k[alive],v[1:07:54 PM]]!
+![k[alive],v[1:07:59 PM]]!
+![k[alive],v[1:08:04 PM]]!
+![k[alive],v[1:08:09 PM]]!
+![k[alive],v[1:08:14 PM]]!
+![k[alive],v[1:08:19 PM]]!
+![k[alive],v[1:08:24 PM]]!
+![k[alive],v[1:08:29 PM]]!
+![k[alive],v[1:08:34 PM]]!
+![k[alive],v[1:08:39 PM]]!
+![k[alive],v[1:08:44 PM]]!
+![k[alive],v[1:08:49 PM]]!
+![k[alive],v[1:08:54 PM]]!
+![k[alive],v[1:08:59 PM]]!
+![k[alive],v[1:09:04 PM]]!
+![k[alive],v[1:09:09 PM]]!
+![k[alive],v[1:09:14 PM]]!
+![k[alive],v[1:09:19 PM]]!
+![k[alive],v[1:09:24 PM]]!
+![k[alive],v[1:09:29 PM]]!
+![k[alive],v[1:09:34 PM]]!
+![k[alive],v[1:09:39 PM]]!
+![k[alive],v[1:09:44 PM]]!
+![k[alive],v[1:09:49 PM]]!
+![k[alive],v[1:09:54 PM]]!
+![k[alive],v[1:09:59 PM]]!
+![k[alive],v[1:10:04 PM]]!
+![k[alive],v[1:10:09 PM]]!
+![k[alive],v[1:10:14 PM]]!
+![k[alive],v[1:10:19 PM]]!
+![k[alive],v[1:10:24 PM]]!
+![k[alive],v[1:10:29 PM]]!
+![k[alive],v[1:10:34 PM]]!
+![k[alive],v[1:10:39 PM]]!
+![k[alive],v[1:10:44 PM]]!
+![k[alive],v[1:10:49 PM]]!
+![k[alive],v[1:10:54 PM]]!
+![k[alive],v[1:10:59 PM]]!
+![k[alive],v[1:11:04 PM]]!
+![k[alive],v[1:11:09 PM]]!
+![k[alive],v[1:11:14 PM]]!
+![k[alive],v[1:11:19 PM]]!
+![k[alive],v[1:11:24 PM]]!
+![k[alive],v[1:11:29 PM]]!
+![k[alive],v[1:11:34 PM]]!
+![k[alive],v[1:11:39 PM]]!
+![k[alive],v[1:11:44 PM]]!
+![k[alive],v[1:11:49 PM]]!
+![k[alive],v[1:11:54 PM]]!
+![k[alive],v[1:11:59 PM]]!
+![k[alive],v[1:12:04 PM]]!
+![k[alive],v[1:12:09 PM]]!
+![k[alive],v[1:12:14 PM]]!
+![k[alive],v[1:12:19 PM]]!
+![k[alive],v[1:12:24 PM]]!
+![k[alive],v[1:12:29 PM]]!
+![k[alive],v[1:12:34 PM]]!
+![k[alive],v[1:12:39 PM]]!
+![k[alive],v[1:12:44 PM]]!
+![k[alive],v[1:12:49 PM]]!
+![k[alive],v[1:12:54 PM]]!
+![k[alive],v[1:12:59 PM]]!
+![k[alive],v[1:13:04 PM]]!
+![k[alive],v[1:13:09 PM]]!
+![k[alive],v[1:13:14 PM]]!
+![k[alive],v[1:13:19 PM]]!
+![k[alive],v[1:13:24 PM]]!
+![k[alive],v[1:13:29 PM]]!
+![k[alive],v[1:13:34 PM]]!
+![k[alive],v[1:13:39 PM]]!
+![k[alive],v[1:13:44 PM]]!
+![k[alive],v[1:13:49 PM]]!
+![k[alive],v[1:13:54 PM]]!
+![k[alive],v[1:13:59 PM]]!
+![k[alive],v[1:14:04 PM]]!
+![k[alive],v[1:14:09 PM]]!
+![k[alive],v[1:14:14 PM]]!
+![k[alive],v[1:14:19 PM]]!
+![k[alive],v[1:14:24 PM]]!
+![k[alive],v[1:14:29 PM]]!
+![k[alive],v[1:14:34 PM]]!
+![k[alive],v[1:14:39 PM]]!
+![k[alive],v[1:14:44 PM]]!
+![k[alive],v[1:14:49 PM]]!
+![k[alive],v[1:14:54 PM]]!
+![k[alive],v[1:14:59 PM]]!
+![k[alive],v[1:15:04 PM]]!
+![k[alive],v[1:15:09 PM]]!
+![k[alive],v[1:15:14 PM]]!
+![k[alive],v[1:15:19 PM]]!
+![k[alive],v[1:15:24 PM]]!
+![k[alive],v[1:15:29 PM]]!
+![k[alive],v[1:15:34 PM]]!
+![k[alive],v[1:15:39 PM]]!
+![k[alive],v[1:15:44 PM]]!
+![k[alive],v[1:15:49 PM]]!
+![k[alive],v[1:15:54 PM]]!
+![k[alive],v[1:15:59 PM]]!
+![k[alive],v[1:16:04 PM]]!
+![k[alive],v[1:16:09 PM]]!
+![k[alive],v[1:16:14 PM]]!
+![k[alive],v[1:16:19 PM]]!
+![k[alive],v[1:16:24 PM]]!
+![k[alive],v[1:16:29 PM]]!
+![k[alive],v[1:16:34 PM]]!
+![k[alive],v[1:16:39 PM]]!
+![k[alive],v[1:16:44 PM]]!
+![k[alive],v[1:16:49 PM]]!
+![k[alive],v[1:16:54 PM]]!
+![k[alive],v[1:16:59 PM]]!
+![k[alive],v[1:17:04 PM]]!
+![k[alive],v[1:17:09 PM]]!
+![k[alive],v[1:17:14 PM]]!
+![k[alive],v[1:17:19 PM]]!
+![k[alive],v[1:17:24 PM]]!
+![k[alive],v[1:17:29 PM]]!
+![k[alive],v[1:17:34 PM]]!
+![k[alive],v[1:17:39 PM]]!
+![k[alive],v[1:17:44 PM]]!
+![k[alive],v[1:17:49 PM]]!
+![k[alive],v[1:17:54 PM]]!
+![k[alive],v[1:17:59 PM]]!
+![k[alive],v[1:18:04 PM]]!
+![k[alive],v[1:18:10 PM]]!
+![k[alive],v[1:18:15 PM]]!
+![k[alive],v[1:18:20 PM]]!
+![k[alive],v[1:18:25 PM]]!
+![k[alive],v[1:18:30 PM]]!
+![k[alive],v[1:18:35 PM]]!
+![k[alive],v[1:18:40 PM]]!
+![k[alive],v[1:18:45 PM]]!
+![k[alive],v[1:18:50 PM]]!
+![k[alive],v[1:18:55 PM]]!
+![k[alive],v[1:19:00 PM]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[alive],v[1:19:05 PM]]!
+![k[alive],v[1:19:10 PM]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[alive],v[1:19:15 PM]]!
+![k[alive],v[1:19:20 PM]]!
+![k[alive],v[1:19:25 PM]]!
+![k[alive],v[1:19:30 PM]]!
+![k[alive],v[1:19:35 PM]]!
+![k[alive],v[1:19:40 PM]]!
+![k[blessMaiden],v[1360,260,Red]]!
+![k[alive],v[1:19:45 PM]]!
+![k[alive],v[1:19:50 PM]]!
+![k[alive],v[1:19:55 PM]]!
+![k[alive],v[1:20:00 PM]]!
+![k[alive],v[1:20:05 PM]]!
+![k[alive],v[1:20:10 PM]]!
+![k[alive],v[1:20:15 PM]]!
+![k[alive],v[1:20:20 PM]]!
+![k[alive],v[1:20:25 PM]]!
+![k[alive],v[1:20:30 PM]]!
+![k[alive],v[1:20:35 PM]]!
+![k[alive],v[1:20:40 PM]]!
+![k[alive],v[1:20:45 PM]]!
+![k[alive],v[1:20:50 PM]]!
+![k[alive],v[1:20:55 PM]]!
+![k[alive],v[1:21:00 PM]]!
+![k[carryFood],v[10]]!
+![k[alive],v[1:21:05 PM]]!
+![k[reserveMaiden],v[560,260,10]]!
+![k[useMaiden],v[560,260,maiden_wings,10]]!
+![k[alive],v[1:21:10 PM]]!
+![k[alive],v[1:21:15 PM]]!
+![k[carryFood],v[4]]!
+![k[carryFood],v[7]]!
+![k[carryFood],v[3]]!
+![k[reserveMaiden],v[560,260,4]]!
+![k[reserveMaiden],v[960,500,3]]!
+![k[alive],v[1:21:20 PM]]!
+![k[useMaiden],v[560,260,maiden_wings,4]]!
+![k[reserveMaiden],v[1510,860,7]]!
+![k[useMaiden],v[960,500,maiden_wings,3]]!
+![k[alive],v[1:21:25 PM]]!
+![k[useMaiden],v[1510,860,maiden_speed,7]]!
+![k[carryFood],v[7]]!
+![k[alive],v[1:21:30 PM]]!
+![k[reserveMaiden],v[1360,260,7]]!
+![k[useMaiden],v[1360,260,maiden_wings,7]]!
+![k[alive],v[1:21:35 PM]]!
+![k[alive],v[1:21:40 PM]]!
+![k[playerKill],v[522,789,7,6,Worker]]!
+![k[alive],v[1:21:45 PM]]!
+![k[playerKill],v[1284,669,10,3,Soldier]]!
+![k[carryFood],v[6]]!
+![k[alive],v[1:21:50 PM]]!
+![k[reserveMaiden],v[560,260,6]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[carryFood],v[3]]!
+![k[alive],v[1:21:55 PM]]!
+![k[useMaiden],v[560,260,maiden_wings,6]]!
+![k[reserveMaiden],v[1360,260,3]]!
+![k[alive],v[1:22:00 PM]]!
+![k[useMaiden],v[1360,260,maiden_wings,3]]!
+![k[playerKill],v[1019,774,7,10,Soldier]]!
+![k[alive],v[1:22:05 PM]]!
+![k[carryFood],v[10]]!
+![k[playerKill],v[1224,716,1,6,Soldier]]!
+![k[alive],v[1:22:10 PM]]!
+![k[reserveMaiden],v[560,260,10]]!
+![k[carryFood],v[9]]!
+![k[reserveMaiden],v[1360,260,9]]!
+![k[useMaiden],v[560,260,maiden_wings,10]]!
+![k[alive],v[1:22:15 PM]]!
+![k[useMaiden],v[1360,260,maiden_wings,9]]!
+![k[carryFood],v[6]]!
+![k[playerKill],v[891,523,9,10,Soldier]]!
+![k[reserveMaiden],v[560,260,6]]!
+![k[alive],v[1:22:20 PM]]!
+![k[playerKill],v[563,547,3,4,Soldier]]!
+![k[useMaiden],v[560,260,maiden_wings,6]]!
+![k[carryFood],v[5]]!
+![k[carryFood],v[10]]!
+![k[reserveMaiden],v[560,260,10]]!
+![k[alive],v[1:22:25 PM]]!
+![k[reserveMaiden],v[1510,860,5]]!
+![k[unreserveMaiden],v[1510,860,,5]]!
+![k[carryFood],v[4]]!
+![k[useMaiden],v[560,260,maiden_wings,10]]!
+![k[reserveMaiden],v[1510,860,5]]!
+![k[reserveMaiden],v[560,260,4]]!
+![k[unreserveMaiden],v[560,260,,4]]!
+![k[playerKill],v[1071,272,2,3,Soldier]]!
+![k[reserveMaiden],v[560,260,4]]!
+![k[alive],v[1:22:30 PM]]!
+![k[useMaiden],v[1510,860,maiden_speed,5]]!
+![k[useMaiden],v[560,260,maiden_wings,4]]!
+![k[carryFood],v[8]]!
+![k[carryFood],v[3]]!
+![k[blessMaiden],v[410,860,Red]]!
+![k[carryFood],v[5]]!
+![k[alive],v[1:22:35 PM]]!
+![k[reserveMaiden],v[560,260,8]]!
+![k[reserveMaiden],v[1360,260,3]]!
+![k[playerKill],v[472,289,9,4,Soldier]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[useMaiden],v[560,260,maiden_wings,8]]!
+![k[blessMaiden],v[410,860,Blue]]!
+![k[useMaiden],v[1360,260,maiden_wings,3]]!
+![k[playerKill],v[689,662,1,6,Soldier]]!
+![k[reserveMaiden],v[1360,260,5]]!
+![k[alive],v[1:22:40 PM]]!
+![k[blessMaiden],v[560,260,Red]]!
+![k[useMaiden],v[1360,260,maiden_wings,5]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[carryFood],v[4]]!
+![k[glance],v[5,10]]!
+![k[blessMaiden],v[410,860,Red]]!
+![k[carryFood],v[6]]!
+![k[alive],v[1:22:45 PM]]!
+![k[glance],v[5,10]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[glance],v[5,10]]!
+![k[glance],v[5,10]]!
+![k[reserveMaiden],v[560,260,4]]!
+![k[glance],v[5,10]]!
+![k[playerKill],v[1045,746,8,9,Soldier]]!
+![k[playerKill],v[1108,771,7,8,Soldier]]!
+![k[alive],v[1:22:50 PM]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[useMaiden],v[560,260,maiden_wings,4]]!
+![k[reserveMaiden],v[560,260,6]]!
+![k[carryFood],v[9]]!
+![k[blessMaiden],v[410,860,Blue]]!
+![k[useMaiden],v[560,260,maiden_wings,6]]!
+![k[alive],v[1:22:55 PM]]!
+![k[blessMaiden],v[560,260,Red]]!
+![k[playerKill],v[720,407,7,8,Worker]]!
+![k[playerKill],v[742,431,6,7,Soldier]]!
+![k[glance],v[10,5]]!
+![k[reserveMaiden],v[1510,860,9]]!
+![k[playerKill],v[919,762,2,5,Soldier]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[useMaiden],v[1510,860,maiden_speed,9]]!
+![k[alive],v[1:23:00 PM]]!
+![k[carryFood],v[5]]!
+![k[carryFood],v[8]]!
+![k[carryFood],v[7]]!
+![k[reserveMaiden],v[1360,260,5]]!
+![k[reserveMaiden],v[960,500,8]]!
+![k[carryFood],v[9]]!
+![k[playerKill],v[1759,516,10,7,Worker]]!
+![k[reserveMaiden],v[560,260,9]]!
+![k[alive],v[1:23:05 PM]]!
+![k[useMaiden],v[1360,260,maiden_wings,5]]!
+![k[useMaiden],v[960,500,maiden_wings,8]]!
+![k[useMaiden],v[560,260,maiden_wings,9]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[carryFood],v[7]]!
+![k[alive],v[1:23:10 PM]]!
+![k[playerKill],v[1000,763,8,1,Queen]]!
+![k[glance],v[5,10]]!
+![k[playerKill],v[1257,718,6,9,Soldier]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[playerKill],v[1087,442,5,6,Soldier]]!
+![k[alive],v[1:23:15 PM]]!
+![k[glance],v[7,8]]!
+![k[playerKill],v[927,501,1,8,Soldier]]!
+![k[playerKill],v[1308,415,5,10,Soldier]]!
+![k[carryFood],v[9]]!
+![k[glance],v[1,2]]!
+![k[alive],v[1:23:20 PM]]!
+![k[glance],v[1,2]]!
+![k[reserveMaiden],v[1510,860,7]]!
+![k[carryFood],v[6]]!
+![k[reserveMaiden],v[960,500,9]]!
+![k[glance],v[1,2]]!
+![k[carryFood],v[8]]!
+![k[glance],v[1,2]]!
+![k[carryFood],v[10]]!
+![k[useMaiden],v[1510,860,maiden_speed,7]]!
+![k[glance],v[1,2]]!
+![k[reserveMaiden],v[560,260,6]]!
+![k[useMaiden],v[960,500,maiden_wings,9]]!
+![k[alive],v[1:23:25 PM]]!
+![k[carryFood],v[7]]!
+![k[reserveMaiden],v[1360,260,7]]!
+![k[useMaiden],v[560,260,maiden_wings,6]]!
+![k[reserveMaiden],v[560,260,8]]!
+![k[unreserveMaiden],v[560,260,,8]]!
+![k[reserveMaiden],v[560,260,10]]!
+![k[alive],v[1:23:30 PM]]!
+![k[playerKill],v[661,487,9,6,Soldier]]!
+![k[blessMaiden],v[410,860,Red]]!
+![k[useMaiden],v[1360,260,maiden_wings,7]]!
+![k[playerKill],v[1394,582,4,3,Soldier]]!
+![k[useMaiden],v[560,260,maiden_wings,10]]!
+![k[reserveMaiden],v[560,260,8]]!
+![k[useMaiden],v[560,260,maiden_wings,8]]!
+![k[alive],v[1:23:35 PM]]!
+![k[carryFood],v[6]]!
+![k[playerKill],v[383,518,10,9,Soldier]]!
+![k[blessMaiden],v[410,860,Blue]]!
+![k[carryFood],v[3]]!
+![k[reserveMaiden],v[560,260,6]]!
+![k[reserveMaiden],v[1360,260,3]]!
+![k[glance],v[10,1]]!
+![k[alive],v[1:23:40 PM]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[useMaiden],v[560,260,maiden_wings,6]]!
+![k[playerKill],v[1214,773,5,2,Queen]]!
+![k[gameend],v[map_day,False,2627.298,False]]!
+![k[victory],v[Gold,military]]!
+![k[useMaiden],v[1360,260,maiden_wings,3]]!
+![k[alive],v[1:23:45 PM]]!
+![k[alive],v[1:23:50 PM]]!
+![k[alive],v[1:23:55 PM]]!
+![k[alive],v[1:24:00 PM]]!
+![k[spawn],v[1,False]]!
+![k[spawn],v[2,False]]!
+![k[playernames],v[,,,,,,,,,]]!
+![k[spawn],v[10,False]]!
+![k[spawn],v[8,False]]!
+![k[spawn],v[7,False]]!
+![k[spawn],v[6,False]]!
+![k[spawn],v[3,False]]!
+![k[spawn],v[4,False]]!
+![k[spawn],v[9,False]]!
+![k[alive],v[1:24:05 PM]]!
+![k[blessMaiden],v[410,860,Blue]]!
+![k[spawn],v[5,False]]!
+![k[blessMaiden],v[1510,860,Red]]!
+![k[alive],v[1:24:10 PM]]!
+![k[gamestart],v[map_day,False,0,False]]!
+![k[carryFood],v[8]]!
+![k[carryFood],v[7]]!
+![k[carryFood],v[9]]!
+![k[carryFood],v[6]]!
+![k[carryFood],v[10]]!
+![k[carryFood],v[4]]!
+![k[glance],v[6,9]]!
+![k[glance],v[2,1]]!
+![k[reserveMaiden],v[560,260,10]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[carryFood],v[5]]!
+![k[glance],v[2,1]]!
+![k[reserveMaiden],v[1510,860,7]]!
+![k[alive],v[1:24:15 PM]]!
+![k[getOnSnail: ],v[960,11,9]]!
+![k[useMaiden],v[560,260,maiden_wings,10]]!
+![k[reserveMaiden],v[560,260,8]]!
+![k[glance],v[2,1]]!
+![k[carryFood],v[3]]!
+![k[useMaiden],v[1510,860,maiden_speed,7]]!
+![k[reserveMaiden],v[1510,860,5]]!
+![k[playerKill],v[815,711,1,10,Soldier]]!
+![k[glance],v[1,2]]!
+![k[reserveMaiden],v[1360,260,3]]!
+![k[useMaiden],v[560,260,maiden_wings,8]]!
+![k[reserveMaiden],v[560,260,4]]!
+![k[unreserveMaiden],v[560,260,,4]]!
+![k[reserveMaiden],v[560,260,6]]!
+![k[playerKill],v[766,775,1,2,Queen]]!
+![k[alive],v[1:24:20 PM]]!
+![k[carryFood],v[7]]!
+![k[useMaiden],v[1510,860,maiden_speed,5]]!
+![k[useMaiden],v[1360,260,maiden_wings,3]]!
+![k[useMaiden],v[560,260,maiden_wings,6]]!
+![k[blessMaiden],v[410,860,Red]]!
+![k[reserveMaiden],v[1360,260,7]]!
+![k[snailEat],v[1114,11,9,4]]!
+![k[carryFood],v[5]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[alive],v[1:24:25 PM]]!
+![k[snailEscape],v[1164,11,4]]!
+![k[getOffSnail: ],v[1114,11,,9]]!
+![k[playerKill],v[1114,11,8,9,Worker]]!
+![k[useMaiden],v[1360,260,maiden_wings,7]]!
+![k[reserveMaiden],v[1360,260,5]]!
+![k[unreserveMaiden],v[1360,260,,5]]!
+![k[carryFood],v[10]]!
+![k[reserveMaiden],v[1360,260,5]]!
+![k[getOnSnail: ],v[1114,11,4]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[blessMaiden],v[1360,260,Blue]]!
+![k[unreserveMaiden],v[1360,260,,5]]!
+![k[playerKill],v[1360,260,2,5,Worker]]!
+![k[blessMaiden],v[1360,260,Red]]!
+![k[carryFood],v[9]]!
+![k[alive],v[1:24:30 PM]]!
+![k[carryFood],v[5]]!
+![k[glance],v[1,2]]!
+![k[playerKill],v[558,260,3,10,Worker]]!
+![k[blessMaiden],v[1510,860,Blue]]!
+![k[snailEat],v[964,11,4,9]]!
+![k[glance],v[2,1]]!
+![k[alive],v[1:24:35 PM]]!
+![k[blessMaiden],v[1510,860,Red]]!
+![k[playerKill],v[980,20,4,9,Worker]]!
+![k[carryFood],v[10]]!
+![k[playerKill],v[741,380,3,10,Worker]]!
+![k[playerKill],v[856,434,8,3,Soldier]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[alive],v[1:24:40 PM]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[carryFood],v[9]]!
+![k[reserveMaiden],v[1510,860,5]]!
+![k[glance],v[9,10]]!
+![k[blessMaiden],v[560,260,Red]]!
+![k[blessMaiden],v[1360,260,Blue]]!
+![k[playerKill],v[653,233,6,1,Queen]]!
+![k[getOffSnail: ],v[819,11,,4]]!
+![k[alive],v[1:24:45 PM]]!
+![k[carryFood],v[3]]!
+![k[useMaiden],v[1510,860,maiden_speed,5]]!
+![k[getOnSnail: ],v[819,11,4]]!
+![k[blessMaiden],v[1510,860,Blue]]!
+![k[reserveMaiden],v[560,260,9]]!
+![k[carryFood],v[10]]!
+![k[reserveMaiden],v[1360,260,10]]!
+![k[carryFood],v[5]]!
+![k[blessMaiden],v[1510,860,Red]]!
+![k[reserveMaiden],v[410,860,3]]!
+![k[useMaiden],v[560,260,maiden_wings,9]]!
+![k[blessMaiden],v[410,860,Blue]]!
+![k[unreserveMaiden],v[410,860,,3]]!
+![k[playerKill],v[410,860,2,3,Worker]]!
+![k[alive],v[1:24:50 PM]]!
+![k[useMaiden],v[1360,260,maiden_wings,10]]!
+![k[getOffSnail: ],v[709,11,,4]]!
+![k[blessMaiden],v[1360,260,Red]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[getOnSnail: ],v[709,11,4]]!
+![k[getOffSnail: ],v[698,11,,4]]!
+![k[alive],v[1:24:55 PM]]!
+![k[getOnSnail: ],v[698,11,4]]!
+![k[getOffSnail: ],v[695,11,,4]]!
+![k[playerKill],v[900,759,1,10,Soldier]]!
+![k[playerKill],v[810,775,2,1,Queen]]!
+![k[playerKill],v[625,20,6,5,Worker]]!
+![k[getOnSnail: ],v[695,11,4]]!
+![k[playerKill],v[562,108,9,6,Soldier]]!
+![k[carryFood],v[3]]!
+![k[getOffSnail: ],v[690,11,,4]]!
+![k[alive],v[1:25:00 PM]]!
+![k[blessMaiden],v[1360,260,Blue]]!
+![k[playerKill],v[877,52,8,9,Soldier]]!
+![k[carryFood],v[6]]!
+![k[getOnSnail: ],v[690,11,4]]!
+![k[blessMaiden],v[1360,260,Red]]!
+![k[carryFood],v[5]]!
+![k[carryFood],v[10]]!
+![k[glance],v[5,8]]!
+![k[reserveMaiden],v[960,500,6]]!
+![k[alive],v[1:25:05 PM]]!
+![k[playerKill],v[1056,536,2,1,Queen]]!
+![k[gameend],v[map_day,False,54.70994,False]]!
+![k[victory],v[Blue,military]]!
+![k[alive],v[1:25:10 PM]]!
+![k[alive],v[1:25:15 PM]]!
+![k[alive],v[1:25:20 PM]]!
+![k[spawn],v[1,False]]!
+![k[spawn],v[2,False]]!
+![k[playernames],v[,,,,,,,,,]]!
+![k[spawn],v[5,False]]!
+![k[spawn],v[7,False]]!
+![k[spawn],v[3,False]]!
+![k[spawn],v[6,False]]!
+![k[spawn],v[4,False]]!
+![k[spawn],v[10,False]]!
+![k[spawn],v[9,False]]!
+![k[alive],v[1:25:25 PM]]!
+![k[spawn],v[8,False]]!
+![k[gamestart],v[map_night,False,0,False]]!
+![k[carryFood],v[3]]!
+![k[alive],v[1:25:30 PM]]!
+![k[carryFood],v[5]]!
+![k[carryFood],v[7]]!
+![k[carryFood],v[9]]!
+![k[carryFood],v[10]]!
+![k[carryFood],v[8]]!
+![k[blessMaiden],v[960,700,Red]]!
+![k[carryFood],v[4]]!
+![k[reserveMaiden],v[1750,740,7]]!
+![k[reserveMaiden],v[700,260,8]]!
+![k[reserveMaiden],v[1220,260,4]]!
+![k[carryFood],v[6]]!
+![k[reserveMaiden],v[960,700,9]]!
+![k[useMaiden],v[1750,740,maiden_speed,7]]!
+![k[reserveMaiden],v[1750,740,6]]!
+![k[unreserveMaiden],v[1750,740,,6]]!
+![k[reserveMaiden],v[1750,740,6]]!
+![k[carryFood],v[7]]!
+![k[alive],v[1:25:35 PM]]!
+![k[berryDeposit],v[124,100,10]]!
+![k[useMaiden],v[700,260,maiden_wings,8]]!
+![k[useMaiden],v[1220,260,maiden_wings,4]]!
+![k[useMaiden],v[960,700,maiden_wings,9]]!
+![k[blessMaiden],v[1220,260,Red]]!
+![k[berryDeposit],v[1807,91,5]]!
+![k[useMaiden],v[1750,740,maiden_speed,6]]!
+![k[blessMaiden],v[960,700,Blue]]!
+![k[carryFood],v[6]]!
+![k[berryDeposit],v[1701,91,3]]!
+![k[playerKill],v[1041,772,2,9,Soldier]]!
+![k[reserveMaiden],v[1220,260,7]]!
+![k[alive],v[1:25:40 PM]]!
+![k[useMaiden],v[1220,260,maiden_wings,7]]!
+![k[carryFood],v[5]]!
+![k[reserveMaiden],v[700,260,6]]!
+![k[glance],v[3,2]]!
+![k[carryFood],v[9]]!
+![k[alive],v[1:25:45 PM]]!
+![k[reserveMaiden],v[1750,740,9]]!
+![k[carryFood],v[10]]!
+![k[useMaiden],v[700,260,maiden_wings,6]]!
+![k[playerKill],v[1581,134,4,3,Worker]]!
+![k[useMaiden],v[1750,740,maiden_speed,9]]!
+![k[carryFood],v[9]]!
+![k[berryDeposit],v[204,100,10]]!
+![k[alive],v[1:25:50 PM]]!
+![k[playerKill],v[1193,853,1,8,Soldier]]!
+![k[playerKill],v[1558,639,6,9,Worker]]!
+![k[blessMaiden],v[1220,260,Blue]]!
+![k[carryFood],v[3]]!
+![k[blessMaiden],v[960,700,Red]]!
+![k[playerKill],v[1615,260,6,5,Worker]]!
+![k[reserveMaiden],v[1750,740,3]]!
+![k[playerKill],v[1558,355,6,7,Soldier]]!
+![k[carryFood],v[8]]!
+![k[alive],v[1:25:55 PM]]!
+![k[blessMaiden],v[1220,260,Red]]!
+![k[carryFood],v[10]]!
+![k[carryFood],v[9]]!
+![k[blessMaiden],v[1220,260,Blue]]!
+![k[useMaiden],v[1750,740,maiden_speed,3]]!
+![k[carryFood],v[5]]!
+![k[reserveMaiden],v[960,700,9]]!
+![k[glance],v[1,2]]!
+![k[blessMaiden],v[1220,260,Red]]!
+![k[glance],v[5,6]]!
+![k[carryFood],v[3]]!
+![k[berryDeposit],v[121,117,8]]!
+![k[carryFood],v[7]]!
+![k[berryDeposit],v[1716,116,5]]!
+![k[berryDeposit],v[149,81,10]]!
+![k[alive],v[1:26:00 PM]]!
+![k[blessMaiden],v[1750,740,Blue]]!
+![k[useMaiden],v[960,700,maiden_wings,9]]!
+![k[blessMaiden],v[170,740,Blue]]!
+![k[reserveMaiden],v[960,700,3]]!
+![k[playerKill],v[1708,136,1,4,Soldier]]!
+![k[carryFood],v[8]]!
+![k[alive],v[1:26:05 PM]]!
+![k[useMaiden],v[960,700,maiden_wings,3]]!
+![k[carryFood],v[10]]!
+![k[playerKill],v[421,368,2,9,Soldier]]!
+![k[carryFood],v[5]]!
+![k[getOnSnail: ],v[960,491,5]]!
+![k[blessMaiden],v[700,260,Blue]]!
+![k[carryFood],v[4]]!
+![k[berryDeposit],v[132,127,8]]!
+![k[playerKill],v[1496,122,1,6,Soldier]]!
+![k[berryDeposit],v[198,109,10]]!
+![k[alive],v[1:26:10 PM]]!
+![k[blessMaiden],v[960,700,Blue]]!
+![k[carryFood],v[9]]!
+![k[getOffSnail: ],v[1058,491,,5]]!
+![k[glance],v[4,7]]!
+![k[playerKill],v[1681,740,1,4,Worker]]!
+![k[blessMaiden],v[1750,740,Red]]!
+![k[blessMaiden],v[1220,260,Blue]]!
+![k[getOnSnail: ],v[1058,491,5]]!
+![k[reserveMaiden],v[1750,740,7]]!
+![k[blessMaiden],v[170,740,Red]]!
+![k[carryFood],v[8]]!
+![k[glance],v[10,1]]!
+![k[alive],v[1:26:15 PM]]!
+![k[carryFood],v[6]]!
+![k[playerKill],v[381,878,1,10,Worker]]!
+![k[useMaiden],v[1750,740,maiden_speed,7]]!
+![k[carryFood],v[7]]!
+![k[carryFood],v[4]]!
+![k[berryDeposit],v[227,91,6]]!
+![k[reserveMaiden],v[170,740,9]]!
+![k[berryDeposit],v[131,127,8]]!
+![k[blessMaiden],v[700,260,Red]]!
+![k[alive],v[1:26:20 PM]]!
+![k[getOffSnail: ],v[1215,491,,5]]!
+![k[reserveMaiden],v[700,260,7]]!
+![k[carryFood],v[10]]!
+![k[useMaiden],v[170,740,maiden_speed,9]]!
+![k[berryDeposit],v[166,91,4]]!
+![k[carryFood],v[9]]!
+![k[reserveMaiden],v[1750,740,5]]!
+![k[carryFood],v[8]]!
+![k[useMaiden],v[700,260,maiden_wings,7]]!
+![k[alive],v[1:26:25 PM]]!
+![k[blessMaiden],v[1220,260,Red]]!
+![k[reserveMaiden],v[960,700,10]]!
+![k[reserveMaiden],v[700,260,9]]!
+![k[useMaiden],v[1750,740,maiden_speed,5]]!
+![k[blessMaiden],v[960,700,Red]]!
+![k[carryFood],v[6]]!
+![k[berryDeposit],v[180,125,8]]!
+![k[useMaiden],v[960,700,maiden_wings,10]]!
+![k[blessMaiden],v[1220,260,Blue]]!
+![k[getOnSnail: ],v[1215,491,5]]!
+![k[useMaiden],v[700,260,maiden_wings,9]]!
+![k[alive],v[1:26:30 PM]]!
+![k[carryFood],v[4]]!
+![k[blessMaiden],v[1220,260,Red]]!
+![k[getOffSnail: ],v[1290,491,,5]]!
+![k[getOnSnail: ],v[1290,491,5]]!
+![k[getOffSnail: ],v[1290,491,,5]]!
+![k[carryFood],v[8]]!
+![k[playerKill],v[1291,556,10,5,Worker]]!
+![k[alive],v[1:26:35 PM]]!
+![k[glance],v[9,6]]!
+![k[playerKill],v[1404,820,1,2,Queen]]!
+![k[glance],v[9,4]]!
+![k[glance],v[4,9]]!
+![k[playerKill],v[319,260,7,4,Worker]]!
+![k[carryFood],v[5]]!
+![k[alive],v[1:26:40 PM]]!
+![k[glance],v[9,8]]!
+![k[blessMaiden],v[700,260,Blue]]!
+![k[playerKill],v[493,142,7,6,Worker]]!
+![k[playerKill],v[106,125,9,8,Worker]]!
+![k[getOnSnail: ],v[1290,491,5]]!
+![k[playerKill],v[786,723,10,3,Soldier]]!
+![k[carryFood],v[4]]!
+![k[alive],v[1:26:45 PM]]!
+![k[playerKill],v[483,186,2,9,Soldier]]!
+![k[carryFood],v[6]]!
+![k[blessMaiden],v[700,260,Red]]!
+![k[getOffSnail: ],v[1380,491,,5]]!
+![k[glance],v[8,7]]!
+![k[reserveMaiden],v[1750,740,5]]!
+![k[blessMaiden],v[960,700,Blue]]!
+![k[blessMaiden],v[960,700,Red]]!
+![k[alive],v[1:26:50 PM]]!
+![k[blessMaiden],v[1220,260,Blue]]!
+![k[carryFood],v[3]]!
+![k[carryFood],v[9]]!
+![k[reserveMaiden],v[1220,260,6]]!
+![k[useMaiden],v[1750,740,maiden_speed,5]]!
+![k[carryFood],v[8]]!
+![k[glance],v[7,8]]!
+![k[reserveMaiden],v[700,260,3]]!
+![k[glance],v[4,5]]!
+![k[getOnSnail: ],v[1380,491,4]]!
+![k[reserveMaiden],v[170,740,9]]!
+![k[getOffSnail: ],v[1375,491,,4]]!
+![k[useMaiden],v[1220,260,maiden_wings,6]]!
+![k[playerKill],v[299,260,7,8,Worker]]!
+![k[getOnSnail: ],v[1375,491,4]]!
+![k[alive],v[1:26:55 PM]]!
+![k[blessMaiden],v[960,700,Blue]]!
+![k[getOffSnail: ],v[1375,491,,4]]!
+![k[useMaiden],v[700,260,maiden_wings,3]]!
+![k[blessMaiden],v[1220,260,Red]]!
+![k[useMaiden],v[170,740,maiden_speed,9]]!
+![k[carryFood],v[5]]!
+![k[blessMaiden],v[700,260,Blue]]!
+![k[blessMaiden],v[960,700,Red]]!
+![k[alive],v[1:27:00 PM]]!
+![k[glance],v[9,10]]!
+![k[glance],v[5,10]]!
+![k[getOnSnail: ],v[1375,491,9]]!
+![k[carryFood],v[8]]!
+![k[getOffSnail: ],v[1382,491,,9]]!
+![k[playerKill],v[1382,491,10,9,Worker]]!
+![k[blessMaiden],v[700,260,Red]]!
+![k[blessMaiden],v[960,700,Blue]]!
+![k[alive],v[1:27:05 PM]]!
+![k[playerKill],v[1046,534,1,6,Soldier]]!
+![k[berryDeposit],v[1718,76,5]]!
+![k[getOnSnail: ],v[1382,491,4]]!
+![k[getOffSnail: ],v[1376,491,,4]]!
+![k[alive],v[1:27:10 PM]]!
+![k[carryFood],v[9]]!
+![k[playerKill],v[741,45,7,8,Worker]]!
+![k[reserveMaiden],v[960,700,4]]!
+![k[playerKill],v[1451,753,1,10,Soldier]]!
+![k[carryFood],v[6]]!
+![k[getOnSnail: ],v[1376,491,5]]!
+![k[blessMaiden],v[700,260,Blue]]!
+![k[blessMaiden],v[960,700,Red]]!
+![k[useMaiden],v[960,700,maiden_wings,4]]!
+![k[reserveMaiden],v[1750,740,9]]!
+![k[alive],v[1:27:15 PM]]!
+![k[blessMaiden],v[700,260,Red]]!
+![k[blessMaiden],v[960,700,Blue]]!
+![k[getOffSnail: ],v[1494,491,,5]]!
+![k[useMaiden],v[1750,740,maiden_speed,9]]!
+![k[getOnSnail: ],v[1494,491,5]]!
+![k[getOffSnail: ],v[1502,491,,5]]!
+![k[playerKill],v[1502,491,4,5,Worker]]!
+![k[blessMaiden],v[960,700,Red]]!
+![k[blessMaiden],v[960,700,Blue]]!
+![k[glance],v[1,2]]!
+![k[getOnSnail: ],v[1502,491,10]]!
+![k[blessMaiden],v[960,700,Red]]!
+![k[alive],v[1:27:20 PM]]!
+![k[carryFood],v[9]]!
+![k[blessMaiden],v[1220,260,Blue]]!
+![k[playerKill],v[1206,629,1,6,Worker]]!
+![k[getOffSnail: ],v[1455,491,,10]]!
+![k[playerKill],v[1288,741,2,3,Soldier]]!
+![k[carryFood],v[10]]!
+![k[carryFood],v[8]]!
+![k[blessMaiden],v[960,700,Blue]]!
+![k[getOnSnail: ],v[1455,491,5]]!
+![k[glance],v[9,10]]!
+![k[getOffSnail: ],v[1467,491,,5]]!
+![k[alive],v[1:27:25 PM]]!
+![k[blessMaiden],v[960,700,Red]]!
+![k[carryFood],v[6]]!
+![k[glance],v[10,9]]!
+![k[blessMaiden],v[1220,260,Red]]!
+![k[glance],v[5,6]]!
+![k[carryFood],v[5]]!
+![k[alive],v[1:27:30 PM]]!
+![k[glance],v[2,9]]!
+![k[glance],v[10,3]]!
+![k[reserveMaiden],v[960,700,9]]!
+![k[carryFood],v[3]]!
+![k[blessMaiden],v[700,260,Blue]]!
+![k[glance],v[7,8]]!
+![k[glance],v[1,2]]!
+![k[alive],v[1:27:35 PM]]!
+![k[berryDeposit],v[196,132,6]]!
+![k[berryDeposit],v[237,125,10]]!
+![k[reserveMaiden],v[1750,740,5]]!
+![k[glance],v[2,1]]!
+![k[useMaiden],v[960,700,maiden_wings,9]]!
+![k[glance],v[8,7]]!
+![k[glance],v[7,8]]!
+![k[glance],v[7,8]]!
+![k[gameend],v[map_night,False,128.2457,False]]!
+![k[victory],v[Blue,economic]]!
+![k[useMaiden],v[1750,740,maiden_speed,5]]!
+![k[alive],v[1:27:40 PM]]!
+![k[alive],v[1:27:45 PM]]!
+![k[alive],v[1:27:50 PM]]!
+![k[spawn],v[4,False]]!
+![k[spawn],v[1,False]]!
+![k[spawn],v[2,False]]!
+![k[playernames],v[,,,,,,,,,]]!
+![k[alive],v[1:27:55 PM]]!
+![k[spawn],v[3,False]]!
+![k[spawn],v[8,False]]!
+![k[spawn],v[7,False]]!
+![k[spawn],v[9,False]]!
+![k[spawn],v[5,False]]!
+![k[spawn],v[6,False]]!
+![k[spawn],v[10,False]]!
+![k[alive],v[1:28:00 PM]]!
+![k[gamestart],v[map_dusk,False,0,False]]!
+![k[blessMaiden],v[1610,620,Red]]!
+![k[blessMaiden],v[310,620,Blue]]!
+![k[carryFood],v[6]]!
+![k[carryFood],v[5]]!
+![k[carryFood],v[4]]!
+![k[carryFood],v[7]]!
+![k[alive],v[1:28:05 PM]]!
+![k[reserveMaiden],v[1580,140,5]]!
+![k[reserveMaiden],v[340,140,6]]!
+![k[carryFood],v[8]]!
+![k[playerKill],v[1907,983,1,2,Queen]]!
+![k[carryFood],v[3]]!
+![k[carryFood],v[9]]!
+![k[carryFood],v[10]]!
+![k[blessMaiden],v[310,620,Red]]!
+![k[glance],v[4,9]]!
+![k[useMaiden],v[1580,140,maiden_speed,5]]!
+![k[useMaiden],v[340,140,maiden_speed,6]]!
+![k[berryDeposit],v[1083,746,7]]!
+![k[berryDeposit],v[825,744,8]]!
+![k[carryFood],v[6]]!
+![k[glance],v[9,4]]!
+![k[carryFood],v[5]]!
+![k[blessMaiden],v[960,140,Blue]]!
+![k[alive],v[1:28:10 PM]]!
+![k[glance],v[4,9]]!
+![k[reserveMaiden],v[960,140,10]]!
+![k[unreserveMaiden],v[960,140,,10]]!
+![k[getOnSnail: ],v[960,11,4]]!
+![k[reserveMaiden],v[960,140,10]]!
+![k[reserveMaiden],v[1610,620,5]]!
+![k[getOffSnail: ],v[950,11,,4]]!
+![k[berryDeposit],v[1138,744,3]]!
+![k[blessMaiden],v[960,140,Red]]!
+![k[carryFood],v[7]]!
+![k[carryFood],v[8]]!
+![k[useMaiden],v[960,140,maiden_wings,10]]!
+![k[alive],v[1:28:15 PM]]!
+![k[reserveMaiden],v[340,140,4]]!
+![k[useMaiden],v[1610,620,maiden_wings,5]]!
+![k[reserveMaiden],v[960,140,9]]!
+![k[blessMaiden],v[960,140,Blue]]!
+![k[berryDeposit],v[1065,706,7]]!
+![k[useMaiden],v[340,140,maiden_speed,4]]!
+![k[carryFood],v[3]]!
+![k[berryDeposit],v[875,706,8]]!
+![k[useMaiden],v[960,140,maiden_wings,9]]!
+![k[blessMaiden],v[960,140,Red]]!
+![k[playerKill],v[1257,736,10,5,Soldier]]!
+![k[berryDeposit],v[771,743,6]]!
+![k[alive],v[1:28:20 PM]]!
+![k[carryFood],v[4]]!
+![k[blessMaiden],v[310,620,Blue]]!
+![k[blessMaiden],v[310,620,Red]]!
+![k[playerKill],v[275,622,1,8,Worker]]!
+![k[carryFood],v[7]]!
+![k[blessMaiden],v[1610,620,Blue]]!
+![k[carryFood],v[5]]!
+![k[playerKill],v[1552,619,2,3,Worker]]!
+![k[alive],v[1:28:25 PM]]!
+![k[reserveMaiden],v[1580,140,5]]!
+![k[blessMaiden],v[960,140,Blue]]!
+![k[reserveMaiden],v[960,140,4]]!
+![k[unreserveMaiden],v[960,140,,4]]!
+![k[blessMaiden],v[1610,620,Red]]!
+![k[reserveMaiden],v[960,140,4]]!
+![k[glance],v[2,7]]!
+![k[carryFood],v[3]]!
+![k[useMaiden],v[1580,140,maiden_speed,5]]!
+![k[carryFood],v[6]]!
+![k[berryDeposit],v[1091,669,7]]!
+![k[carryFood],v[8]]!
+![k[playerKill],v[960,988,2,9,Soldier]]!
+![k[carryFood],v[5]]!
+![k[alive],v[1:28:30 PM]]!
+![k[useMaiden],v[960,140,maiden_wings,4]]!
+![k[reserveMaiden],v[960,140,6]]!
+![k[reserveMaiden],v[1610,620,3]]!
+![k[unreserveMaiden],v[1610,620,,3]]!
+![k[reserveMaiden],v[1610,620,5]]!
+![k[blessMaiden],v[310,620,Blue]]!
+![k[berryDeposit],v[799,707,8]]!
+![k[useMaiden],v[960,140,maiden_wings,6]]!
+![k[blessMaiden],v[340,140,Blue]]!
+![k[carryFood],v[7]]!
+![k[useMaiden],v[1610,620,maiden_wings,5]]!
+![k[alive],v[1:28:35 PM]]!
+![k[blessMaiden],v[960,140,Red]]!
+![k[carryFood],v[9]]!
+![k[blessMaiden],v[960,140,Blue]]!
+![k[playerKill],v[1054,931,4,5,Soldier]]!
+![k[blessMaiden],v[310,620,Red]]!
+![k[carryFood],v[8]]!
+![k[reserveMaiden],v[1610,620,9]]!
+![k[unreserveMaiden],v[1610,620,,9]]!
+![k[playerKill],v[872,951,4,7,Worker]]!
+![k[alive],v[1:28:40 PM]]!
+![k[blessMaiden],v[1610,620,Blue]]!
+![k[reserveMaiden],v[1580,140,3]]!
+![k[glance],v[6,9]]!
+![k[playerKill],v[1295,901,10,9,Worker]]!
+![k[berryDeposit],v[746,704,8]]!
+![k[carryFood],v[5]]!
+![k[playerKill],v[716,840,1,4,Soldier]]!
+![k[blessMaiden],v[310,620,Blue]]!
+![k[alive],v[1:28:45 PM]]!
+![k[useMaiden],v[1580,140,maiden_speed,3]]!
+![k[blessMaiden],v[310,620,Red]]!
+![k[carryFood],v[7]]!
+![k[carryFood],v[3]]!
+![k[playerKill],v[223,995,1,6,Soldier]]!
+![k[carryFood],v[9]]!
+![k[blessMaiden],v[310,620,Blue]]!
+![k[carryFood],v[8]]!
+![k[blessMaiden],v[310,620,Red]]!
+![k[blessMaiden],v[310,620,Blue]]!
+![k[carryFood],v[4]]!
+![k[alive],v[1:28:50 PM]]!
+![k[playerKill],v[451,854,1,2,Queen]]!
+![k[berryDeposit],v[832,580,8]]!
+![k[reserveMaiden],v[340,140,4]]!
+![k[carryFood],v[6]]!
+![k[blessMaiden],v[310,620,Red]]!
+![k[glance],v[6,5]]!
+![k[reserveMaiden],v[1580,140,7]]!
+![k[reserveMaiden],v[960,140,6]]!
+![k[berryDeposit],v[1046,612,3]]!
+![k[useMaiden],v[340,140,maiden_speed,4]]!
+![k[glance],v[9,10]]!
+![k[glance],v[9,10]]!
+![k[alive],v[1:28:55 PM]]!
+![k[useMaiden],v[1580,140,maiden_speed,7]]!
+![k[carryFood],v[8]]!
+![k[berryDeposit],v[1089,598,9]]!
+![k[blessMaiden],v[1610,620,Red]]!
+![k[useMaiden],v[960,140,maiden_wings,6]]!
+![k[carryFood],v[4]]!
+![k[carryFood],v[7]]!
+![k[playerKill],v[1230,328,6,3,Worker]]!
+![k[reserveMaiden],v[310,620,5]]!
+![k[getOnSnail: ],v[950,11,4]]!
+![k[glance],v[1,2]]!
+![k[getOffSnail: ],v[938,11,,4]]!
+![k[glance],v[2,1]]!
+![k[reserveMaiden],v[960,140,4]]!
+![k[alive],v[1:29:00 PM]]!
+![k[glance],v[2,1]]!
+![k[berryDeposit],v[809,640,8]]!
+![k[useMaiden],v[310,620,maiden_wings,5]]!
+![k[glance],v[9,6]]!
+![k[glance],v[2,1]]!
+![k[playerKill],v[1301,1014,1,10,Soldier]]!
+![k[carryFood],v[3]]!
+![k[useMaiden],v[960,140,maiden_wings,4]]!
+![k[glance],v[2,1]]!
+![k[carryFood],v[9]]!
+![k[reserveMaiden],v[310,620,7]]!
+![k[glance],v[1,2]]!
+![k[alive],v[1:29:05 PM]]!
+![k[glance],v[9,6]]!
+![k[glance],v[1,2]]!
+![k[carryFood],v[8]]!
+![k[glance],v[1,2]]!
+![k[playerKill],v[924,686,5,4,Soldier]]!
+![k[useMaiden],v[310,620,maiden_wings,7]]!
+![k[glance],v[1,2]]!
+![k[carryFood],v[10]]!
+![k[berryDeposit],v[1116,712,9]]!
+![k[reserveMaiden],v[960,140,10]]!
+![k[glance],v[1,2]]!
+![k[reserveMaiden],v[340,140,8]]!
+![k[berryDeposit],v[1181,706,3]]!
+![k[glance],v[1,2]]!
+![k[alive],v[1:29:10 PM]]!
+![k[glance],v[1,2]]!
+![k[useMaiden],v[960,140,maiden_wings,10]]!
+![k[carryFood],v[4]]!
+![k[useMaiden],v[340,140,maiden_speed,8]]!
+![k[playerKill],v[1131,260,10,9,Worker]]!
+![k[carryFood],v[8]]!
+![k[blessMaiden],v[960,140,Red]]!
+![k[alive],v[1:29:15 PM]]!
+![k[carryFood],v[3]]!
+![k[blessMaiden],v[960,140,Blue]]!
+![k[blessMaiden],v[960,140,Red]]!
+![k[playerKill],v[692,1015,2,5,Soldier]]!
+![k[glance],v[1,8]]!
+![k[carryFood],v[9]]!
+![k[glance],v[1,4]]!
+![k[glance],v[7,4]]!
+![k[alive],v[1:29:20 PM]]!
+![k[glance],v[4,7]]!
+![k[berryDeposit],v[756,580,8]]!
+![k[playerKill],v[870,526,2,7,Soldier]]!
+![k[berryDeposit],v[737,631,4]]!
+![k[playerKill],v[671,570,2,1,Queen]]!
+![k[carryFood],v[5]]!
+![k[alive],v[1:29:25 PM]]!
+![k[berryDeposit],v[1159,580,9]]!
+![k[reserveMaiden],v[960,140,5]]!
+![k[carryFood],v[8]]!
+![k[carryFood],v[7]]!
+![k[carryFood],v[4]]!
+![k[reserveMaiden],v[1580,140,7]]!
+![k[useMaiden],v[960,140,maiden_wings,5]]!
+![k[alive],v[1:29:30 PM]]!
+![k[useMaiden],v[1580,140,maiden_speed,7]]!
+![k[carryFood],v[7]]!
+![k[glance],v[8,1]]!
+![k[playerKill],v[796,616,5,8,Worker]]!
+![k[playerKill],v[775,658,2,5,Soldier]]!
+![k[alive],v[1:29:35 PM]]!
+![k[blessMaiden],v[960,140,Blue]]!
+![k[berryKickIn],v[831,684,4]]!
+![k[blessMaiden],v[960,140,Red]]!
+![k[berryDeposit],v[770,642,4]]!
+![k[playerKill],v[1336,391,2,9,Worker]]!
+![k[gameend],v[map_dusk,False,95.98329,False]]!
+![k[victory],v[Blue,economic]]!
+![k[alive],v[1:29:40 PM]]!
+![k[alive],v[1:29:45 PM]]!
+![k[alive],v[1:29:50 PM]]!
+![k[alive],v[1:29:55 PM]]!
+![k[alive],v[1:30:00 PM]]!
+![k[alive],v[1:30:05 PM]]!
+![k[alive],v[1:30:10 PM]]!
+![k[alive],v[1:30:15 PM]]!
+![k[spawn],v[8,False]]!
+![k[alive],v[1:30:20 PM]]!
+![k[spawn],v[1,False]]!
+![k[spawn],v[2,False]]!
+![k[playernames],v[,,,,,,,,,]]!
+![k[spawn],v[7,False]]!
+![k[spawn],v[10,False]]!
+![k[spawn],v[3,False]]!
+![k[spawn],v[5,False]]!
+![k[spawn],v[9,False]]!
+![k[spawn],v[4,False]]!
+![k[spawn],v[6,False]]!
+![k[blessMaiden],v[1510,860,Red]]!
+![k[alive],v[1:30:25 PM]]!
+![k[gamestart],v[map_day,False,0,False]]!
+![k[alive],v[1:30:30 PM]]!
+![k[carryFood],v[6]]!
+![k[carryFood],v[8]]!
+![k[carryFood],v[5]]!
+![k[carryFood],v[7]]!
+![k[carryFood],v[10]]!
+![k[glance],v[1,2]]!
+![k[carryFood],v[3]]!
+![k[reserveMaiden],v[560,260,10]]!
+![k[glance],v[1,2]]!
+![k[glance],v[9,8]]!
+![k[reserveMaiden],v[1510,860,5]]!
+![k[getOnSnail: ],v[960,11,3]]!
+![k[snailEat],v[976,11,3,4]]!
+![k[useMaiden],v[560,260,maiden_wings,10]]!
+![k[glance],v[7,6]]!
+![k[alive],v[1:30:35 PM]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[reserveMaiden],v[410,860,8]]!
+![k[glance],v[6,7]]!
+![k[useMaiden],v[1510,860,maiden_speed,5]]!
+![k[reserveMaiden],v[1510,860,7]]!
+![k[carryFood],v[9]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[playerKill],v[959,20,3,4,Worker]]!
+![k[useMaiden],v[410,860,maiden_speed,8]]!
+![k[carryFood],v[5]]!
+![k[alive],v[1:30:40 PM]]!
+![k[getOffSnail: ],v[1006,11,,3]]!
+![k[useMaiden],v[1510,860,maiden_speed,7]]!
+![k[getOnSnail: ],v[1006,11,9]]!
+![k[glance],v[6,5]]!
+![k[glance],v[6,3]]!
+![k[reserveMaiden],v[1360,260,5]]!
+![k[carryFood],v[7]]!
+![k[reserveMaiden],v[960,500,7]]!
+![k[carryFood],v[8]]!
+![k[alive],v[1:30:45 PM]]!
+![k[snailEat],v[1098,11,9,4]]!
+![k[glance],v[4,9]]!
+![k[blessMaiden],v[560,260,Red]]!
+![k[useMaiden],v[1360,260,maiden_wings,5]]!
+![k[reserveMaiden],v[1360,260,6]]!
+![k[blessMaiden],v[1510,860,Blue]]!
+![k[useMaiden],v[960,500,maiden_wings,7]]!
+![k[reserveMaiden],v[560,260,3]]!
+![k[playerKill],v[1083,20,9,4,Worker]]!
+![k[blessMaiden],v[1360,260,Red]]!
+![k[useMaiden],v[1360,260,maiden_wings,6]]!
+![k[alive],v[1:30:50 PM]]!
+![k[useMaiden],v[560,260,maiden_wings,3]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[glance],v[5,2]]!
+![k[getOffSnail: ],v[1176,11,,9]]!
+![k[glance],v[2,1]]!
+![k[carryFood],v[4]]!
+![k[getOnSnail: ],v[1176,11,9]]!
+![k[glance],v[1,2]]!
+![k[getOffSnail: ],v[1176,11,,9]]!
+![k[glance],v[4,7]]!
+![k[alive],v[1:30:55 PM]]!
+![k[glance],v[2,1]]!
+![k[getOnSnail: ],v[1176,11,9]]!
+![k[glance],v[4,7]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[getOffSnail: ],v[1225,11,,9]]!
+![k[glance],v[6,9]]!
+![k[blessMaiden],v[1360,260,Blue]]!
+![k[alive],v[1:31:00 PM]]!
+![k[glance],v[5,4]]!
+![k[glance],v[9,6]]!
+![k[playerKill],v[995,576,7,4,Worker]]!
+![k[reserveMaiden],v[1360,260,8]]!
+![k[getOnSnail: ],v[1225,11,9]]!
+![k[getOffSnail: ],v[1235,11,,9]]!
+![k[alive],v[1:31:05 PM]]!
+![k[glance],v[6,9]]!
+![k[useMaiden],v[1360,260,maiden_wings,8]]!
+![k[playerKill],v[1326,408,2,1,Queen]]!
+![k[playerKill],v[1349,121,6,5,Soldier]]!
+![k[playerKill],v[1259,83,6,3,Soldier]]!
+![k[getOnSnail: ],v[1235,11,9]]!
+![k[getOffSnail: ],v[1237,11,,9]]!
+![k[playerKill],v[1237,11,6,9,Worker]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[carryFood],v[4]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[alive],v[1:31:10 PM]]!
+![k[blessMaiden],v[1510,860,Red]]!
+![k[getOnSnail: ],v[1237,11,4]]!
+![k[carryFood],v[3]]!
+![k[blessMaiden],v[410,860,Blue]]!
+![k[carryFood],v[5]]!
+![k[snailEat],v[1197,11,4,9]]!
+![k[glance],v[9,4]]!
+![k[alive],v[1:31:15 PM]]!
+![k[playerKill],v[1211,20,4,9,Worker]]!
+![k[playerKill],v[1145,775,1,2,Queen]]!
+![k[reserveMaiden],v[1510,860,5]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[playerKill],v[1326,278,6,3,Worker]]!
+![k[alive],v[1:31:20 PM]]!
+![k[playerKill],v[1373,415,7,6,Soldier]]!
+![k[getOffSnail: ],v[1104,11,,4]]!
+![k[blessMaiden],v[1360,260,Red]]!
+![k[useMaiden],v[1510,860,maiden_speed,5]]!
+![k[playerKill],v[1161,51,10,7,Soldier]]!
+![k[playerKill],v[1159,20,10,9,Worker]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[carryFood],v[5]]!
+![k[carryFood],v[6]]!
+![k[alive],v[1:31:25 PM]]!
+![k[getOnSnail: ],v[1104,11,4]]!
+![k[reserveMaiden],v[1360,260,5]]!
+![k[carryFood],v[3]]!
+![k[glance],v[1,2]]!
+![k[glance],v[2,1]]!
+![k[carryFood],v[7]]!
+![k[glance],v[6,7]]!
+![k[useMaiden],v[1360,260,maiden_wings,5]]!
+![k[reserveMaiden],v[1360,260,3]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[reserveMaiden],v[560,260,6]]!
+![k[alive],v[1:31:30 PM]]!
+![k[blessMaiden],v[1360,260,Blue]]!
+![k[playerKill],v[1357,260,2,7,Worker]]!
+![k[unreserveMaiden],v[560,260,,6]]!
+![k[blessMaiden],v[560,260,Red]]!
+![k[glance],v[9,10]]!
+![k[useMaiden],v[1360,260,maiden_wings,3]]!
+![k[playerKill],v[1073,30,10,9,Worker]]!
+![k[playerKill],v[1637,353,5,2,Queen]]!
+![k[playerKill],v[818,380,3,6,Worker]]!
+![k[blessMaiden],v[410,860,Red]]!
+![k[alive],v[1:31:35 PM]]!
+![k[carryFood],v[7]]!
+![k[glance],v[5,10]]!
+![k[getOffSnail: ],v[860,11,,4]]!
+![k[reserveMaiden],v[560,260,7]]!
+![k[glance],v[5,10]]!
+![k[playerKill],v[1030,20,5,4,Worker]]!
+![k[carryFood],v[9]]!
+![k[blessMaiden],v[410,860,Blue]]!
+![k[glance],v[5,10]]!
+![k[alive],v[1:31:40 PM]]!
+![k[carryFood],v[6]]!
+![k[glance],v[5,10]]!
+![k[useMaiden],v[560,260,maiden_wings,7]]!
+![k[glance],v[10,9]]!
+![k[blessMaiden],v[1360,260,Red]]!
+![k[glance],v[10,5]]!
+![k[glance],v[9,10]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[playerKill],v[908,50,5,10,Soldier]]!
+![k[getOnSnail: ],v[860,11,9]]!
+![k[playerKill],v[668,112,2,3,Soldier]]!
+![k[getOffSnail: ],v[907,11,,9]]!
+![k[alive],v[1:31:45 PM]]!
+![k[carryFood],v[4]]!
+![k[glance],v[5,2]]!
+![k[reserveMaiden],v[560,260,6]]!
+![k[unreserveMaiden],v[560,260,,6]]!
+![k[playerKill],v[893,55,2,5,Soldier]]!
+![k[blessMaiden],v[560,260,Red]]!
+![k[carryFood],v[10]]!
+![k[playerKill],v[1276,119,2,9,Worker]]!
+![k[playerKill],v[828,168,7,10,Worker]]!
+![k[blessMaiden],v[1360,260,Blue]]!
+![k[alive],v[1:31:50 PM]]!
+![k[getOnSnail: ],v[907,11,6]]!
+![k[carryFood],v[3]]!
+![k[blessMaiden],v[410,860,Red]]!
+![k[carryFood],v[5]]!
+![k[playerKill],v[1260,357,2,7,Soldier]]!
+![k[glance],v[5,4]]!
+![k[reserveMaiden],v[560,260,3]]!
+![k[glance],v[10,5]]!
+![k[reserveMaiden],v[1360,260,4]]!
+![k[alive],v[1:31:55 PM]]!
+![k[glance],v[10,5]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[useMaiden],v[560,260,maiden_wings,3]]!
+![k[carryFood],v[9]]!
+![k[playerKill],v[932,38,8,9,Worker]]!
+![k[blessMaiden],v[1360,260,Red]]!
+![k[useMaiden],v[1360,260,maiden_wings,4]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[glance],v[8,3]]!
+![k[carryFood],v[10]]!
+![k[alive],v[1:32:00 PM]]!
+![k[carryFood],v[7]]!
+![k[getOffSnail: ],v[703,11,,6]]!
+![k[playerKill],v[703,11,3,6,Worker]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[playerKill],v[675,127,4,3,Soldier]]!
+![k[reserveMaiden],v[560,260,10]]!
+![k[reserveMaiden],v[1360,260,5]]!
+![k[glance],v[2,1]]!
+![k[carryFood],v[9]]!
+![k[glance],v[1,2]]!
+![k[reserveMaiden],v[1510,860,7]]!
+![k[glance],v[8,9]]!
+![k[alive],v[1:32:05 PM]]!
+![k[useMaiden],v[560,260,maiden_wings,10]]!
+![k[useMaiden],v[1360,260,maiden_wings,5]]!
+![k[playerKill],v[777,42,8,9,Worker]]!
+![k[glance],v[2,1]]!
+![k[carryFood],v[3]]!
+![k[useMaiden],v[1510,860,maiden_speed,7]]!
+![k[carryFood],v[6]]!
+![k[glance],v[1,2]]!
+![k[reserveMaiden],v[1360,260,3]]!
+![k[getOnSnail: ],v[703,11,6]]!
+![k[alive],v[1:32:10 PM]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[blessMaiden],v[560,260,Red]]!
+![k[carryFood],v[7]]!
+![k[carryFood],v[9]]!
+![k[glance],v[5,8]]!
+![k[useMaiden],v[1360,260,maiden_wings,3]]!
+![k[reserveMaiden],v[1360,260,7]]!
+![k[alive],v[1:32:15 PM]]!
+![k[getOffSnail: ],v[602,11,,6]]!
+![k[getOnSnail: ],v[602,11,9]]!
+![k[glance],v[9,6]]!
+![k[snailEat],v[602,11,9,6]]!
+![k[useMaiden],v[1360,260,maiden_wings,7]]!
+![k[playerKill],v[184,379,3,4,Soldier]]!
+![k[playerKill],v[592,52,9,6,Worker]]!
+![k[getOffSnail: ],v[608,11,,9]]!
+![k[alive],v[1:32:20 PM]]!
+![k[playerKill],v[604,111,10,5,Soldier]]!
+![k[getOnSnail: ],v[608,11,9]]!
+![k[getOffSnail: ],v[625,11,,9]]!
+![k[playerKill],v[643,76,10,9,Worker]]!
+![k[getOnSnail: ],v[625,11,4]]!
+![k[getOffSnail: ],v[610,11,,4]]!
+![k[playerKill],v[590,93,3,4,Worker]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[carryFood],v[6]]!
+![k[alive],v[1:32:25 PM]]!
+![k[carryFood],v[5]]!
+![k[glance],v[1,2]]!
+![k[playerKill],v[1143,140,7,6,Worker]]!
+![k[glance],v[1,2]]!
+![k[getOnSnail: ],v[610,11,9]]!
+![k[glance],v[1,2]]!
+![k[glance],v[7,10]]!
+![k[glance],v[1,2]]!
+![k[reserveMaiden],v[1510,860,5]]!
+![k[alive],v[1:32:30 PM]]!
+![k[carryFood],v[4]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[useMaiden],v[1510,860,maiden_speed,5]]!
+![k[carryFood],v[6]]!
+![k[alive],v[1:32:35 PM]]!
+![k[glance],v[1,2]]!
+![k[glance],v[2,1]]!
+![k[getOffSnail: ],v[781,11,,9]]!
+![k[playerKill],v[781,11,10,9,Worker]]!
+![k[carryFood],v[5]]!
+![k[glance],v[5,6]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[glance],v[3,6]]!
+![k[glance],v[5,2]]!
+![k[reserveMaiden],v[560,260,4]]!
+![k[glance],v[7,2]]!
+![k[alive],v[1:32:40 PM]]!
+![k[playerKill],v[382,187,2,7,Soldier]]!
+![k[useMaiden],v[560,260,maiden_wings,4]]!
+![k[carryFood],v[9]]!
+![k[blessMaiden],v[560,260,Red]]!
+![k[playerKill],v[973,45,10,9,Worker]]!
+![k[reserveMaiden],v[960,500,5]]!
+![k[blessMaiden],v[1360,260,Blue]]!
+![k[alive],v[1:32:45 PM]]!
+![k[playerKill],v[624,54,3,10,Soldier]]!
+![k[reserveMaiden],v[1360,260,6]]!
+![k[useMaiden],v[960,500,maiden_wings,5]]!
+![k[playerKill],v[876,193,4,7,Worker]]!
+![k[useMaiden],v[1360,260,maiden_wings,6]]!
+![k[carryFood],v[9]]!
+![k[getOnSnail: ],v[781,11,9]]!
+![k[alive],v[1:32:50 PM]]!
+![k[getOffSnail: ],v[799,11,,9]]!
+![k[carryFood],v[10]]!
+![k[getOnSnail: ],v[799,11,9]]!
+![k[carryFood],v[7]]!
+![k[getOffSnail: ],v[840,11,,9]]!
+![k[getOnSnail: ],v[840,11,9]]!
+![k[glance],v[2,1]]!
+![k[alive],v[1:32:55 PM]]!
+![k[getOffSnail: ],v[847,11,,9]]!
+![k[glance],v[4,9]]!
+![k[playerKill],v[968,774,5,6,Soldier]]!
+![k[reserveMaiden],v[1360,260,10]]!
+![k[blessMaiden],v[1360,260,Red]]!
+![k[unreserveMaiden],v[1360,260,,10]]!
+![k[playerKill],v[1360,260,1,10,Worker]]!
+![k[glance],v[4,9]]!
+![k[blessMaiden],v[1510,860,Blue]]!
+![k[glance],v[4,3]]!
+![k[playerKill],v[1271,344,1,8,Soldier]]!
+![k[playerKill],v[923,20,4,9,Worker]]!
+![k[alive],v[1:33:00 PM]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[reserveMaiden],v[1360,260,7]]!
+![k[carryFood],v[6]]!
+![k[blessMaiden],v[1360,260,Blue]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[glance],v[10,5]]!
+![k[glance],v[5,6]]!
+![k[alive],v[1:33:05 PM]]!
+![k[useMaiden],v[1360,260,maiden_wings,7]]!
+![k[blessMaiden],v[1510,860,Red]]!
+![k[carryFood],v[10]]!
+![k[carryFood],v[9]]!
+![k[glance],v[5,10]]!
+![k[getOnSnail: ],v[847,11,9]]!
+![k[playerKill],v[341,20,5,6,Worker]]!
+![k[carryFood],v[8]]!
+![k[reserveMaiden],v[1360,260,10]]!
+![k[blessMaiden],v[1360,260,Red]]!
+![k[unreserveMaiden],v[1360,260,,10]]!
+![k[playerKill],v[1360,260,1,10,Worker]]!
+![k[alive],v[1:33:10 PM]]!
+![k[blessMaiden],v[1360,260,Blue]]!
+![k[playerKill],v[1230,386,7,4,Soldier]]!
+![k[glance],v[2,1]]!
+![k[carryFood],v[6]]!
+![k[blessMaiden],v[1360,260,Red]]!
+![k[alive],v[1:33:15 PM]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[carryFood],v[10]]!
+![k[getOffSnail: ],v[1075,11,,9]]!
+![k[getOnSnail: ],v[1075,11,6]]!
+![k[getOffSnail: ],v[1075,11,,6]]!
+![k[playerKill],v[1075,11,3,6,Worker]]!
+![k[playerKill],v[563,24,7,10,Worker]]!
+![k[getOnSnail: ],v[1075,11,9]]!
+![k[reserveMaiden],v[560,260,8]]!
+![k[unreserveMaiden],v[560,260,,8]]!
+![k[playerKill],v[560,260,5,8,Worker]]!
+![k[alive],v[1:33:20 PM]]!
+![k[playerKill],v[544,394,1,2,Queen]]!
+![k[gameend],v[map_day,False,170.9333,False]]!
+![k[victory],v[Gold,military]]!
+![k[alive],v[1:33:25 PM]]!
+![k[alive],v[1:33:30 PM]]!
+![k[alive],v[1:33:35 PM]]!
+![k[alive],v[1:33:40 PM]]!
+![k[alive],v[1:33:45 PM]]!
+![k[alive],v[1:33:50 PM]]!
+![k[alive],v[1:33:55 PM]]!
+![k[alive],v[1:34:00 PM]]!
+![k[alive],v[1:34:05 PM]]!
+![k[alive],v[1:34:10 PM]]!
+![k[alive],v[1:34:15 PM]]!
+![k[spawn],v[5,False]]!
+![k[spawn],v[3,False]]!
+![k[spawn],v[9,False]]!
+![k[spawn],v[8,False]]!
+![k[spawn],v[1,False]]!
+![k[spawn],v[2,False]]!
+![k[playernames],v[,,,,,,,,,]]!
+![k[spawn],v[10,False]]!
+![k[spawn],v[7,False]]!
+![k[spawn],v[4,False]]!
+![k[spawn],v[6,False]]!
+![k[alive],v[1:34:20 PM]]!
+![k[alive],v[1:34:25 PM]]!
+![k[gamestart],v[map_night,False,0,False]]!
+![k[carryFood],v[4]]!
+![k[carryFood],v[8]]!
+![k[carryFood],v[7]]!
+![k[carryFood],v[3]]!
+![k[glance],v[10,9]]!
+![k[blessMaiden],v[960,700,Blue]]!
+![k[reserveMaiden],v[170,740,8]]!
+![k[reserveMaiden],v[1750,740,7]]!
+![k[glance],v[5,6]]!
+![k[glance],v[10,9]]!
+![k[glance],v[6,7]]!
+![k[reserveMaiden],v[1220,260,3]]!
+![k[unreserveMaiden],v[1750,740,,7]]!
+![k[glance],v[7,6]]!
+![k[alive],v[1:34:30 PM]]!
+![k[glance],v[6,7]]!
+![k[glance],v[10,9]]!
+![k[useMaiden],v[170,740,maiden_speed,8]]!
+![k[carryFood],v[8]]!
+![k[glance],v[10,9]]!
+![k[carryFood],v[6]]!
+![k[playerKill],v[722,325,1,10,Worker]]!
+![k[useMaiden],v[1220,260,maiden_wings,3]]!
+![k[blessMaiden],v[700,260,Red]]!
+![k[reserveMaiden],v[1750,740,6]]!
+![k[berryDeposit],v[132,157,4]]!
+![k[alive],v[1:34:35 PM]]!
+![k[useMaiden],v[1750,740,maiden_speed,6]]!
+![k[blessMaiden],v[960,700,Red]]!
+![k[getOnSnail: ],v[960,491,9]]!
+![k[carryFood],v[5]]!
+![k[reserveMaiden],v[170,740,7]]!
+![k[glance],v[1,2]]!
+![k[carryFood],v[6]]!
+![k[glance],v[1,2]]!
+![k[carryFood],v[10]]!
+![k[reserveMaiden],v[700,260,5]]!
+![k[glance],v[2,1]]!
+![k[useMaiden],v[170,740,maiden_speed,7]]!
+![k[carryFood],v[7]]!
+![k[glance],v[1,2]]!
+![k[getOffSnail: ],v[1027,491,,9]]!
+![k[carryFood],v[4]]!
+![k[alive],v[1:34:40 PM]]!
+![k[blessMaiden],v[960,700,Blue]]!
+![k[glance],v[9,6]]!
+![k[useMaiden],v[700,260,maiden_wings,5]]!
+![k[glance],v[8,9]]!
+![k[reserveMaiden],v[700,260,7]]!
+![k[blessMaiden],v[1220,260,Red]]!
+![k[reserveMaiden],v[170,740,4]]!
+![k[glance],v[8,1]]!
+![k[carryFood],v[9]]!
+![k[playerKill],v[389,860,3,6,Worker]]!
+![k[getOnSnail: ],v[1027,491,9]]!
+![k[alive],v[1:34:45 PM]]!
+![k[useMaiden],v[700,260,maiden_wings,7]]!
+![k[useMaiden],v[170,740,maiden_speed,4]]!
+![k[getOffSnail: ],v[1073,491,,9]]!
+![k[carryFood],v[4]]!
+![k[glance],v[1,2]]!
+![k[getOnSnail: ],v[1073,491,9]]!
+![k[blessMaiden],v[960,700,Red]]!
+![k[glance],v[1,2]]!
+![k[playerKill],v[450,860,3,8,Worker]]!
+![k[alive],v[1:34:50 PM]]!
+![k[carryFood],v[6]]!
+![k[blessMaiden],v[700,260,Blue]]!
+![k[berryDeposit],v[127,81,4]]!
+![k[glance],v[1,2]]!
+![k[glance],v[1,2]]!
+![k[playerKill],v[1726,740,7,6,Worker]]!
+![k[carryFood],v[8]]!
+![k[alive],v[1:34:55 PM]]!
+![k[glance],v[1,2]]!
+![k[playerKill],v[158,741,7,8,Worker]]!
+![k[playerKill],v[475,146,5,10,Worker]]!
+![k[glance],v[1,2]]!
+![k[berryKickIn],v[107,144,5]]!
+![k[carryFood],v[4]]!
+![k[blessMaiden],v[700,260,Red]]!
+![k[glance],v[7,4]]!
+![k[blessMaiden],v[960,700,Blue]]!
+![k[alive],v[1:35:00 PM]]!
+![k[carryFood],v[8]]!
+![k[carryFood],v[6]]!
+![k[glance],v[9,4]]!
+![k[playerKill],v[122,740,5,8,Worker]]!
+![k[glance],v[4,7]]!
+![k[carryFood],v[10]]!
+![k[blessMaiden],v[170,740,Red]]!
+![k[glance],v[6,9]]!
+![k[getOffSnail: ],v[1377,491,,9]]!
+![k[getOnSnail: ],v[1377,491,4]]!
+![k[glance],v[9,2]]!
+![k[blessMaiden],v[1750,740,Red]]!
+![k[reserveMaiden],v[960,700,10]]!
+![k[getOffSnail: ],v[1353,491,,4]]!
+![k[alive],v[1:35:05 PM]]!
+![k[glance],v[4,9]]!
+![k[carryFood],v[8]]!
+![k[getOnSnail: ],v[1353,491,9]]!
+![k[blessMaiden],v[960,700,Red]]!
+![k[useMaiden],v[960,700,maiden_wings,10]]!
+![k[glance],v[5,6]]!
+![k[glance],v[2,1]]!
+![k[playerKill],v[213,20,3,4,Worker]]!
+![k[getOffSnail: ],v[1410,491,,9]]!
+![k[glance],v[1,2]]!
+![k[alive],v[1:35:10 PM]]!
+![k[playerKill],v[1260,579,7,10,Soldier]]!
+![k[blessMaiden],v[960,700,Blue]]!
+![k[glance],v[2,1]]!
+![k[getOnSnail: ],v[1410,491,9]]!
+![k[glance],v[6,9]]!
+![k[glance],v[6,7]]!
+![k[glance],v[2,1]]!
+![k[playerKill],v[1343,600,7,6,Worker]]!
+![k[carryFood],v[4]]!
+![k[getOffSnail: ],v[1458,491,,9]]!
+![k[blessMaiden],v[960,700,Red]]!
+![k[glance],v[4,5]]!
+![k[getOnSnail: ],v[1458,491,9]]!
+![k[blessMaiden],v[1220,260,Blue]]!
+![k[alive],v[1:35:15 PM]]!
+![k[carryFood],v[10]]!
+![k[blessMaiden],v[1220,260,Red]]!
+![k[snailEat],v[1521,491,9,8]]!
+![k[blessMaiden],v[1750,740,Blue]]!
+![k[playerKill],v[1425,556,5,4,Worker]]!
+![k[blessMaiden],v[170,740,Blue]]!
+![k[blessMaiden],v[1750,740,Red]]!
+![k[alive],v[1:35:20 PM]]!
+![k[playerKill],v[1592,500,9,8,Worker]]!
+![k[carryFood],v[6]]!
+![k[getOffSnail: ],v[1536,491,,9]]!
+![k[blessMaiden],v[170,740,Red]]!
+![k[playerKill],v[1614,500,5,6,Worker]]!
+![k[getOnSnail: ],v[1536,491,9]]!
+![k[blessMaiden],v[960,700,Blue]]!
+![k[playerKill],v[558,159,3,10,Worker]]!
+![k[alive],v[1:35:25 PM]]!
+![k[glance],v[4,7]]!
+![k[carryFood],v[4]]!
+![k[blessMaiden],v[1220,260,Blue]]!
+![k[carryFood],v[6]]!
+![k[gameend],v[map_night,False,62.84657,False]]!
+![k[victory],v[Gold,snail]]!
+![k[alive],v[1:35:30 PM]]!
+![k[alive],v[1:35:35 PM]]!
+![k[alive],v[1:35:40 PM]]!
+![k[alive],v[1:35:45 PM]]!
+![k[alive],v[1:35:50 PM]]!
+![k[alive],v[1:35:55 PM]]!
+![k[alive],v[1:36:00 PM]]!
+![k[alive],v[1:36:05 PM]]!
+![k[alive],v[1:36:10 PM]]!
+![k[alive],v[1:36:15 PM]]!
+![k[alive],v[1:36:20 PM]]!
+![k[alive],v[1:36:25 PM]]!
+![k[alive],v[1:36:30 PM]]!
+![k[alive],v[1:36:35 PM]]!
+![k[alive],v[1:36:40 PM]]!
+![k[spawn],v[3,False]]!
+![k[spawn],v[5,False]]!
+![k[spawn],v[7,False]]!
+![k[spawn],v[10,False]]!
+![k[spawn],v[9,False]]!
+![k[alive],v[1:36:45 PM]]!
+![k[spawn],v[8,False]]!
+![k[spawn],v[1,False]]!
+![k[spawn],v[2,False]]!
+![k[playernames],v[,,,,,,,,,]]!
+![k[spawn],v[6,False]]!
+![k[alive],v[1:36:50 PM]]!
+![k[spawn],v[4,False]]!
+![k[gamestart],v[map_dusk,False,0,False]]!
+![k[blessMaiden],v[1610,620,Red]]!
+![k[carryFood],v[7]]!
+![k[carryFood],v[6]]!
+![k[alive],v[1:36:55 PM]]!
+![k[carryFood],v[5]]!
+![k[carryFood],v[9]]!
+![k[carryFood],v[3]]!
+![k[reserveMaiden],v[1580,140,7]]!
+![k[reserveMaiden],v[340,140,6]]!
+![k[carryFood],v[10]]!
+![k[carryFood],v[4]]!
+![k[glance],v[1,2]]!
+![k[reserveMaiden],v[960,140,4]]!
+![k[glance],v[2,1]]!
+![k[useMaiden],v[1580,140,maiden_speed,7]]!
+![k[useMaiden],v[340,140,maiden_speed,6]]!
+![k[carryFood],v[8]]!
+![k[berryDeposit],v[1100,738,3]]!
+![k[reserveMaiden],v[1580,140,5]]!
+![k[carryFood],v[7]]!
+![k[berryDeposit],v[1144,746,9]]!
+![k[glance],v[2,1]]!
+![k[alive],v[1:37:00 PM]]!
+![k[carryFood],v[6]]!
+![k[reserveMaiden],v[310,620,10]]!
+![k[useMaiden],v[960,140,maiden_wings,4]]!
+![k[glance],v[1,2]]!
+![k[reserveMaiden],v[960,140,6]]!
+![k[useMaiden],v[1580,140,maiden_speed,5]]!
+![k[glance],v[2,1]]!
+![k[reserveMaiden],v[1610,620,7]]!
+![k[carryFood],v[5]]!
+![k[useMaiden],v[310,620,maiden_wings,10]]!
+![k[carryFood],v[3]]!
+![k[useMaiden],v[960,140,maiden_wings,6]]!
+![k[alive],v[1:37:05 PM]]!
+![k[carryFood],v[9]]!
+![k[useMaiden],v[1610,620,maiden_wings,7]]!
+![k[berryDeposit],v[751,704,8]]!
+![k[playerKill],v[1219,953,7,4,Soldier]]!
+![k[reserveMaiden],v[1610,620,5]]!
+![k[unreserveMaiden],v[1610,620,,5]]!
+![k[berryDeposit],v[1121,712,9]]!
+![k[reserveMaiden],v[1610,620,5]]!
+![k[alive],v[1:37:10 PM]]!
+![k[glance],v[8,3]]!
+![k[blessMaiden],v[310,620,Red]]!
+![k[blessMaiden],v[310,620,Blue]]!
+![k[getOnSnail: ],v[960,11,4]]!
+![k[useMaiden],v[1610,620,maiden_wings,5]]!
+![k[carryFood],v[9]]!
+![k[alive],v[1:37:15 PM]]!
+![k[getOffSnail: ],v[870,11,,4]]!
+![k[glance],v[1,2]]!
+![k[carryFood],v[8]]!
+![k[carryFood],v[4]]!
+![k[berryDeposit],v[1066,702,3]]!
+![k[berryDeposit],v[1171,688,9]]!
+![k[playerKill],v[1781,969,1,2,Queen]]!
+![k[glance],v[4,5]]!
+![k[blessMaiden],v[310,620,Red]]!
+![k[reserveMaiden],v[340,140,4]]!
+![k[alive],v[1:37:20 PM]]!
+![k[berryDeposit],v[823,743,8]]!
+![k[carryFood],v[9]]!
+![k[blessMaiden],v[960,140,Blue]]!
+![k[useMaiden],v[340,140,maiden_speed,4]]!
+![k[playerKill],v[677,770,10,5,Soldier]]!
+![k[carryFood],v[4]]!
+![k[carryFood],v[3]]!
+![k[alive],v[1:37:25 PM]]!
+![k[playerKill],v[1077,275,6,7,Soldier]]!
+![k[playerKill],v[1394,823,10,3,Worker]]!
+![k[carryFood],v[8]]!
+![k[blessMaiden],v[310,620,Blue]]!
+![k[carryFood],v[5]]!
+![k[berryDeposit],v[1160,589,9]]!
+![k[reserveMaiden],v[310,620,4]]!
+![k[blessMaiden],v[960,140,Red]]!
+![k[alive],v[1:37:30 PM]]!
+![k[berryKickIn],v[1083,686,10]]!
+![k[carryFood],v[7]]!
+![k[berryDeposit],v[780,743,8]]!
+![k[carryFood],v[3]]!
+![k[useMaiden],v[310,620,maiden_wings,4]]!
+![k[reserveMaiden],v[1610,620,5]]!
+![k[reserveMaiden],v[340,140,3]]!
+![k[playerKill],v[1597,642,6,9,Worker]]!
+![k[alive],v[1:37:35 PM]]!
+![k[useMaiden],v[1610,620,maiden_wings,5]]!
+![k[reserveMaiden],v[1610,620,7]]!
+![k[useMaiden],v[340,140,maiden_speed,3]]!
+![k[carryFood],v[8]]!
+![k[playerKill],v[1403,931,5,6,Soldier]]!
+![k[carryFood],v[3]]!
+![k[blessMaiden],v[960,140,Blue]]!
+![k[useMaiden],v[1610,620,maiden_wings,7]]!
+![k[alive],v[1:37:40 PM]]!
+![k[carryFood],v[9]]!
+![k[carryFood],v[6]]!
+![k[berryDeposit],v[825,580,8]]!
+![k[berryDeposit],v[1124,612,3]]!
+![k[reserveMaiden],v[340,140,6]]!
+![k[blessMaiden],v[1610,620,Blue]]!
+![k[blessMaiden],v[310,620,Red]]!
+![k[alive],v[1:37:45 PM]]!
+![k[useMaiden],v[340,140,maiden_speed,6]]!
+![k[playerKill],v[1508,875,4,7,Soldier]]!
+![k[carryFood],v[6]]!
+![k[berryDeposit],v[1095,580,9]]!
+![k[carryFood],v[3]]!
+![k[alive],v[1:37:50 PM]]!
+![k[reserveMaiden],v[960,140,6]]!
+![k[carryFood],v[8]]!
+![k[carryFood],v[7]]!
+![k[playerKill],v[1107,926,2,1,Queen]]!
+![k[reserveMaiden],v[310,620,3]]!
+![k[useMaiden],v[960,140,maiden_wings,6]]!
+![k[carryFood],v[9]]!
+![k[berryDeposit],v[788,703,8]]!
+![k[alive],v[1:37:55 PM]]!
+![k[useMaiden],v[310,620,maiden_wings,3]]!
+![k[blessMaiden],v[960,140,Red]]!
+![k[reserveMaiden],v[310,620,7]]!
+![k[playerKill],v[1364,619,4,5,Soldier]]!
+![k[useMaiden],v[310,620,maiden_wings,7]]!
+![k[alive],v[1:38:00 PM]]!
+![k[glance],v[3,10]]!
+![k[glance],v[9,10]]!
+![k[playerKill],v[1313,539,2,9,Worker]]!
+![k[blessMaiden],v[960,140,Blue]]!
+![k[glance],v[3,8]]!
+![k[carryFood],v[5]]!
+![k[alive],v[1:38:05 PM]]!
+![k[playerKill],v[805,631,1,2,Queen]]!
+![k[playerKill],v[1180,900,4,3,Soldier]]!
+![k[carryFood],v[8]]!
+![k[berryDeposit],v[1056,612,5]]!
+![k[blessMaiden],v[960,140,Red]]!
+![k[carryFood],v[9]]!
+![k[blessMaiden],v[310,620,Blue]]!
+![k[alive],v[1:38:10 PM]]!
+![k[playerKill],v[1488,299,6,7,Soldier]]!
+![k[reserveMaiden],v[310,620,8]]!
+![k[reserveMaiden],v[1580,140,9]]!
+![k[alive],v[1:38:15 PM]]!
+![k[blessMaiden],v[1610,620,Red]]!
+![k[carryFood],v[7]]!
+![k[reserveMaiden],v[960,140,7]]!
+![k[carryFood],v[3]]!
+![k[useMaiden],v[310,620,maiden_wings,8]]!
+![k[playerKill],v[962,860,6,3,Worker]]!
+![k[useMaiden],v[1580,140,maiden_speed,9]]!
+![k[carryFood],v[9]]!
+![k[glance],v[1,2]]!
+![k[useMaiden],v[960,140,maiden_wings,7]]!
+![k[blessMaiden],v[1610,620,Blue]]!
+![k[alive],v[1:38:20 PM]]!
+![k[blessMaiden],v[310,620,Red]]!
+![k[carryFood],v[3]]!
+![k[alive],v[1:38:25 PM]]!
+![k[carryFood],v[5]]!
+![k[playerKill],v[1238,499,10,3,Worker]]!
+![k[playerKill],v[918,312,4,5,Worker]]!
+![k[glance],v[7,8]]!
+![k[blessMaiden],v[310,620,Blue]]!
+![k[glance],v[8,7]]!
+![k[glance],v[7,8]]!
+![k[carryFood],v[3]]!
+![k[alive],v[1:38:30 PM]]!
+![k[playerKill],v[812,996,8,7,Soldier]]!
+![k[carryFood],v[5]]!
+![k[glance],v[9,4]]!
+![k[reserveMaiden],v[960,140,5]]!
+![k[blessMaiden],v[1610,620,Red]]!
+![k[blessMaiden],v[960,140,Blue]]!
+![k[playerKill],v[1271,870,10,9,Worker]]!
+![k[reserveMaiden],v[1610,620,3]]!
+![k[alive],v[1:38:35 PM]]!
+![k[carryFood],v[7]]!
+![k[useMaiden],v[960,140,maiden_wings,5]]!
+![k[useMaiden],v[1610,620,maiden_wings,3]]!
+![k[carryFood],v[9]]!
+![k[glance],v[7,6]]!
+![k[alive],v[1:38:40 PM]]!
+![k[glance],v[10,7]]!
+![k[playerKill],v[939,941,5,8,Soldier]]!
+![k[playerKill],v[1322,392,3,10,Soldier]]!
+![k[glance],v[4,9]]!
+![k[alive],v[1:38:45 PM]]!
+![k[playerKill],v[1245,600,4,5,Soldier]]!
+![k[berryDeposit],v[1161,671,7]]!
+![k[playerKill],v[990,960,2,3,Soldier]]!
+![k[carryFood],v[10]]!
+![k[playerKill],v[1205,500,6,9,Worker]]!
+![k[playerKill],v[1024,994,1,2,Queen]]!
+![k[gameend],v[map_dusk,False,114.2446,False]]!
+![k[victory],v[Gold,military]]!
+![k[alive],v[1:38:50 PM]]!
+![k[alive],v[1:38:55 PM]]!
+![k[alive],v[1:39:00 PM]]!
+![k[alive],v[1:39:05 PM]]!
+![k[alive],v[1:39:10 PM]]!
+![k[alive],v[1:39:15 PM]]!
+![k[alive],v[1:39:20 PM]]!
+![k[alive],v[1:39:25 PM]]!
+![k[alive],v[1:39:30 PM]]!
+![k[spawn],v[3,False]]!
+![k[spawn],v[10,False]]!
+![k[alive],v[1:39:35 PM]]!
+![k[spawn],v[1,False]]!
+![k[spawn],v[2,False]]!
+![k[playernames],v[,,,,,,,,,]]!
+![k[spawn],v[8,False]]!
+![k[spawn],v[6,False]]!
+![k[spawn],v[5,False]]!
+![k[spawn],v[9,False]]!
+![k[spawn],v[4,False]]!
+![k[blessMaiden],v[1510,860,Red]]!
+![k[alive],v[1:39:40 PM]]!
+![k[blessMaiden],v[410,860,Blue]]!
+![k[spawn],v[7,True]]!
+![k[gamestart],v[map_day,False,0,False]]!
+![k[alive],v[1:39:45 PM]]!
+![k[carryFood],v[6]]!
+![k[carryFood],v[8]]!
+![k[carryFood],v[10]]!
+![k[carryFood],v[5]]!
+![k[carryFood],v[9]]!
+![k[reserveMaiden],v[960,500,6]]!
+![k[reserveMaiden],v[1360,260,5]]!
+![k[glance],v[1,2]]!
+![k[reserveMaiden],v[560,260,10]]!
+![k[getOnSnail: ],v[960,11,4]]!
+![k[carryFood],v[7]]!
+![k[glance],v[2,1]]!
+![k[reserveMaiden],v[410,860,8]]!
+![k[glance],v[2,1]]!
+![k[useMaiden],v[960,500,maiden_wings,6]]!
+![k[useMaiden],v[1360,260,maiden_wings,5]]!
+![k[alive],v[1:39:50 PM]]!
+![k[useMaiden],v[560,260,maiden_wings,10]]!
+![k[glance],v[2,1]]!
+![k[carryFood],v[3]]!
+![k[glance],v[1,2]]!
+![k[useMaiden],v[410,860,maiden_speed,8]]!
+![k[berryDeposit],v[1151,940,7]]!
+![k[reserveMaiden],v[1360,260,3]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[unreserveMaiden],v[1360,260,,3]]!
+![k[playerKill],v[1360,260,6,3,Worker]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[reserveMaiden],v[1510,860,9]]!
+![k[carryFood],v[8]]!
+![k[alive],v[1:39:55 PM]]!
+![k[reserveMaiden],v[560,260,8]]!
+![k[spawn],v[7,False]]!
+![k[getOffSnail: ],v[756,11,,4]]!
+![k[useMaiden],v[1510,860,maiden_speed,9]]!
+![k[getOnSnail: ],v[756,11,4]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[carryFood],v[3]]!
+![k[useMaiden],v[560,260,maiden_wings,8]]!
+![k[carryFood],v[7]]!
+![k[playerKill],v[1194,380,6,7,Worker]]!
+![k[alive],v[1:40:00 PM]]!
+![k[reserveMaiden],v[960,500,3]]!
+![k[carryFood],v[9]]!
+![k[reserveMaiden],v[1360,260,9]]!
+![k[getOffSnail: ],v[679,11,,4]]!
+![k[glance],v[6,5]]!
+![k[getOnSnail: ],v[679,11,4]]!
+![k[useMaiden],v[960,500,maiden_wings,3]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[blessMaiden],v[560,260,Red]]!
+![k[useMaiden],v[1360,260,maiden_wings,9]]!
+![k[carryFood],v[7]]!
+![k[alive],v[1:40:05 PM]]!
+![k[getOffSnail: ],v[606,11,,4]]!
+![k[carryFood],v[4]]!
+![k[glance],v[8,5]]!
+![k[glance],v[5,8]]!
+![k[blessMaiden],v[1510,860,Blue]]!
+![k[glance],v[8,5]]!
+![k[getOnSnail: ],v[606,11,4]]!
+![k[alive],v[1:40:10 PM]]!
+![k[glance],v[5,8]]!
+![k[blessMaiden],v[1360,260,Blue]]!
+![k[reserveMaiden],v[560,260,7]]!
+![k[getOffSnail: ],v[592,11,,4]]!
+![k[playerKill],v[523,60,9,4,Worker]]!
+![k[glance],v[5,8]]!
+![k[useMaiden],v[560,260,maiden_wings,7]]!
+![k[playerKill],v[735,521,1,10,Soldier]]!
+![k[alive],v[1:40:15 PM]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[getOnSnail: ],v[592,11,4]]!
+![k[getOffSnail: ],v[589,11,,4]]!
+![k[playerKill],v[579,46,9,4,Worker]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[carryFood],v[10]]!
+![k[alive],v[1:40:20 PM]]!
+![k[reserveMaiden],v[1360,260,10]]!
+![k[playerKill],v[1216,774,6,1,Queen]]!
+![k[carryFood],v[4]]!
+![k[glance],v[5,6]]!
+![k[useMaiden],v[1360,260,maiden_wings,10]]!
+![k[alive],v[1:40:25 PM]]!
+![k[glance],v[9,4]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[blessMaiden],v[1510,860,Red]]!
+![k[alive],v[1:40:30 PM]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[playerKill],v[179,565,10,5,Soldier]]!
+![k[alive],v[1:40:35 PM]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[glance],v[10,1]]!
+![k[carryFood],v[5]]!
+![k[playerKill],v[992,355,9,8,Soldier]]!
+![k[alive],v[1:40:40 PM]]!
+![k[reserveMaiden],v[1510,860,5]]!
+![k[alive],v[1:40:45 PM]]!
+![k[carryFood],v[8]]!
+![k[useMaiden],v[1510,860,maiden_speed,5]]!
+![k[reserveMaiden],v[960,500,8]]!
+![k[glance],v[3,4]]!
+![k[blessMaiden],v[1360,260,Red]]!
+![k[carryFood],v[5]]!
+![k[getOnSnail: ],v[589,11,4]]!
+![k[getOffSnail: ],v[583,11,,4]]!
+![k[playerKill],v[561,379,6,7,Soldier]]!
+![k[useMaiden],v[960,500,maiden_wings,8]]!
+![k[getOnSnail: ],v[583,11,4]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[reserveMaiden],v[1360,260,5]]!
+![k[alive],v[1:40:50 PM]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[useMaiden],v[1360,260,maiden_wings,5]]!
+![k[carryFood],v[7]]!
+![k[getOffSnail: ],v[478,11,,4]]!
+![k[alive],v[1:40:55 PM]]!
+![k[getOnSnail: ],v[478,11,4]]!
+![k[reserveMaiden],v[1360,260,7]]!
+![k[glance],v[1,2]]!
+![k[getOffSnail: ],v[454,11,,4]]!
+![k[glance],v[2,1]]!
+![k[getOnSnail: ],v[454,11,4]]!
+![k[playerKill],v[442,74,9,10,Soldier]]!
+![k[glance],v[2,1]]!
+![k[getOffSnail: ],v[443,11,,4]]!
+![k[useMaiden],v[1360,260,maiden_wings,7]]!
+![k[glance],v[1,2]]!
+![k[alive],v[1:41:00 PM]]!
+![k[glance],v[9,4]]!
+![k[carryFood],v[10]]!
+![k[getOnSnail: ],v[443,11,4]]!
+![k[reserveMaiden],v[560,260,10]]!
+![k[alive],v[1:41:05 PM]]!
+![k[glance],v[1,2]]!
+![k[useMaiden],v[560,260,maiden_wings,10]]!
+![k[getOffSnail: ],v[355,11,,4]]!
+![k[glance],v[9,10]]!
+![k[playerKill],v[373,183,9,4,Worker]]!
+![k[glance],v[10,9]]!
+![k[playerKill],v[217,403,2,1,Queen]]!
+![k[alive],v[1:41:10 PM]]!
+![k[glance],v[5,8]]!
+![k[glance],v[5,8]]!
+![k[carryFood],v[4]]!
+![k[playerKill],v[388,20,9,4,Worker]]!
+![k[glance],v[8,5]]!
+![k[alive],v[1:41:15 PM]]!
+![k[glance],v[10,5]]!
+![k[alive],v[1:41:20 PM]]!
+![k[blessMaiden],v[560,260,Red]]!
+![k[glance],v[5,8]]!
+![k[playerKill],v[771,54,9,4,Worker]]!
+![k[glance],v[5,8]]!
+![k[glance],v[5,8]]!
+![k[alive],v[1:41:25 PM]]!
+![k[glance],v[5,8]]!
+![k[blessMaiden],v[410,860,Red]]!
+![k[glance],v[3,8]]!
+![k[carryFood],v[4]]!
+![k[glance],v[8,3]]!
+![k[alive],v[1:41:30 PM]]!
+![k[getOnSnail: ],v[355,11,4]]!
+![k[glance],v[1,2]]!
+![k[glance],v[1,2]]!
+![k[glance],v[7,8]]!
+![k[glance],v[1,2]]!
+![k[getOffSnail: ],v[292,11,,4]]!
+![k[glance],v[10,3]]!
+![k[glance],v[8,7]]!
+![k[playerKill],v[340,135,9,10,Soldier]]!
+![k[glance],v[9,4]]!
+![k[glance],v[1,2]]!
+![k[glance],v[8,7]]!
+![k[alive],v[1:41:35 PM]]!
+![k[playerKill],v[187,41,9,4,Worker]]!
+![k[glance],v[2,7]]!
+![k[glance],v[2,1]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[playerKill],v[567,303,2,5,Soldier]]!
+![k[carryFood],v[10]]!
+![k[alive],v[1:41:40 PM]]!
+![k[blessMaiden],v[560,260,Red]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[reserveMaiden],v[960,500,10]]!
+![k[carryFood],v[5]]!
+![k[alive],v[1:41:45 PM]]!
+![k[reserveMaiden],v[1360,260,5]]!
+![k[getOnSnail: ],v[292,11,4]]!
+![k[getOffSnail: ],v[288,11,,4]]!
+![k[useMaiden],v[960,500,maiden_wings,10]]!
+![k[playerKill],v[337,157,9,4,Worker]]!
+![k[useMaiden],v[1360,260,maiden_wings,5]]!
+![k[blessMaiden],v[1510,860,Blue]]!
+![k[alive],v[1:41:50 PM]]!
+![k[blessMaiden],v[1360,260,Blue]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[glance],v[2,1]]!
+![k[alive],v[1:41:55 PM]]!
+![k[getOnSnail: ],v[288,11,4]]!
+![k[getOffSnail: ],v[288,11,,4]]!
+![k[playerKill],v[285,68,3,4,Worker]]!
+![k[blessMaiden],v[1360,260,Red]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[playerKill],v[135,133,10,3,Soldier]]!
+![k[glance],v[7,6]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[alive],v[1:42:00 PM]]!
+![k[carryFood],v[4]]!
+![k[playerKill],v[315,375,1,10,Soldier]]!
+![k[glance],v[1,2]]!
+![k[getOnSnail: ],v[288,11,4]]!
+![k[glance],v[2,1]]!
+![k[getOffSnail: ],v[270,11,,4]]!
+![k[glance],v[2,1]]!
+![k[alive],v[1:42:05 PM]]!
+![k[getOnSnail: ],v[270,11,4]]!
+![k[glance],v[1,2]]!
+![k[getOffSnail: ],v[261,11,,4]]!
+![k[carryFood],v[3]]!
+![k[glance],v[1,2]]!
+![k[getOnSnail: ],v[261,11,3]]!
+![k[snailEat],v[267,11,3,4]]!
+![k[playerKill],v[214,416,7,2,Queen]]!
+![k[snailEscape],v[317,11,4]]!
+![k[getOffSnail: ],v[267,11,,3]]!
+![k[playerKill],v[267,11,6,3,Worker]]!
+![k[carryFood],v[10]]!
+![k[playerKill],v[282,81,9,6,Soldier]]!
+![k[reserveMaiden],v[560,260,10]]!
+![k[alive],v[1:42:10 PM]]!
+![k[unreserveMaiden],v[560,260,,10]]!
+![k[playerKill],v[560,260,7,10,Worker]]!
+![k[playerKill],v[1449,20,9,4,Worker]]!
+![k[blessMaiden],v[560,260,Red]]!
+![k[blessMaiden],v[410,860,Blue]]!
+![k[carryFood],v[6]]!
+![k[glance],v[6,3]]!
+![k[playerKill],v[934,260,9,6,Worker]]!
+![k[carryFood],v[3]]!
+![k[alive],v[1:42:15 PM]]!
+![k[blessMaiden],v[1360,260,Blue]]!
+![k[glance],v[5,4]]!
+![k[carryFood],v[10]]!
+![k[getOnSnail: ],v[267,11,3]]!
+![k[carryFood],v[4]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[blessMaiden],v[1360,260,Red]]!
+![k[carryFood],v[6]]!
+![k[alive],v[1:42:20 PM]]!
+![k[reserveMaiden],v[960,500,10]]!
+![k[blessMaiden],v[1510,860,Red]]!
+![k[useMaiden],v[960,500,maiden_wings,10]]!
+![k[reserveMaiden],v[960,500,6]]!
+![k[alive],v[1:42:25 PM]]!
+![k[glance],v[4,3]]!
+![k[glance],v[3,4]]!
+![k[playerKill],v[339,927,1,8,Soldier]]!
+![k[snailEat],v[443,11,3,4]]!
+![k[blessMaiden],v[410,860,Red]]!
+![k[useMaiden],v[960,500,maiden_wings,6]]!
+![k[snailEscape],v[493,11,4]]!
+![k[getOffSnail: ],v[443,11,,3]]!
+![k[playerKill],v[443,11,10,3,Worker]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[getOnSnail: ],v[443,11,4]]!
+![k[playerKill],v[687,431,6,9,Soldier]]!
+![k[alive],v[1:42:30 PM]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[carryFood],v[8]]!
+![k[glance],v[2,1]]!
+![k[glance],v[5,2]]!
+![k[playerKill],v[551,414,7,2,Queen]]!
+![k[blessMaiden],v[560,260,Red]]!
+![k[alive],v[1:42:35 PM]]!
+![k[playerKill],v[562,149,10,1,Queen]]!
+![k[gameend],v[map_day,False,170.6416,False]]!
+![k[victory],v[Blue,military]]!
+![k[alive],v[1:42:40 PM]]!
+![k[alive],v[1:42:45 PM]]!
+![k[alive],v[1:42:50 PM]]!
+![k[alive],v[1:42:55 PM]]!
+![k[alive],v[1:43:00 PM]]!
+![k[alive],v[1:43:05 PM]]!
+![k[spawn],v[3,False]]!
+![k[spawn],v[10,False]]!
+![k[spawn],v[5,False]]!
+![k[spawn],v[1,False]]!
+![k[spawn],v[2,False]]!
+![k[playernames],v[,,,,,,,,,]]!
+![k[spawn],v[7,False]]!
+![k[spawn],v[4,False]]!
+![k[alive],v[1:43:10 PM]]!
+![k[spawn],v[8,False]]!
+![k[spawn],v[9,False]]!
+![k[spawn],v[6,False]]!
+![k[alive],v[1:43:15 PM]]!
+![k[gamestart],v[map_night,False,0,False]]!
+![k[blessMaiden],v[1220,260,Red]]!
+![k[blessMaiden],v[700,260,Blue]]!
+![k[alive],v[1:43:20 PM]]!
+![k[carryFood],v[5]]!
+![k[carryFood],v[8]]!
+![k[carryFood],v[7]]!
+![k[reserveMaiden],v[1750,740,5]]!
+![k[reserveMaiden],v[170,740,8]]!
+![k[carryFood],v[3]]!
+![k[glance],v[10,3]]!
+![k[carryFood],v[9]]!
+![k[carryFood],v[4]]!
+![k[carryFood],v[10]]!
+![k[carryFood],v[6]]!
+![k[blessMaiden],v[960,700,Red]]!
+![k[glance],v[7,10]]!
+![k[useMaiden],v[1750,740,maiden_speed,5]]!
+![k[reserveMaiden],v[1750,740,9]]!
+![k[useMaiden],v[170,740,maiden_speed,8]]!
+![k[carryFood],v[5]]!
+![k[reserveMaiden],v[700,260,6]]!
+![k[berryDeposit],v[1805,91,3]]!
+![k[carryFood],v[8]]!
+![k[alive],v[1:43:25 PM]]!
+![k[playerKill],v[824,602,1,4,Worker]]!
+![k[blessMaiden],v[170,740,Blue]]!
+![k[useMaiden],v[1750,740,maiden_speed,9]]!
+![k[reserveMaiden],v[1220,260,7]]!
+![k[blessMaiden],v[1750,740,Blue]]!
+![k[reserveMaiden],v[960,700,5]]!
+![k[useMaiden],v[700,260,maiden_wings,6]]!
+![k[carryFood],v[9]]!
+![k[blessMaiden],v[700,260,Red]]!
+![k[useMaiden],v[1220,260,maiden_wings,7]]!
+![k[alive],v[1:43:30 PM]]!
+![k[carryFood],v[3]]!
+![k[useMaiden],v[960,700,maiden_wings,5]]!
+![k[blessMaiden],v[960,700,Blue]]!
+![k[reserveMaiden],v[960,700,8]]!
+![k[carryFood],v[4]]!
+![k[berryDeposit],v[1822,125,9]]!
+![k[useMaiden],v[960,700,maiden_wings,8]]!
+![k[alive],v[1:43:35 PM]]!
+![k[berryDeposit],v[218,91,4]]!
+![k[carryFood],v[9]]!
+![k[playerKill],v[1695,415,6,5,Soldier]]!
+![k[blessMaiden],v[700,260,Blue]]!
+![k[alive],v[1:43:40 PM]]!
+![k[berryDeposit],v[1789,81,3]]!
+![k[berryDeposit],v[133,81,10]]!
+![k[carryFood],v[4]]!
+![k[carryFood],v[5]]!
+![k[berryDeposit],v[1777,109,9]]!
+![k[carryFood],v[3]]!
+![k[alive],v[1:43:45 PM]]!
+![k[playerKill],v[861,423,8,7,Soldier]]!
+![k[reserveMaiden],v[1220,260,5]]!
+![k[carryFood],v[10]]!
+![k[glance],v[3,6]]!
+![k[useMaiden],v[1220,260,maiden_wings,5]]!
+![k[berryDeposit],v[204,89,4]]!
+![k[berryDeposit],v[1754,90,3]]!
+![k[carryFood],v[9]]!
+![k[alive],v[1:43:50 PM]]!
+![k[carryFood],v[7]]!
+![k[berryDeposit],v[111,100,10]]!
+![k[berryDeposit],v[1735,81,9]]!
+![k[playerKill],v[818,770,1,2,Queen]]!
+![k[alive],v[1:43:55 PM]]!
+![k[blessMaiden],v[960,700,Red]]!
+![k[reserveMaiden],v[1220,260,7]]!
+![k[playerKill],v[1884,131,5,6,Soldier]]!
+![k[carryFood],v[3]]!
+![k[unreserveMaiden],v[1220,260,,7]]!
+![k[playerKill],v[1220,260,8,7,Worker]]!
+![k[carryFood],v[4]]!
+![k[carryFood],v[10]]!
+![k[carryFood],v[9]]!
+![k[glance],v[3,8]]!
+![k[playerKill],v[1380,105,8,5,Soldier]]!
+![k[alive],v[1:44:00 PM]]!
+![k[berryDeposit],v[159,88,10]]!
+![k[berryDeposit],v[206,117,4]]!
+![k[carryFood],v[6]]!
+![k[playerKill],v[1112,402,8,7,Worker]]!
+![k[berryDeposit],v[1780,132,3]]!
+![k[blessMaiden],v[960,700,Blue]]!
+![k[berryDeposit],v[1746,117,9]]!
+![k[reserveMaiden],v[700,260,6]]!
+![k[carryFood],v[10]]!
+![k[alive],v[1:44:05 PM]]!
+![k[carryFood],v[5]]!
+![k[useMaiden],v[700,260,maiden_wings,6]]!
+![k[carryFood],v[7]]!
+![k[carryFood],v[4]]!
+![k[berryDeposit],v[129,109,10]]!
+![k[glance],v[8,5]]!
+![k[alive],v[1:44:10 PM]]!
+![k[getOnSnail: ],v[960,491,7]]!
+![k[glance],v[1,2]]!
+![k[carryFood],v[3]]!
+![k[berryDeposit],v[1720,109,5]]!
+![k[carryFood],v[9]]!
+![k[playerKill],v[1488,329,1,8,Soldier]]!
+![k[getOffSnail: ],v[1013,491,,7]]!
+![k[berryDeposit],v[177,132,4]]!
+![k[alive],v[1:44:15 PM]]!
+![k[carryFood],v[10]]!
+![k[playerKill],v[1608,22,2,9,Worker]]!
+![k[playerKill],v[1595,22,2,3,Worker]]!
+![k[glance],v[7,10]]!
+![k[carryFood],v[8]]!
+![k[carryFood],v[5]]!
+![k[glance],v[7,10]]!
+![k[blessMaiden],v[700,260,Red]]!
+![k[reserveMaiden],v[700,260,5]]!
+![k[glance],v[7,10]]!
+![k[carryFood],v[4]]!
+![k[blessMaiden],v[1220,260,Blue]]!
+![k[alive],v[1:44:20 PM]]!
+![k[reserveMaiden],v[960,700,8]]!
+![k[glance],v[7,10]]!
+![k[getOnSnail: ],v[1013,491,9]]!
+![k[getOffSnail: ],v[1020,491,,9]]!
+![k[glance],v[7,10]]!
+![k[playerKill],v[1016,626,2,9,Worker]]!
+![k[useMaiden],v[700,260,maiden_wings,5]]!
+![k[useMaiden],v[960,700,maiden_wings,8]]!
+![k[alive],v[1:44:25 PM]]!
+![k[playerKill],v[236,20,5,4,Worker]]!
+![k[blessMaiden],v[700,260,Blue]]!
+![k[carryFood],v[3]]!
+![k[carryFood],v[9]]!
+![k[playerKill],v[368,43,2,5,Soldier]]!
+![k[alive],v[1:44:30 PM]]!
+![k[berryDeposit],v[118,139,10]]!
+![k[glance],v[7,4]]!
+![k[glance],v[9,4]]!
+![k[glance],v[4,9]]!
+![k[glance],v[3,4]]!
+![k[glance],v[3,4]]!
+![k[playerKill],v[1570,318,6,9,Worker]]!
+![k[alive],v[1:44:35 PM]]!
+![k[getOnSnail: ],v[1020,491,5]]!
+![k[glance],v[4,5]]!
+![k[getOffSnail: ],v[1020,491,,5]]!
+![k[berryDeposit],v[1730,134,3]]!
+![k[carryFood],v[10]]!
+![k[getOnSnail: ],v[1020,491,7]]!
+![k[getOffSnail: ],v[1022,491,,7]]!
+![k[getOnSnail: ],v[1022,491,7]]!
+![k[getOffSnail: ],v[1022,491,,7]]!
+![k[alive],v[1:44:40 PM]]!
+![k[blessMaiden],v[1220,260,Red]]!
+![k[carryFood],v[9]]!
+![k[glance],v[4,9]]!
+![k[reserveMaiden],v[1220,260,7]]!
+![k[glance],v[1,2]]!
+![k[glance],v[10,5]]!
+![k[getOnSnail: ],v[1022,491,3]]!
+![k[playerKill],v[1558,260,8,9,Worker]]!
+![k[getOffSnail: ],v[1022,491,,3]]!
+![k[glance],v[5,10]]!
+![k[blessMaiden],v[1220,260,Blue]]!
+![k[alive],v[1:44:45 PM]]!
+![k[blessMaiden],v[960,700,Red]]!
+![k[glance],v[10,5]]!
+![k[useMaiden],v[1220,260,maiden_wings,7]]!
+![k[glance],v[5,10]]!
+![k[carryFood],v[5]]!
+![k[blessMaiden],v[700,260,Red]]!
+![k[playerKill],v[1359,221,2,7,Soldier]]!
+![k[carryFood],v[9]]!
+![k[carryFood],v[4]]!
+![k[alive],v[1:44:50 PM]]!
+![k[getOnSnail: ],v[1022,491,3]]!
+![k[getOffSnail: ],v[1022,491,,3]]!
+![k[playerKill],v[1030,523,2,3,Worker]]!
+![k[glance],v[5,4]]!
+![k[playerKill],v[388,127,1,4,Worker]]!
+![k[glance],v[1,10]]!
+![k[getOnSnail: ],v[1022,491,7]]!
+![k[blessMaiden],v[960,700,Blue]]!
+![k[getOffSnail: ],v[1022,491,,7]]!
+![k[glance],v[1,10]]!
+![k[playerKill],v[1570,335,8,9,Worker]]!
+![k[alive],v[1:44:55 PM]]!
+![k[blessMaiden],v[700,260,Blue]]!
+![k[glance],v[4,5]]!
+![k[carryFood],v[3]]!
+![k[blessMaiden],v[700,260,Red]]!
+![k[alive],v[1:45:00 PM]]!
+![k[glance],v[3,4]]!
+![k[carryFood],v[7]]!
+![k[carryFood],v[9]]!
+![k[glance],v[2,1]]!
+![k[berryDeposit],v[146,159,10]]!
+![k[glance],v[4,3]]!
+![k[carryFood],v[4]]!
+![k[blessMaiden],v[700,260,Blue]]!
+![k[playerKill],v[562,365,1,2,Queen]]!
+![k[alive],v[1:45:05 PM]]!
+![k[blessMaiden],v[700,260,Red]]!
+![k[carryFood],v[10]]!
+![k[playerKill],v[1476,140,8,3,Worker]]!
+![k[playerKill],v[1466,160,8,5,Worker]]!
+![k[glance],v[8,9]]!
+![k[berryKickIn],v[1691,120,5]]!
+![k[playerKill],v[1711,51,6,7,Worker]]!
+![k[playerKill],v[1657,20,6,9,Worker]]!
+![k[carryFood],v[5]]!
+![k[carryFood],v[3]]!
+![k[playerKill],v[1774,20,6,5,Worker]]!
+![k[playerKill],v[1769,50,6,3,Worker]]!
+![k[alive],v[1:45:10 PM]]!
+![k[carryFood],v[7]]!
+![k[glance],v[7,8]]!
+![k[playerKill],v[1781,100,8,7,Worker]]!
+![k[playerKill],v[139,139,1,2,Queen]]!
+![k[gameend],v[map_night,False,112.7437,False]]!
+![k[victory],v[Gold,military]]!
+![k[alive],v[1:45:15 PM]]!
+![k[alive],v[1:45:20 PM]]!
+![k[alive],v[1:45:25 PM]]!
+![k[alive],v[1:45:30 PM]]!
+![k[alive],v[1:45:35 PM]]!
+![k[alive],v[1:45:40 PM]]!
+![k[alive],v[1:45:45 PM]]!
+![k[spawn],v[6,False]]!
+![k[spawn],v[1,False]]!
+![k[spawn],v[2,False]]!
+![k[playernames],v[,,,,,,,,,]]!
+![k[spawn],v[7,False]]!
+![k[alive],v[1:45:50 PM]]!
+![k[spawn],v[5,False]]!
+![k[spawn],v[9,False]]!
+![k[spawn],v[4,False]]!
+![k[spawn],v[3,False]]!
+![k[spawn],v[10,False]]!
+![k[spawn],v[8,False]]!
+![k[alive],v[1:45:55 PM]]!
+![k[gamestart],v[map_dusk,False,0,False]]!
+![k[blessMaiden],v[310,620,Blue]]!
+![k[carryFood],v[6]]!
+![k[carryFood],v[5]]!
+![k[carryFood],v[7]]!
+![k[carryFood],v[8]]!
+![k[reserveMaiden],v[1580,140,5]]!
+![k[alive],v[1:46:00 PM]]!
+![k[carryFood],v[9]]!
+![k[carryFood],v[10]]!
+![k[reserveMaiden],v[960,140,7]]!
+![k[carryFood],v[4]]!
+![k[reserveMaiden],v[340,140,6]]!
+![k[reserveMaiden],v[310,620,8]]!
+![k[blessMaiden],v[960,140,Red]]!
+![k[useMaiden],v[1580,140,maiden_speed,5]]!
+![k[useMaiden],v[960,140,maiden_wings,7]]!
+![k[berryDeposit],v[1156,746,9]]!
+![k[useMaiden],v[340,140,maiden_speed,6]]!
+![k[carryFood],v[5]]!
+![k[useMaiden],v[310,620,maiden_wings,8]]!
+![k[carryFood],v[6]]!
+![k[alive],v[1:46:05 PM]]!
+![k[carryFood],v[3]]!
+![k[reserveMaiden],v[960,140,5]]!
+![k[getOnSnail: ],v[960,11,10]]!
+![k[reserveMaiden],v[310,620,6]]!
+![k[blessMaiden],v[1610,620,Red]]!
+![k[useMaiden],v[960,140,maiden_wings,5]]!
+![k[carryFood],v[9]]!
+![k[blessMaiden],v[960,140,Blue]]!
+![k[berryDeposit],v[1051,710,3]]!
+![k[alive],v[1:46:10 PM]]!
+![k[useMaiden],v[310,620,maiden_wings,6]]!
+![k[blessMaiden],v[310,620,Red]]!
+![k[getOffSnail: ],v[865,11,,10]]!
+![k[getOnSnail: ],v[865,11,10]]!
+![k[glance],v[7,6]]!
+![k[berryDeposit],v[1137,580,9]]!
+![k[getOffSnail: ],v[854,11,,10]]!
+![k[glance],v[10,5]]!
+![k[getOnSnail: ],v[854,11,10]]!
+![k[glance],v[6,7]]!
+![k[getOffSnail: ],v[850,11,,10]]!
+![k[playerKill],v[850,11,5,10,Worker]]!
+![k[glance],v[1,4]]!
+![k[alive],v[1:46:15 PM]]!
+![k[blessMaiden],v[1610,620,Blue]]!
+![k[carryFood],v[3]]!
+![k[playerKill],v[419,757,1,4,Worker]]!
+![k[getOnSnail: ],v[850,11,10]]!
+![k[glance],v[9,10]]!
+![k[alive],v[1:46:20 PM]]!
+![k[carryFood],v[9]]!
+![k[blessMaiden],v[1610,620,Red]]!
+![k[getOffSnail: ],v[810,11,,10]]!
+![k[playerKill],v[810,11,5,10,Worker]]!
+![k[glance],v[9,4]]!
+![k[carryFood],v[4]]!
+![k[blessMaiden],v[1610,620,Blue]]!
+![k[getOnSnail: ],v[810,11,10]]!
+![k[alive],v[1:46:25 PM]]!
+![k[playerKill],v[1698,500,2,3,Worker]]!
+![k[getOffSnail: ],v[797,11,,10]]!
+![k[playerKill],v[797,11,7,10,Worker]]!
+![k[blessMaiden],v[310,620,Blue]]!
+![k[blessMaiden],v[960,140,Red]]!
+![k[carryFood],v[3]]!
+![k[alive],v[1:46:30 PM]]!
+![k[getOnSnail: ],v[797,11,10]]!
+![k[playerKill],v[758,770,2,7,Soldier]]!
+![k[playerKill],v[821,850,6,1,Queen]]!
+![k[berryDeposit],v[1062,642,9]]!
+![k[playerKill],v[1128,802,6,3,Worker]]!
+![k[glance],v[4,5]]!
+![k[getOffSnail: ],v[697,11,,10]]!
+![k[alive],v[1:46:35 PM]]!
+![k[carryFood],v[10]]!
+![k[getOnSnail: ],v[697,11,10]]!
+![k[glance],v[4,5]]!
+![k[carryFood],v[7]]!
+![k[blessMaiden],v[1610,620,Red]]!
+![k[reserveMaiden],v[960,140,7]]!
+![k[carryFood],v[9]]!
+![k[blessMaiden],v[960,140,Blue]]!
+![k[blessMaiden],v[310,620,Red]]!
+![k[getOffSnail: ],v[619,11,,10]]!
+![k[alive],v[1:46:40 PM]]!
+![k[useMaiden],v[960,140,maiden_wings,7]]!
+![k[carryFood],v[3]]!
+![k[berryDeposit],v[759,642,4]]!
+![k[reserveMaiden],v[1610,620,3]]!
+![k[berryDeposit],v[1094,605,9]]!
+![k[playerKill],v[1393,20,5,10,Worker]]!
+![k[blessMaiden],v[1610,620,Blue]]!
+![k[useMaiden],v[1610,620,maiden_wings,3]]!
+![k[alive],v[1:46:45 PM]]!
+![k[carryFood],v[4]]!
+![k[playerKill],v[934,867,6,5,Soldier]]!
+![k[getOnSnail: ],v[619,11,4]]!
+![k[blessMaiden],v[1610,620,Red]]!
+![k[carryFood],v[10]]!
+![k[playerKill],v[1645,746,1,2,Queen]]!
+![k[carryFood],v[9]]!
+![k[alive],v[1:46:50 PM]]!
+![k[reserveMaiden],v[1580,140,10]]!
+![k[carryFood],v[5]]!
+![k[blessMaiden],v[960,140,Red]]!
+![k[berryDeposit],v[1117,612,9]]!
+![k[useMaiden],v[1580,140,maiden_speed,10]]!
+![k[reserveMaiden],v[1580,140,5]]!
+![k[blessMaiden],v[310,620,Blue]]!
+![k[carryFood],v[10]]!
+![k[alive],v[1:46:55 PM]]!
+![k[playerKill],v[1883,1015,2,7,Soldier]]!
+![k[useMaiden],v[1580,140,maiden_speed,5]]!
+![k[blessMaiden],v[310,620,Red]]!
+![k[blessMaiden],v[1610,620,Blue]]!
+![k[carryFood],v[5]]!
+![k[alive],v[1:47:00 PM]]!
+![k[reserveMaiden],v[960,140,5]]!
+![k[carryFood],v[7]]!
+![k[carryFood],v[9]]!
+![k[blessMaiden],v[960,140,Blue]]!
+![k[getOffSnail: ],v[295,11,,4]]!
+![k[playerKill],v[272,97,3,4,Worker]]!
+![k[playerKill],v[284,98,8,3,Soldier]]!
+![k[useMaiden],v[960,140,maiden_wings,5]]!
+![k[reserveMaiden],v[1610,620,10]]!
+![k[glance],v[8,7]]!
+![k[alive],v[1:47:05 PM]]!
+![k[blessMaiden],v[310,620,Blue]]!
+![k[useMaiden],v[1610,620,maiden_wings,10]]!
+![k[carryFood],v[4]]!
+![k[getOnSnail: ],v[295,11,7]]!
+![k[snailEat],v[295,11,7,4]]!
+![k[carryFood],v[3]]!
+![k[alive],v[1:47:10 PM]]!
+![k[playerKill],v[349,20,7,4,Worker]]!
+![k[glance],v[10,9]]!
+![k[playerKill],v[1136,855,6,9,Worker]]!
+![k[alive],v[1:47:15 PM]]!
+![k[playerKill],v[432,415,2,1,Queen]]!
+![k[carryFood],v[9]]!
+![k[getOffSnail: ],v[406,11,,7]]!
+![k[carryFood],v[4]]!
+![k[getOnSnail: ],v[406,11,4]]!
+![k[glance],v[3,6]]!
+![k[berryDeposit],v[1094,641,9]]!
+![k[blessMaiden],v[340,140,Blue]]!
+![k[playerKill],v[1528,968,10,3,Worker]]!
+![k[glance],v[2,7]]!
+![k[alive],v[1:47:20 PM]]!
+![k[carryFood],v[9]]!
+![k[playerKill],v[505,20,2,7,Worker]]!
+![k[carryFood],v[3]]!
+![k[berryDeposit],v[1193,612,9]]!
+![k[reserveMaiden],v[1580,140,3]]!
+![k[alive],v[1:47:25 PM]]!
+![k[blessMaiden],v[960,140,Red]]!
+![k[useMaiden],v[1580,140,maiden_speed,3]]!
+![k[snailEat],v[165,11,4,3]]!
+![k[carryFood],v[9]]!
+![k[carryFood],v[7]]!
+![k[playerKill],v[259,91,2,7,Worker]]!
+![k[alive],v[1:47:30 PM]]!
+![k[blessMaiden],v[1610,620,Red]]!
+![k[glance],v[9,4]]!
+![k[playerKill],v[102,20,4,3,Worker]]!
+![k[snailEat],v[158,11,4,9]]!
+![k[glance],v[9,4]]!
+![k[snailEscape],v[108,11,9]]!
+![k[getOffSnail: ],v[158,11,,4]]!
+![k[playerKill],v[158,11,5,4,Worker]]!
+![k[glance],v[5,8]]!
+![k[alive],v[1:47:35 PM]]!
+![k[playerKill],v[1888,175,2,5,Soldier]]!
+![k[carryFood],v[7]]!
+![k[playerKill],v[1711,20,6,9,Worker]]!
+![k[carryFood],v[3]]!
+![k[playerKill],v[184,41,2,7,Worker]]!
+![k[blessMaiden],v[310,620,Red]]!
+![k[getOnSnail: ],v[158,11,4]]!
+![k[playerKill],v[258,20,2,3,Worker]]!
+![k[alive],v[1:47:40 PM]]!
+![k[playerKill],v[206,162,2,1,Queen]]!
+![k[gameend],v[map_dusk,False,102.1888,False]]!
+![k[victory],v[Blue,military]]!
+![k[alive],v[1:47:45 PM]]!
+![k[alive],v[1:47:50 PM]]!
+![k[alive],v[1:47:55 PM]]!
+![k[alive],v[1:48:00 PM]]!
+![k[alive],v[1:48:05 PM]]!
+![k[alive],v[1:48:10 PM]]!
+![k[alive],v[1:48:15 PM]]!
+![k[alive],v[1:48:20 PM]]!
+![k[alive],v[1:48:25 PM]]!
+![k[alive],v[1:48:30 PM]]!
+![k[spawn],v[7,False]]!
+![k[spawn],v[3,False]]!
+![k[alive],v[1:48:35 PM]]!
+![k[spawn],v[9,False]]!
+![k[spawn],v[1,False]]!
+![k[spawn],v[2,False]]!
+![k[playernames],v[,,,,,,,,,]]!
+![k[spawn],v[5,False]]!
+![k[spawn],v[10,False]]!
+![k[spawn],v[8,False]]!
+![k[spawn],v[4,False]]!
+![k[spawn],v[6,False]]!
+![k[blessMaiden],v[1510,860,Red]]!
+![k[alive],v[1:48:40 PM]]!
+![k[blessMaiden],v[410,860,Blue]]!
+![k[gamestart],v[map_day,False,0,False]]!
+![k[alive],v[1:48:45 PM]]!
+![k[carryFood],v[8]]!
+![k[carryFood],v[10]]!
+![k[carryFood],v[6]]!
+![k[carryFood],v[3]]!
+![k[carryFood],v[5]]!
+![k[carryFood],v[7]]!
+![k[carryFood],v[4]]!
+![k[glance],v[1,2]]!
+![k[glance],v[10,9]]!
+![k[reserveMaiden],v[960,500,3]]!
+![k[reserveMaiden],v[560,260,8]]!
+![k[reserveMaiden],v[1360,260,5]]!
+![k[glance],v[1,2]]!
+![k[glance],v[10,9]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[glance],v[9,10]]!
+![k[reserveMaiden],v[1510,860,7]]!
+![k[reserveMaiden],v[410,860,6]]!
+![k[getOnSnail: ],v[960,11,4]]!
+![k[useMaiden],v[960,500,maiden_wings,3]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[useMaiden],v[560,260,maiden_wings,8]]!
+![k[useMaiden],v[1360,260,maiden_wings,5]]!
+![k[alive],v[1:48:50 PM]]!
+![k[carryFood],v[9]]!
+![k[reserveMaiden],v[1360,260,10]]!
+![k[glance],v[9,10]]!
+![k[unreserveMaiden],v[1360,260,,10]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[useMaiden],v[1510,860,maiden_speed,7]]!
+![k[useMaiden],v[410,860,maiden_speed,6]]!
+![k[glance],v[2,1]]!
+![k[carryFood],v[7]]!
+![k[carryFood],v[6]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[alive],v[1:48:55 PM]]!
+![k[getOffSnail: ],v[836,11,,4]]!
+![k[glance],v[9,4]]!
+![k[getOnSnail: ],v[836,11,9]]!
+![k[reserveMaiden],v[1360,260,7]]!
+![k[reserveMaiden],v[560,260,6]]!
+![k[getOffSnail: ],v[855,11,,9]]!
+![k[getOnSnail: ],v[855,11,4]]!
+![k[glance],v[4,9]]!
+![k[snailEat],v[855,11,4,9]]!
+![k[glance],v[1,2]]!
+![k[glance],v[1,2]]!
+![k[useMaiden],v[1360,260,maiden_wings,7]]!
+![k[useMaiden],v[560,260,maiden_wings,6]]!
+![k[reserveMaiden],v[560,260,10]]!
+![k[glance],v[2,1]]!
+![k[glance],v[1,2]]!
+![k[snailEscape],v[805,11,9]]!
+![k[getOffSnail: ],v[855,11,,4]]!
+![k[playerKill],v[855,11,5,4,Worker]]!
+![k[alive],v[1:49:00 PM]]!
+![k[getOnSnail: ],v[855,11,9]]!
+![k[glance],v[1,2]]!
+![k[useMaiden],v[560,260,maiden_wings,10]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[alive],v[1:49:05 PM]]!
+![k[blessMaiden],v[410,860,Red]]!
+![k[playerKill],v[1281,20,7,4,Worker]]!
+![k[playerKill],v[1396,27,7,10,Soldier]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[alive],v[1:49:10 PM]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[blessMaiden],v[560,260,Red]]!
+![k[blessMaiden],v[1360,260,Blue]]!
+![k[carryFood],v[10]]!
+![k[alive],v[1:49:15 PM]]!
+![k[reserveMaiden],v[1360,260,10]]!
+![k[snailEat],v[1178,11,9,4]]!
+![k[playerKill],v[1155,535,1,8,Soldier]]!
+![k[useMaiden],v[1360,260,maiden_wings,10]]!
+![k[playerKill],v[1247,26,9,4,Worker]]!
+![k[alive],v[1:49:20 PM]]!
+![k[blessMaiden],v[1360,260,Red]]!
+![k[glance],v[2,5]]!
+![k[carryFood],v[8]]!
+![k[playerKill],v[132,378,5,2,Queen]]!
+![k[alive],v[1:49:25 PM]]!
+![k[getOffSnail: ],v[1310,11,,9]]!
+![k[glance],v[5,4]]!
+![k[playerKill],v[1287,397,6,1,Queen]]!
+![k[glance],v[10,7]]!
+![k[getOnSnail: ],v[1310,11,9]]!
+![k[glance],v[9,10]]!
+![k[playerKill],v[640,512,5,8,Worker]]!
+![k[getOffSnail: ],v[1314,11,,9]]!
+![k[playerKill],v[1314,11,10,9,Worker]]!
+![k[blessMaiden],v[410,860,Blue]]!
+![k[carryFood],v[4]]!
+![k[playerKill],v[1321,163,10,3,Soldier]]!
+![k[alive],v[1:49:30 PM]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[playerKill],v[1408,175,7,10,Soldier]]!
+![k[getOnSnail: ],v[1314,11,4]]!
+![k[getOffSnail: ],v[1288,11,,4]]!
+![k[playerKill],v[1279,43,7,4,Worker]]!
+![k[getOnSnail: ],v[1288,11,9]]!
+![k[carryFood],v[8]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[carryFood],v[3]]!
+![k[alive],v[1:49:35 PM]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[reserveMaiden],v[560,260,8]]!
+![k[glance],v[5,6]]!
+![k[carryFood],v[10]]!
+![k[glance],v[6,5]]!
+![k[glance],v[2,1]]!
+![k[playerKill],v[1303,400,7,6,Soldier]]!
+![k[reserveMaiden],v[1510,860,3]]!
+![k[glance],v[1,2]]!
+![k[useMaiden],v[560,260,maiden_wings,8]]!
+![k[carryFood],v[4]]!
+![k[reserveMaiden],v[560,260,10]]!
+![k[alive],v[1:49:40 PM]]!
+![k[useMaiden],v[1510,860,maiden_speed,3]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[reserveMaiden],v[960,500,4]]!
+![k[unreserveMaiden],v[960,500,,4]]!
+![k[useMaiden],v[560,260,maiden_wings,10]]!
+![k[playerKill],v[1024,503,2,5,Soldier]]!
+![k[carryFood],v[6]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[carryFood],v[3]]!
+![k[blessMaiden],v[1360,260,Blue]]!
+![k[glance],v[3,2]]!
+![k[getOffSnail: ],v[1530,11,,9]]!
+![k[playerKill],v[1530,11,8,9,Worker]]!
+![k[alive],v[1:49:45 PM]]!
+![k[blessMaiden],v[560,260,Red]]!
+![k[playerKill],v[549,266,1,6,Worker]]!
+![k[getOnSnail: ],v[1530,11,4]]!
+![k[reserveMaiden],v[560,260,3]]!
+![k[unreserveMaiden],v[560,260,,3]]!
+![k[reserveMaiden],v[560,260,3]]!
+![k[carryFood],v[5]]!
+![k[getOffSnail: ],v[1467,11,,4]]!
+![k[alive],v[1:49:50 PM]]!
+![k[getOnSnail: ],v[1467,11,9]]!
+![k[carryFood],v[6]]!
+![k[getOffSnail: ],v[1482,11,,9]]!
+![k[carryFood],v[9]]!
+![k[useMaiden],v[560,260,maiden_wings,3]]!
+![k[glance],v[9,4]]!
+![k[reserveMaiden],v[1360,260,6]]!
+![k[unreserveMaiden],v[1360,260,,6]]!
+![k[playerKill],v[1360,260,7,6,Worker]]!
+![k[getOnSnail: ],v[1482,11,4]]!
+![k[playerKill],v[1578,153,7,8,Soldier]]!
+![k[glance],v[4,9]]!
+![k[getOffSnail: ],v[1466,11,,4]]!
+![k[reserveMaiden],v[1510,860,5]]!
+![k[glance],v[9,4]]!
+![k[playerKill],v[1371,48,10,9,Worker]]!
+![k[alive],v[1:49:55 PM]]!
+![k[getOnSnail: ],v[1466,11,4]]!
+![k[playerKill],v[1436,198,2,7,Soldier]]!
+![k[getOffSnail: ],v[1454,11,,4]]!
+![k[blessMaiden],v[1360,260,Red]]!
+![k[glance],v[3,4]]!
+![k[playerKill],v[1395,89,10,3,Soldier]]!
+![k[getOnSnail: ],v[1454,11,4]]!
+![k[useMaiden],v[1510,860,maiden_speed,5]]!
+![k[carryFood],v[6]]!
+![k[carryFood],v[8]]!
+![k[alive],v[1:50:00 PM]]!
+![k[carryFood],v[5]]!
+![k[glance],v[6,7]]!
+![k[getOffSnail: ],v[1377,11,,4]]!
+![k[glance],v[8,9]]!
+![k[glance],v[4,9]]!
+![k[carryFood],v[7]]!
+![k[blessMaiden],v[1360,260,Blue]]!
+![k[reserveMaiden],v[1360,260,8]]!
+![k[getOnSnail: ],v[1377,11,9]]!
+![k[snailEat],v[1377,11,9,4]]!
+![k[glance],v[4,9]]!
+![k[reserveMaiden],v[560,260,5]]!
+![k[glance],v[6,5]]!
+![k[unreserveMaiden],v[560,260,,5]]!
+![k[snailEscape],v[1427,11,4]]!
+![k[getOffSnail: ],v[1377,11,,9]]!
+![k[playerKill],v[1377,11,10,9,Worker]]!
+![k[carryFood],v[3]]!
+![k[alive],v[1:50:05 PM]]!
+![k[playerKill],v[500,260,1,6,Worker]]!
+![k[getOnSnail: ],v[1377,11,4]]!
+![k[useMaiden],v[1360,260,maiden_wings,8]]!
+![k[reserveMaiden],v[560,260,5]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[reserveMaiden],v[1510,860,7]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[useMaiden],v[560,260,maiden_wings,5]]!
+![k[reserveMaiden],v[560,260,3]]!
+![k[blessMaiden],v[1510,860,Blue]]!
+![k[alive],v[1:50:10 PM]]!
+![k[useMaiden],v[1510,860,maiden_speed,7]]!
+![k[carryFood],v[6]]!
+![k[glance],v[9,10]]!
+![k[blessMaiden],v[1360,260,Red]]!
+![k[useMaiden],v[560,260,maiden_wings,3]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[carryFood],v[7]]!
+![k[reserveMaiden],v[1360,260,7]]!
+![k[getOffSnail: ],v[1192,11,,4]]!
+![k[playerKill],v[1192,11,1,4,Worker]]!
+![k[unreserveMaiden],v[1360,260,,7]]!
+![k[playerKill],v[1362,285,10,7,Worker]]!
+![k[alive],v[1:50:15 PM]]!
+![k[playerKill],v[666,364,2,3,Soldier]]!
+![k[getOnSnail: ],v[1192,11,9]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[getOffSnail: ],v[1207,11,,9]]!
+![k[getOnSnail: ],v[1207,11,9]]!
+![k[getOffSnail: ],v[1216,11,,9]]!
+![k[playerKill],v[1257,20,10,9,Worker]]!
+![k[playerKill],v[438,264,1,6,Worker]]!
+![k[blessMaiden],v[560,260,Red]]!
+![k[playerKill],v[1267,63,5,10,Soldier]]!
+![k[alive],v[1:50:20 PM]]!
+![k[glance],v[4,7]]!
+![k[glance],v[1,2]]!
+![k[carryFood],v[3]]!
+![k[playerKill],v[1347,260,5,4,Worker]]!
+![k[carryFood],v[7]]!
+![k[glance],v[1,2]]!
+![k[reserveMaiden],v[1360,260,3]]!
+![k[getOnSnail: ],v[1216,11,9]]!
+![k[carryFood],v[6]]!
+![k[glance],v[1,2]]!
+![k[alive],v[1:50:25 PM]]!
+![k[useMaiden],v[1360,260,maiden_wings,3]]!
+![k[reserveMaiden],v[1360,260,7]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[carryFood],v[10]]!
+![k[blessMaiden],v[560,260,Red]]!
+![k[reserveMaiden],v[960,500,6]]!
+![k[glance],v[4,3]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[snailEat],v[1326,11,9,4]]!
+![k[useMaiden],v[1360,260,maiden_wings,7]]!
+![k[reserveMaiden],v[560,260,10]]!
+![k[alive],v[1:50:30 PM]]!
+![k[useMaiden],v[960,500,maiden_wings,6]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[blessMaiden],v[1510,860,Red]]!
+![k[useMaiden],v[560,260,maiden_wings,10]]!
+![k[playerKill],v[1310,20,9,4,Worker]]!
+![k[getOffSnail: ],v[1346,11,,9]]!
+![k[getOnSnail: ],v[1346,11,9]]!
+![k[playerKill],v[1426,65,2,3,Soldier]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[alive],v[1:50:35 PM]]!
+![k[getOffSnail: ],v[1363,11,,9]]!
+![k[getOnSnail: ],v[1363,11,9]]!
+![k[getOffSnail: ],v[1366,11,,9]]!
+![k[playerKill],v[1749,396,7,2,Queen]]!
+![k[blessMaiden],v[560,260,Red]]!
+![k[playerKill],v[709,406,6,1,Queen]]!
+![k[glance],v[4,9]]!
+![k[alive],v[1:50:40 PM]]!
+![k[glance],v[7,10]]!
+![k[getOnSnail: ],v[1366,11,4]]!
+![k[snailEat],v[1358,11,4,9]]!
+![k[glance],v[10,7]]!
+![k[carryFood],v[3]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[snailEscape],v[1308,11,9]]!
+![k[getOffSnail: ],v[1358,11,,4]]!
+![k[playerKill],v[1358,11,5,4,Worker]]!
+![k[playerKill],v[1478,373,10,3,Worker]]!
+![k[glance],v[10,7]]!
+![k[getOnSnail: ],v[1358,11,9]]!
+![k[glance],v[10,7]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[getOffSnail: ],v[1373,11,,9]]!
+![k[playerKill],v[1402,121,8,9,Worker]]!
+![k[glance],v[7,10]]!
+![k[alive],v[1:50:45 PM]]!
+![k[glance],v[2,1]]!
+![k[glance],v[7,10]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[playerKill],v[1400,348,5,10,Soldier]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[glance],v[5,8]]!
+![k[playerKill],v[1290,174,7,8,Soldier]]!
+![k[blessMaiden],v[560,260,Red]]!
+![k[carryFood],v[3]]!
+![k[glance],v[4,5]]!
+![k[getOnSnail: ],v[1373,11,9]]!
+![k[getOffSnail: ],v[1376,11,,9]]!
+![k[alive],v[1:50:50 PM]]!
+![k[glance],v[5,4]]!
+![k[getOnSnail: ],v[1376,11,9]]!
+![k[reserveMaiden],v[1360,260,3]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[playerKill],v[175,582,1,6,Soldier]]!
+![k[playerKill],v[1059,231,5,10,Worker]]!
+![k[blessMaiden],v[410,860,Red]]!
+![k[useMaiden],v[1360,260,maiden_wings,3]]!
+![k[getOffSnail: ],v[1452,11,,9]]!
+![k[getOnSnail: ],v[1452,11,4]]!
+![k[getOffSnail: ],v[1452,11,,4]]!
+![k[glance],v[4,9]]!
+![k[alive],v[1:50:55 PM]]!
+![k[getOnSnail: ],v[1452,11,4]]!
+![k[glance],v[9,4]]!
+![k[glance],v[4,9]]!
+![k[getOffSnail: ],v[1451,11,,4]]!
+![k[playerKill],v[1451,11,3,4,Worker]]!
+![k[blessMaiden],v[410,860,Blue]]!
+![k[getOnSnail: ],v[1451,11,9]]!
+![k[carryFood],v[8]]!
+![k[carryFood],v[6]]!
+![k[reserveMaiden],v[560,260,8]]!
+![k[carryFood],v[10]]!
+![k[alive],v[1:51:00 PM]]!
+![k[blessMaiden],v[560,260,Red]]!
+![k[playerKill],v[813,140,7,10,Worker]]!
+![k[playerKill],v[853,269,5,6,Worker]]!
+![k[useMaiden],v[560,260,maiden_wings,8]]!
+![k[playerKill],v[617,125,2,3,Soldier]]!
+![k[getOffSnail: ],v[1621,11,,9]]!
+![k[alive],v[1:51:05 PM]]!
+![k[carryFood],v[9]]!
+![k[glance],v[8,9]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[getOnSnail: ],v[1621,11,9]]!
+![k[playerKill],v[1222,35,2,5,Soldier]]!
+![k[getOffSnail: ],v[1621,11,,9]]!
+![k[getOnSnail: ],v[1621,11,4]]!
+![k[carryFood],v[6]]!
+![k[glance],v[8,9]]!
+![k[carryFood],v[3]]!
+![k[getOffSnail: ],v[1579,11,,4]]!
+![k[carryFood],v[4]]!
+![k[getOnSnail: ],v[1579,11,4]]!
+![k[carryFood],v[10]]!
+![k[getOffSnail: ],v[1568,11,,4]]!
+![k[alive],v[1:51:10 PM]]!
+![k[getOnSnail: ],v[1568,11,4]]!
+![k[snailEat],v[1568,11,4,9]]!
+![k[blessMaiden],v[1510,860,Blue]]!
+![k[reserveMaiden],v[560,260,3]]!
+![k[glance],v[5,4]]!
+![k[snailEscape],v[1518,11,9]]!
+![k[getOffSnail: ],v[1568,11,,4]]!
+![k[playerKill],v[1568,11,7,4,Worker]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[reserveMaiden],v[960,500,6]]!
+![k[carryFood],v[5]]!
+![k[getOnSnail: ],v[1568,11,5]]!
+![k[getOffSnail: ],v[1569,11,,5]]!
+![k[getOnSnail: ],v[1569,11,9]]!
+![k[playerKill],v[1557,158,7,8,Soldier]]!
+![k[useMaiden],v[560,260,maiden_wings,3]]!
+![k[alive],v[1:51:15 PM]]!
+![k[useMaiden],v[960,500,maiden_wings,6]]!
+![k[reserveMaiden],v[960,500,10]]!
+![k[reserveMaiden],v[560,260,5]]!
+![k[blessMaiden],v[1510,860,Red]]!
+![k[useMaiden],v[960,500,maiden_wings,10]]!
+![k[alive],v[1:51:20 PM]]!
+![k[playerKill],v[1537,140,7,4,Worker]]!
+![k[useMaiden],v[560,260,maiden_wings,5]]!
+![k[getOffSnail: ],v[1738,11,,9]]!
+![k[blessMaiden],v[410,860,Red]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[getOnSnail: ],v[1738,11,8]]!
+![k[getOffSnail: ],v[1738,11,,8]]!
+![k[playerKill],v[1738,11,7,8,Worker]]!
+![k[getOnSnail: ],v[1738,11,9]]!
+![k[alive],v[1:51:25 PM]]!
+![k[getOffSnail: ],v[1774,11,,9]]!
+![k[playerKill],v[1774,11,10,9,Worker]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[playerKill],v[1830,55,2,5,Soldier]]!
+![k[playerKill],v[1663,50,10,7,Soldier]]!
+![k[carryFood],v[4]]!
+![k[getOnSnail: ],v[1774,11,4]]!
+![k[alive],v[1:51:30 PM]]!
+![k[carryFood],v[8]]!
+![k[blessMaiden],v[560,260,Red]]!
+![k[carryFood],v[5]]!
+![k[getOffSnail: ],v[1684,11,,4]]!
+![k[getOnSnail: ],v[1684,11,9]]!
+![k[glance],v[9,4]]!
+![k[snailEat],v[1684,11,9,4]]!
+![k[snailEscape],v[1734,11,4]]!
+![k[getOffSnail: ],v[1684,11,,9]]!
+![k[playerKill],v[1684,11,10,9,Worker]]!
+![k[alive],v[1:51:35 PM]]!
+![k[carryFood],v[7]]!
+![k[getOnSnail: ],v[1684,11,4]]!
+![k[playerKill],v[34,297,2,3,Soldier]]!
+![k[glance],v[8,5]]!
+![k[reserveMaiden],v[1360,260,5]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[alive],v[1:51:40 PM]]!
+![k[glance],v[9,8]]!
+![k[playerKill],v[1391,260,1,8,Worker]]!
+![k[useMaiden],v[1360,260,maiden_wings,5]]!
+![k[getOffSnail: ],v[1556,11,,4]]!
+![k[blessMaiden],v[410,860,Blue]]!
+![k[carryFood],v[3]]!
+![k[glance],v[3,4]]!
+![k[getOnSnail: ],v[1556,11,3]]!
+![k[snailEat],v[1561,11,3,4]]!
+![k[playerKill],v[1685,357,6,9,Worker]]!
+![k[glance],v[2,1]]!
+![k[alive],v[1:51:45 PM]]!
+![k[glance],v[5,10]]!
+![k[snailEscape],v[1611,11,4]]!
+![k[getOffSnail: ],v[1561,11,,3]]!
+![k[playerKill],v[1561,11,6,3,Worker]]!
+![k[glance],v[5,10]]!
+![k[reserveMaiden],v[1510,860,7]]!
+![k[carryFood],v[8]]!
+![k[playerKill],v[1487,246,5,6,Soldier]]!
+![k[getOnSnail: ],v[1561,11,4]]!
+![k[glance],v[2,1]]!
+![k[getOffSnail: ],v[1556,11,,4]]!
+![k[playerKill],v[1518,20,5,4,Worker]]!
+![k[reserveMaiden],v[560,260,8]]!
+![k[useMaiden],v[1510,860,maiden_speed,7]]!
+![k[alive],v[1:51:50 PM]]!
+![k[glance],v[2,1]]!
+![k[carryFood],v[9]]!
+![k[getOnSnail: ],v[1556,11,9]]!
+![k[getOffSnail: ],v[1558,11,,9]]!
+![k[useMaiden],v[560,260,maiden_wings,8]]!
+![k[playerKill],v[1641,43,5,10,Soldier]]!
+![k[glance],v[1,2]]!
+![k[carryFood],v[3]]!
+![k[getOnSnail: ],v[1558,11,9]]!
+![k[carryFood],v[7]]!
+![k[reserveMaiden],v[1360,260,3]]!
+![k[alive],v[1:51:55 PM]]!
+![k[carryFood],v[6]]!
+![k[glance],v[2,1]]!
+![k[playerKill],v[1366,260,8,7,Worker]]!
+![k[useMaiden],v[1360,260,maiden_wings,3]]!
+![k[reserveMaiden],v[560,260,6]]!
+![k[getOffSnail: ],v[1656,11,,9]]!
+![k[carryFood],v[4]]!
+![k[carryFood],v[10]]!
+![k[glance],v[8,9]]!
+![k[getOnSnail: ],v[1656,11,4]]!
+![k[getOffSnail: ],v[1643,11,,4]]!
+![k[playerKill],v[1643,11,3,4,Worker]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[getOnSnail: ],v[1643,11,9]]!
+![k[alive],v[1:52:00 PM]]!
+![k[useMaiden],v[560,260,maiden_wings,6]]!
+![k[reserveMaiden],v[560,260,10]]!
+![k[glance],v[1,2]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[carryFood],v[7]]!
+![k[useMaiden],v[560,260,maiden_wings,10]]!
+![k[getOffSnail: ],v[1735,11,,9]]!
+![k[alive],v[1:52:05 PM]]!
+![k[carryFood],v[4]]!
+![k[playerKill],v[1736,200,3,6,Soldier]]!
+![k[playerKill],v[1743,186,3,8,Soldier]]!
+![k[glance],v[4,9]]!
+![k[reserveMaiden],v[1360,260,7]]!
+![k[getOnSnail: ],v[1735,11,9]]!
+![k[getOffSnail: ],v[1744,11,,9]]!
+![k[glance],v[4,5]]!
+![k[getOnSnail: ],v[1744,11,9]]!
+![k[snailEat],v[1750,11,9,4]]!
+![k[useMaiden],v[1360,260,maiden_wings,7]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[alive],v[1:52:10 PM]]!
+![k[playerKill],v[1803,45,10,5,Soldier]]!
+![k[carryFood],v[8]]!
+![k[carryFood],v[6]]!
+![k[playerKill],v[1817,55,3,10,Soldier]]!
+![k[playerKill],v[1820,20,9,4,Worker]]!
+![k[blessMaiden],v[1360,260,Blue]]!
+![k[reserveMaiden],v[560,260,8]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[getOffSnail: ],v[1776,11,,9]]!
+![k[alive],v[1:52:15 PM]]!
+![k[blessMaiden],v[560,260,Red]]!
+![k[glance],v[2,9]]!
+![k[playerKill],v[1838,20,2,9,Worker]]!
+![k[useMaiden],v[560,260,maiden_wings,8]]!
+![k[playerKill],v[18,140,3,6,Worker]]!
+![k[getOnSnail: ],v[1776,11,5]]!
+![k[getOffSnail: ],v[1776,11,,5]]!
+![k[carryFood],v[5]]!
+![k[glance],v[5,2]]!
+![k[glance],v[3,2]]!
+![k[glance],v[2,5]]!
+![k[blessMaiden],v[1360,260,Red]]!
+![k[alive],v[1:52:20 PM]]!
+![k[carryFood],v[10]]!
+![k[getOnSnail: ],v[1776,11,5]]!
+![k[playerKill],v[1683,99,7,2,Queen]]!
+![k[gameend],v[map_day,False,216.9158,False]]!
+![k[victory],v[Gold,military]]!
+![k[alive],v[1:52:25 PM]]!
+![k[alive],v[1:52:30 PM]]!
+![k[alive],v[1:52:35 PM]]!
+![k[alive],v[1:52:40 PM]]!
+![k[alive],v[1:52:45 PM]]!
+![k[alive],v[1:52:50 PM]]!
+![k[alive],v[1:52:55 PM]]!
+![k[alive],v[1:53:00 PM]]!
+![k[spawn],v[9,False]]!
+![k[spawn],v[6,False]]!
+![k[spawn],v[5,False]]!
+![k[spawn],v[3,False]]!
+![k[spawn],v[1,False]]!
+![k[spawn],v[2,False]]!
+![k[playernames],v[,,,,,,,,,]]!
+![k[spawn],v[8,False]]!
+![k[spawn],v[7,False]]!
+![k[spawn],v[10,False]]!
+![k[spawn],v[4,False]]!
+![k[alive],v[1:53:05 PM]]!
+![k[blessMaiden],v[1510,860,Red]]!
+![k[blessMaiden],v[410,860,Blue]]!
+![k[alive],v[1:53:10 PM]]!
+![k[gamestart],v[map_day,False,0,False]]!
+![k[carryFood],v[3]]!
+![k[carryFood],v[8]]!
+![k[carryFood],v[5]]!
+![k[carryFood],v[10]]!
+![k[carryFood],v[6]]!
+![k[carryFood],v[7]]!
+![k[glance],v[1,2]]!
+![k[glance],v[9,10]]!
+![k[reserveMaiden],v[1360,260,3]]!
+![k[reserveMaiden],v[560,260,8]]!
+![k[glance],v[1,2]]!
+![k[getOnSnail: ],v[960,11,4]]!
+![k[alive],v[1:53:15 PM]]!
+![k[reserveMaiden],v[960,500,5]]!
+![k[glance],v[1,2]]!
+![k[reserveMaiden],v[1510,860,7]]!
+![k[reserveMaiden],v[410,860,6]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[useMaiden],v[1360,260,maiden_wings,3]]!
+![k[useMaiden],v[560,260,maiden_wings,8]]!
+![k[reserveMaiden],v[560,260,10]]!
+![k[carryFood],v[9]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[useMaiden],v[960,500,maiden_wings,5]]!
+![k[blessMaiden],v[1360,260,Blue]]!
+![k[useMaiden],v[1510,860,maiden_speed,7]]!
+![k[useMaiden],v[410,860,maiden_speed,6]]!
+![k[playerKill],v[1437,414,2,3,Soldier]]!
+![k[snailEat],v[854,11,4,9]]!
+![k[useMaiden],v[560,260,maiden_wings,10]]!
+![k[blessMaiden],v[560,260,Red]]!
+![k[alive],v[1:53:20 PM]]!
+![k[playerKill],v[656,566,1,10,Soldier]]!
+![k[carryFood],v[6]]!
+![k[snailEscape],v[804,11,9]]!
+![k[getOffSnail: ],v[854,11,,4]]!
+![k[playerKill],v[854,11,5,4,Worker]]!
+![k[carryFood],v[7]]!
+![k[getOnSnail: ],v[854,11,9]]!
+![k[blessMaiden],v[410,860,Red]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[glance],v[7,6]]!
+![k[carryFood],v[3]]!
+![k[glance],v[2,1]]!
+![k[alive],v[1:53:25 PM]]!
+![k[carryFood],v[10]]!
+![k[reserveMaiden],v[1510,860,3]]!
+![k[glance],v[7,10]]!
+![k[alive],v[1:53:30 PM]]!
+![k[useMaiden],v[1510,860,maiden_speed,3]]!
+![k[glance],v[5,10]]!
+![k[blessMaiden],v[1360,260,Red]]!
+![k[reserveMaiden],v[1360,260,7]]!
+![k[carryFood],v[4]]!
+![k[carryFood],v[3]]!
+![k[glance],v[5,10]]!
+![k[useMaiden],v[1360,260,maiden_wings,7]]!
+![k[reserveMaiden],v[1360,260,3]]!
+![k[playerKill],v[899,500,5,10,Worker]]!
+![k[alive],v[1:53:35 PM]]!
+![k[glance],v[5,6]]!
+![k[playerKill],v[653,471,2,5,Soldier]]!
+![k[useMaiden],v[1360,260,maiden_wings,3]]!
+![k[glance],v[7,6]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[getOffSnail: ],v[1178,11,,9]]!
+![k[getOnSnail: ],v[1178,11,4]]!
+![k[getOffSnail: ],v[1163,11,,4]]!
+![k[playerKill],v[1163,11,3,4,Worker]]!
+![k[getOnSnail: ],v[1163,11,9]]!
+![k[playerKill],v[548,261,2,7,Soldier]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[blessMaiden],v[560,260,Red]]!
+![k[carryFood],v[10]]!
+![k[playerKill],v[580,324,2,1,Queen]]!
+![k[alive],v[1:53:40 PM]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[carryFood],v[5]]!
+![k[reserveMaiden],v[560,260,6]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[alive],v[1:53:45 PM]]!
+![k[reserveMaiden],v[1510,860,5]]!
+![k[useMaiden],v[560,260,maiden_wings,6]]!
+![k[reserveMaiden],v[560,260,10]]!
+![k[glance],v[1,2]]!
+![k[carryFood],v[7]]!
+![k[carryFood],v[4]]!
+![k[glance],v[1,2]]!
+![k[playerKill],v[1159,385,3,8,Soldier]]!
+![k[reserveMaiden],v[1360,260,7]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[useMaiden],v[1510,860,maiden_speed,5]]!
+![k[useMaiden],v[560,260,maiden_wings,10]]!
+![k[getOffSnail: ],v[1364,11,,9]]!
+![k[getOnSnail: ],v[1364,11,9]]!
+![k[blessMaiden],v[560,260,Red]]!
+![k[playerKill],v[605,277,1,4,Worker]]!
+![k[blessMaiden],v[1360,260,Blue]]!
+![k[alive],v[1:53:50 PM]]!
+![k[useMaiden],v[1360,260,maiden_wings,7]]!
+![k[playerKill],v[1436,188,2,3,Soldier]]!
+![k[carryFood],v[5]]!
+![k[getOffSnail: ],v[1396,11,,9]]!
+![k[glance],v[2,9]]!
+![k[glance],v[6,9]]!
+![k[carryFood],v[8]]!
+![k[glance],v[6,9]]!
+![k[getOnSnail: ],v[1396,11,9]]!
+![k[getOffSnail: ],v[1420,11,,9]]!
+![k[glance],v[9,6]]!
+![k[reserveMaiden],v[560,260,5]]!
+![k[glance],v[7,8]]!
+![k[playerKill],v[1490,158,10,9,Worker]]!
+![k[alive],v[1:53:55 PM]]!
+![k[carryFood],v[4]]!
+![k[carryFood],v[3]]!
+![k[glance],v[1,8]]!
+![k[playerKill],v[1306,270,7,4,Worker]]!
+![k[useMaiden],v[560,260,maiden_wings,5]]!
+![k[playerKill],v[1289,496,1,8,Worker]]!
+![k[reserveMaiden],v[560,260,3]]!
+![k[getOnSnail: ],v[1420,11,9]]!
+![k[alive],v[1:54:00 PM]]!
+![k[getOffSnail: ],v[1441,11,,9]]!
+![k[glance],v[10,5]]!
+![k[useMaiden],v[560,260,maiden_wings,3]]!
+![k[glance],v[5,10]]!
+![k[getOnSnail: ],v[1441,11,9]]!
+![k[getOffSnail: ],v[1448,11,,9]]!
+![k[glance],v[10,5]]!
+![k[alive],v[1:54:05 PM]]!
+![k[carryFood],v[4]]!
+![k[carryFood],v[9]]!
+![k[getOnSnail: ],v[1448,11,9]]!
+![k[getOffSnail: ],v[1457,11,,9]]!
+![k[playerKill],v[1475,160,6,9,Worker]]!
+![k[glance],v[7,8]]!
+![k[getOnSnail: ],v[1457,11,4]]!
+![k[alive],v[1:54:10 PM]]!
+![k[carryFood],v[8]]!
+![k[getOffSnail: ],v[1355,11,,4]]!
+![k[playerKill],v[1355,11,5,4,Worker]]!
+![k[glance],v[3,10]]!
+![k[glance],v[10,3]]!
+![k[playerKill],v[1636,312,5,8,Worker]]!
+![k[alive],v[1:54:15 PM]]!
+![k[glance],v[1,2]]!
+![k[glance],v[10,3]]!
+![k[playerKill],v[1284,115,7,6,Soldier]]!
+![k[getOnSnail: ],v[1355,11,9]]!
+![k[carryFood],v[4]]!
+![k[playerKill],v[1528,415,5,10,Soldier]]!
+![k[playerKill],v[1380,415,2,5,Soldier]]!
+![k[alive],v[1:54:20 PM]]!
+![k[playerKill],v[1537,415,2,3,Soldier]]!
+![k[carryFood],v[6]]!
+![k[glance],v[2,1]]!
+![k[glance],v[4,7]]!
+![k[reserveMaiden],v[1360,260,6]]!
+![k[getOffSnail: ],v[1507,11,,9]]!
+![k[carryFood],v[9]]!
+![k[blessMaiden],v[1360,260,Red]]!
+![k[unreserveMaiden],v[1360,260,,6]]!
+![k[playerKill],v[1360,260,1,6,Worker]]!
+![k[alive],v[1:54:25 PM]]!
+![k[carryFood],v[10]]!
+![k[glance],v[8,7]]!
+![k[getOnSnail: ],v[1507,11,4]]!
+![k[carryFood],v[5]]!
+![k[carryFood],v[3]]!
+![k[playerKill],v[1328,267,7,8,Worker]]!
+![k[glance],v[10,9]]!
+![k[blessMaiden],v[1360,260,Blue]]!
+![k[playerKill],v[1418,97,7,10,Worker]]!
+![k[getOffSnail: ],v[1461,11,,4]]!
+![k[playerKill],v[1461,11,7,4,Worker]]!
+![k[getOnSnail: ],v[1461,11,9]]!
+![k[glance],v[2,1]]!
+![k[alive],v[1:54:30 PM]]!
+![k[reserveMaiden],v[1510,860,3]]!
+![k[carryFood],v[6]]!
+![k[reserveMaiden],v[410,860,5]]!
+![k[getOffSnail: ],v[1529,11,,9]]!
+![k[blessMaiden],v[1360,260,Red]]!
+![k[getOnSnail: ],v[1529,11,9]]!
+![k[getOffSnail: ],v[1530,11,,9]]!
+![k[useMaiden],v[1510,860,maiden_speed,3]]!
+![k[useMaiden],v[410,860,maiden_speed,5]]!
+![k[carryFood],v[10]]!
+![k[getOnSnail: ],v[1530,11,6]]!
+![k[playerKill],v[1660,21,2,7,Soldier]]!
+![k[getOffSnail: ],v[1527,11,,6]]!
+![k[glance],v[6,9]]!
+![k[playerKill],v[1562,35,2,9,Worker]]!
+![k[alive],v[1:54:35 PM]]!
+![k[getOnSnail: ],v[1527,11,6]]!
+![k[carryFood],v[5]]!
+![k[carryFood],v[8]]!
+![k[reserveMaiden],v[560,260,5]]!
+![k[unreserveMaiden],v[560,260,,5]]!
+![k[reserveMaiden],v[560,260,5]]!
+![k[carryFood],v[3]]!
+![k[glance],v[1,2]]!
+![k[carryFood],v[4]]!
+![k[playerKill],v[1548,352,1,2,Queen]]!
+![k[alive],v[1:54:40 PM]]!
+![k[carryFood],v[7]]!
+![k[getOffSnail: ],v[1433,11,,6]]!
+![k[reserveMaiden],v[960,500,3]]!
+![k[useMaiden],v[560,260,maiden_wings,5]]!
+![k[playerKill],v[1384,22,1,4,Worker]]!
+![k[getOnSnail: ],v[1433,11,9]]!
+![k[glance],v[10,1]]!
+![k[reserveMaiden],v[560,260,7]]!
+![k[useMaiden],v[960,500,maiden_wings,3]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[useMaiden],v[560,260,maiden_wings,7]]!
+![k[reserveMaiden],v[560,260,8]]!
+![k[playerKill],v[661,429,3,2,Queen]]!
+![k[alive],v[1:54:45 PM]]!
+![k[glance],v[6,7]]!
+![k[playerKill],v[420,140,5,6,Worker]]!
+![k[blessMaiden],v[560,260,Red]]!
+![k[useMaiden],v[560,260,maiden_wings,8]]!
+![k[getOffSnail: ],v[1589,11,,9]]!
+![k[carryFood],v[9]]!
+![k[carryFood],v[4]]!
+![k[alive],v[1:54:50 PM]]!
+![k[getOnSnail: ],v[1589,11,9]]!
+![k[glance],v[10,5]]!
+![k[getOffSnail: ],v[1590,11,,9]]!
+![k[playerKill],v[809,756,7,2,Queen]]!
+![k[gameend],v[map_day,False,99.10674,False]]!
+![k[victory],v[Gold,military]]!
+![k[alive],v[1:54:55 PM]]!
+![k[alive],v[1:55:00 PM]]!
+![k[alive],v[1:55:05 PM]]!
+![k[alive],v[1:55:10 PM]]!
+![k[alive],v[1:55:15 PM]]!
+![k[alive],v[1:55:20 PM]]!
+![k[spawn],v[4,False]]!
+![k[spawn],v[1,False]]!
+![k[spawn],v[2,False]]!
+![k[playernames],v[,,,,,,,,,]]!
+![k[spawn],v[5,False]]!
+![k[spawn],v[9,False]]!
+![k[spawn],v[10,False]]!
+![k[spawn],v[3,False]]!
+![k[spawn],v[7,False]]!
+![k[spawn],v[8,False]]!
+![k[spawn],v[6,False]]!
+![k[alive],v[1:55:25 PM]]!
+![k[gamestart],v[map_night,False,0,False]]!
+![k[alive],v[1:55:30 PM]]!
+![k[carryFood],v[5]]!
+![k[carryFood],v[6]]!
+![k[blessMaiden],v[960,700,Blue]]!
+![k[carryFood],v[10]]!
+![k[playerKill],v[1072,760,2,1,Queen]]!
+![k[carryFood],v[8]]!
+![k[reserveMaiden],v[1750,740,5]]!
+![k[glance],v[3,8]]!
+![k[reserveMaiden],v[170,740,6]]!
+![k[carryFood],v[9]]!
+![k[reserveMaiden],v[700,260,8]]!
+![k[unreserveMaiden],v[700,260,,8]]!
+![k[reserveMaiden],v[700,260,8]]!
+![k[unreserveMaiden],v[700,260,,8]]!
+![k[glance],v[7,8]]!
+![k[alive],v[1:55:35 PM]]!
+![k[useMaiden],v[1750,740,maiden_speed,5]]!
+![k[carryFood],v[4]]!
+![k[reserveMaiden],v[960,700,10]]!
+![k[useMaiden],v[170,740,maiden_speed,6]]!
+![k[blessMaiden],v[1220,260,Blue]]!
+![k[carryFood],v[5]]!
+![k[carryFood],v[6]]!
+![k[glance],v[7,8]]!
+![k[carryFood],v[3]]!
+![k[reserveMaiden],v[700,260,8]]!
+![k[unreserveMaiden],v[700,260,,8]]!
+![k[reserveMaiden],v[700,260,8]]!
+![k[blessMaiden],v[1750,740,Red]]!
+![k[useMaiden],v[960,700,maiden_wings,10]]!
+![k[blessMaiden],v[170,740,Red]]!
+![k[alive],v[1:55:40 PM]]!
+![k[berryDeposit],v[130,81,4]]!
+![k[useMaiden],v[700,260,maiden_wings,8]]!
+![k[reserveMaiden],v[700,260,6]]!
+![k[reserveMaiden],v[1750,740,9]]!
+![k[blessMaiden],v[170,740,Blue]]!
+![k[carryFood],v[7]]!
+![k[useMaiden],v[700,260,maiden_wings,6]]!
+![k[blessMaiden],v[1750,740,Blue]]!
+![k[useMaiden],v[1750,740,maiden_speed,9]]!
+![k[alive],v[1:55:45 PM]]!
+![k[carryFood],v[4]]!
+![k[blessMaiden],v[960,700,Red]]!
+![k[reserveMaiden],v[700,260,3]]!
+![k[reserveMaiden],v[170,740,4]]!
+![k[getOnSnail: ],v[960,491,9]]!
+![k[playerKill],v[794,620,6,5,Worker]]!
+![k[getOffSnail: ],v[971,491,,9]]!
+![k[playerKill],v[980,523,6,9,Worker]]!
+![k[glance],v[1,2]]!
+![k[useMaiden],v[700,260,maiden_wings,3]]!
+![k[useMaiden],v[170,740,maiden_speed,4]]!
+![k[alive],v[1:55:50 PM]]!
+![k[carryFood],v[4]]!
+![k[playerKill],v[1182,620,8,7,Worker]]!
+![k[carryFood],v[5]]!
+![k[glance],v[10,3]]!
+![k[alive],v[1:55:55 PM]]!
+![k[glance],v[3,10]]!
+![k[carryFood],v[9]]!
+![k[berryDeposit],v[133,109,4]]!
+![k[carryFood],v[7]]!
+![k[glance],v[3,10]]!
+![k[berryDeposit],v[1783,81,9]]!
+![k[reserveMaiden],v[960,700,5]]!
+![k[glance],v[3,10]]!
+![k[glance],v[1,2]]!
+![k[glance],v[2,1]]!
+![k[glance],v[3,10]]!
+![k[playerKill],v[1092,775,1,8,Soldier]]!
+![k[alive],v[1:56:00 PM]]!
+![k[blessMaiden],v[960,700,Blue]]!
+![k[useMaiden],v[960,700,maiden_wings,5]]!
+![k[playerKill],v[1084,500,2,7,Worker]]!
+![k[blessMaiden],v[1750,740,Red]]!
+![k[carryFood],v[9]]!
+![k[carryFood],v[4]]!
+![k[blessMaiden],v[170,740,Red]]!
+![k[playerKill],v[772,737,10,3,Soldier]]!
+![k[alive],v[1:56:05 PM]]!
+![k[carryFood],v[8]]!
+![k[reserveMaiden],v[1220,260,8]]!
+![k[blessMaiden],v[700,260,Blue]]!
+![k[berryDeposit],v[118,100,4]]!
+![k[carryFood],v[7]]!
+![k[berryDeposit],v[1816,127,9]]!
+![k[reserveMaiden],v[1750,740,7]]!
+![k[useMaiden],v[1220,260,maiden_wings,8]]!
+![k[glance],v[2,1]]!
+![k[alive],v[1:56:10 PM]]!
+![k[glance],v[2,1]]!
+![k[glance],v[1,6]]!
+![k[useMaiden],v[1750,740,maiden_speed,7]]!
+![k[carryFood],v[4]]!
+![k[carryFood],v[3]]!
+![k[carryFood],v[7]]!
+![k[playerKill],v[1631,728,8,9,Worker]]!
+![k[alive],v[1:56:15 PM]]!
+![k[blessMaiden],v[1220,260,Red]]!
+![k[berryDeposit],v[120,139,4]]!
+![k[playerKill],v[1546,364,8,5,Soldier]]!
+![k[berryDeposit],v[1806,91,7]]!
+![k[blessMaiden],v[1220,260,Blue]]!
+![k[alive],v[1:56:20 PM]]!
+![k[carryFood],v[9]]!
+![k[carryFood],v[4]]!
+![k[blessMaiden],v[960,700,Red]]!
+![k[glance],v[1,2]]!
+![k[glance],v[1,2]]!
+![k[carryFood],v[5]]!
+![k[playerKill],v[1373,740,10,9,Worker]]!
+![k[glance],v[1,2]]!
+![k[playerKill],v[1256,745,10,3,Worker]]!
+![k[berryDeposit],v[133,134,4]]!
+![k[alive],v[1:56:25 PM]]!
+![k[carryFood],v[7]]!
+![k[glance],v[1,2]]!
+![k[glance],v[1,10]]!
+![k[blessMaiden],v[960,700,Blue]]!
+![k[playerKill],v[1072,691,2,1,Queen]]!
+![k[berryKickIn],v[233,129,10]]!
+![k[reserveMaiden],v[1750,740,5]]!
+![k[glance],v[7,8]]!
+![k[carryFood],v[9]]!
+![k[alive],v[1:56:30 PM]]!
+![k[carryFood],v[3]]!
+![k[berryDeposit],v[1727,81,7]]!
+![k[carryFood],v[4]]!
+![k[useMaiden],v[1750,740,maiden_speed,5]]!
+![k[carryFood],v[5]]!
+![k[alive],v[1:56:35 PM]]!
+![k[berryDeposit],v[206,100,4]]!
+![k[blessMaiden],v[700,260,Red]]!
+![k[carryFood],v[7]]!
+![k[glance],v[1,2]]!
+![k[glance],v[6,9]]!
+![k[reserveMaiden],v[700,260,3]]!
+![k[unreserveMaiden],v[700,260,,3]]!
+![k[playerKill],v[700,260,10,3,Worker]]!
+![k[glance],v[2,1]]!
+![k[glance],v[1,2]]!
+![k[alive],v[1:56:40 PM]]!
+![k[carryFood],v[4]]!
+![k[blessMaiden],v[700,260,Blue]]!
+![k[glance],v[7,4]]!
+![k[blessMaiden],v[960,700,Red]]!
+![k[carryFood],v[3]]!
+![k[berryDeposit],v[178,100,4]]!
+![k[alive],v[1:56:45 PM]]!
+![k[playerKill],v[812,775,2,1,Queen]]!
+![k[gameend],v[map_night,False,75.23357,False]]!
+![k[victory],v[Blue,military]]!
+![k[alive],v[1:56:50 PM]]!
+![k[alive],v[1:56:55 PM]]!
+![k[alive],v[1:57:00 PM]]!
+![k[spawn],v[5,False]]!
+![k[spawn],v[4,False]]!
+![k[spawn],v[3,False]]!
+![k[spawn],v[6,False]]!
+![k[spawn],v[10,False]]!
+![k[spawn],v[1,False]]!
+![k[spawn],v[2,False]]!
+![k[playernames],v[,,,,,,,,,]]!
+![k[spawn],v[8,False]]!
+![k[spawn],v[7,False]]!
+![k[alive],v[1:57:05 PM]]!
+![k[spawn],v[9,False]]!
+![k[alive],v[1:57:10 PM]]!
+![k[gamestart],v[map_dusk,False,0,False]]!
+![k[blessMaiden],v[960,140,Blue]]!
+![k[carryFood],v[5]]!
+![k[carryFood],v[6]]!
+![k[carryFood],v[10]]!
+![k[blessMaiden],v[1610,620,Red]]!
+![k[reserveMaiden],v[1580,140,5]]!
+![k[carryFood],v[3]]!
+![k[carryFood],v[9]]!
+![k[reserveMaiden],v[340,140,6]]!
+![k[alive],v[1:57:15 PM]]!
+![k[carryFood],v[8]]!
+![k[carryFood],v[7]]!
+![k[glance],v[8,7]]!
+![k[reserveMaiden],v[1610,620,3]]!
+![k[carryFood],v[4]]!
+![k[blessMaiden],v[310,620,Red]]!
+![k[playerKill],v[1432,784,2,9,Worker]]!
+![k[berryDeposit],v[836,742,4]]!
+![k[useMaiden],v[1580,140,maiden_speed,5]]!
+![k[useMaiden],v[340,140,maiden_speed,6]]!
+![k[reserveMaiden],v[340,140,10]]!
+![k[carryFood],v[5]]!
+![k[carryFood],v[6]]!
+![k[useMaiden],v[1610,620,maiden_wings,3]]!
+![k[blessMaiden],v[1610,620,Blue]]!
+![k[alive],v[1:57:20 PM]]!
+![k[useMaiden],v[340,140,maiden_speed,10]]!
+![k[glance],v[6,7]]!
+![k[reserveMaiden],v[310,620,5]]!
+![k[unreserveMaiden],v[310,620,,5]]!
+![k[glance],v[4,5]]!
+![k[glance],v[8,9]]!
+![k[reserveMaiden],v[960,140,6]]!
+![k[carryFood],v[10]]!
+![k[alive],v[1:57:25 PM]]!
+![k[reserveMaiden],v[310,620,5]]!
+![k[carryFood],v[9]]!
+![k[glance],v[4,5]]!
+![k[unreserveMaiden],v[310,620,,5]]!
+![k[reserveMaiden],v[1610,620,8]]!
+![k[useMaiden],v[960,140,maiden_wings,6]]!
+![k[reserveMaiden],v[310,620,5]]!
+![k[glance],v[6,9]]!
+![k[glance],v[4,5]]!
+![k[unreserveMaiden],v[310,620,,5]]!
+![k[berryDeposit],v[1131,710,9]]!
+![k[glance],v[1,2]]!
+![k[useMaiden],v[1610,620,maiden_wings,8]]!
+![k[glance],v[4,5]]!
+![k[glance],v[7,4]]!
+![k[reserveMaiden],v[960,140,10]]!
+![k[alive],v[1:57:30 PM]]!
+![k[reserveMaiden],v[310,620,5]]!
+![k[unreserveMaiden],v[310,620,,5]]!
+![k[reserveMaiden],v[310,620,5]]!
+![k[glance],v[4,5]]!
+![k[unreserveMaiden],v[310,620,,5]]!
+![k[blessMaiden],v[310,620,Blue]]!
+![k[playerKill],v[293,620,2,7,Worker]]!
+![k[playerKill],v[282,676,1,2,Queen]]!
+![k[blessMaiden],v[310,620,Red]]!
+![k[useMaiden],v[960,140,maiden_wings,10]]!
+![k[carryFood],v[9]]!
+![k[reserveMaiden],v[310,620,5]]!
+![k[glance],v[4,5]]!
+![k[unreserveMaiden],v[310,620,,5]]!
+![k[alive],v[1:57:35 PM]]!
+![k[glance],v[4,5]]!
+![k[carryFood],v[7]]!
+![k[playerKill],v[382,713,3,6,Soldier]]!
+![k[reserveMaiden],v[1580,140,7]]!
+![k[carryFood],v[4]]!
+![k[reserveMaiden],v[310,620,5]]!
+![k[alive],v[1:57:40 PM]]!
+![k[blessMaiden],v[960,140,Red]]!
+![k[blessMaiden],v[310,620,Blue]]!
+![k[useMaiden],v[1580,140,maiden_speed,7]]!
+![k[carryFood],v[7]]!
+![k[useMaiden],v[310,620,maiden_wings,5]]!
+![k[carryFood],v[6]]!
+![k[glance],v[6,7]]!
+![k[alive],v[1:57:45 PM]]!
+![k[playerKill],v[753,91,2,1,Queen]]!
+![k[reserveMaiden],v[1580,140,6]]!
+![k[berryDeposit],v[723,619,4]]!
+![k[playerKill],v[843,111,2,7,Worker]]!
+![k[playerKill],v[1639,620,10,9,Worker]]!
+![k[useMaiden],v[1580,140,maiden_speed,6]]!
+![k[alive],v[1:57:50 PM]]!
+![k[blessMaiden],v[960,140,Blue]]!
+![k[carryFood],v[6]]!
+![k[blessMaiden],v[310,620,Red]]!
+![k[reserveMaiden],v[960,140,6]]!
+![k[playerKill],v[372,624,3,4,Worker]]!
+![k[carryFood],v[7]]!
+![k[alive],v[1:57:55 PM]]!
+![k[blessMaiden],v[1610,620,Red]]!
+![k[glance],v[5,10]]!
+![k[playerKill],v[1140,1015,5,10,Soldier]]!
+![k[carryFood],v[9]]!
+![k[useMaiden],v[960,140,maiden_wings,6]]!
+![k[reserveMaiden],v[1580,140,9]]!
+![k[carryFood],v[4]]!
+![k[reserveMaiden],v[1610,620,7]]!
+![k[reserveMaiden],v[340,140,4]]!
+![k[alive],v[1:58:00 PM]]!
+![k[playerKill],v[686,757,3,8,Soldier]]!
+![k[carryFood],v[10]]!
+![k[useMaiden],v[1580,140,maiden_speed,9]]!
+![k[carryFood],v[9]]!
+![k[useMaiden],v[1610,620,maiden_wings,7]]!
+![k[useMaiden],v[340,140,maiden_speed,4]]!
+![k[getOnSnail: ],v[960,11,9]]!
+![k[alive],v[1:58:05 PM]]!
+![k[carryFood],v[8]]!
+![k[getOffSnail: ],v[1029,11,,9]]!
+![k[reserveMaiden],v[960,140,8]]!
+![k[getOnSnail: ],v[1029,11,4]]!
+![k[getOffSnail: ],v[1019,11,,4]]!
+![k[useMaiden],v[960,140,maiden_wings,8]]!
+![k[reserveMaiden],v[340,140,10]]!
+![k[getOnSnail: ],v[1019,11,4]]!
+![k[alive],v[1:58:10 PM]]!
+![k[useMaiden],v[340,140,maiden_speed,10]]!
+![k[blessMaiden],v[310,620,Blue]]!
+![k[berryDeposit],v[1079,743,9]]!
+![k[glance],v[6,7]]!
+![k[alive],v[1:58:15 PM]]!
+![k[playerKill],v[1306,1000,6,7,Soldier]]!
+![k[glance],v[1,2]]!
+![k[carryFood],v[10]]!
+![k[glance],v[2,1]]!
+![k[getOffSnail: ],v[815,11,,4]]!
+![k[reserveMaiden],v[310,620,10]]!
+![k[glance],v[1,2]]!
+![k[getOnSnail: ],v[815,11,4]]!
+![k[carryFood],v[9]]!
+![k[blessMaiden],v[310,620,Red]]!
+![k[alive],v[1:58:20 PM]]!
+![k[carryFood],v[7]]!
+![k[useMaiden],v[310,620,maiden_wings,10]]!
+![k[playerKill],v[823,337,6,3,Soldier]]!
+![k[playerKill],v[922,54,10,7,Worker]]!
+![k[blessMaiden],v[1610,620,Blue]]!
+![k[alive],v[1:58:25 PM]]!
+![k[berryDeposit],v[1096,589,9]]!
+![k[carryFood],v[3]]!
+![k[alive],v[1:58:30 PM]]!
+![k[getOffSnail: ],v[465,11,,4]]!
+![k[carryFood],v[7]]!
+![k[carryFood],v[9]]!
+![k[blessMaiden],v[310,620,Blue]]!
+![k[getOnSnail: ],v[465,11,4]]!
+![k[getOffSnail: ],v[460,11,,4]]!
+![k[glance],v[7,4]]!
+![k[getOnSnail: ],v[460,11,7]]!
+![k[getOffSnail: ],v[460,11,,7]]!
+![k[playerKill],v[460,11,10,7,Worker]]!
+![k[getOnSnail: ],v[460,11,4]]!
+![k[alive],v[1:58:35 PM]]!
+![k[playerKill],v[553,805,6,1,Queen]]!
+![k[carryFood],v[7]]!
+![k[blessMaiden],v[340,140,Blue]]!
+![k[glance],v[10,7]]!
+![k[berryDeposit],v[1137,631,9]]!
+![k[glance],v[6,3]]!
+![k[blessMaiden],v[960,140,Red]]!
+![k[alive],v[1:58:40 PM]]!
+![k[playerKill],v[527,20,10,7,Worker]]!
+![k[reserveMaiden],v[960,140,3]]!
+![k[carryFood],v[9]]!
+![k[blessMaiden],v[960,140,Blue]]!
+![k[alive],v[1:58:45 PM]]!
+![k[useMaiden],v[960,140,maiden_wings,3]]!
+![k[carryFood],v[7]]!
+![k[blessMaiden],v[340,140,Red]]!
+![k[gameend],v[map_dusk,False,94.22884,False]]!
+![k[victory],v[Blue,snail]]!
+![k[alive],v[1:58:50 PM]]!
+![k[alive],v[1:58:55 PM]]!
+![k[alive],v[1:59:00 PM]]!
+![k[alive],v[1:59:05 PM]]!
+![k[alive],v[1:59:10 PM]]!
+![k[alive],v[1:59:15 PM]]!
+![k[alive],v[1:59:20 PM]]!
+![k[alive],v[1:59:25 PM]]!
+![k[alive],v[1:59:30 PM]]!
+![k[alive],v[1:59:35 PM]]!
+![k[alive],v[1:59:40 PM]]!
+![k[spawn],v[7,False]]!
+![k[spawn],v[5,False]]!
+![k[spawn],v[3,False]]!
+![k[spawn],v[8,False]]!
+![k[spawn],v[9,False]]!
+![k[spawn],v[1,False]]!
+![k[spawn],v[2,False]]!
+![k[playernames],v[,,,,,,,,,]]!
+![k[spawn],v[6,False]]!
+![k[spawn],v[4,False]]!
+![k[spawn],v[10,False]]!
+![k[alive],v[1:59:45 PM]]!
+![k[blessMaiden],v[1510,860,Red]]!
+![k[blessMaiden],v[410,860,Blue]]!
+![k[alive],v[1:59:50 PM]]!
+![k[gamestart],v[map_day,False,0,False]]!
+![k[carryFood],v[7]]!
+![k[carryFood],v[6]]!
+![k[carryFood],v[4]]!
+![k[carryFood],v[10]]!
+![k[carryFood],v[9]]!
+![k[carryFood],v[5]]!
+![k[glance],v[3,8]]!
+![k[glance],v[1,2]]!
+![k[carryFood],v[8]]!
+![k[reserveMaiden],v[560,260,4]]!
+![k[reserveMaiden],v[1360,260,5]]!
+![k[reserveMaiden],v[960,500,9]]!
+![k[carryFood],v[3]]!
+![k[glance],v[1,2]]!
+![k[unreserveMaiden],v[960,500,,9]]!
+![k[reserveMaiden],v[960,500,9]]!
+![k[getOnSnail: ],v[960,11,10]]!
+![k[reserveMaiden],v[1510,860,7]]!
+![k[reserveMaiden],v[410,860,6]]!
+![k[alive],v[1:59:55 PM]]!
+![k[useMaiden],v[560,260,maiden_wings,4]]!
+![k[useMaiden],v[1360,260,maiden_wings,5]]!
+![k[useMaiden],v[960,500,maiden_wings,9]]!
+![k[useMaiden],v[1510,860,maiden_speed,7]]!
+![k[reserveMaiden],v[560,260,8]]!
+![k[useMaiden],v[410,860,maiden_speed,6]]!
+![k[getOffSnail: ],v[877,11,,10]]!
+![k[glance],v[3,10]]!
+![k[getOnSnail: ],v[877,11,10]]!
+![k[snailEat],v[877,11,10,3]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[carryFood],v[7]]!
+![k[alive],v[2:00:00 PM]]!
+![k[carryFood],v[6]]!
+![k[useMaiden],v[560,260,maiden_wings,8]]!
+![k[reserveMaiden],v[1360,260,7]]!
+![k[snailEscape],v[827,11,3]]!
+![k[getOffSnail: ],v[877,11,,10]]!
+![k[playerKill],v[877,11,5,10,Worker]]!
+![k[reserveMaiden],v[560,260,6]]!
+![k[getOnSnail: ],v[877,11,3]]!
+![k[useMaiden],v[1360,260,maiden_wings,7]]!
+![k[useMaiden],v[560,260,maiden_wings,6]]!
+![k[alive],v[2:00:05 PM]]!
+![k[glance],v[1,2]]!
+![k[carryFood],v[10]]!
+![k[reserveMaiden],v[560,260,10]]!
+![k[glance],v[8,7]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[glance],v[6,5]]!
+![k[playerKill],v[1204,54,9,6,Soldier]]!
+![k[useMaiden],v[560,260,maiden_wings,10]]!
+![k[glance],v[4,5]]!
+![k[alive],v[2:00:10 PM]]!
+![k[blessMaiden],v[1510,860,Blue]]!
+![k[playerKill],v[682,779,8,7,Soldier]]!
+![k[blessMaiden],v[1360,260,Red]]!
+![k[glance],v[5,4]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[glance],v[4,5]]!
+![k[glance],v[4,5]]!
+![k[glance],v[1,2]]!
+![k[carryFood],v[6]]!
+![k[carryFood],v[7]]!
+![k[glance],v[4,5]]!
+![k[alive],v[2:00:15 PM]]!
+![k[playerKill],v[1227,445,10,7,Worker]]!
+![k[reserveMaiden],v[560,260,6]]!
+![k[unreserveMaiden],v[560,260,,6]]!
+![k[blessMaiden],v[1510,860,Red]]!
+![k[getOffSnail: ],v[1175,11,,3]]!
+![k[glance],v[6,9]]!
+![k[playerKill],v[1430,984,1,10,Soldier]]!
+![k[playerKill],v[1247,156,2,3,Worker]]!
+![k[blessMaiden],v[1360,260,Blue]]!
+![k[glance],v[9,6]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[glance],v[9,4]]!
+![k[alive],v[2:00:20 PM]]!
+![k[playerKill],v[1016,58,5,6,Worker]]!
+![k[playerKill],v[941,35,5,4,Soldier]]!
+![k[carryFood],v[10]]!
+![k[glance],v[7,2]]!
+![k[blessMaiden],v[410,860,Red]]!
+![k[getOnSnail: ],v[1175,11,3]]!
+![k[playerKill],v[897,552,8,7,Worker]]!
+![k[reserveMaiden],v[1360,260,10]]!
+![k[playerKill],v[1077,382,9,2,Queen]]!
+![k[alive],v[2:00:25 PM]]!
+![k[blessMaiden],v[560,260,Red]]!
+![k[carryFood],v[4]]!
+![k[carryFood],v[6]]!
+![k[useMaiden],v[1360,260,maiden_wings,10]]!
+![k[carryFood],v[7]]!
+![k[glance],v[10,9]]!
+![k[blessMaiden],v[410,860,Blue]]!
+![k[alive],v[2:00:30 PM]]!
+![k[glance],v[9,10]]!
+![k[playerKill],v[1386,260,5,6,Worker]]!
+![k[glance],v[9,10]]!
+![k[reserveMaiden],v[1510,860,7]]!
+![k[glance],v[9,10]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[alive],v[2:00:35 PM]]!
+![k[useMaiden],v[1510,860,maiden_speed,7]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[reserveMaiden],v[560,260,4]]!
+![k[carryFood],v[6]]!
+![k[blessMaiden],v[1360,260,Red]]!
+![k[reserveMaiden],v[960,500,6]]!
+![k[useMaiden],v[560,260,maiden_wings,4]]!
+![k[alive],v[2:00:40 PM]]!
+![k[playerKill],v[1336,408,2,9,Soldier]]!
+![k[carryFood],v[7]]!
+![k[glance],v[1,2]]!
+![k[useMaiden],v[960,500,maiden_wings,6]]!
+![k[glance],v[1,2]]!
+![k[getOffSnail: ],v[1583,11,,3]]!
+![k[blessMaiden],v[1360,260,Blue]]!
+![k[playerKill],v[1375,260,2,3,Worker]]!
+![k[carryFood],v[9]]!
+![k[alive],v[2:00:45 PM]]!
+![k[playerKill],v[1648,415,2,5,Soldier]]!
+![k[blessMaiden],v[1360,260,Red]]!
+![k[carryFood],v[3]]!
+![k[playerKill],v[1439,20,10,3,Worker]]!
+![k[alive],v[2:00:50 PM]]!
+![k[blessMaiden],v[1360,260,Blue]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[reserveMaiden],v[960,500,7]]!
+![k[reserveMaiden],v[1510,860,9]]!
+![k[blessMaiden],v[1510,860,Blue]]!
+![k[unreserveMaiden],v[1510,860,,9]]!
+![k[playerKill],v[1510,860,2,9,Worker]]!
+![k[carryFood],v[5]]!
+![k[playerKill],v[636,698,1,4,Soldier]]!
+![k[useMaiden],v[960,500,maiden_wings,7]]!
+![k[playerKill],v[506,972,1,10,Soldier]]!
+![k[alive],v[2:00:55 PM]]!
+![k[carryFood],v[3]]!
+![k[blessMaiden],v[560,260,Red]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[glance],v[9,8]]!
+![k[carryFood],v[4]]!
+![k[alive],v[2:01:00 PM]]!
+![k[reserveMaiden],v[560,260,5]]!
+![k[reserveMaiden],v[1360,260,4]]!
+![k[glance],v[8,9]]!
+![k[getOnSnail: ],v[1583,11,3]]!
+![k[getOffSnail: ],v[1583,11,,3]]!
+![k[glance],v[8,3]]!
+![k[carryFood],v[10]]!
+![k[getOnSnail: ],v[1583,11,10]]!
+![k[useMaiden],v[560,260,maiden_wings,5]]!
+![k[useMaiden],v[1360,260,maiden_wings,4]]!
+![k[alive],v[2:01:05 PM]]!
+![k[playerKill],v[679,484,2,5,Soldier]]!
+![k[carryFood],v[9]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[snailEat],v[1480,11,10,3]]!
+![k[playerKill],v[1304,542,7,8,Soldier]]!
+![k[blessMaiden],v[1360,260,Red]]!
+![k[playerKill],v[1331,587,7,6,Soldier]]!
+![k[reserveMaiden],v[1360,260,9]]!
+![k[alive],v[2:01:10 PM]]!
+![k[carryFood],v[5]]!
+![k[playerKill],v[1413,20,10,3,Worker]]!
+![k[getOffSnail: ],v[1480,11,,10]]!
+![k[playerKill],v[1480,11,1,10,Worker]]!
+![k[useMaiden],v[1360,260,maiden_wings,9]]!
+![k[reserveMaiden],v[1360,260,5]]!
+![k[carryFood],v[6]]!
+![k[alive],v[2:01:15 PM]]!
+![k[carryFood],v[8]]!
+![k[reserveMaiden],v[560,260,6]]!
+![k[useMaiden],v[1360,260,maiden_wings,5]]!
+![k[carryFood],v[3]]!
+![k[getOnSnail: ],v[1480,11,3]]!
+![k[carryFood],v[10]]!
+![k[reserveMaiden],v[960,500,8]]!
+![k[useMaiden],v[560,260,maiden_wings,6]]!
+![k[alive],v[2:01:20 PM]]!
+![k[reserveMaiden],v[560,260,10]]!
+![k[useMaiden],v[960,500,maiden_wings,8]]!
+![k[playerKill],v[1867,524,7,6,Soldier]]!
+![k[playerKill],v[1328,261,5,8,Soldier]]!
+![k[useMaiden],v[560,260,maiden_wings,10]]!
+![k[alive],v[2:01:25 PM]]!
+![k[playerKill],v[1864,535,4,7,Soldier]]!
+![k[carryFood],v[6]]!
+![k[reserveMaiden],v[560,260,6]]!
+![k[getOffSnail: ],v[1725,11,,3]]!
+![k[playerKill],v[1742,99,4,3,Worker]]!
+![k[carryFood],v[8]]!
+![k[alive],v[2:01:30 PM]]!
+![k[playerKill],v[1693,401,2,9,Soldier]]!
+![k[playerKill],v[1645,415,2,1,Queen]]!
+![k[useMaiden],v[560,260,maiden_wings,6]]!
+![k[blessMaiden],v[1360,260,Blue]]!
+![k[carryFood],v[7]]!
+![k[reserveMaiden],v[410,860,8]]!
+![k[alive],v[2:01:35 PM]]!
+![k[carryFood],v[3]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[useMaiden],v[410,860,maiden_speed,8]]!
+![k[carryFood],v[9]]!
+![k[reserveMaiden],v[960,500,7]]!
+![k[alive],v[2:01:40 PM]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[playerKill],v[1002,500,2,3,Worker]]!
+![k[glance],v[8,9]]!
+![k[useMaiden],v[960,500,maiden_wings,7]]!
+![k[blessMaiden],v[560,260,Red]]!
+![k[glance],v[9,8]]!
+![k[carryFood],v[8]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[getOnSnail: ],v[1725,11,8]]!
+![k[alive],v[2:01:45 PM]]!
+![k[getOffSnail: ],v[1670,11,,8]]!
+![k[getOnSnail: ],v[1670,11,8]]!
+![k[reserveMaiden],v[560,260,9]]!
+![k[carryFood],v[3]]!
+![k[playerKill],v[1656,504,10,5,Soldier]]!
+![k[alive],v[2:01:50 PM]]!
+![k[useMaiden],v[560,260,maiden_wings,9]]!
+![k[glance],v[2,1]]!
+![k[reserveMaiden],v[560,260,3]]!
+![k[getOffSnail: ],v[1445,11,,8]]!
+![k[playerKill],v[1445,11,9,8,Worker]]!
+![k[playerKill],v[1053,775,2,1,Queen]]!
+![k[getOnSnail: ],v[1445,11,5]]!
+![k[alive],v[2:01:55 PM]]!
+![k[getOffSnail: ],v[1461,11,,5]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[playerKill],v[1485,84,6,5,Worker]]!
+![k[playerKill],v[1726,149,10,9,Soldier]]!
+![k[useMaiden],v[560,260,maiden_wings,3]]!
+![k[playerKill],v[1557,414,2,7,Soldier]]!
+![k[blessMaiden],v[1510,860,Red]]!
+![k[alive],v[2:02:00 PM]]!
+![k[blessMaiden],v[1510,860,Blue]]!
+![k[getOnSnail: ],v[1461,11,8]]!
+![k[playerKill],v[73,488,10,3,Soldier]]!
+![k[getOffSnail: ],v[1438,11,,8]]!
+![k[carryFood],v[5]]!
+![k[getOnSnail: ],v[1438,11,9]]!
+![k[blessMaiden],v[960,500,Red]]!
+![k[getOffSnail: ],v[1444,11,,9]]!
+![k[playerKill],v[1458,66,4,9,Worker]]!
+![k[getOnSnail: ],v[1444,11,8]]!
+![k[blessMaiden],v[960,500,Blue]]!
+![k[carryFood],v[7]]!
+![k[reserveMaiden],v[560,260,5]]!
+![k[alive],v[2:02:05 PM]]!
+![k[blessMaiden],v[560,260,Blue]]!
+![k[getOffSnail: ],v[1376,11,,8]]!
+![k[getOnSnail: ],v[1376,11,3]]!
+![k[glance],v[6,7]]!
+![k[useMaiden],v[560,260,maiden_wings,5]]!
+![k[getOffSnail: ],v[1390,11,,3]]!
+![k[playerKill],v[1390,11,4,3,Worker]]!
+![k[blessMaiden],v[410,860,Red]]!
+![k[getOnSnail: ],v[1390,11,8]]!
+![k[glance],v[6,7]]!
+![k[playerKill],v[1724,366,10,9,Worker]]!
+![k[blessMaiden],v[410,860,Blue]]!
+![k[alive],v[2:02:10 PM]]!
+![k[glance],v[1,10]]!
+![k[glance],v[2,5]]!
+![k[carryFood],v[3]]!
+![k[blessMaiden],v[1360,260,Red]]!
+![k[alive],v[2:02:15 PM]]!
+![k[playerKill],v[1477,404,10,1,Queen]]!
+![k[gameend],v[map_day,False,144.8426,False]]!
+![k[victory],v[Blue,military]]!
+![k[alive],v[2:02:20 PM]]!
+![k[alive],v[2:02:25 PM]]!
+![k[alive],v[2:02:30 PM]]!
+![k[alive],v[2:02:35 PM]]!
+![k[alive],v[2:02:40 PM]]!
+![k[alive],v[2:02:45 PM]]!
+![k[spawn],v[5,False]]!
+![k[spawn],v[10,False]]!
+![k[spawn],v[7,False]]!
+![k[spawn],v[3,False]]!
+![k[spawn],v[8,False]]!
+![k[spawn],v[1,False]]!
+![k[spawn],v[2,False]]!
+![k[playernames],v[,,,,,,,,,]]!
+![k[spawn],v[9,False]]!
+![k[spawn],v[6,False]]!
+![k[spawn],v[4,False]]!
+![k[alive],v[2:02:50 PM]]!
+![k[alive],v[2:02:55 PM]]!
+![k[gamestart],v[map_night,False,0,False]]!
+![k[carryFood],v[10]]!
+![k[carryFood],v[6]]!
+![k[carryFood],v[7]]!
+![k[carryFood],v[3]]!
+![k[carryFood],v[5]]!
+![k[reserveMaiden],v[1750,740,7]]!
+![k[reserveMaiden],v[170,740,10]]!
+![k[carryFood],v[4]]!
+![k[unreserveMaiden],v[170,740,,10]]!
+![k[glance],v[9,10]]!
+![k[carryFood],v[8]]!
+![k[carryFood],v[9]]!
+![k[reserveMaiden],v[1220,260,5]]!
+![k[glance],v[10,9]]!
+![k[glance],v[2,1]]!
+![k[alive],v[2:03:00 PM]]!
+![k[glance],v[10,9]]!
+![k[blessMaiden],v[960,700,Red]]!
+![k[useMaiden],v[1750,740,maiden_speed,7]]!
+![k[glance],v[6,9]]!
+![k[reserveMaiden],v[170,740,9]]!
+![k[unreserveMaiden],v[170,740,,9]]!
+![k[carryFood],v[7]]!
+![k[reserveMaiden],v[700,260,4]]!
+![k[useMaiden],v[1220,260,maiden_wings,5]]!
+![k[glance],v[10,9]]!
+![k[berryDeposit],v[1820,91,3]]!
+![k[glance],v[10,9]]!
+![k[reserveMaiden],v[1220,260,8]]!
+![k[reserveMaiden],v[170,740,9]]!
+![k[unreserveMaiden],v[1220,260,,8]]!
+![k[glance],v[10,9]]!
+![k[useMaiden],v[700,260,maiden_wings,4]]!
+![k[alive],v[2:03:05 PM]]!
+![k[berryDeposit],v[112,91,6]]!
+![k[reserveMaiden],v[960,700,7]]!
+![k[glance],v[9,10]]!
+![k[glance],v[9,10]]!
+![k[glance],v[9,10]]!
+![k[glance],v[9,10]]!
+![k[glance],v[9,10]]!
+![k[reserveMaiden],v[700,260,8]]!
+![k[glance],v[9,10]]!
+![k[playerKill],v[788,394,2,5,Soldier]]!
+![k[glance],v[9,10]]!
+![k[glance],v[9,10]]!
+![k[blessMaiden],v[700,260,Blue]]!
+![k[glance],v[9,10]]!
+![k[useMaiden],v[960,700,maiden_wings,7]]!
+![k[glance],v[9,10]]!
+![k[carryFood],v[3]]!
+![k[glance],v[10,9]]!
+![k[playerKill],v[576,866,1,2,Queen]]!
+![k[glance],v[9,10]]!
+![k[glance],v[9,10]]!
+![k[alive],v[2:03:10 PM]]!
+![k[useMaiden],v[700,260,maiden_wings,8]]!
+![k[glance],v[9,10]]!
+![k[glance],v[6,9]]!
+![k[reserveMaiden],v[1750,740,3]]!
+![k[glance],v[9,10]]!
+![k[playerKill],v[229,799,1,6,Worker]]!
+![k[blessMaiden],v[170,740,Red]]!
+![k[glance],v[1,10]]!
+![k[glance],v[9,10]]!
+![k[glance],v[9,10]]!
+![k[unreserveMaiden],v[170,740,,9]]!
+![k[playerKill],v[159,826,1,10,Worker]]!
+![k[reserveMaiden],v[170,740,9]]!
+![k[carryFood],v[5]]!
+![k[useMaiden],v[1750,740,maiden_speed,3]]!
+![k[reserveMaiden],v[1750,740,5]]!
+![k[blessMaiden],v[1750,740,Red]]!
+![k[carryFood],v[3]]!
+![k[blessMaiden],v[170,740,Blue]]!
+![k[alive],v[2:03:15 PM]]!
+![k[glance],v[7,4]]!
+![k[useMaiden],v[170,740,maiden_speed,9]]!
+![k[carryFood],v[9]]!
+![k[carryFood],v[6]]!
+![k[playerKill],v[170,780,2,9,Worker]]!
+![k[glance],v[7,4]]!
+![k[carryFood],v[10]]!
+![k[reserveMaiden],v[170,740,10]]!
+![k[useMaiden],v[1750,740,maiden_speed,5]]!
+![k[blessMaiden],v[1750,740,Blue]]!
+![k[glance],v[7,4]]!
+![k[carryFood],v[5]]!
+![k[blessMaiden],v[700,260,Red]]!
+![k[glance],v[3,6]]!
+![k[useMaiden],v[170,740,maiden_speed,10]]!
+![k[alive],v[2:03:20 PM]]!
+![k[playerKill],v[478,397,8,5,Worker]]!
+![k[carryFood],v[10]]!
+![k[carryFood],v[9]]!
+![k[getOnSnail: ],v[960,491,3]]!
+![k[blessMaiden],v[1220,260,Blue]]!
+![k[getOffSnail: ],v[988,491,,3]]!
+![k[berryDeposit],v[141,81,6]]!
+![k[reserveMaiden],v[1220,260,10]]!
+![k[alive],v[2:03:25 PM]]!
+![k[reserveMaiden],v[960,700,9]]!
+![k[carryFood],v[5]]!
+![k[playerKill],v[1199,1011,7,2,Queen]]!
+![k[useMaiden],v[1220,260,maiden_wings,10]]!
+![k[blessMaiden],v[1220,260,Red]]!
+![k[useMaiden],v[960,700,maiden_wings,9]]!
+![k[alive],v[2:03:30 PM]]!
+![k[reserveMaiden],v[960,700,5]]!
+![k[carryFood],v[6]]!
+![k[blessMaiden],v[700,260,Blue]]!
+![k[berryDeposit],v[1777,81,3]]!
+![k[useMaiden],v[960,700,maiden_wings,5]]!
+![k[berryDeposit],v[139,109,6]]!
+![k[alive],v[2:03:35 PM]]!
+![k[playerKill],v[514,1043,7,10,Soldier]]!
+![k[carryFood],v[3]]!
+![k[playerKill],v[355,415,2,7,Soldier]]!
+![k[playerKill],v[870,458,1,8,Soldier]]!
+![k[carryFood],v[6]]!
+![k[alive],v[2:03:40 PM]]!
+![k[playerKill],v[807,1015,2,5,Soldier]]!
+![k[carryFood],v[10]]!
+![k[reserveMaiden],v[170,740,10]]!
+![k[blessMaiden],v[700,260,Red]]!
+![k[glance],v[9,4]]!
+![k[blessMaiden],v[960,700,Blue]]!
+![k[getOnSnail: ],v[988,491,3]]!
+![k[berryDeposit],v[162,91,6]]!
+![k[getOffSnail: ],v[988,491,,3]]!
+![k[carryFood],v[7]]!
+![k[glance],v[4,9]]!
+![k[blessMaiden],v[170,740,Red]]!
+![k[glance],v[1,8]]!
+![k[useMaiden],v[170,740,maiden_speed,10]]!
+![k[reserveMaiden],v[170,740,7]]!
+![k[alive],v[2:03:45 PM]]!
+![k[glance],v[4,9]]!
+![k[carryFood],v[5]]!
+![k[playerKill],v[1402,347,2,9,Soldier]]!
+![k[berryDeposit],v[1807,125,3]]!
+![k[useMaiden],v[170,740,maiden_speed,7]]!
+![k[reserveMaiden],v[170,740,5]]!
+![k[carryFood],v[8]]!
+![k[blessMaiden],v[1750,740,Red]]!
+![k[carryFood],v[6]]!
+![k[blessMaiden],v[1220,260,Blue]]!
+![k[carryFood],v[7]]!
+![k[alive],v[2:03:50 PM]]!
+![k[reserveMaiden],v[960,700,8]]!
+![k[blessMaiden],v[700,260,Blue]]!
+![k[useMaiden],v[170,740,maiden_speed,5]]!
+![k[blessMaiden],v[960,700,Red]]!
+![k[carryFood],v[3]]!
+![k[carryFood],v[10]]!
+![k[carryFood],v[9]]!
+![k[playerKill],v[410,860,2,5,Worker]]!
+![k[useMaiden],v[960,700,maiden_wings,8]]!
+![k[blessMaiden],v[170,740,Blue]]!
+![k[getOnSnail: ],v[988,491,3]]!
+![k[alive],v[2:03:55 PM]]!
+![k[blessMaiden],v[1750,740,Blue]]!
+![k[reserveMaiden],v[960,700,7]]!
+![k[getOffSnail: ],v[1013,491,,3]]!
+![k[berryDeposit],v[201,90,10]]!
+![k[reserveMaiden],v[1220,260,6]]!
+![k[glance],v[8,3]]!
+![k[useMaiden],v[960,700,maiden_wings,7]]!
+![k[reserveMaiden],v[960,700,9]]!
+![k[carryFood],v[5]]!
+![k[useMaiden],v[1220,260,maiden_wings,6]]!
+![k[alive],v[2:04:00 PM]]!
+![k[glance],v[5,10]]!
+![k[useMaiden],v[960,700,maiden_wings,9]]!
+![k[playerKill],v[1180,993,2,3,Worker]]!
+![k[playerKill],v[1378,866,6,7,Soldier]]!
+![k[carryFood],v[10]]!
+![k[reserveMaiden],v[960,700,5]]!
+![k[alive],v[2:04:05 PM]]!
+![k[useMaiden],v[960,700,maiden_wings,5]]!
+![k[carryFood],v[3]]!
+![k[berryDeposit],v[131,132,10]]!
+![k[blessMaiden],v[700,260,Red]]!
+![k[getOnSnail: ],v[1013,491,3]]!
+![k[carryFood],v[7]]!
+![k[getOffSnail: ],v[1027,491,,3]]!
+![k[blessMaiden],v[960,700,Blue]]!
+![k[alive],v[2:04:10 PM]]!
+![k[getOnSnail: ],v[1027,491,7]]!
+![k[getOffSnail: ],v[1028,491,,7]]!
+![k[blessMaiden],v[170,740,Red]]!
+![k[blessMaiden],v[1750,740,Red]]!
+![k[reserveMaiden],v[700,260,7]]!
+![k[carryFood],v[10]]!
+![k[unreserveMaiden],v[700,260,,7]]!
+![k[playerKill],v[700,262,6,7,Worker]]!
+![k[playerKill],v[760,410,9,6,Soldier]]!
+![k[glance],v[8,5]]!
+![k[alive],v[2:04:15 PM]]!
+![k[blessMaiden],v[1220,260,Red]]!
+![k[carryFood],v[7]]!
+![k[carryFood],v[6]]!
+![k[berryDeposit],v[1735,81,3]]!
+![k[alive],v[2:04:20 PM]]!
+![k[playerKill],v[821,610,2,7,Worker]]!
+![k[playerKill],v[282,303,9,10,Worker]]!
+![k[playerKill],v[1037,397,5,8,Soldier]]!
+![k[blessMaiden],v[700,260,Blue]]!
+![k[glance],v[9,6]]!
+![k[glance],v[6,9]]!
+![k[alive],v[2:04:25 PM]]!
+![k[carryFood],v[7]]!
+![k[getOnSnail: ],v[1028,491,3]]!
+![k[berryDeposit],v[117,125,6]]!
+![k[carryFood],v[8]]!
+![k[getOffSnail: ],v[1028,491,,3]]!
+![k[carryFood],v[3]]!
+![k[glance],v[10,1]]!
+![k[alive],v[2:04:30 PM]]!
+![k[glance],v[10,3]]!
+![k[playerKill],v[253,87,9,8,Worker]]!
+![k[glance],v[9,6]]!
+![k[berryDeposit],v[1684,149,7]]!
+![k[glance],v[6,9]]!
+![k[playerKill],v[1532,124,1,4,Soldier]]!
+![k[alive],v[2:04:35 PM]]!
+![k[carryFood],v[6]]!
+![k[carryFood],v[10]]!
+![k[berryDeposit],v[1751,91,3]]!
+![k[carryFood],v[8]]!
+![k[getOnSnail: ],v[1028,491,10]]!
+![k[getOffSnail: ],v[1026,491,,10]]!
+![k[carryFood],v[7]]!
+![k[reserveMaiden],v[700,260,8]]!
+![k[blessMaiden],v[1220,260,Blue]]!
+![k[blessMaiden],v[960,700,Red]]!
+![k[alive],v[2:04:40 PM]]!
+![k[glance],v[10,5]]!
+![k[reserveMaiden],v[1220,260,6]]!
+![k[useMaiden],v[700,260,maiden_wings,8]]!
+![k[glance],v[1,2]]!
+![k[playerKill],v[1444,140,2,7,Worker]]!
+![k[glance],v[10,9]]!
+![k[berryDeposit],v[245,129,10]]!
+![k[blessMaiden],v[1220,260,Red]]!
+![k[useMaiden],v[1220,260,maiden_wings,6]]!
+![k[alive],v[2:04:45 PM]]!
+![k[getOnSnail: ],v[1026,491,4]]!
+![k[carryFood],v[3]]!
+![k[glance],v[3,8]]!
+![k[blessMaiden],v[1750,740,Blue]]!
+![k[carryFood],v[10]]!
+![k[getOffSnail: ],v[941,491,,4]]!
+![k[glance],v[4,5]]!
+![k[blessMaiden],v[170,740,Blue]]!
+![k[getOnSnail: ],v[941,491,4]]!
+![k[alive],v[2:04:50 PM]]!
+![k[playerKill],v[852,688,5,6,Soldier]]!
+![k[carryFood],v[7]]!
+![k[getOffSnail: ],v[924,491,,4]]!
+![k[glance],v[4,5]]!
+![k[getOnSnail: ],v[924,491,4]]!
+![k[glance],v[5,4]]!
+![k[getOffSnail: ],v[921,491,,4]]!
+![k[glance],v[5,4]]!
+![k[playerKill],v[362,174,2,9,Soldier]]!
+![k[alive],v[2:04:55 PM]]!
+![k[berryDeposit],v[199,109,10]]!
+![k[berryDeposit],v[1784,109,7]]!
+![k[carryFood],v[6]]!
+![k[berryDeposit],v[1766,125,3]]!
+![k[carryFood],v[4]]!
+![k[glance],v[1,2]]!
+![k[blessMaiden],v[700,260,Red]]!
+![k[alive],v[2:05:00 PM]]!
+![k[carryFood],v[7]]!
+![k[carryFood],v[3]]!
+![k[playerKill],v[330,20,5,6,Worker]]!
+![k[reserveMaiden],v[960,700,7]]!
+![k[playerKill],v[538,172,2,1,Queen]]!
+![k[blessMaiden],v[700,260,Blue]]!
+![k[alive],v[2:05:05 PM]]!
+![k[useMaiden],v[960,700,maiden_wings,7]]!
+![k[carryFood],v[9]]!
+![k[carryFood],v[6]]!
+![k[glance],v[10,5]]!
+![k[glance],v[2,5]]!
+![k[playerKill],v[496,194,7,10,Worker]]!
+![k[playerKill],v[361,365,7,4,Worker]]!
+![k[getOnSnail: ],v[921,491,3]]!
+![k[playerKill],v[267,113,2,5,Soldier]]!
+![k[alive],v[2:05:10 PM]]!
+![k[getOffSnail: ],v[934,491,,3]]!
+![k[playerKill],v[1763,281,8,9,Worker]]!
+![k[glance],v[1,2]]!
+![k[berryDeposit],v[175,132,6]]!
+![k[berryDeposit],v[1730,109,3]]!
+![k[glance],v[1,2]]!
+![k[glance],v[1,2]]!
+![k[carryFood],v[5]]!
+![k[alive],v[2:05:15 PM]]!
+![k[carryFood],v[4]]!
+![k[carryFood],v[10]]!
+![k[glance],v[1,2]]!
+![k[glance],v[4,5]]!
+![k[carryFood],v[9]]!
+![k[playerKill],v[1744,260,8,9,Worker]]!
+![k[glance],v[1,2]]!
+![k[playerKill],v[200,20,7,6,Worker]]!
+![k[glance],v[1,2]]!
+![k[reserveMaiden],v[1220,260,5]]!
+![k[glance],v[1,2]]!
+![k[alive],v[2:05:20 PM]]!
+![k[glance],v[10,7]]!
+![k[glance],v[1,2]]!
+![k[glance],v[1,2]]!
+![k[berryDeposit],v[207,132,10]]!
+![k[carryFood],v[9]]!
+![k[useMaiden],v[1220,260,maiden_wings,5]]!
+![k[getOnSnail: ],v[934,491,6]]!
+![k[carryFood],v[3]]!
+![k[glance],v[2,1]]!
+![k[getOffSnail: ],v[931,491,,6]]!
+![k[glance],v[5,6]]!
+![k[glance],v[1,2]]!
+![k[glance],v[6,5]]!
+![k[alive],v[2:05:25 PM]]!
+![k[glance],v[4,7]]!
+![k[glance],v[1,2]]!
+![k[glance],v[7,10]]!
+![k[glance],v[1,2]]!
+![k[playerKill],v[130,20,7,4,Worker]]!
+![k[glance],v[3,8]]!
+![k[playerKill],v[221,20,7,10,Worker]]!
+![k[glance],v[9,8]]!
+![k[glance],v[1,2]]!
+![k[glance],v[8,9]]!
+![k[glance],v[8,9]]!
+![k[berryDeposit],v[1680,97,9]]!
+![k[glance],v[8,3]]!
+![k[glance],v[1,2]]!
+![k[alive],v[2:05:30 PM]]!
+![k[berryDeposit],v[1770,139,3]]!
+![k[glance],v[1,2]]!
+![k[glance],v[6,5]]!
+![k[carryFood],v[4]]!
+![k[blessMaiden],v[700,260,Red]]!
+![k[carryFood],v[9]]!
+![k[blessMaiden],v[1220,260,Blue]]!
+![k[alive],v[2:05:35 PM]]!
+![k[carryFood],v[6]]!
+![k[glance],v[3,8]]!
+![k[playerKill],v[1691,38,8,9,Worker]]!
+![k[reserveMaiden],v[1220,260,4]]!
+![k[glance],v[1,6]]!
+![k[alive],v[2:05:40 PM]]!
+![k[useMaiden],v[1220,260,maiden_wings,4]]!
+![k[playerKill],v[1363,380,1,6,Worker]]!
+![k[glance],v[3,10]]!
+![k[carryFood],v[10]]!
+![k[carryFood],v[9]]!
+![k[glance],v[4,5]]!
+![k[alive],v[2:05:45 PM]]!
+![k[glance],v[3,10]]!
+![k[carryFood],v[6]]!
+![k[playerKill],v[1237,260,8,9,Worker]]!
+![k[glance],v[4,5]]!
+![k[getOnSnail: ],v[931,491,3]]!
+![k[playerKill],v[195,175,4,5,Soldier]]!
+![k[getOffSnail: ],v[954,491,,3]]!
+![k[alive],v[2:05:50 PM]]!
+![k[playerKill],v[326,260,7,10,Worker]]!
+![k[playerKill],v[1549,157,8,1,Queen]]!
+![k[playerKill],v[451,146,7,6,Worker]]!
+![k[carryFood],v[3]]!
+![k[carryFood],v[10]]!
+![k[alive],v[2:05:55 PM]]!
+![k[glance],v[7,10]]!
+![k[blessMaiden],v[960,700,Blue]]!
+![k[berryDeposit],v[232,91,10]]!
+![k[gameend],v[map_night,False,183.2956,False]]!
+![k[victory],v[Blue,economic]]!
+![k[alive],v[2:06:00 PM]]!
+![k[alive],v[2:06:05 PM]]!
+![k[alive],v[2:06:10 PM]]!
+![k[alive],v[2:06:15 PM]]!
+![k[alive],v[2:06:20 PM]]!
+![k[alive],v[2:06:25 PM]]!
+![k[spawn],v[7,False]]!
+![k[spawn],v[10,False]]!
+![k[spawn],v[5,False]]!
+![k[spawn],v[3,False]]!
+![k[spawn],v[9,False]]!
+![k[spawn],v[1,False]]!
+![k[spawn],v[2,False]]!
+![k[playernames],v[,,,,,,,,,]]!
+![k[spawn],v[8,False]]!
+![k[alive],v[2:06:30 PM]]!
+![k[spawn],v[4,False]]!
+![k[spawn],v[6,False]]!
+![k[alive],v[2:06:35 PM]]!
+![k[gamestart],v[map_dusk,False,0,False]]!
+![k[blessMaiden],v[310,620,Blue]]!
+![k[blessMaiden],v[1610,620,Red]]!
+![k[carryFood],v[7]]!
+![k[carryFood],v[8]]!
+![k[reserveMaiden],v[1580,140,7]]!
+![k[carryFood],v[5]]!
+![k[carryFood],v[3]]!
+![k[reserveMaiden],v[340,140,8]]!
+![k[carryFood],v[6]]!
+![k[glance],v[2,1]]!
+![k[carryFood],v[4]]!
+![k[alive],v[2:06:40 PM]]!
+![k[glance],v[1,2]]!
+![k[carryFood],v[10]]!
+![k[useMaiden],v[1580,140,maiden_speed,7]]!
+![k[useMaiden],v[340,140,maiden_speed,8]]!
+![k[reserveMaiden],v[340,140,4]]!
+![k[glance],v[1,2]]!
+![k[carryFood],v[9]]!
+![k[berryDeposit],v[1081,743,3]]!
+![k[carryFood],v[7]]!
+![k[glance],v[2,1]]!
+![k[reserveMaiden],v[310,620,6]]!
+![k[carryFood],v[8]]!
+![k[berryDeposit],v[1142,749,5]]!
+![k[reserveMaiden],v[1580,140,10]]!
+![k[reserveMaiden],v[960,140,7]]!
+![k[glance],v[2,1]]!
+![k[useMaiden],v[340,140,maiden_speed,4]]!
+![k[alive],v[2:06:45 PM]]!
+![k[glance],v[2,1]]!
+![k[carryFood],v[4]]!
+![k[useMaiden],v[310,620,maiden_wings,6]]!
+![k[reserveMaiden],v[310,620,8]]!
+![k[glance],v[1,2]]!
+![k[useMaiden],v[1580,140,maiden_speed,10]]!
+![k[useMaiden],v[960,140,maiden_wings,7]]!
+![k[carryFood],v[10]]!
+![k[blessMaiden],v[310,620,Red]]!
+![k[carryFood],v[5]]!
+![k[useMaiden],v[310,620,maiden_wings,8]]!
+![k[reserveMaiden],v[960,140,10]]!
+![k[berryDeposit],v[1060,702,9]]!
+![k[blessMaiden],v[310,620,Blue]]!
+![k[alive],v[2:06:50 PM]]!
+![k[blessMaiden],v[340,140,Red]]!
+![k[playerKill],v[1320,490,6,7,Soldier]]!
+![k[useMaiden],v[960,140,maiden_wings,10]]!
+![k[berryDeposit],v[1124,707,5]]!
+![k[glance],v[6,3]]!
+![k[playerKill],v[1228,260,6,3,Worker]]!
+![k[blessMaiden],v[340,140,Blue]]!
+![k[getOnSnail: ],v[960,11,4]]!
+![k[getOffSnail: ],v[951,11,,4]]!
+![k[carryFood],v[9]]!
+![k[alive],v[2:06:55 PM]]!
+![k[blessMaiden],v[960,140,Blue]]!
+![k[reserveMaiden],v[960,140,4]]!
+![k[glance],v[8,9]]!
+![k[carryFood],v[7]]!
+![k[blessMaiden],v[1580,140,Red]]!
+![k[carryFood],v[5]]!
+![k[reserveMaiden],v[1580,140,7]]!
+![k[useMaiden],v[960,140,maiden_wings,4]]!
+![k[blessMaiden],v[340,140,Red]]!
+![k[alive],v[2:07:00 PM]]!
+![k[berryDeposit],v[1153,671,9]]!
+![k[glance],v[8,1]]!
+![k[blessMaiden],v[1610,620,Blue]]!
+![k[useMaiden],v[1580,140,maiden_speed,7]]!
+![k[blessMaiden],v[310,620,Red]]!
+![k[carryFood],v[7]]!
+![k[blessMaiden],v[1580,140,Blue]]!
+![k[playerKill],v[338,733,1,8,Soldier]]!
+![k[getOnSnail: ],v[951,11,7]]!
+![k[alive],v[2:07:05 PM]]!
+![k[getOffSnail: ],v[953,11,,7]]!
+![k[carryFood],v[9]]!
+![k[blessMaiden],v[960,140,Red]]!
+![k[reserveMaiden],v[960,140,7]]!
+![k[unreserveMaiden],v[960,140,,7]]!
+![k[reserveMaiden],v[960,140,7]]!
+![k[glance],v[10,5]]!
+![k[carryFood],v[8]]!
+![k[playerKill],v[1472,871,2,9,Worker]]!
+![k[useMaiden],v[960,140,maiden_wings,7]]!
+![k[alive],v[2:07:10 PM]]!
+![k[berryDeposit],v[1078,580,5]]!
+![k[reserveMaiden],v[1580,140,8]]!
+![k[playerKill],v[1040,572,2,7,Soldier]]!
+![k[carryFood],v[9]]!
+![k[useMaiden],v[1580,140,maiden_speed,8]]!
+![k[blessMaiden],v[1580,140,Red]]!
+![k[carryFood],v[3]]!
+![k[carryFood],v[8]]!
+![k[glance],v[8,3]]!
+![k[alive],v[2:07:15 PM]]!
+![k[playerKill],v[1754,312,10,3,Worker]]!
+![k[carryFood],v[5]]!
+![k[playerKill],v[1681,412,1,10,Soldier]]!
+![k[carryFood],v[7]]!
+![k[berryDeposit],v[1192,635,9]]!
+![k[blessMaiden],v[1580,140,Blue]]!
+![k[blessMaiden],v[1610,620,Red]]!
+![k[alive],v[2:07:20 PM]]!
+![k[carryFood],v[3]]!
+![k[reserveMaiden],v[340,140,7]]!
+![k[blessMaiden],v[1610,620,Blue]]!
+![k[reserveMaiden],v[1610,620,8]]!
+![k[carryFood],v[9]]!
+![k[useMaiden],v[340,140,maiden_speed,7]]!
+![k[playerKill],v[613,860,4,5,Worker]]!
+![k[carryFood],v[7]]!
+![k[reserveMaiden],v[960,140,3]]!
+![k[alive],v[2:07:25 PM]]!
+![k[useMaiden],v[1610,620,maiden_wings,8]]!
+![k[blessMaiden],v[960,140,Blue]]!
+![k[playerKill],v[947,142,2,7,Worker]]!
+![k[playerKill],v[962,913,4,1,Queen]]!
+![k[glance],v[6,9]]!
+![k[useMaiden],v[960,140,maiden_wings,3]]!
+![k[carryFood],v[10]]!
+![k[glance],v[9,6]]!
+![k[alive],v[2:07:30 PM]]!
+![k[reserveMaiden],v[1580,140,10]]!
+![k[playerKill],v[1405,750,4,9,Worker]]!
+![k[playerKill],v[1150,991,3,8,Soldier]]!
+![k[blessMaiden],v[960,140,Red]]!
+![k[carryFood],v[5]]!
+![k[useMaiden],v[1580,140,maiden_speed,10]]!
+![k[glance],v[1,2]]!
+![k[alive],v[2:07:35 PM]]!
+![k[carryFood],v[9]]!
+![k[carryFood],v[7]]!
+![k[carryFood],v[8]]!
+![k[reserveMaiden],v[310,620,7]]!
+![k[playerKill],v[821,571,4,5,Worker]]!
+![k[glance],v[6,9]]!
+![k[berryKickIn],v[733,720,5]]!
+![k[berryDeposit],v[1069,633,9]]!
+![k[playerKill],v[1294,261,3,6,Soldier]]!
+![k[reserveMaiden],v[1580,140,8]]!
+![k[useMaiden],v[310,620,maiden_wings,7]]!
+![k[playerKill],v[1346,402,2,3,Soldier]]!
+![k[alive],v[2:07:40 PM]]!
+![k[carryFood],v[10]]!
+![k[playerKill],v[1310,483,1,2,Queen]]!
+![k[carryFood],v[5]]!
+![k[carryFood],v[9]]!
+![k[useMaiden],v[1580,140,maiden_speed,8]]!
+![k[reserveMaiden],v[960,140,5]]!
+![k[blessMaiden],v[1610,620,Red]]!
+![k[carryFood],v[6]]!
+![k[blessMaiden],v[960,140,Blue]]!
+![k[alive],v[2:07:45 PM]]!
+![k[blessMaiden],v[1580,140,Red]]!
+![k[useMaiden],v[960,140,maiden_wings,5]]!
+![k[carryFood],v[8]]!
+![k[glance],v[4,9]]!
+![k[carryFood],v[3]]!
+![k[berryDeposit],v[763,751,6]]!
+![k[reserveMaiden],v[1580,140,3]]!
+![k[reserveMaiden],v[960,140,8]]!
+![k[playerKill],v[930,995,5,2,Queen]]!
+![k[glance],v[10,3]]!
+![k[unreserveMaiden],v[1580,140,,3]]!
+![k[alive],v[2:07:50 PM]]!
+![k[glance],v[3,10]]!
+![k[berryDeposit],v[1171,700,9]]!
+![k[useMaiden],v[960,140,maiden_wings,8]]!
+![k[reserveMaiden],v[1580,140,3]]!
+![k[blessMaiden],v[340,140,Blue]]!
+![k[carryFood],v[6]]!
+![k[reserveMaiden],v[960,140,10]]!
+![k[alive],v[2:07:55 PM]]!
+![k[useMaiden],v[1580,140,maiden_speed,3]]!
+![k[playerKill],v[1165,995,7,4,Soldier]]!
+![k[blessMaiden],v[960,140,Red]]!
+![k[carryFood],v[9]]!
+![k[useMaiden],v[960,140,maiden_wings,10]]!
+![k[playerKill],v[869,935,5,6,Worker]]!
+![k[carryFood],v[3]]!
+![k[playerKill],v[879,794,2,5,Soldier]]!
+![k[alive],v[2:08:00 PM]]!
+![k[playerKill],v[990,146,10,3,Worker]]!
+![k[berryDeposit],v[1148,599,9]]!
+![k[carryFood],v[6]]!
+![k[alive],v[2:08:05 PM]]!
+![k[carryFood],v[3]]!
+![k[carryFood],v[9]]!
+![k[berryDeposit],v[840,746,6]]!
+![k[playerKill],v[1277,713,10,7,Soldier]]!
+![k[carryFood],v[5]]!
+![k[carryFood],v[4]]!
+![k[alive],v[2:08:10 PM]]!
+![k[berryDeposit],v[1131,639,9]]!
+![k[reserveMaiden],v[960,140,3]]!
+![k[berryDeposit],v[805,707,4]]!
+![k[playerKill],v[1016,1015,8,1,Queen]]!
+![k[useMaiden],v[960,140,maiden_wings,3]]!
+![k[playerKill],v[1117,583,2,5,Worker]]!
+![k[alive],v[2:08:15 PM]]!
+![k[carryFood],v[4]]!
+![k[carryFood],v[9]]!
+![k[glance],v[7,6]]!
+![k[berryKickIn],v[1098,684,2]]!
+![k[gameend],v[map_dusk,False,101.8123,False]]!
+![k[victory],v[Gold,economic]]!
+![k[alive],v[2:08:20 PM]]!
+![k[alive],v[2:08:25 PM]]!
+![k[alive],v[2:08:30 PM]]!
+![k[alive],v[2:08:35 PM]]!

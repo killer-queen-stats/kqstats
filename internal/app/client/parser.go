@@ -30,7 +30,7 @@ func (p *StatParser) Parse(message string) (*Stat, error) {
 	}
 
 	// Check if timestamp is first
-	tsRegex := regexp.MustCompile(`[0-9]+,`)
+	tsRegex := regexp.MustCompile(`^[0-9]+,`)
 	idxs := tsRegex.FindStringIndex(message)
 
 	var tsString string
@@ -48,7 +48,9 @@ func (p *StatParser) Parse(message string) (*Stat, error) {
 	}
 
 	key := p.getMessageKey(keysAndValue)
-	logrus.Infof("%v", key)
+	values := p.getMessageValues(keysAndValue)
+	logrus.Infof("Key: %v", key)
+	logrus.Infof("Values: %v", values)
 
 	stat := Stat{
 		RawMessage: message,
@@ -97,4 +99,15 @@ func (p *StatParser) getMessageKey(keyAndValue string) string {
 	key := messageKeys[1]
 	processedKey := alphaRegex.ReplaceAllString(key, "")
 	return processedKey
+}
+
+func (p *StatParser) getMessageValues(keyAndValue string) []string {
+	keyRegex := regexp.MustCompile(`v\[(?P<value>[^\]]+)\]`)
+	messageValues := keyRegex.FindStringSubmatch(keyAndValue)
+	if len(messageValues) <= 1 {
+		return []string{}
+	}
+	values := messageValues[1]
+	valuesList := strings.Split(values, ",")
+	return valuesList
 }
