@@ -240,7 +240,7 @@ func (s *Stat) createReserveMaidenValues(values ...string) (map[string]interface
 		return nil, err
 	}
 
-	reserverName, err := util.PlayerID(victimID).ToString()
+	reserverName, err := util.PlayerID(reserver).ToString()
 	if err != nil {
 		return nil, err
 	}
@@ -270,7 +270,7 @@ func (s *Stat) createUnreserveMaidenValues(values ...string) (map[string]interfa
 		return nil, err
 	}
 
-	reserverName, err := util.PlayerID(victimID).ToString()
+	reserverName, err := util.PlayerID(reserver).ToString()
 	if err != nil {
 		return nil, err
 	}
@@ -282,18 +282,103 @@ func (s *Stat) createUnreserveMaidenValues(values ...string) (map[string]interfa
 	return payload, nil
 }
 
+// Values are
+// X coord
+// Y coord
+// Gate type: speed or warrior
+// PlayerID
 func (s *Stat) createUseMaidenValues(values ...string) (map[string]interface{}, error) {
-	return map[string]interface{}{}, nil
+	x := values[0]
+	y := values[1]
+
+	gate := GateType(values[2]).Normalize()
+
+	user, err := strconv.Atoi(values[3])
+	if err != nil {
+		return nil, err
+	}
+
+	coords, err := util.NewCoords(x, y)
+	if err != nil {
+		return nil, err
+	}
+	userName, err := util.PlayerID(user).ToString()
+	if err != nil {
+		return nil, err
+	}
+	payload := map[string]interface{}{
+		"coordinates": coords,
+		"gateType":    gate,
+		"player":      userName,
+	}
+	return payload, nil
 }
+
+// Values are
+// PlayerID 1
+// PlayerID 2
 func (s *Stat) createGlanceValues(values ...string) (map[string]interface{}, error) {
-	return map[string]interface{}{}, nil
+	player1ID, err := strconv.Atoi(values[0])
+	if err != nil {
+		return nil, err
+	}
+	player2ID, err := strconv.Atoivalues[1]
+	if err != nil {
+		return nil, err
+	}
+	player1Name, err := util.PlayerID(player1ID).ToString()
+	if err != nil {
+		return nil, err
+	}
+	player2Name, err := util.PlayerID(player2ID).ToString()
+	if err != nil {
+		return nil, err
+	}
+
+	payload := map[string]interface{}{
+		"player1": player1Name,
+		"player2": player2Name,
+	}
+
+	return payload, nil
 }
+
+// Values are
+// PlayerID
 func (s *Stat) createCarryFoodValues(values ...string) (map[string]interface{}, error) {
-	return map[string]interface{}{}, nil
+	playerID, err := strconv.Atoi(values[0])
+	if err != nil {
+		return nil, err
+	}
+	playerName, err := util.PlayerID(player1ID).ToString()
+	if err != nil {
+		return nil, err
+	}
+	payload := map[string]interface{}{
+		"player": playerName,
+	}
+	return payload, nil
 }
+
+// Values are
+// MapName
+// Cab orientation
+// Some float?
+// some boolean (probably tourney mode?)
 func (s *Stat) createGameStartValues(values ...string) (map[string]interface{}, error) {
-	return map[string]interface{}{}, nil
+	mapType := MapType(values[0]).Normalize()
+	if blueOnRight, err := values[1]; err != nil {
+		return nil, err
+	}
+	// Skip the other two values
+	payload := map[string]interface{}{
+		"map":         mapType,
+		"blueOnRight": blueOnRight,
+	}
+
+	return payload, nil
 }
+
 func (s *Stat) createGameEndValues(values ...string) (map[string]interface{}, error) {
 	return map[string]interface{}{}, nil
 }
