@@ -44,3 +44,11 @@ func (id PlayerID) ToString() (string, error) {
 	}
 	return playerIDToStringMap[id], nil
 }
+
+func (id PlayerID) Side() Side {
+	if id%2 == 1 {
+		return Gold
+	} else {
+		return Blue
+	}
+}

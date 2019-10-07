@@ -202,15 +202,86 @@ func (s *Stat) createPlayerKillValues(values ...string) (map[string]interface{},
 	return payload, nil
 }
 
+// Values are
+// X coord
+// Y coord
+// side
 func (s *Stat) createBlessMaidenValues(values ...string) (map[string]interface{}, error) {
-	return map[string]interface{}{}, nil
+	x := values[0]
+	y := values[1]
+	side := util.Side(values[2])
+
+	coords, err := util.NewCoords(x, y)
+	if err != nil {
+		return nil, err
+	}
+	payload := map[string]interface{}{
+		"coordinates": coords,
+		"side":        side.Normalize(),
+	}
+
+	return payload, nil
 }
+
+// Values are
+// X coord
+// Y coord
+// PlayerID
 func (s *Stat) createReserveMaidenValues(values ...string) (map[string]interface{}, error) {
-	return map[string]interface{}{}, nil
+	x := values[0]
+	y := values[1]
+	reserver, err := strconv.Atoi(values[2])
+	if err != nil {
+		return nil, err
+	}
+
+	coords, err := util.NewCoords(x, y)
+	if err != nil {
+		return nil, err
+	}
+
+	reserverName, err := util.PlayerID(victimID).ToString()
+	if err != nil {
+		return nil, err
+	}
+
+	payload := map[string]interface{}{
+		"coordinates": coords,
+		"player":      reserveName,
+	}
+	return payload, nil
 }
+
+// Values are
+// X coord
+// Y coord
+// PlayerID
+// Pretty much the same as reserve, but the code is duplicated just in case
 func (s *Stat) createUnreserveMaidenValues(values ...string) (map[string]interface{}, error) {
-	return map[string]interface{}{}, nil
+	x := values[0]
+	y := values[1]
+	reserver, err := strconv.Atoi(values[2])
+	if err != nil {
+		return nil, err
+	}
+
+	coords, err := util.NewCoords(x, y)
+	if err != nil {
+		return nil, err
+	}
+
+	reserverName, err := util.PlayerID(victimID).ToString()
+	if err != nil {
+		return nil, err
+	}
+
+	payload := map[string]interface{}{
+		"coordinates": coords,
+		"player":      reserveName,
+	}
+	return payload, nil
 }
+
 func (s *Stat) createUseMaidenValues(values ...string) (map[string]interface{}, error) {
 	return map[string]interface{}{}, nil
 }
