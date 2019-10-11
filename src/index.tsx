@@ -46,8 +46,12 @@ class Home extends React.Component {
           <li><a href="/killboard/full">Full</a></li>
           <li><a href="/killboard/horizontal/blue">Blue team</a></li>
           <li><a href="/killboard/horizontal/blue/mirror">Blue team (mirrored)</a></li>
+          <li><a href="/killboard/vertical/blue/">Vert Blue team</a></li>
+          <li><a href="/killboard/vertical/blue/mirror">Vert Blue team (mirrored)</a></li>
           <li><a href="/killboard/horizontal/gold">Gold team</a></li>
           <li><a href="/killboard/horizontal/gold/mirror">Gold team (mirrored)</a></li>
+          <li><a href="/killboard/vertical/gold">Vert Gold team</a></li>
+          <li><a href="/killboard/vertical/gold/mirror">Vert Gold team (mirrored)</a></li>
         </ul>
       </div>
     );
