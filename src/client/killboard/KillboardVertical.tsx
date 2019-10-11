@@ -90,10 +90,10 @@ class KillboardVertical extends KillboardBase {
                     <img className="avatar" src={this.alias.spriteName[1]}/>
                 </div>
                 <div className="crown-container">
-                    {this.getCrowns(3)}
+                    {this.getCrowns(this.state[this.alias.position[1]].queen_kills)}
                 </div>
                 <div className="score-container">
-                  <span>{this.state[this.alias.position[1]].kills}/
+                  <span>{this.state[this.alias.position[1]].kills}-
                   {this.state[this.alias.position[1]].deaths}</span>
                 </div>
             </div>
@@ -105,7 +105,7 @@ class KillboardVertical extends KillboardBase {
                     {this.getCrowns(this.state[this.alias.position[2]].queen_kills)}
                 </div>
                 <div className="score-container">
-                    <span>{this.state[this.alias.position[2]].kills}/
+                    <span>{this.state[this.alias.position[2]].kills}-
                     {this.state[this.alias.position[2]].deaths}</span>
                 </div>
             </div>
@@ -117,7 +117,7 @@ class KillboardVertical extends KillboardBase {
                     {this.getCrowns(this.state[this.alias.position[3]].queen_kills)}
                 </div>
                 <div className="score-container">
-                    <span>{this.state[this.alias.position[3]].kills}/
+                    <span>{this.state[this.alias.position[3]].kills}-
                     {this.state[this.alias.position[3]].deaths}</span>
                 </div>
             </div>
@@ -129,7 +129,7 @@ class KillboardVertical extends KillboardBase {
                     {this.getCrowns(this.state[this.alias.position[4]].queen_kills)}
                 </div>
                 <div className="score-container">
-                    <span>{this.state[this.alias.position[4]].kills}/
+                    <span>{this.state[this.alias.position[4]].kills}-
                     {this.state[this.alias.position[4]].deaths}</span>
                 </div>
             </div>
@@ -142,7 +142,7 @@ class KillboardVertical extends KillboardBase {
               </div>
               <div className="score-container">
 
-                  <span>{this.state[this.alias.position[5]].kills}/
+                  <span>{this.state[this.alias.position[5]].kills}-
                   {this.state[this.alias.position[5]].deaths}</span>
               </div>
             </div>
@@ -154,7 +154,7 @@ class KillboardVertical extends KillboardBase {
           <div className="killboard vertical">
             <div className="player-container" >
                 <div className="score-container">
-                  <span>{this.state[this.alias.position[1]].kills}/
+                  <span>{this.state[this.alias.position[1]].kills}-
                   {this.state[this.alias.position[1]].deaths}</span>
                 </div>
                 <div className="crown-container">
@@ -166,7 +166,7 @@ class KillboardVertical extends KillboardBase {
             </div>
             <div className="player-container" >
                 <div className="score-container">
-                    <span>{this.state[this.alias.position[2]].kills}/
+                    <span>{this.state[this.alias.position[2]].kills}-
                     {this.state[this.alias.position[2]].deaths}</span>
                 </div>
                 <div className="crown-container">
@@ -178,7 +178,7 @@ class KillboardVertical extends KillboardBase {
             </div>
             <div className="player-container" >
                 <div className="score-container">
-                    <span>{this.state[this.alias.position[3]].kills}/
+                    <span>{this.state[this.alias.position[3]].kills}-
                     {this.state[this.alias.position[3]].deaths}</span>
                 </div>
                 <div className="crown-container">
@@ -190,7 +190,7 @@ class KillboardVertical extends KillboardBase {
             </div>
             <div className="player-container" >
                 <div className="score-container">
-                    <span>{this.state[this.alias.position[4]].kills}/
+                    <span>{this.state[this.alias.position[4]].kills}-
                     {this.state[this.alias.position[4]].deaths}</span>
                 </div>
                 <div className="crown-container">
@@ -202,7 +202,7 @@ class KillboardVertical extends KillboardBase {
             </div>
             <div className="player-container" >
               <div className="score-container">
-                  <span>{this.state[this.alias.position[5]].kills}/
+                  <span>{this.state[this.alias.position[5]].kills}-
                   {this.state[this.alias.position[5]].deaths}</span>
               </div>
               <div className="crown-container">

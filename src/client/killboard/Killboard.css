@@ -108,8 +108,9 @@ th:not(:nth-child(1)), td:not(:nth-child(1)) {
     font-family: "BumbleBash Sans";
     color: white;
     font-size: 150px;
-    width: 500px;
+    width: 600px;
     height: 250px;
+    text-align: center;
 }
 
 .killboard.vertical .player-container .score-container span{
