@@ -350,7 +350,7 @@ func (s *Stat) createCarryFoodValues(values ...string) (map[string]interface{}, 
 	if err != nil {
 		return nil, err
 	}
-	playerName, err := util.PlayerID(player1ID).ToString()
+	playerName, err := util.PlayerID(playerID).ToString()
 	if err != nil {
 		return nil, err
 	}
@@ -367,7 +367,7 @@ func (s *Stat) createCarryFoodValues(values ...string) (map[string]interface{}, 
 // some boolean (probably tourney mode?)
 func (s *Stat) createGameStartValues(values ...string) (map[string]interface{}, error) {
 	mapType := MapType(values[0]).Normalize()
-	if blueOnRight, err := values[1]; err != nil {
+	if blueOnRight, err := strconv.ParseBool(values[1]); err != nil {
 		return nil, err
 	}
 	// Skip the other two values
@@ -379,30 +379,240 @@ func (s *Stat) createGameStartValues(values ...string) (map[string]interface{}, 
 	return payload, nil
 }
 
+// Values are
+// MapName
+// Random bool
+// Duration in seconds
+// Some other random boolean
 func (s *Stat) createGameEndValues(values ...string) (map[string]interface{}, error) {
-	return map[string]interface{}{}, nil
+	mapType := MapType(values[0]).Normalize()
+	durationString := fmt.Sprintf("%ss", values[2])
+
+	duration, err := time.ParseDuration(durationString)
+	if err != nil {
+		duration = time.Duration()
+	}
+
+	payload := map[string]interface{}{
+		"map":          mapType,
+		"gameDuration": duration,
+	}
+	return payload, nil
 }
+
+// Values are
+// Side
+// Victory Type
 func (s *Stat) createVictoryValues(values ...string) (map[string]interface{}, error) {
-	return map[string]interface{}{}, nil
+	side := util.Side(values[0]).Normalize()
+	victoryType := util.VictoryType(values[1]).Normalize()
+
+	payload := map[string]interface{}{
+		"side":        side,
+		"victoryType": victoryType,
+	}
+	return payload, nil
 }
+
+// Values are
+// playerID
+// isAi
 func (s *Stat) createSpawnValues(values ...string) (map[string]interface{}, error) {
-	return map[string]interface{}{}, nil
+	playerID, err := strconv.Atoi(values[0])
+	if err != nil {
+		return nil, err
+	}
+	playerName, err := util.PlayerID(playerID).ToString()
+	if err != nil {
+		return nil, err
+	}
+	isAi, err := strconv.ParseBool(values[1])
+	if err != nil {
+		return nil, err
+	}
+	payload := map[string]interface{}{
+		"player": playerName,
+		"isAi":   isAi,
+	}
+	return payload, nil
 }
+
+// Values are
+// x
+// y
+// playerID
 func (s *Stat) createGetOnSnailValues(values ...string) (map[string]interface{}, error) {
-	return map[string]interface{}{}, nil
+	x := values[0]
+	y := values[1]
+
+	playerID, err := strconv.Atoi(values[2])
+	if err != nil {
+		return nil, err
+	}
+	playerName, err := util.PlayerID(playerID).ToString()
+	if err != nil {
+		return nil, err
+	}
+
+	coords, err := util.NewCoords(x, y)
+	if err != nil {
+		return nil, err
+	}
+	payload := map[string]interface{}{
+		"player":      playerName,
+		"coordinates": coords,
+	}
+	return payload, nil
 }
+
+// Values are
+// x
+// y
+// playerID
 func (s *Stat) createGetOffSnailValues(values ...string) (map[string]interface{}, error) {
-	return map[string]interface{}{}, nil
+	x := values[0]
+	y := values[1]
+
+	playerID, err := strconv.Atoi(values[2])
+	if err != nil {
+		return nil, err
+	}
+	playerName, err := util.PlayerID(playerID).ToString()
+	if err != nil {
+		return nil, err
+	}
+
+	coords, err := util.NewCoords(x, y)
+	if err != nil {
+		return nil, err
+	}
+	payload := map[string]interface{}{
+		"player":      playerName,
+		"coordinates": coords,
+	}
+	return payload, nil
 }
+
+// Values are
+// x
+// y
+// eaterId
+// mealId
 func (s *Stat) createSnailEatValues(values ...string) (map[string]interface{}, error) {
-	return map[string]interface{}{}, nil
+	x := values[0]
+	y := values[1]
+
+	eaterID, err := strconv.Atoi(values[2])
+	if err != nil {
+		return nil, err
+	}
+	eaterName, err := util.PlayerID(eaterID).ToString()
+	if err != nil {
+		return nil, err
+	}
+	mealID, err := strconv.Atoi(values[3])
+	if err != nil {
+		return nil, err
+	}
+	mealName, err := util.PlayerID(mealID).ToString()
+	if err != nil {
+		return nil, err
+	}
+
+	coords, err := util.NewCoords(x, y)
+	if err != nil {
+		return nil, err
+	}
+
+	payload := map[string]interface{}{
+		"coordinates": coords,
+		"eater":       eaterName,
+		"meal":        mealName,
+	}
+	return paylaod, nil
 }
+
+// Values are
+// x
+// y
+// playerID
 func (s *Stat) createSnailEscapeValues(values ...string) (map[string]interface{}, error) {
-	return map[string]interface{}{}, nil
+	x := values[0]
+	y := values[1]
+
+	playerID, err := strconv.Atoi(values[2])
+	if err != nil {
+		return nil, err
+	}
+	playerName, err := util.PlayerID(playerID).ToString()
+	if err != nil {
+		return nil, err
+	}
+
+	coords, err := util.NewCoords(x, y)
+	if err != nil {
+		return nil, err
+	}
+	payload := map[string]interface{}{
+		"player":      playerName,
+		"coordinates": coords,
+	}
+	return payload, nil
+
 }
+
+// Values are
+// x
+// y
+// playerID
 func (s *Stat) createBerryDepositValues(values ...string) (map[string]interface{}, error) {
-	return map[string]interface{}{}, nil
+	x := values[0]
+	y := values[1]
+
+	playerID, err := strconv.Atoi(values[2])
+	if err != nil {
+		return nil, err
+	}
+	playerName, err := util.PlayerID(playerID).ToString()
+	if err != nil {
+		return nil, err
+	}
+
+	coords, err := util.NewCoords(x, y)
+	if err != nil {
+		return nil, err
+	}
+	payload := map[string]interface{}{
+		"player":      playerName,
+		"coordinates": coords,
+	}
+	return payload, nil
 }
+
+// Values are
+// x
+// y
+// playerID
 func (s *Stat) createBerryKickInValues(values ...string) (map[string]interface{}, error) {
-	return map[string]interface{}{}, nil
+	x := values[0]
+	y := values[1]
+
+	playerID, err := strconv.Atoi(values[2])
+	if err != nil {
+		return nil, err
+	}
+	playerName, err := util.PlayerID(playerID).ToString()
+	if err != nil {
+		return nil, err
+	}
+
+	coords, err := util.NewCoords(x, y)
+	if err != nil {
+		return nil, err
+	}
+	payload := map[string]interface{}{
+		"player":      playerName,
+		"coordinates": coords,
+	}
+	return payload, nil
 }

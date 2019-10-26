@@ -104,7 +104,7 @@ func (p *StatParser) getMessageValues(keyAndValue string) []string {
 	if len(messageValues) <= 1 {
 		return []string{}
 	}
-	values := messageValues[1]
+	values := strings.ToLower(messageValues[1])
 	valuesList := strings.Split(values, ",")
 	return valuesList
 }
