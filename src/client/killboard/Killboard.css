@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "BumbleBash Sans";
+    src: url("/fonts/BumbleBashSans.otf");
+}
+
 table {
   border-collapse: collapse;
 }
@@ -64,6 +69,55 @@ th:not(:nth-child(1)), td:not(:nth-child(1)) {
   top: 30px;
 }
 
+.killboard.vertical {
+    position: "relative";
+}
+
+.killboard.vertical .player-container {
+    position: relative;
+}
+
+.killboard.vertical .player-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.killboard.vertical .player-container .avatar-container{
+    float: left;
+}
+
+.killboard.vertical .player-container .avatar{
+    width: 250px;
+    height: 250px;
+}
+
+.killboard.vertical .player-container .crown-container{
+    float: left;
+    width: 90px;
+    height: 250px;
+}
+
+.killboard.vertical .player-container .crown{
+    width: 80px;
+    height: 80px;
+}
+
+.killboard.vertical .player-container .score-container{
+    float: left;
+    font-family: "BumbleBash Sans";
+    color: white;
+    font-size: 150px;
+    width: 600px;
+    height: 250px;
+    text-align: center;
+}
+
+.killboard.vertical .player-container .score-container span{
+    font-size: 150px;
+    line-height: 260px;
+}
+
 .killboard.horizontal .value {
   position: absolute;
   width: 100px;
@@ -125,3 +179,5 @@ th:not(:nth-child(1)), td:not(:nth-child(1)) {
 .killboard.player .stat span.value {
   font-size: 48px;
 }
+
+

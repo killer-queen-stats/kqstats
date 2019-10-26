@@ -3,6 +3,7 @@ import * as React from 'react';
 import { Page404 } from '../404';
 import KillboardFull from './KillboardFull';
 import KillboardHorizontal from './KillboardHorizontal';
+import KillboardVertical from './KillboardVertical';
 import KillboardPlayer from './KillboardPlayer';
 import './Killboard.css';
 
@@ -50,6 +51,44 @@ class Killboard extends React.Component<RouteComponentProps<{}>> {
           path={`${this.props.match.path}/horizontal/gold/mirror`}
           render={(props) => (
             <KillboardHorizontal
+              team="gold"
+              mirror={true}
+            />
+          )}
+        />
+        <Route
+          exact={true}
+          path={`${this.props.match.path}/vertical/blue`}
+          render={(props) => (
+            <KillboardVertical
+              team="blue"
+            />
+          )}
+        />
+        <Route
+          exact={true}
+          path={`${this.props.match.path}/vertical/gold`}
+          render={(props) => (
+            <KillboardVertical
+              team="gold"
+            />
+          )}
+        />
+        <Route
+          exact={true}
+          path={`${this.props.match.path}/vertical/blue/mirror`}
+          render={(props) => (
+            <KillboardVertical
+              team="blue"
+              mirror={true}
+            />
+          )}
+        />
+        <Route
+          exact={true}
+          path={`${this.props.match.path}/vertical/gold/mirror`}
+          render={(props) => (
+            <KillboardVertical
               team="gold"
               mirror={true}
             />
