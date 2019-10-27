@@ -247,7 +247,7 @@ func (s *Stat) createReserveMaidenValues(values ...string) (map[string]interface
 
 	payload := map[string]interface{}{
 		"coordinates": coords,
-		"player":      reserveName,
+		"player":      reserverName,
 	}
 	return payload, nil
 }
@@ -277,7 +277,7 @@ func (s *Stat) createUnreserveMaidenValues(values ...string) (map[string]interfa
 
 	payload := map[string]interface{}{
 		"coordinates": coords,
-		"player":      reserveName,
+		"player":      reserverName,
 	}
 	return payload, nil
 }
@@ -291,7 +291,7 @@ func (s *Stat) createUseMaidenValues(values ...string) (map[string]interface{}, 
 	x := values[0]
 	y := values[1]
 
-	gate := GateType(values[2]).Normalize()
+	gate := util.GateType(values[2]).Normalize()
 
 	user, err := strconv.Atoi(values[3])
 	if err != nil {
@@ -322,7 +322,7 @@ func (s *Stat) createGlanceValues(values ...string) (map[string]interface{}, err
 	if err != nil {
 		return nil, err
 	}
-	player2ID, err := strconv.Atoivalues[1]
+	player2ID, err := strconv.Atoi(values[1])
 	if err != nil {
 		return nil, err
 	}
@@ -366,8 +366,9 @@ func (s *Stat) createCarryFoodValues(values ...string) (map[string]interface{}, 
 // Some float?
 // some boolean (probably tourney mode?)
 func (s *Stat) createGameStartValues(values ...string) (map[string]interface{}, error) {
-	mapType := MapType(values[0]).Normalize()
-	if blueOnRight, err := strconv.ParseBool(values[1]); err != nil {
+	mapType := util.MapType(values[0]).Normalize()
+	blueOnRight, err := strconv.ParseBool(values[1])
+	if err != nil {
 		return nil, err
 	}
 	// Skip the other two values
@@ -385,12 +386,12 @@ func (s *Stat) createGameStartValues(values ...string) (map[string]interface{}, 
 // Duration in seconds
 // Some other random boolean
 func (s *Stat) createGameEndValues(values ...string) (map[string]interface{}, error) {
-	mapType := MapType(values[0]).Normalize()
+	mapType := util.MapType(values[0]).Normalize()
 	durationString := fmt.Sprintf("%ss", values[2])
 
 	duration, err := time.ParseDuration(durationString)
 	if err != nil {
-		duration = time.Duration()
+		duration = time.Duration(0)
 	}
 
 	payload := map[string]interface{}{
@@ -529,7 +530,8 @@ func (s *Stat) createSnailEatValues(values ...string) (map[string]interface{}, e
 		"eater":       eaterName,
 		"meal":        mealName,
 	}
-	return paylaod, nil
+
+	return payload, nil
 }
 
 // Values are
