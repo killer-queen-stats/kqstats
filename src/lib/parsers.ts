@@ -25,6 +25,7 @@ import {
   SnailEscape,
   BerryDeposit,
   BerryKickIn,
+  CharacterType,
 } from './models/KQStream';
 
 const teams = {
@@ -35,6 +36,12 @@ const teams = {
 const maidens = {
   'maidenWings': Maiden.Warrior,
   'maidenSpeed': Maiden.Speed,
+};
+
+const characterTypes = {
+  'worker': CharacterType.Worker,
+  'soldier': CharacterType.Soldier,
+  'queen': CharacterType.Queen
 };
 
 const maps = {
@@ -73,11 +80,12 @@ export function playernames(value: string[]): PlayerNames {
 }
 
 export function playerKill(value: string[]): PlayerKill {
-  const [x, y, by, killed] = value;
+  const [x, y, by, killed, killedCharacterType] = value;
   return {
     pos: position(x, y),
     killed: Number(killed),
     by: Number(by),
+    killedCharType: characterTypes[killedCharacterType]
   };
 }
 
