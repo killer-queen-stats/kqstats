@@ -1,6 +1,6 @@
 import { ProtectedEventEmitter } from 'eventemitter-ts';
 import { KQStream } from './KQStream';
-import { Character, PlayerKill } from './models/KQStream';
+import { Character, PlayerKill, CharacterType } from './models/KQStream';
 
 type StatisticType = 'kills' | 'queen_kills' | 'warrior_kills' | 'deaths';
 
@@ -201,16 +201,25 @@ export class GameStats extends ProtectedEventEmitter<Events> {
 
         // Increment kills and deaths
         this.gameStats[kill.by].kills++;
-        if (kill.killed === Character.GoldQueen || kill.killed === Character.BlueQueen) {
-            this.gameStats[kill.by].queen_kills++;
-            filter[kill.by]!.push('queen_kills');
-        } else if (this.gameState[kill.killed].isWarrior) {
-            this.gameStats[kill.by].warrior_kills++;
-            filter[kill.by]!.push('warrior_kills');
-        }
         this.gameStats[kill.killed].deaths++;
 
+        switch (kill.killedCharType) {
+            case CharacterType.Queen:
+                this.gameStats[kill.by].queen_kills++;
+                filter[kill.by]!.push('queen_kills');
+                break;
+            case CharacterType.Soldier:
+                this.gameStats[kill.by].warrior_kills++;
+                filter[kill.by]!.push('warrior_kills');    
+                break;
+            default:
+                break;    
+        }
+
         // Set state of characters
+        // TODO: only use player kill to reset isWarrior to false
+        // Add another function that processes "useMaiden" to set isWarrior
+        // to true if that event indicates so.
         if (!GameStats.isQueen(kill.by) && !GameStats.isMaybeSnailKill(kill)) {
             this.gameState[kill.by].isWarrior = true;
         }

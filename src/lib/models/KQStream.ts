@@ -16,6 +16,12 @@ export enum Character {
   BlueChecks = 10,
 }
 
+export enum CharacterType {
+  Worker = 'WORKER',
+  Soldier = 'SOLDIER',
+  Queen = 'QUEEN'
+}
+
 export enum Team {
   Gold = 'GOLD',
   Blue = 'BLUE',
@@ -50,6 +56,7 @@ export interface PlayerKill {
   pos: Position;
   killed: Character;
   by: Character;
+  killedCharType: CharacterType;
 }
 
 export interface BlessMaiden {

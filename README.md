@@ -119,6 +119,29 @@ Set the callback for `playerKill` events. `callback` should accept a single para
 
 Set the callback for `playernames` events. `callback` should accept a single parameter of type `PlayerNames`.
 
+## Events
+
+| Event Name         | When it happens |  Other Info Included  | 
+| :-------------:    | :-------------: | :-------------------: |
+| `'playernames'`    | ???             |                       |
+| `'playerKill'`     | A player is killed | The player that was killed, the player that killed them, where it happened  |
+| `'blessMaiden'`    | A Queen tags a gate         |                       |
+| `'reserveMaiden'`  | A bear holds a berry up in front of a gate (?) |                       |
+| `'unreserveMaiden'`| After `reserveMaiden`, bear either steps away or gate changes(?)    |                       |
+| `'useMaiden'`      | Bear pops out of gate        |  What type of gate it was, where it happened                     |
+| `'glance'`         | One character bounces off of another        |                       |
+| `'carryFood'`      | Bear picks up berry        |                       |
+| `'gamestart'`      | Game starts        |                       |
+| `'gameend'`        | Game ends      |                       |
+| `'victory'`        | Game ends        |    Victory type                   |
+| `'spawn'`          | Player spawns in (definitely human, maybe bot too?)        |                       |
+| `'getOnSnail'`     | Bear gets on snail        |                       |
+| `'getOffSnail'`    | Bear gets off snail       |                       |
+| `'snailEat'`       | Bear eats another bear on snail (?)        |                       |
+| `'snailEscape'`    | While one bear is being eaten by snail, the rider is killed (?)        |                       |
+| `'berryDeposit'`   | Bear sinks a berry       |                       |
+| `'berryKickIn'`    | Character kicks a berry into a hive        |                       |
+
 ## Examples
 
 Simple killfeed:

@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import { KQCab } from '../src/lib/KQCab';
-import { Character, Team, Maiden, GameMap, CabOrientation, VictoryType } from '../src/lib/models/KQStream';
+import { Character, Team, Maiden, GameMap, CabOrientation, VictoryType, CharacterType } from '../src/lib/models/KQStream';
 import { GameEvents, KQStream } from '../src/lib/KQStream';
 
 type TestEvents = {
@@ -18,10 +18,11 @@ describe('KQStream', () => {
             '![k[playernames],v[,,,,,,,,,]]!'
         ],
         playerKill: [
-            '![k[playerKill],v[730,860,9,8]]!',
-            '![k[playerKill],v[770,860,9,10]]!',
-            '![k[playerKill],v[810,860,9,4]]!',
-            '![k[playerKill],v[1071.977,20,3,10]]!'
+            '![k[playerKill],v[730,860,9,8,Worker]]!',
+            '![k[playerKill],v[770,860,9,10,Soldier]]!',
+            '![k[playerKill],v[810,860,9,4,Worker]]!',
+            '![k[playerKill],v[1071.977,20,3,10,Soldier]]!',
+            '![k[playerKill],v[1071.977,20,3,1,Queen]]!'
         ],
         blessMaiden: [
             '![k[blessMaiden],v[960,500,Blue]]!',
@@ -101,7 +102,8 @@ describe('KQStream', () => {
                     y: 860
                 },
                 killed: Character.BlueChecks,
-                by: Character.GoldChecks
+                by: Character.GoldChecks,
+                killedCharType: CharacterType.Soldier
             },
             {
                 pos: {
@@ -109,7 +111,8 @@ describe('KQStream', () => {
                     y: 860
                 },
                 killed: Character.BlueChecks,
-                by: Character.GoldChecks
+                by: Character.GoldChecks,
+                killedCharType: CharacterType.Soldier
             },
             {
                 pos: {
@@ -117,7 +120,8 @@ describe('KQStream', () => {
                     y: 860
                 },
                 killed: Character.BlueStripes,
-                by: Character.GoldChecks
+                by: Character.GoldChecks,
+                killedCharType: CharacterType.Worker
             },
             {
                 pos: {
@@ -125,7 +129,17 @@ describe('KQStream', () => {
                     y: 20
                 },
                 killed: Character.BlueChecks,
-                by: Character.GoldStripes
+                by: Character.GoldStripes,
+                killedCharType: CharacterType.Soldier
+            },
+            {
+                pos: {
+                    x: 1071.977,
+                    y: 20
+                },
+                killed: Character.GoldQueen,
+                by: Character.GoldStripes,
+                killedCharType: CharacterType.Queen
             }
         ],
         blessMaiden: [
