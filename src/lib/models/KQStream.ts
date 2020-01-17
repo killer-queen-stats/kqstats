@@ -90,7 +90,7 @@ export interface GameStart {
 export interface GameEnd {
   map: GameMap;
   orientation: CabOrientation;
-  duration: Number;
+  duration: number;
 }
 
 export interface Victory {
